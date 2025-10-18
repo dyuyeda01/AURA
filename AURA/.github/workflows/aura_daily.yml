@@ -1,0 +1,29 @@
+name: AURA Daily Update
+on:
+  schedule:
+    - cron: "0 14 * * *"   # 10:00 AM ET daily
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install requests
+      - name: Run AURA update (placeholder, no external calls)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/aura_update.py
+      - name: Prune old history
+        run: python scripts/prune_history.py
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ public/data/
+          git commit -m "AURA update $(date -u +%F)" || echo "No changes"
+          git push

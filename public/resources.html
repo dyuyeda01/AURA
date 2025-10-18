@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AURA Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true, theme:'dark'});</script>
+  <style> body { background:#0f172a; } </style>
+</head>
+<body class="text-gray-100">
+  <header class="py-10 text-center">
+    <h1 class="text-3xl font-bold text-cyan-400">AURA Resources</h1>
+    <p class="text-gray-400 mt-1">Guide • Data Sources • Architecture</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 space-y-8">
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-cyan-300">How to Use AURA</h2>
+      <ul class="list-disc ml-6 mt-3 text-gray-300 text-sm space-y-1">
+        <li>Start with the Top 10 to get daily situational awareness.</li>
+        <li>Click a CVE to view scoring breakdown and AI summary.</li>
+        <li>Use Trends to explore vendors, categories, and score movements.</li>
+        <li>Prioritize patching based on AURA Score and context to your environment.</li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-cyan-300">Data Sources</h2>
+      <p class="text-gray-300 text-sm mt-2">AURA fuses multiple public sources:</p>
+      <ul class="list-disc ml-6 mt-2 text-gray-300 text-sm space-y-1">
+        <li>CISA Known Exploited Vulnerabilities (KEV)</li>
+        <li>NVD (CVSS scores & metadata)</li>
+        <li>FIRST EPSS (exploit probability)</li>
+        <li>Exploit-DB / GitHub (public PoC availability)</li>
+        <li>Cyber advisories & news (RSS)</li>
+      </ul>
+    </section>
+
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-cyan-300">Architecture</h2>
+      <div class="mermaid">
+flowchart TD
+    A[GitHub Action (Daily Run)]
+    B[Data Ingestion Layer<br/>KEV, NVD, EPSS, ExploitDB, News]
+    C[Normalization & Enrichment]
+    D[AURA Scoring Engine<br/>CVSS+EPSS+KEV+Exploit+Trend+AI]
+    E[AI Reasoning Layer<br/>Summaries & Reports]
+    F[Data Storage & Retention<br/>Latest + 1yr History]
+    G[Presentation (GitHub Pages)]
+    H[User Interaction<br/>Top 10, Date Picker, Trends]
+
+    A --> B --> C --> D --> E --> F --> G --> H
+
+    classDef layer fill:#0f172a,stroke:#06b6d4,color:#e0f2fe,stroke-width:1px;
+    class A,B,C,D,E,F,G,H layer;
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-500 text-xs py-10">
+    <a href="index.html" class="underline text-cyan-300">← Back to AURA Feed</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "CVE-2024-12345": {
+    "vendor": "Cisco",
+    "product": "IOS XE",
+    "history": [
+      {
+        "date": "2025-10-18",
+        "score": 87
+      }
+    ],
+    "latest_score": 87,
+    "summary": "CVE-2024-12345 \u2014 High. Targeting Cisco IOS XE; confirmed exploited (KEV), public PoC available, trend mentions: 3. Prioritize patching and restrict internet-facing access where possible."
+  },
+  "CVE-2024-33333": {
+    "vendor": "Fortinet",
+    "product": "FortiOS",
+    "history": [
+      {
+        "date": "2025-10-18",
+        "score": 82
+      }
+    ],
+    "latest_score": 82,
+    "summary": "CVE-2024-33333 \u2014 High. Targeting Fortinet FortiOS; confirmed exploited (KEV), public PoC available, trend mentions: 8. Prioritize patching and restrict internet-facing access where possible."
+  },
+  "CVE-2024-56789": {
+    "vendor": "Microsoft",
+    "product": "Exchange Server",
+    "history": [
+      {
+        "date": "2025-10-18",
+        "score": 62
+      }
+    ],
+    "latest_score": 62,
+    "summary": "CVE-2024-56789 \u2014 Moderate. Targeting Microsoft Exchange Server; confirmed exploited (KEV), no public PoC observed, trend mentions: 0. Prioritize patching and restrict internet-facing access where possible."
+  }
+}
