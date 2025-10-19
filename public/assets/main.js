@@ -15,13 +15,42 @@ function riskColor(score) {
 function renderList(data) {
   const list = document.getElementById('top-list');
   list.innerHTML = '';
+
   data.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card bg-gray-900 rounded-xl p-4 border border-gray-800';
+
+    // prefer the first direct EDB exploit URL; fallback to search page
+    const primaryExploitUrl =
+      item.exploit_urls && item.exploit_urls.length
+        ? item.exploit_urls[0]
+        : `https://www.exploit-db.com/search?q=${item.cve}`;
+
+    // optional count if multiple exploits found
+    const exploitCount =
+      item.exploit_edb_ids && item.exploit_edb_ids.length
+        ? ` (${item.exploit_edb_ids.length})`
+        : '';
+
     card.innerHTML = `
       <div class="flex items-start justify-between gap-3">
         <div>
-          <h3 class="text-lg font-semibold text-cyan-400">${item.cve}</h3>
+          <div class="flex items-center gap-2 flex-wrap">
+            <h3 class="text-lg font-semibold text-cyan-400">${item.cve}</h3>
+            ${item.exploit_poc ? `
+              <a
+                href="${primaryExploitUrl}"
+                class="text-xs bg-red-700/60 px-2 py-1 rounded text-red-100 hover:bg-red-700/80 focus:outline-none focus:ring-2 focus:ring-red-500"
+                target="_blank"
+                rel="noopener noreferrer"
+                role="link"
+                aria-label="Exploit proof-of-concept available. Opens in new tab."
+                title="Exploit PoC — click to open"
+              >
+                Exploit PoC${exploitCount}
+              </a>
+            ` : ''}
+          </div>
           <p class="text-sm text-gray-400">${item.vendor ?? ''} ${item.product ?? ''}</p>
         </div>
         <div class="text-right">
@@ -29,6 +58,7 @@ function renderList(data) {
           <div class="text-2xl font-bold ${riskColor(item.aura_score)}">${item.aura_score}</div>
         </div>
       </div>
+
       <p class="mt-2 text-sm text-gray-200">${item.summary}</p>
 
       <details class="mt-3 bg-gray-950/60 rounded p-3">
@@ -41,15 +71,30 @@ function renderList(data) {
           <div>Trend: ${item.trend_mentions} (w ${item.score_breakdown.trend_weight})</div>
           <div>AI Context: ${(item.ai_context ?? 0).toFixed(2)} (w ${item.score_breakdown.ai_weight})</div>
         </div>
+
+        ${item.exploit_urls && item.exploit_urls.length ? `
+          <div class="mt-3">
+            <div class="text-xs text-gray-400 mb-1">Exploit references</div>
+            <ul class="list-disc list-inside text-xs text-cyan-200 space-y-1">
+              ${item.exploit_urls.map(u => `
+                <li>
+                  <a class="underline hover:text-cyan-100 break-all" href="${u}" target="_blank" rel="noopener noreferrer">
+                    ${u.replace('https://www.exploit-db.com/', '')}
+                  </a>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+        ` : ''}
       </details>
     `;
+
     list.appendChild(card);
   });
 }
 
 async function loadToday() {
   try {
-    // 👇 FIX #1 — absolute path
     const data = await fetchJSON('/data/aura_scores.json');
     renderList(data);
   } catch (e) {
@@ -62,7 +107,6 @@ async function loadToday() {
 async function loadByDate(dateStr) {
   if (!dateStr) return loadToday();
   try {
-    // 👇 FIX #2 — absolute path
     const path = `/data/history/${dateStr}.json`;
     const data = await fetchJSON(path);
     renderList(data);
