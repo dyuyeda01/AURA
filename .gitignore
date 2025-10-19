@@ -1,0 +1,35 @@
+# --- Python Virtual Environment ---
+.venv/
+venv/
+
+# --- Python Cache / Build Files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+*.log
+
+# --- IDE / Editor Settings ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- OS and Misc ---
+Thumbs.db
+.env
+.env.*
+*.bak
+*.tmp
+
+# --- Project-Specific ---
+# Cache and generated data
+cache/
+logs/
+data/aura_log_*.txt
+
+# Auto-generated JSON data (optional to ignore if you don’t want large data commits)
+# Uncomment these lines if you prefer not to version data history:
+# data/history/
+# public/data/aura_scores.json
