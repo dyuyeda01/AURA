@@ -1,62 +1,222 @@
 [
   {
     "cve": "CVE-2025-54253",
+    "aura_score": 60.0,
     "cvss": 10.0,
-    "description": "Adobe Experience Manager versions 6.5.23 and earlier are affected by a Misconfiguration vulnerability that could result in arbitrary code execution. An attacker could leverage this vulnerability to bypass security mechanisms and execute code. Exploitation of this issue does not require user interaction and scope is changed.",
-    "summary": "CVE-2025-54253 is a critical vulnerability in a widely-used web application framework that allows remote code execution, potentially enabling an attacker to compromise affected systems and exfiltrate sensitive data, which poses a significant risk to organizational security and data integrity."
-  },
-  {
-    "cve": "CVE-2016-7836",
-    "cvss": 9.8,
-    "description": "SKYSEA Client View Ver.11.221.03 and earlier allows remote code execution via a flaw in processing authentication on the TCP connection with the management console program.",
-    "summary": "CVE-2016-7836 is a security vulnerability in the web-based management interface of Cisco's RV series routers, which could allow an unauthenticated remote attacker to execute arbitrary commands on the affected device due to improper input validation, potentially leading to unauthorized access and control of the network."
-  },
-  {
-    "cve": "CVE-2021-22555",
-    "cvss": 8.3,
-    "description": "A heap out-of-bounds write affecting Linux since v2.6.19-rc1 was discovered in net/netfilter/x_tables.c. This allows an attacker to gain privileges or cause a DoS (via heap memory corruption) through user name space",
-    "summary": "CVE-2021-22555 is a vulnerability in the Ansible Automation Platform that allows for remote command execution due to improper handling of user inputs, which can lead to the exposure of sensitive data and unauthorized access to systems, making it critical for organizations to patch to maintain security posture."
-  },
-  {
-    "cve": "CVE-2010-3962",
-    "cvss": 8.1,
-    "description": "Use-after-free vulnerability in Microsoft Internet Explorer 6, 7, and 8 allows remote attackers to execute arbitrary code via vectors related to Cascading Style Sheets (CSS) token sequences and the clip attribute, aka an \"invalid flag reference\" issue or \"Uninitialized Memory Corruption Vulnerability,\" as exploited in the wild in November 2010.",
-    "summary": "CVE-2010-3962 is a vulnerability in the Windows Media Player that allows remote attackers to execute arbitrary code via specially crafted AVI files, posing a significant risk to users as it can be exploited simply by tricking a victim into opening a malicious file."
-  },
-  {
-    "cve": "CVE-2025-24990",
-    "cvss": 7.8,
-    "description": "Microsoft is aware of vulnerabilities in the third party Agere Modem driver that ships natively with supported Windows operating systems.  This is an announcement of the upcoming removal of ltmdm64.sys driver.  The driver has been removed in the October cumulative update.\nFax modem hardware dependent on this specific driver will no longer work on Windows.\nMicrosoft recommends removing any existing dependencies on this hardware.",
-    "summary": "CVE-2025-24990 is a critical vulnerability in the XYZ application that allows remote code execution due to improper input validation, potentially enabling attackers to gain unauthorized access to sensitive systems and data, making it essential for organizations to apply patches immediately to mitigate risk."
-  },
-  {
-    "cve": "CVE-2025-59230",
-    "cvss": 7.8,
-    "description": "Improper access control in Windows Remote Access Connection Manager allows an authorized attacker to elevate privileges locally.",
-    "summary": "CVE-2025-59230 is a vulnerability in the XYZ software that allows for remote code execution due to improper input validation, which could potentially allow an attacker to take full control of affected systems, posing significant risks to data integrity and confidentiality."
-  },
-  {
-    "cve": "CVE-2021-43798",
-    "cvss": 7.5,
-    "description": "Grafana is an open-source platform for monitoring and observability. Grafana versions 8.0.0-beta1 through 8.3.0 (except for patched versions) iss vulnerable to directory traversal, allowing access to local files. The vulnerable URL path is: `<grafana_host_url>/public/plugins//`, where is the plugin ID for any installed plugin. At no time has Grafana Cloud been vulnerable. Users are advised to upgrade to patched versions 8.0.7, 8.1.8, 8.2.7, or 8.3.1. The GitHub Security Advisory contains more information about vulnerable URL paths, mitigation, and the disclosure timeline.",
-    "summary": "CVE-2021-43798 is a vulnerability in the W3C's XML Core specification that allows an attacker to exploit the way XML parsers handle invalid input, potentially leading to denial of service (DoS) or arbitrary code execution, making it critical for maintaining secure and reliable web applications and services."
-  },
-  {
-    "cve": "CVE-2025-6264",
-    "cvss": 5.5,
-    "description": "Velociraptor allows collection of VQL queries packaged into Artifacts from endpoints. These artifacts can be used to do anything and usually run with elevated permissions.\u00a0 To limit access to some dangerous artifact, Velociraptor allows for those to require high permissions like EXECVE to launch.\n\nThe Admin.Client.UpdateClientConfig is an artifact used to update the client's configuration. This artifact did not enforce an additional required permission, allowing users with COLLECT_CLIENT permissions (normally given by the \"Investigator\" role) to collect it from endpoints and update the configuration. \n\nThis can lead to arbitrary command execution and endpoint takeover.\n\nTo successfully exploit this vulnerability the user must already have access to collect artifacts from the endpoint (i.e. have the COLLECT_CLIENT given typically by the \"Investigator' role).",
-    "summary": "CVE-2025-6264 is a critical vulnerability in the XYZ software that allows remote attackers to execute arbitrary code due to improper input validation, potentially compromising sensitive data and leading to system takeovers, emphasizing the need for immediate patching to protect against exploitation."
-  },
-  {
-    "cve": "CVE-2025-27915",
-    "cvss": 5.4,
-    "description": "An issue was discovered in Zimbra Collaboration (ZCS) 9.0 and 10.0 and 10.1. A stored cross-site scripting (XSS) vulnerability exists in the Classic Web Client due to insufficient sanitization of HTML content in ICS files. When a user views an e-mail message containing a malicious ICS entry, its embedded JavaScript executes via an ontoggle event inside a <details> tag. This allows an attacker to run arbitrary JavaScript within the victim's session, potentially leading to unauthorized actions such as setting e-mail filters to redirect messages to an attacker-controlled address. As a result, an attacker can perform unauthorized actions on the victim's account, including e-mail redirection and data exfiltration.",
-    "summary": "CVE-2025-27915 is a critical vulnerability in XYZ software that allows an attacker to execute arbitrary code due to improper input validation, potentially leading to full system compromise and unauthorized access to sensitive data."
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Adobe",
+    "product": "Experience Manager (AEM) Forms",
+    "summary": "CVE-2025-54253 is a critical vulnerability in Adobe Experience Manager (AEM) Forms that allows unauthorized access to sensitive information, potentially leading to data breaches. It is recommended that users immediately apply the latest security updates provided by Adobe to mitigate this risk.",
+    "description": "CVE-2025-54253 is a critical vulnerability in Adobe Experience Manager (AEM) Forms that allows unauthorized access to sensitive information, potentially leading to data breaches. It is recommended that users immediately apply the latest security updates provided by Adobe to mitigate this risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
   },
   {
     "cve": "CVE-2025-47827",
+    "aura_score": 38.4,
     "cvss": 4.6,
-    "description": "In IGEL OS before 11, Secure Boot can be bypassed because the igel-flash-driver module improperly verifies a cryptographic signature. Ultimately, a crafted root filesystem can be mounted from an unverified SquashFS image.",
-    "summary": "CVE-2025-47827 is a critical vulnerability in the XYZ software that allows unauthorized remote code execution due to improper input validation, potentially enabling attackers to compromise systems and exfiltrate sensitive data, highlighting the need for immediate patching to mitigate risks."
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "IGEL",
+    "product": "IGEL OS",
+    "summary": "CVE-2025-47827 poses a risk of privilege escalation in IGEL OS, potentially allowing an attacker to gain higher-level access to the system. It is recommended to update to the latest version of IGEL OS where the vulnerability has been addressed to mitigate this risk.",
+    "description": "CVE-2025-47827 poses a risk of privilege escalation in IGEL OS, potentially allowing an attacker to gain higher-level access to the system. It is recommended to update to the latest version of IGEL OS where the vulnerability has been addressed to mitigate this risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-24990",
+    "aura_score": 51.2,
+    "cvss": 7.8,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Microsoft",
+    "product": "Windows",
+    "summary": "CVE-2025-24990 is a vulnerability in Microsoft Windows that could allow an attacker to escalate privileges and execute arbitrary code with system-level access. It is recommended to apply the latest security patches from Microsoft promptly to mitigate this risk.",
+    "description": "CVE-2025-24990 is a vulnerability in Microsoft Windows that could allow an attacker to escalate privileges and execute arbitrary code with system-level access. It is recommended to apply the latest security patches from Microsoft promptly to mitigate this risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-59230",
+    "aura_score": 51.2,
+    "cvss": 7.8,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Microsoft",
+    "product": "Windows",
+    "summary": "CVE-2025-59230 is a critical vulnerability in Windows that could allow an attacker to execute arbitrary code with elevated privileges. Users are recommended to apply the latest security updates from Microsoft immediately to mitigate the risk.",
+    "description": "CVE-2025-59230 is a critical vulnerability in Windows that could allow an attacker to execute arbitrary code with elevated privileges. Users are recommended to apply the latest security updates from Microsoft immediately to mitigate the risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-6264",
+    "aura_score": 42.0,
+    "cvss": 5.5,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Rapid7",
+    "product": "Velociraptor",
+    "summary": "CVE-2025-6264 is a vulnerability in Rapid7's Velociraptor that could allow unauthorized access to sensitive information due to improper access controls. It is recommended that users apply the latest security patches provided by Rapid7 to mitigate this risk.",
+    "description": "CVE-2025-6264 is a vulnerability in Rapid7's Velociraptor that could allow unauthorized access to sensitive information due to improper access controls. It is recommended that users apply the latest security patches provided by Rapid7 to mitigate this risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2016-7836",
+    "aura_score": 59.2,
+    "cvss": 9.8,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "SKYSEA",
+    "product": "Client View",
+    "summary": "CVE-2016-7836 is a vulnerability in SKYSEA Client View that allows remote attackers to execute arbitrary commands via crafted requests due to improper handling of HTTP requests. It is recommended to apply the latest security patches provided by the vendor to mitigate this risk.",
+    "description": "CVE-2016-7836 is a vulnerability in SKYSEA Client View that allows remote attackers to execute arbitrary commands via crafted requests due to improper handling of HTTP requests. It is recommended to apply the latest security patches provided by the vendor to mitigate this risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2021-43798",
+    "aura_score": 50.0,
+    "cvss": 7.5,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Grafana Labs",
+    "product": "Grafana",
+    "summary": "CVE-2021-43798 is a vulnerability in Grafana that allows unauthorized access to sensitive data due to improper handling of user access control. It is recommended to upgrade to the latest version of Grafana to mitigate this risk.",
+    "description": "CVE-2021-43798 is a vulnerability in Grafana that allows unauthorized access to sensitive data due to improper handling of user access control. It is recommended to upgrade to the latest version of Grafana to mitigate this risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-27915",
+    "aura_score": 41.6,
+    "cvss": 5.4,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Synacor",
+    "product": "Zimbra Collaboration Suite (ZCS)",
+    "summary": "CVE-2025-27915 represents a security vulnerability in the Zimbra Collaboration Suite (ZCS) that could potentially allow unauthorized access or data leakage. It is recommended that users immediately apply the latest security patches released by Synacor and review their access controls to mitigate the risk.",
+    "description": "CVE-2025-27915 represents a security vulnerability in the Zimbra Collaboration Suite (ZCS) that could potentially allow unauthorized access or data leakage. It is recommended that users immediately apply the latest security patches released by Synacor and review their access controls to mitigate the risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2021-22555",
+    "aura_score": 53.2,
+    "cvss": 8.3,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Linux",
+    "product": "Kernel",
+    "summary": "CVE-2021-22555 is a vulnerability in the Linux kernel that allows local users to escalate privileges due to improper handling of certain system calls. It is recommended to update the kernel to a patched version as soon as possible to mitigate the risk of exploitation.",
+    "description": "CVE-2021-22555 is a vulnerability in the Linux kernel that allows local users to escalate privileges due to improper handling of certain system calls. It is recommended to update the kernel to a patched version as soon as possible to mitigate the risk of exploitation.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2010-3962",
+    "aura_score": 52.4,
+    "cvss": 8.1,
+    "epss": 0.0,
+    "kev": true,
+    "exploit_poc": false,
+    "trend_mentions": 0,
+    "ai_context": 0.0,
+    "vendor": "Microsoft",
+    "product": "Internet Explorer",
+    "summary": "CVE-2010-3962 is a vulnerability in Internet Explorer that could allow remote attackers to execute arbitrary code via crafted web pages, leading to potential system compromise. It is recommended to apply the latest security updates and patches from Microsoft to mitigate this risk.",
+    "description": "CVE-2010-3962 is a vulnerability in Internet Explorer that could allow remote attackers to execute arbitrary code via crafted web pages, leading to potential system compromise. It is recommended to apply the latest security updates and patches from Microsoft to mitigate this risk.",
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
   }
 ]
