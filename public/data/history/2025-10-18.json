@@ -1,0 +1,302 @@
+[
+  {
+    "cve": "CVE-1999-0209",
+    "cvss": 9.458177169406067,
+    "summary": "CVE-1999-0209 is a critical vulnerability that affects certain versions of the Microsoft Internet Explorer web browser, allowing attackers to execute arbitrary code on a user's system through malicious web content. With a CVSS score of 9.46, it indicates a high risk of exploitation, potentially leading to unauthorized access, data breaches, or system compromise. This vulnerability matters because it can be easily exploited by attackers to gain control over vulnerable systems, posing significant threats to both individual users and organizations that rely on affected software.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1468",
+    "cvss": 9.341320880937499,
+    "summary": "CVE-1999-1468 is a critical vulnerability associated with the Microsoft Internet Explorer web browser, specifically related to the handling of certain web content. With a CVSS score of approximately 9.34, it indicates a high risk of exploitation, allowing attackers to execute arbitrary code on affected systems, potentially leading to unauthorized access, data breaches, or system compromise. This vulnerability matters because it exposes users to significant security threats, particularly in environments where Internet Explorer is still in use, making it essential for organizations to apply patches and mitigate risks associated with outdated software.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1142",
+    "cvss": 9.333727428431033,
+    "summary": "CVE-1999-1142 is a vulnerability in the Microsoft Internet Explorer web browser that allows remote attackers to execute arbitrary code via a crafted HTML document. With a CVSS score of 9.33, this vulnerability poses a critical risk, as it can lead to unauthorized access, data breaches, and system compromise. This vulnerability matters because it highlights the potential for widespread exploitation due to the popularity of Internet Explorer, making it a significant threat to users and organizations relying on this browser for web access.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0117",
+    "cvss": 9.04396272091201,
+    "summary": "CVE-1999-0117 is a critical vulnerability that affects certain versions of the Microsoft Windows operating system, specifically related to the handling of malformed RPC (Remote Procedure Call) requests. With a CVSS score of 9.04, it indicates a high severity level, suggesting that an attacker could exploit this vulnerability to execute arbitrary code remotely, potentially leading to system compromise, data theft, or denial of service. This vulnerability matters because it exposes systems to significant risks, especially in environments where untrusted users can send RPC requests, making it crucial for organizations to apply patches and implement security measures to",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1034",
+    "cvss": 8.982020268382753,
+    "summary": "CVE-1999-1034 is a vulnerability in the Linux kernel that allows local users to gain elevated privileges through a flaw in the handling of certain system calls. With a CVSS score of approximately 8.98, this indicates a high severity risk, as it can lead to unauthorized access and control over the affected system, potentially allowing attackers to execute arbitrary code with root privileges. This vulnerability matters because it poses a significant threat to system integrity and security, enabling malicious users to exploit it for further attacks or to compromise sensitive data.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1395",
+    "cvss": 8.934174200958058,
+    "summary": "CVE-1999-1395 is a vulnerability in the Microsoft Internet Explorer browser that allows remote attackers to execute arbitrary code on a user's system by exploiting a flaw in the way the browser handles certain types of web content. With a CVSS score of approximately 8.93, this vulnerability is considered critical, as it can lead to unauthorized access, data breaches, and the potential for widespread malware distribution. This vulnerability matters because it highlights the risks associated with outdated web browsers and the importance of timely updates and patches to protect users from severe security threats.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1115",
+    "cvss": 8.91978960951419,
+    "summary": "CVE-1999-1115 is a vulnerability in the Microsoft Internet Explorer web browser that allows an attacker to execute arbitrary code on a user's system through a specially crafted HTML document. With a CVSS score of approximately 8.92, this vulnerability poses a significant risk, as it can lead to unauthorized access, data theft, or system compromise, particularly in environments where users frequently browse the web. This vulnerability matters because it highlights the potential for severe exploitation in widely used software, emphasizing the importance of timely updates and user awareness to mitigate such risks.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1119",
+    "cvss": 8.882223776550497,
+    "summary": "CVE-1999-1119 is a vulnerability in the Microsoft Internet Explorer web browser that allows attackers to execute arbitrary code on a user's system by exploiting a flaw in the handling of certain HTML elements. With a CVSS score of 8.88, this vulnerability poses a significant risk, as it can lead to unauthorized access, data theft, or system compromise. This vulnerability matters because it highlights the potential for widespread exploitation in a widely used application, emphasizing the importance of timely patching and security awareness among users.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0498",
+    "cvss": 8.82874466644018,
+    "summary": "CVE-1999-0498 is a vulnerability in the Microsoft Internet Explorer browser that allows attackers to execute arbitrary code on a user's system through malicious HTML content. With a CVSS score of 8.83, this vulnerability is considered critical, as it can lead to unauthorized access, data breaches, and the potential compromise of sensitive information. This vulnerability matters because it highlights the risks associated with web browsing and the importance of keeping software updated to mitigate exploitation attempts.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1218",
+    "cvss": 8.761145452687584,
+    "summary": "CVE-1999-1218 is a vulnerability that affects certain versions of the Microsoft Internet Information Server (IIS), allowing remote attackers to execute arbitrary code on the server. With a CVSS score of approximately 8.76, this vulnerability poses a significant risk as it can lead to unauthorized access, data breaches, and potential server compromise. This vulnerability matters because it highlights the critical need for timely patching and secure configuration of web servers, as exploitation can have severe consequences for the confidentiality, integrity, and availability of sensitive information.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1211",
+    "cvss": 8.760850681277597,
+    "summary": "CVE-1999-1211 is a vulnerability in the Microsoft Internet Explorer web browser that allows attackers to execute arbitrary code on a user's system through malicious web content. With a CVSS score of approximately 8.76, this vulnerability is considered high risk, indicating that it can be exploited remotely and may lead to significant impacts, such as unauthorized access to sensitive data or complete system compromise. This vulnerability matters because it highlights the potential for widespread exploitation in a widely used application, emphasizing the need for timely patching and robust security practices to protect users from such threats.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0168",
+    "cvss": 8.673227033097021,
+    "summary": "CVE-1999-0168 is a vulnerability in Microsoft Internet Explorer that allows remote attackers to execute arbitrary code via a crafted HTML document, potentially leading to unauthorized access and control over affected systems. With a CVSS score of 8.67, this vulnerability is considered high risk, indicating that it can be exploited easily and may result in significant impact, including data breaches and system compromise. This vulnerability matters because it highlights the importance of securing web browsers, which are often the primary interface for users interacting with the internet, making them a common target for attackers.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1123",
+    "cvss": 8.665232347486754,
+    "summary": "CVE-1999-1123 is a vulnerability in the Microsoft Internet Explorer web browser that allows remote attackers to execute arbitrary code on a user's system by exploiting a flaw in the way the browser handles certain types of content. With a CVSS score of 8.66, this indicates a high severity risk, as it could lead to unauthorized access, data breaches, or system compromise. This vulnerability matters because it highlights significant weaknesses in widely used software that can be exploited to gain control over user systems, potentially leading to widespread damage and loss of sensitive information.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1306",
+    "cvss": 8.635698213112642,
+    "summary": "CVE-1999-1306 is a vulnerability in the Internet Explorer web browser that allows attackers to execute arbitrary code on a victim's system through specially crafted HTML content. With a CVSS score of approximately 8.64, this vulnerability poses a significant risk, as it can lead to unauthorized access, data theft, or system compromise. This vulnerability matters because it highlights the potential for widespread exploitation due to the popularity of Internet Explorer, particularly in environments where users may not be aware of the risks associated with malicious web content.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1197",
+    "cvss": 8.539921915528126,
+    "summary": "CVE-1999-1197 is a vulnerability in the Microsoft Internet Explorer web browser that allows remote attackers to execute arbitrary code on a user's system through a crafted HTML document. With a CVSS score of approximately 8.54, this vulnerability is considered critical, as it can lead to unauthorized access, data theft, or system compromise. This vulnerability matters because it highlights the risks associated with web browsers as attack vectors, emphasizing the need for regular updates and security awareness among users to mitigate potential exploitation.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1032",
+    "cvss": 8.495936917755136,
+    "summary": "CVE-1999-1032 is a vulnerability in the Microsoft Windows operating system that allows an attacker to gain unauthorized access to the system by exploiting a flaw in the way Windows handles certain network packets. With a CVSS score of approximately 8.5, this vulnerability is considered high risk, as it can lead to significant impacts such as data breaches, system compromise, and unauthorized control over affected systems. This vulnerability matters because it highlights the potential for severe exploitation in networked environments, emphasizing the need for timely patching and robust security measures to protect sensitive information.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0084",
+    "cvss": 8.4,
+    "summary": "CVE-1999-0084 is a vulnerability in the Microsoft Windows NT operating system that allows an attacker to gain unauthorized access to the system by exploiting a flaw in the way Windows NT handles certain network requests. With a CVSS score of 8.4, this vulnerability is considered high-risk, as it can lead to significant impacts such as data breaches, system compromise, and unauthorized control over affected systems. This vulnerability matters because it exposes critical systems to exploitation, potentially leading to severe operational disruptions and loss of sensitive information.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1507",
+    "cvss": 8.375272873221046,
+    "summary": "CVE-1999-1507 is a vulnerability in the Microsoft Internet Explorer web browser that allows remote attackers to execute arbitrary code via a malformed HTML document. With a CVSS score of 8.4, it indicates a high severity risk, as successful exploitation could lead to unauthorized access and control over affected systems. This vulnerability matters because it exposes users to significant security threats, including data breaches and system compromise, particularly in environments where Internet Explorer is still in use.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1059",
+    "cvss": 8.362746315540983,
+    "summary": "CVE-1999-1059 is a vulnerability in the Microsoft Windows NT operating system that allows an attacker to gain unauthorized access to sensitive information through a flaw in the way the system handles certain network requests. With a CVSS score of 8.36, this vulnerability poses a significant risk, as it can lead to data breaches, unauthorized system access, and potential exploitation of other vulnerabilities within the network. This vulnerability matters because it highlights the importance of securing legacy systems, as they may still be in use and can be targeted by attackers seeking to exploit known weaknesses.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1258",
+    "cvss": 8.313043063526585,
+    "summary": "CVE-1999-1258 is a vulnerability in the Internet Control Message Protocol (ICMP) that allows an attacker to exploit the way certain systems handle ICMP packets, potentially leading to denial-of-service (DoS) conditions or unauthorized access to sensitive information. With a CVSS score of 8.31, this vulnerability is considered high risk, indicating that it could be easily exploited and result in significant impact on system availability and confidentiality. This vulnerability matters because it highlights the importance of securing network protocols, as weaknesses in foundational technologies can lead to widespread disruptions and compromise critical infrastructure.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1090",
+    "cvss": 8.222346974722736,
+    "summary": "CVE-1999-1090 is a vulnerability in the Microsoft Internet Explorer web browser that allows attackers to execute arbitrary code on a user's system via a specially crafted HTML document. With a CVSS score of 8.22, this vulnerability poses a significant risk, as it can lead to unauthorized access, data breaches, and system compromise. This vulnerability matters because it highlights the potential for widespread exploitation of web browsers, which are critical components of everyday internet use, thereby jeopardizing user security and privacy.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0082",
+    "cvss": 8.165910511770374,
+    "summary": "CVE-1999-0082 is a vulnerability in certain versions of the Microsoft Windows operating system that allows for remote code execution due to improper validation of input. With a CVSS score of 8.16, it indicates a high severity risk, meaning that an attacker could exploit this vulnerability to gain unauthorized access to a system, potentially leading to data breaches, system compromise, or further exploitation within a network. This vulnerability matters because it highlights the critical need for timely patching and security measures to protect against remote attacks that can have widespread consequences.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0167",
+    "cvss": 8.113017615951604,
+    "summary": "CVE-1999-0167 is a vulnerability in the Microsoft Windows NT operating system that allows remote attackers to execute arbitrary code via a malformed RPC (Remote Procedure Call) request. With a CVSS score of 8.11, this vulnerability is considered high-risk, as it can lead to unauthorized access and control over affected systems, potentially compromising sensitive data and disrupting services. This vulnerability matters because it highlights the importance of securing network services and the potential for significant damage if exploited, especially in environments where Windows NT systems are still in use.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1466",
+    "cvss": 8.082120858061481,
+    "summary": "CVE-1999-1466 is a vulnerability in the Microsoft Internet Explorer web browser that allows an attacker to execute arbitrary code on a user's system through a crafted HTML document. With a CVSS score of 8.08, this vulnerability is considered high risk, indicating that it can be exploited easily and may lead to significant impacts, such as unauthorized access to sensitive data or complete system compromise. This vulnerability matters because it highlights the potential for widespread exploitation in a widely used application, emphasizing the importance of timely patching and user awareness in cybersecurity practices.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1193",
+    "cvss": 8.072466529050299,
+    "summary": "CVE-1999-1193 is a vulnerability in the Microsoft Internet Explorer web browser that allows an attacker to execute arbitrary code on a user's system by exploiting a flaw in the handling of certain HTML content. With a CVSS score of approximately 8.07, this vulnerability is considered high risk, indicating that it could lead to significant security breaches, including unauthorized access to sensitive data and system compromise. This vulnerability matters because it highlights the potential for widespread exploitation given Internet Explorer's historical prevalence, emphasizing the need for users to apply security updates and consider alternative browsers to mitigate risks.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1467",
+    "cvss": 8.041847974652313,
+    "summary": "CVE-1999-1467 is a vulnerability in the Microsoft Internet Explorer web browser that allows an attacker to execute arbitrary code on a user's system through a malicious web page. With a CVSS score of 8.04, this vulnerability is considered high risk, indicating that it can lead to significant impacts such as unauthorized access to sensitive data, system compromise, and potential propagation of malware. This vulnerability matters because it highlights the importance of securing web browsers, which are often the primary interface for users interacting with the internet, making them a prime target for attackers.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1021",
+    "cvss": 7.965094489357462,
+    "summary": "CVE-1999-1021 is a vulnerability in the Internet Control Message Protocol (ICMP) that allows an attacker to exploit certain implementations of the protocol to execute arbitrary code or cause a denial of service. With a CVSS score of approximately 7.97, this vulnerability poses a significant risk, particularly in environments where ICMP is widely used for network diagnostics and management. Its potential impact includes unauthorized access to systems, disruption of network services, and the ability to launch further attacks within the network, making it crucial for organizations to address and mitigate this vulnerability.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1438",
+    "cvss": 7.896954507962679,
+    "summary": "CVE-1999-1438 is a vulnerability in the Microsoft Internet Explorer web browser that allows attackers to execute arbitrary code on a user's system by exploiting a flaw in the handling of certain HTML elements. With a CVSS score of approximately 7.9, this vulnerability poses a significant risk, as it can lead to unauthorized access and control over affected systems, potentially resulting in data breaches or further exploitation. This vulnerability matters because it highlights the importance of keeping web browsers updated and secure, as they are often the primary interface for users interacting with the internet, making them prime targets for attackers.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1391",
+    "cvss": 7.798077087867502,
+    "summary": "CVE-1999-1391 is a vulnerability in the Internet Information Services (IIS) web server that allows an attacker to execute arbitrary code on the server by exploiting a flaw in the way IIS handles certain requests. With a CVSS score of approximately 7.8, this vulnerability poses a significant risk, as it can lead to unauthorized access, data breaches, and potential system compromise. This vulnerability matters because it affects a widely used web server, making it a critical target for attackers seeking to exploit weaknesses in web applications and infrastructure.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-2000-0388",
+    "cvss": 7.786899561466399,
+    "summary": "CVE-2000-0388 is a vulnerability in Microsoft Internet Explorer that allows remote attackers to execute arbitrary code via a crafted HTML document, potentially leading to unauthorized access and control over affected systems. With a CVSS score of approximately 7.8, this vulnerability is considered high risk, as it can be exploited easily and can result in significant data breaches or system compromise. This vulnerability matters because it underscores the importance of keeping web browsers updated and highlights the potential for widespread exploitation in environments where users may inadvertently open malicious content.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1121",
+    "cvss": 7.6623776249824855,
+    "summary": "CVE-1999-1121 is a vulnerability in the Microsoft Windows NT operating system that allows local users to gain elevated privileges, potentially leading to unauthorized access and control over the system. With a CVSS score of approximately 7.66, this vulnerability is considered high risk, as it can be exploited by attackers to execute arbitrary code or perform administrative actions without proper authorization. This vulnerability matters because it poses a significant threat to system integrity and confidentiality, particularly in environments where sensitive data is stored or processed.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1194",
+    "cvss": 7.591722171611009,
+    "summary": "CVE-1999-1194 is a vulnerability in the Microsoft Internet Explorer browser that allows attackers to execute arbitrary code via a crafted HTML document. With a CVSS score of 7.59, this vulnerability poses a significant risk, as it can lead to unauthorized access to sensitive information, system compromise, and potential data loss. This vulnerability matters because it highlights the critical need for users to keep their software updated and to be cautious with untrusted content, as exploitation can lead to severe security breaches.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1554",
+    "cvss": 7.301107780182963,
+    "summary": "CVE-1999-1554 is a vulnerability in the Internet Control Message Protocol (ICMP) that allows attackers to exploit the way certain systems handle ICMP packets, potentially leading to denial of service (DoS) conditions. With a CVSS score of 7.3, this vulnerability is considered high-risk, as it can enable attackers to disrupt network services and affect the availability of systems. This vulnerability matters because it highlights the importance of securing network protocols, as exploitation can lead to significant operational disruptions and impact the overall security posture of affected systems.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1216",
+    "cvss": 7.284730339715416,
+    "summary": "CVE-1999-1216 is a vulnerability in certain versions of the Microsoft Internet Explorer web browser that allows an attacker to execute arbitrary code on a user's system through a crafted web page. With a CVSS score of 7.28, this vulnerability is considered high risk, indicating that it can lead to significant security breaches, including unauthorized access to sensitive information or system control. This vulnerability matters because it highlights the potential for widespread exploitation, especially given the popularity of Internet Explorer at the time, which could lead to severe impacts on user privacy and system integrity.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1056",
+    "cvss": 7.1810259497248,
+    "summary": "CVE-1999-1056 is a vulnerability that affects certain versions of the Microsoft Internet Explorer web browser, allowing attackers to execute arbitrary code on a user's system through a specially crafted HTML document. With a CVSS score of 7.18, this vulnerability is considered high risk, indicating that it could lead to significant impacts such as unauthorized access to sensitive data, system compromise, or the spread of malware. This vulnerability matters because it highlights the potential for exploitation in widely used software, emphasizing the importance of timely updates and user awareness to mitigate risks associated with web-based threats.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0095",
+    "cvss": 7.179969830867469,
+    "summary": "CVE-1999-0095 is a vulnerability in the Microsoft Windows NT operating system that allows an attacker to gain unauthorized access to system resources by exploiting a flaw in the way the system handles certain network requests. With a CVSS score of approximately 7.18, this vulnerability is considered high-risk, as it can lead to significant impacts such as data breaches, system compromise, and potential disruption of services. This vulnerability matters because it highlights the importance of securing legacy systems, as unpatched vulnerabilities can still be exploited, leading to severe consequences for organizations that rely on outdated software.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0214",
+    "cvss": 7.165176295801378,
+    "summary": "CVE-1999-0214 is a vulnerability in the Internet Explorer web browser that allows remote attackers to execute arbitrary code on a user's system by exploiting a flaw in the handling of certain HTML elements. With a CVSS score of 7.17, this vulnerability poses a significant risk as it can lead to unauthorized access, data breaches, and system compromise. This vulnerability matters because it highlights the potential for widespread exploitation in a widely used application, emphasizing the importance of timely updates and security measures to protect users from such threats.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0627",
+    "cvss": 7.11905069387099,
+    "summary": "CVE-1999-0627 is a vulnerability in the Microsoft Internet Explorer web browser that allows remote attackers to execute arbitrary code on a user's system by exploiting a flaw in the handling of certain HTML elements. With a CVSS score of approximately 7.1, this vulnerability poses a significant risk, as it can lead to unauthorized access and control over affected systems, potentially compromising sensitive data and enabling further attacks. This vulnerability matters because it highlights the importance of keeping web browsers updated and secure, as they are critical points of entry for cyber threats.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1122",
+    "cvss": 7.095115641748434,
+    "summary": "CVE-1999-1122 is a vulnerability in the Microsoft Windows NT operating system that allows an attacker to gain unauthorized access to sensitive information by exploiting a flaw in the way the system handles certain requests. With a CVSS score of approximately 7.1, this vulnerability poses a significant risk as it can lead to data breaches, unauthorized system access, and potential system compromise. This vulnerability matters because it highlights the importance of securing legacy systems, as many organizations may still rely on outdated software that is susceptible to exploitation.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-0312",
+    "cvss": 6.929636723990464,
+    "summary": "CVE-1999-0312 is a vulnerability in the Microsoft Internet Explorer web browser that allows remote attackers to execute arbitrary code via a crafted HTML document. With a CVSS score of approximately 6.93, this vulnerability poses a moderate risk, as it can lead to unauthorized access and control over affected systems, potentially resulting in data theft or system compromise. This vulnerability matters because it highlights the importance of keeping web browsers updated and demonstrates how seemingly minor flaws can be exploited to achieve significant security breaches.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1396",
+    "cvss": 6.720834184814619,
+    "summary": "CVE-1999-1396 is a vulnerability in the Microsoft Internet Explorer browser that allows attackers to execute arbitrary code on a user's system by exploiting a flaw in the way the browser handles certain types of content. With a CVSS score of approximately 6.7, this vulnerability poses a moderate risk, as it can lead to unauthorized access and potential data compromise. This vulnerability matters because it highlights the importance of keeping web browsers updated, as they are often the primary interface for users interacting with potentially malicious content on the internet.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1392",
+    "cvss": 6.665141912962809,
+    "summary": "CVE-1999-1392 is a vulnerability in the Internet Explorer web browser that allows attackers to execute arbitrary code on a user's system through malicious web content. With a CVSS score of approximately 6.67, it indicates a moderate risk, suggesting that while exploitation is possible, it may require user interaction or specific conditions to succeed. This vulnerability matters because it can lead to unauthorized access, data breaches, and the compromise of user systems, particularly in environments where Internet Explorer is still in use.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1415",
+    "cvss": 6.6181159861897765,
+    "summary": "CVE-1999-1415 is a vulnerability in the Microsoft Internet Explorer web browser that allows attackers to execute arbitrary code on a user's system through a specially crafted HTML document. With a CVSS score of approximately 6.6, this vulnerability poses a moderate risk, as it can lead to unauthorized access and control over affected systems, potentially compromising sensitive data and user privacy. This vulnerability matters because it highlights the importance of keeping web browsers updated and secure, as they are often a primary vector for cyberattacks targeting end-users.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1198",
+    "cvss": 6.598918472816498,
+    "summary": "CVE-1999-1198 is a vulnerability in the Microsoft Internet Explorer web browser that allows remote attackers to execute arbitrary code via a malicious HTML document. With a CVSS score of approximately 6.6, this vulnerability poses a moderate risk, as it can lead to unauthorized access and control over affected systems, potentially resulting in data breaches or system compromise. This vulnerability matters because it highlights the ongoing risks associated with web browsers as attack vectors, emphasizing the need for users to keep their software updated and exercise caution when browsing the internet.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1506",
+    "cvss": 6.530021068776419,
+    "summary": "CVE-1999-1506 is a vulnerability in the Microsoft Internet Explorer web browser that allows for the execution of arbitrary code through the improper handling of certain HTML content. With a CVSS score of approximately 6.5, this indicates a moderate risk level, suggesting that while exploitation may require some level of skill, successful attacks could lead to significant impacts such as unauthorized access to sensitive information or system compromise. This vulnerability matters because it highlights the potential for web-based attacks to exploit browser weaknesses, emphasizing the need for timely updates and user awareness to mitigate risks associated with outdated software.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1057",
+    "cvss": 6.504659879929494,
+    "summary": "CVE-1999-1057 is a vulnerability in the Unix-based operating systems that allows local users to gain elevated privileges by exploiting a flaw in the way certain system calls are handled. With a CVSS score of approximately 6.5, this vulnerability poses a moderate risk, as it can lead to unauthorized access and control over system resources, potentially compromising sensitive data and system integrity. This vulnerability matters because it highlights the importance of securing local user access and ensuring that system calls are properly validated to prevent privilege escalation attacks.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1312",
+    "cvss": 6.4276647092361445,
+    "summary": "CVE-1999-1312 is a vulnerability in the Microsoft Internet Explorer web browser that allows attackers to execute arbitrary code through a maliciously crafted web page. With a CVSS score of approximately 6.43, this indicates a moderate risk, suggesting that while exploitation may require some level of user interaction, it could lead to significant consequences, such as unauthorized access to sensitive information or system compromise. This vulnerability matters because it highlights the ongoing risks associated with web browsers, which are often targeted by attackers to exploit users and gain control over their systems.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1471",
+    "cvss": 6.2635796136360105,
+    "summary": "CVE-1999-1471 is a vulnerability in the Microsoft Internet Explorer web browser that allows attackers to execute arbitrary code on a user's system through a malicious web page. With a CVSS score of approximately 6.26, this vulnerability poses a moderate risk, as it can lead to unauthorized access and potential data compromise. This vulnerability matters because it highlights the importance of keeping web browsers updated and the risks associated with untrusted web content, which can be exploited to gain control over user systems.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1212",
+    "cvss": 6.195599494817842,
+    "summary": "CVE-1999-1212 is a vulnerability in the Microsoft Windows NT operating system that allows local users to gain elevated privileges through the manipulation of certain system files. With a CVSS score of approximately 6.2, this vulnerability poses a moderate risk, as it can lead to unauthorized access and control over the affected system, potentially compromising sensitive data and system integrity. This vulnerability matters because it highlights the importance of securing local user permissions and system configurations to prevent unauthorized privilege escalation, which can have significant implications for overall system security.",
+    "date": "2025-10-18"
+  },
+  {
+    "cve": "CVE-1999-1493",
+    "cvss": 6.160579633103206,
+    "summary": "CVE-1999-1493 is a vulnerability in certain versions of the Microsoft Internet Explorer browser that allows attackers to execute arbitrary code via a crafted HTML document. With a CVSS score of 6.16, it indicates a moderate risk, suggesting that while exploitation is possible, it may require some level of user interaction or specific conditions to succeed. This vulnerability matters because it can lead to unauthorized access to sensitive information or system compromise, potentially impacting users' privacy and the integrity of their systems.",
+    "date": "2025-10-18"
+  }
+]

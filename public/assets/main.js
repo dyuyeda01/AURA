@@ -18,7 +18,6 @@ function renderList(data) {
   data.forEach(item => {
     const card = document.createElement('div');
     card.className = 'card bg-gray-900 rounded-xl p-4 border border-gray-800';
-    const detailId = `d-${item.cve.replaceAll(/[^a-zA-Z0-9]/g,'')}`;
     card.innerHTML = `
       <div class="flex items-start justify-between gap-3">
         <div>
@@ -50,22 +49,26 @@ function renderList(data) {
 
 async function loadToday() {
   try {
-    const data = await fetchJSON('data/aura_scores.json');
+    // 👇 FIX #1 — absolute path
+    const data = await fetchJSON('/data/aura_scores.json');
     renderList(data);
   } catch (e) {
     console.error(e);
-    document.getElementById('top-list').innerHTML = '<div class="text-sm text-red-300">Failed to load today\'s feed.</div>';
+    document.getElementById('top-list').innerHTML =
+      '<div class="text-sm text-red-300">Failed to load today\'s feed.</div>';
   }
 }
 
 async function loadByDate(dateStr) {
   if (!dateStr) return loadToday();
   try {
-    const path = `../data/history/${dateStr}.json`;
+    // 👇 FIX #2 — absolute path
+    const path = `/data/history/${dateStr}.json`;
     const data = await fetchJSON(path);
     renderList(data);
   } catch (e) {
-    document.getElementById('top-list').innerHTML = '<div class="text-sm text-yellow-300">No snapshot for that date.</div>';
+    document.getElementById('top-list').innerHTML =
+      '<div class="text-sm text-yellow-300">No snapshot for that date.</div>';
   }
 }
 
