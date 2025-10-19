@@ -1,0 +1,19 @@
+org: "AI Cyber Labs"
+sector: "fintech"
+os:
+  - linux
+  - ubuntu
+  - redhat
+cloud:
+  - aws
+  - azure
+critical_products:
+  - grafana
+  - nginx
+  - openssl
+  - vmware
+  - adobe
+exposure:
+  internet_facing: true
+notes: >
+  Heavy virtualization and container usage; high sensitivity to zero-days.
