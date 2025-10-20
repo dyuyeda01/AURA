@@ -1,47 +1,57 @@
-name: AURA Nightly
+name: 🌙 AURA Nightly Update
 
 on:
   schedule:
-    # 10:30 PM ET during Daylight Saving (Mar–Nov) = 02:30 UTC
-    - cron: "30 2 * 3-11 *"
-    # 10:30 PM ET during Standard Time (Dec–Feb) = 03:30 UTC
-    - cron: "30 3 * 12,1,2 *"
-  workflow_dispatch:
+    # 10:30 PM EST = 02:30 UTC
+    - cron: "30 2 * * *"
+  workflow_dispatch:  # allow manual trigger too
+
+permissions:
+  contents: write
+  pages: write
 
 jobs:
-  build-and-update:
+  build:
     runs-on: ubuntu-latest
-
-    env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
-      NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-
     steps:
-      - name: Checkout
+      - name: 🧩 Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      - name: 📦 Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install -r requirements.txt
 
-      - name: Run AURA update
+      - name: 🔐 Set environment variables
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
         run: |
-          python -m scripts.aura_update
-          echo "Updated files:" && ls -la public/data
+          echo "Environment variables loaded."
 
-      - name: Commit & push changes
-        if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
+      - name: 🚀 Run AURA update script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+        run: python scripts/aura_update.py
+
+      - name: 💾 Commit & push updated data
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data
-          git add data/history || true
-          git commit -m "AURA nightly update $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          git commit -m "🕐 Nightly AURA data update: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
+          git push origin main
+
+      - name: 🌐 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
