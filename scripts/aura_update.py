@@ -26,7 +26,7 @@ OUTPUT_SCORES = "public/data/aura_scores.json"
 OUTPUT_MASTER = "public/data/aura_master.json"
 HISTORY_DIR = "public/data/history"
 CACHE_FILE = "data/cache/exploitdb.json"
-MAX_CVES = 10
+MAX_CVES = 30  # ✅ pull 100 CVEs for scoring
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
 NEWS_CAP = 50.0  # normalization cap for trend
 
@@ -100,7 +100,7 @@ def get_trend_score(cve_id: str):
         except Exception as e:
             log.warning(f"⚠️ NewsAPI lookup failed for {cve_id}: {e}")
 
-    # --- Optional GitHub fallback (very light heuristic) ---
+    # --- Optional GitHub fallback ---
     try:
         gh_url = f"https://github.com/search?q={cve_id}"
         r = requests.get(gh_url, timeout=6, headers={"User-Agent": "Mozilla/5.0"})
@@ -184,7 +184,7 @@ def main():
             ai_context, ai_breakdown = compute_ai_context_score(
                 vendor=vendor,
                 product=product,
-                description=f"{desc} {summary}",  # include AI summary for deeper context
+                description=f"{desc} {summary}",
                 references=[],
                 cpes=[],
             )
@@ -197,7 +197,7 @@ def main():
                 ctx_mult=ctx_mult,
                 trend_score=trend_score,
                 exploit_poc=exploit_found,
-                ai_context=ai_context,   # 👈 included in weighted score
+                ai_context=ai_context,
             )
 
             score_breakdown = {
@@ -221,8 +221,8 @@ def main():
                 "exploit_poc": exploit_found,
                 "exploit_edb_ids": exploit_edb_ids,
                 "exploit_urls": exploit_urls,
-                "ai_context": round(ai_context, 3),     # 👈 NEW
-                "ai_breakdown": ai_breakdown,           # 👈 NEW (matched keywords)
+                "ai_context": round(ai_context, 3),
+                "ai_breakdown": ai_breakdown,
                 "vendor": vendor,
                 "product": product,
                 "summary": summary,
@@ -243,6 +243,16 @@ def main():
         save_exploit_cache(exploit_cache)
         log.info(f"💾 Updated Exploit-DB cache with {len(exploit_cache)} entries")
 
+    # --- Sort and trim to Top 10 ---
+    records.sort(key=lambda x: x.get("aura_score", 0), reverse=True)
+    top_records = records[:10]
+
+    if records:
+        min_score = round(min(r["aura_score"] for r in records), 1)
+        max_score = round(max(r["aura_score"] for r in records), 1)
+        log.info(f"📊 AURA Score Range: {min_score} – {max_score}")
+    log.info(f"🏆 Selected Top {len(top_records)} CVEs by AURA score")
+
     # --- Save outputs ---
     os.makedirs(os.path.dirname(OUTPUT_SCORES), exist_ok=True)
     os.makedirs(HISTORY_DIR, exist_ok=True)
@@ -251,7 +261,7 @@ def main():
     today = dt.date.today().isoformat()
     try:
         with open(OUTPUT_SCORES, "w") as f:
-            json.dump(records, f, indent=2)
+            json.dump(top_records, f, indent=2)
         with open(OUTPUT_MASTER, "w") as f:
             json.dump({"date": today, "records": records}, f, indent=2)
         with open(os.path.join(HISTORY_DIR, f"{today}.json"), "w") as f:
@@ -260,7 +270,7 @@ def main():
         log.error(f"Failed to write output files: {e}")
         return
 
-    log.info(f"✅ Saved Top {len(records)} CVEs to {OUTPUT_SCORES}")
+    log.info(f"✅ Saved Top {len(top_records)} CVEs to {OUTPUT_SCORES}")
     log.info(f"📅 History snapshot written to {HISTORY_DIR}/{today}.json")
 
 
