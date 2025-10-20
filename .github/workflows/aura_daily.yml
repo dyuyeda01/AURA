@@ -27,13 +27,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 🔐 Set environment variables
+      - name: 🔐 Load environment variables
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-        run: |
-          echo "Environment variables loaded."
+        run: echo "Environment variables loaded."
 
       - name: 🚀 Run AURA update script
         env:
@@ -42,16 +41,21 @@ jobs:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
         run: python scripts/aura_update.py
 
-      - name: 💾 Commit & push updated data
+      - name: 💾 Commit updated data in /public
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/
-          git commit -m "🕐 Nightly AURA data update: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes to commit"
-          git push origin main
+          git add public/data/ || true
+          git commit -m "🕐 Nightly AURA data update: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No data changes to commit"
 
-      - name: 🌐 Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+      - name: 🪄 Sync /public → /docs for GitHub Pages
+        run: |
+          rm -rf docs
+          mkdir docs
+          cp -r public/* docs/
+          touch docs/.nojekyll
+          git add docs || true
+          git commit -m "Sync public → docs for GitHub Pages $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No site changes to commit"
+
+      - name: ⬆️ Push all changes
+        run: git push origin main
