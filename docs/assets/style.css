@@ -1,0 +1,11 @@
+/* public/assets/style.css */
+/* Additional subtle polish on top of Tailwind via CDN */
+@keyframes flicker {
+    0% { opacity: 0.9; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0.9; transform: scale(1); }
+  }
+  .fire-badge {
+    animation: flicker 1.6s infinite ease-in-out;
+  }
+  

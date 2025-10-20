@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AURA Trends</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style> body { background:#0f172a; } </style>
+</head>
+<body class="text-gray-100">
+  <header class="py-10 text-center">
+    <h1 class="text-3xl font-bold text-cyan-400">AURA Trends & Analytics</h1>
+    <p class="text-gray-400 mt-1">Explore patterns over the historical snapshots.</p>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 space-y-8">
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <div class="flex flex-col md:flex-row gap-4 md:items-end md:justify-between">
+        <div>
+          <h2 class="text-lg font-semibold">Filters</h2>
+          <p class="text-sm text-gray-400">Use these to slice the time series.</p>
+        </div>
+        <div class="flex gap-3">
+          <input id="vendorFilter" placeholder="Vendor (e.g., Cisco)" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-sm" />
+          <input id="cveFilter" placeholder="CVE (e.g., CVE-2024-12345)" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-sm" />
+          <button id="applyFilters" class="bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-200 border border-cyan-400/40 px-3 py-2 rounded text-sm">Apply</button>
+        </div>
+      </div>
+      <div class="grid gap-6 mt-6">
+        <canvas id="avgScoreChart" height="120"></canvas>
+        <canvas id="vendorCountChart" height="120"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-500 text-xs py-10">
+    <a href="index.html" class="underline text-cyan-300">← Back to AURA Feed</a>
+  </footer>
+
+  <script src="assets/trends.js"></script>
+</body>
+</html>

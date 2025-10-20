@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AURA – AI Unified Risk Assessment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0f172a; }
+    .aura-glow { text-shadow: 0 0 12px #06b6d4, 0 0 24px rgba(6,182,212,0.3); }
+    .card:hover { box-shadow: 0 0 12px rgba(6,182,212,0.35); transition: box-shadow .2s ease; }
+  </style>
+</head>
+<body class="text-gray-100">
+  <header class="py-12 text-center max-w-3xl mx-auto">
+    <h1 class="text-6xl font-extrabold text-cyan-400 aura-glow tracking-wide">AURA</h1>
+    <p class="text-cyan-200 text-lg mt-2 italic">What’s your cybersecurity AURA?</p>
+    <p class="text-gray-300 text-sm mt-4 leading-relaxed">
+      The AI Unified Risk Assessment (AURA) platform is an AI-powered risk intelligence engine that fuses threat data from CISA KEV, NVD, EPSS, Exploit-DB, and global security news.
+      It helps analysts cut through noise by revealing which vulnerabilities truly matter — and why.
+    </p>
+    <p class="text-gray-400 text-xs mt-2">
+      Real-time context. Measurable risk. AI-driven clarity.
+    </p>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+      <div>
+        <h2 class="text-xl font-semibold">Today’s Top 10</h2>
+        <p class="text-sm text-gray-400">Fused from KEV, EPSS, NVD, exploit data, and AI context.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <label class="text-sm text-gray-400">View by date:</label>
+        <input id="datePicker" type="date" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-sm">
+        <button id="loadDateBtn" class="bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-200 border border-cyan-400/40 px-3 py-2 rounded text-sm">Load</button>
+      </div>
+    </div>
+
+    <div id="top-list" class="grid md:grid-cols-2 gap-4"></div>
+
+    <div class="mt-10 flex gap-4 text-sm">
+      <a href="trends.html" class="underline text-cyan-300 hover:text-cyan-200">Trends & Analytics</a>
+      <a href="resources.html" class="underline text-cyan-300 hover:text-cyan-200">How AURA Works</a>
+    </div>
+  </main>
+
+  <footer class="text-center text-gray-500 text-xs py-10 space-y-2">
+    <p>Updated daily • Powered by open data + AI</p>
+    <p class="text-[11px] text-gray-600 max-w-md mx-auto leading-relaxed">
+      Disclaimer: AURA is a volunteer research project built for educational and non-commercial purposes. 
+      It is not intended for production or enterprise use. Data accuracy and availability are not guaranteed.
+    </p>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

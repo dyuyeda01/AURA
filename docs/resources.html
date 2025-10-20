@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AURA Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background:#0f172a; }
+  </style>
+</head>
+<body class="text-gray-100">
+  <header class="py-10 text-center">
+    <h1 class="text-3xl font-bold text-cyan-400">AURA Resources</h1>
+    <p class="text-gray-400 mt-1">Data Intelligence • Scoring Framework • Context Insight</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 space-y-8">
+    <!-- How to Use -->
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-cyan-300">How to Use AURA</h2>
+      <p class="text-gray-300 text-sm mt-3">
+        AURA provides a unified view of daily cyber risk by fusing exploit intelligence, 
+        vulnerability data, and AI-driven context. Each entry reflects the most relevant CVEs 
+        with enrichment from public and open-source data feeds.
+      </p>
+      <ul class="list-disc ml-6 mt-3 text-gray-300 text-sm space-y-1">
+        <li>Start with the <strong>Top 10 CVEs</strong> for immediate threat visibility.</li>
+        <li>Expand any entry to see detailed scoring, trend data, and exploit references.</li>
+        <li>Use the <strong>AURA Score</strong> to prioritize based on risk and likelihood of exploitation.</li>
+        <li>Track how emerging AI-related vulnerabilities are shaping the cyber landscape.</li>
+      </ul>
+    </section>
+
+    <!-- Data Sources -->
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-cyan-300">Data Sources</h2>
+      <p class="text-gray-300 text-sm mt-2">
+        AURA combines multiple trusted and open data sources to provide context and 
+        scoring depth. Each component contributes a different dimension to the overall 
+        risk calculation:
+      </p>
+
+      <ul class="list-disc ml-6 mt-3 text-gray-300 text-sm space-y-3">
+        <li>
+          <strong>CISA Known Exploited Vulnerabilities (KEV)</strong> — Identifies 
+          vulnerabilities confirmed as actively exploited in the wild. This dataset drives 
+          AURA’s baseline prioritization and marks which CVEs are proven threats.
+        </li>
+
+        <li>
+          <strong>National Vulnerability Database (NVD)</strong> — Supplies 
+          standardized metadata and CVSS severity scores, enabling consistency in 
+          measuring technical impact and base risk.
+        </li>
+
+        <li>
+          <strong>FIRST Exploit Prediction Scoring System (EPSS)</strong> — Provides 
+          a probabilistic forecast of exploitation. AURA integrates EPSS to 
+          reflect real-world likelihood rather than theoretical severity.
+        </li>
+
+        <li>
+          <strong>Exploit-DB and GitHub Proof-of-Concepts</strong> — Confirms the 
+          public availability of exploit code or demonstrations. When present, this 
+          factor elevates urgency due to increased attacker accessibility.
+        </li>
+
+        <li>
+          <strong>News & Advisory Feeds (NewsAPI)</strong> — Tracks how often a 
+          CVE appears in trusted security publications. This “Trend” score indicates 
+          visibility and awareness across the cybersecurity community.
+        </li>
+
+        <li>
+          <strong>AI Context Analysis</strong> — Detects whether a CVE affects 
+          machine learning frameworks, AI supply chain tools, or model-serving 
+          infrastructure (e.g., TensorFlow, PyTorch, Vertex AI, Hugging Face). 
+          This helps highlight risks that could impact AI-driven operations or 
+          software supply chains.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Scoring Explanation -->
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-cyan-300">AURA Scoring Framework</h2>
+      <p class="text-gray-300 text-sm mt-2">
+        The AURA Score is a composite index that blends technical severity, 
+        exploit probability, active exploitation, exposure trends, and AI-related 
+        context into a unified 0–100 risk scale.
+      </p>
+      <p class="text-gray-400 text-xs mt-2">
+        Weights are dynamically tuned to balance technical accuracy with operational relevance:
+      </p>
+      <ul class="ml-6 mt-2 text-gray-300 text-xs space-y-1">
+        <li>CVSS: 40%</li>
+        <li>EPSS: 20%</li>
+        <li>KEV: 20%</li>
+        <li>Exploit Availability: 10%</li>
+        <li>Trend Awareness: 5%</li>
+        <li>AI Context: 5%</li>
+      </ul>
+    </section>
+
+    <!-- Legal Disclaimer -->
+    <section class="bg-gray-900/60 rounded-xl p-6 border border-gray-800">
+      <h2 class="text-sm font-semibold text-gray-400">Legal & Disclaimer</h2>
+      <p class="text-gray-500 text-xs mt-2 leading-relaxed">
+        This project is a volunteer research initiative intended for educational 
+        and non-commercial use. While data is sourced from publicly available and 
+        reputable feeds, accuracy is not guaranteed. AURA is not designed or 
+        validated for enterprise security operations or compliance decisions. 
+        Use at your own discretion.
+      </p>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-500 text-xs py-10">
+    <a href="index.html" class="underline text-cyan-300">← Back to AURA Feed</a>
+  </footer>
+</body>
+</html>
