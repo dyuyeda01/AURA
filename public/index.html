@@ -7,14 +7,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { background: #0f172a; }
-    .aura-glow { text-shadow: 0 0 8px #06b6d4; }
+    .aura-glow { text-shadow: 0 0 12px #06b6d4, 0 0 24px rgba(6,182,212,0.3); }
     .card:hover { box-shadow: 0 0 12px rgba(6,182,212,0.35); transition: box-shadow .2s ease; }
   </style>
 </head>
 <body class="text-gray-100">
-  <header class="py-10 text-center">
-    <h1 class="text-4xl font-extrabold text-cyan-400 aura-glow tracking-wide">AURA</h1>
-    <p class="text-gray-400 mt-1">AI Unified Risk Assessment • Daily Top 10 Vulnerabilities</p>
+  <header class="py-12 text-center max-w-3xl mx-auto">
+    <h1 class="text-6xl font-extrabold text-cyan-400 aura-glow tracking-wide">AURA</h1>
+    <p class="text-cyan-200 text-lg mt-2 italic">What’s your cybersecurity AURA?</p>
+    <p class="text-gray-300 text-sm mt-4 leading-relaxed">
+      AURA is an AI-powered risk intelligence engine that fuses threat data from CISA KEV, NVD, EPSS, Exploit-DB, and global security news.
+      It helps analysts cut through noise by revealing which vulnerabilities truly matter — and why.
+    </p>
+    <p class="text-gray-400 text-xs mt-2">
+      Real-time context. Measurable risk. AI-driven clarity.
+    </p>
   </header>
 
   <main class="max-w-6xl mx-auto px-4">
@@ -38,8 +45,12 @@
     </div>
   </main>
 
-  <footer class="text-center text-gray-500 text-xs py-10">
-    Updated daily • Powered by open data + AI • © AURA
+  <footer class="text-center text-gray-500 text-xs py-10 space-y-2">
+    <p>Updated daily • Powered by open data + AI • © AURA</p>
+    <p class="text-[11px] text-gray-600 max-w-md mx-auto leading-relaxed">
+      Disclaimer: AURA is a volunteer research project built for educational and non-commercial purposes. 
+      It is not intended for production or enterprise use. Data accuracy and availability are not guaranteed.
+    </p>
   </footer>
 
   <script src="assets/main.js"></script>

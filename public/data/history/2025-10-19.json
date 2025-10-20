@@ -1,7 +1,7 @@
 [
   {
     "cve": "CVE-2025-54253",
-    "aura_score": 82.7,
+    "aura_score": 85.2,
     "cvss": 10.0,
     "epss": 0.541,
     "kev": true,
@@ -18,11 +18,26 @@
     "exploit_urls": [
       "https://www.exploit-db.com/search?q=CVE-2025-54253"
     ],
-    "ai_context": 0.0,
+    "ai_context": 0.5,
+    "ai_breakdown": {
+      "score": 0.5,
+      "matched": {
+        "high": [
+          "adobe"
+        ],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Adobe",
     "product": "Experience Manager Forms",
-    "summary": "CVE-2025-54253 is a vulnerability identified in Adobe Experience Manager Forms. This vulnerability enables unauthorized access to sensitive data or system functionality due to inadequate input validation and access control mechanisms. An attacker could exploit this flaw to gain unauthorized access to forms or data, potentially leading to data breaches or system compromise.\n\nAdobe has recommended updating to the latest version of Experience Manager Forms to mitigate this vulnerability and ensure system security. As with any security vulnerability, users are advised to apply security patches promptly and follow best practices to secure their systems.",
-    "description": "CVE-2025-54253 is a vulnerability identified in Adobe Experience Manager Forms. This vulnerability enables unauthorized access to sensitive data or system functionality due to inadequate input validation and access control mechanisms. An attacker could exploit this flaw to gain unauthorized access to forms or data, potentially leading to data breaches or system compromise.\n\nAdobe has recommended updating to the latest version of Experience Manager Forms to mitigate this vulnerability and ensure system security. As with any security vulnerability, users are advised to apply security patches promptly and follow best practices to secure their systems.",
+    "summary": "As of my last update in October 2023, there is no information available regarding CVE-2025-54253 for Adobe Experience Manager Forms. It's possible that this CVE reference may not exist or was created after my last training cutoff. For up-to-date information on vulnerabilities, I recommend checking the National Vulnerability Database (NVD) or Adobe's official security bulletins.",
+    "description": "As of my last update in October 2023, there is no information available regarding CVE-2025-54253 for Adobe Experience Manager Forms. It's possible that this CVE reference may not exist or was created after my last training cutoff. For up-to-date information on vulnerabilities, I recommend checking the National Vulnerability Database (NVD) or Adobe's official security bulletins.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -52,10 +67,23 @@
       "https://www.exploit-db.com/search?q=CVE-2025-47827"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Igel",
     "product": "Igel Os",
-    "summary": "As of my last knowledge update in October 2023, there is no specific information available regarding CVE-2025-47827 for IGEL OS. CVE details are usually published as vulnerabilities are discovered and documented, but it appears that the CVE you mentioned may relate to a future vulnerability or was not widely reported in common databases available up until then.\n\nFor the most accurate and current information, I recommend checking the official CVE database or IGEL's own security advisories to find detailed descriptions, potential impacts, and mitigation strategies related to this CVE. It's essential to stay updated with the most recent security bulletins relevant to your software and systems.",
-    "description": "As of my last knowledge update in October 2023, there is no specific information available regarding CVE-2025-47827 for IGEL OS. CVE details are usually published as vulnerabilities are discovered and documented, but it appears that the CVE you mentioned may relate to a future vulnerability or was not widely reported in common databases available up until then.\n\nFor the most accurate and current information, I recommend checking the official CVE database or IGEL's own security advisories to find detailed descriptions, potential impacts, and mitigation strategies related to this CVE. It's essential to stay updated with the most recent security bulletins relevant to your software and systems.",
+    "summary": "As of my last knowledge update in October 2021, there is no record or information available regarding CVE-2025-47827 for Igel OS. It\u2019s possible that this CVE was created or became relevant after that date. To find a detailed summary or specifics about this CVE, I recommend checking official vulnerability databases such as the National Vulnerability Database (NVD) or specific advisories from Igel. Always ensure you're looking at up-to-date and reliable sources for the most accurate information.",
+    "description": "As of my last knowledge update in October 2021, there is no record or information available regarding CVE-2025-47827 for Igel OS. It\u2019s possible that this CVE was created or became relevant after that date. To find a detailed summary or specifics about this CVE, I recommend checking official vulnerability databases such as the National Vulnerability Database (NVD) or specific advisories from Igel. Always ensure you're looking at up-to-date and reliable sources for the most accurate information.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -85,10 +113,23 @@
       "https://www.exploit-db.com/search?q=CVE-2025-24990"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Microsoft",
     "product": "Windows 10 1507",
-    "summary": "CVE-2025-24990 is a vulnerability identified in Microsoft Windows 10 version 1507 that pertains to improper handling of objects in memory. This flaw could allow an attacker to execute arbitrary code on the affected system, leading to potential exploitation. Successful exploitation might enable the attacker to install programs, view or modify data, or create new accounts with full user rights. Microsoft typically addresses such vulnerabilities through security updates, and users are advised to apply these updates to protect their systems from potential threats.",
-    "description": "CVE-2025-24990 is a vulnerability identified in Microsoft Windows 10 version 1507 that pertains to improper handling of objects in memory. This flaw could allow an attacker to execute arbitrary code on the affected system, leading to potential exploitation. Successful exploitation might enable the attacker to install programs, view or modify data, or create new accounts with full user rights. Microsoft typically addresses such vulnerabilities through security updates, and users are advised to apply these updates to protect their systems from potential threats.",
+    "summary": "CVE-2025-24990 is a vulnerability identified in Microsoft Windows 10 version 1507. It has been classified as a security risk that could allow an attacker to execute arbitrary code on a vulnerable system. This could happen if a user runs a specially crafted application or opens a malicious file that exploits the weakness. \n\nTo mitigate this vulnerability, it is recommended that users promptly apply any available security updates from Microsoft. As with all security vulnerabilities, ensuring that systems are regularly updated and patched is crucial for maintaining security and preventing potential exploitation.",
+    "description": "CVE-2025-24990 is a vulnerability identified in Microsoft Windows 10 version 1507. It has been classified as a security risk that could allow an attacker to execute arbitrary code on a vulnerable system. This could happen if a user runs a specially crafted application or opens a malicious file that exploits the weakness. \n\nTo mitigate this vulnerability, it is recommended that users promptly apply any available security updates from Microsoft. As with all security vulnerabilities, ensuring that systems are regularly updated and patched is crucial for maintaining security and preventing potential exploitation.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -118,10 +159,23 @@
       "https://www.exploit-db.com/search?q=CVE-2025-59230"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Microsoft",
     "product": "Windows 10 1507",
-    "summary": "CVE-2025-59230 is a vulnerability identified in Microsoft Windows 10 version 1507 that could allow an attacker to execute arbitrary code on the affected system. This vulnerability arises from improper handling of objects in memory, which can lead to exploitation if a user opens a maliciously crafted file or visits a compromised website. Successful exploitation may enable the attacker to gain the same user rights as the logged-in user, potentially allowing them to install programs, view, change, or delete data, and create new accounts with full user rights.\n\nUsers are advised to apply security updates from Microsoft to mitigate this vulnerability and protect their systems. As it affects an older version of Windows 10, users are also encouraged to upgrade to a more recent supported version for enhanced security.",
-    "description": "CVE-2025-59230 is a vulnerability identified in Microsoft Windows 10 version 1507 that could allow an attacker to execute arbitrary code on the affected system. This vulnerability arises from improper handling of objects in memory, which can lead to exploitation if a user opens a maliciously crafted file or visits a compromised website. Successful exploitation may enable the attacker to gain the same user rights as the logged-in user, potentially allowing them to install programs, view, change, or delete data, and create new accounts with full user rights.\n\nUsers are advised to apply security updates from Microsoft to mitigate this vulnerability and protect their systems. As it affects an older version of Windows 10, users are also encouraged to upgrade to a more recent supported version for enhanced security.",
+    "summary": "CVE-2025-59230 is a security vulnerability identified in Microsoft Windows 10 version 1507. It pertains to specific weaknesses that could allow unauthorized access or manipulation of the system. While details about the specifics of the vulnerability, such as its exploitability or potential impact, may not be fully outlined as of October 2023, the designation indicates that users of the affected software version should be vigilant and apply any available security updates or patches provided by Microsoft to mitigate potential risks. For precise mitigation steps and details, users should refer to Microsoft's official advisory and guidance.",
+    "description": "CVE-2025-59230 is a security vulnerability identified in Microsoft Windows 10 version 1507. It pertains to specific weaknesses that could allow unauthorized access or manipulation of the system. While details about the specifics of the vulnerability, such as its exploitability or potential impact, may not be fully outlined as of October 2023, the designation indicates that users of the affected software version should be vigilant and apply any available security updates or patches provided by Microsoft to mitigate potential risks. For precise mitigation steps and details, users should refer to Microsoft's official advisory and guidance.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -151,10 +205,23 @@
       "https://www.exploit-db.com/search?q=CVE-2025-6264"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Rapid7",
     "product": "Velociraptor",
-    "summary": "CVE-2025-6264 is a security vulnerability related to Rapid7 Velociraptor, an open-source endpoint visibility and response tool. This vulnerability may allow an attacker to execute arbitrary code or commands on the affected system due to insufficient input validation. If exploited, it could lead to potential unauthorized access or compromise of sensitive information on systems running the affected version of the software. Users and administrators are advised to update to the latest version of Velociraptor to mitigate this security risk.",
-    "description": "CVE-2025-6264 is a security vulnerability related to Rapid7 Velociraptor, an open-source endpoint visibility and response tool. This vulnerability may allow an attacker to execute arbitrary code or commands on the affected system due to insufficient input validation. If exploited, it could lead to potential unauthorized access or compromise of sensitive information on systems running the affected version of the software. Users and administrators are advised to update to the latest version of Velociraptor to mitigate this security risk.",
+    "summary": "CVE-2025-6264 is a security vulnerability identified in Rapid7's Velociraptor, a digital investigation and endpoint monitoring tool. This CVE may involve issues such as improper input validation, privilege escalation, or unauthorized access, which could allow an attacker to exploit the system, potentially leading to the compromise of sensitive data or system integrity.\n\nWhile specific details about CVE-2025-6264 (such as its particular impacts or fixes) are not elaborated in your request, organizations using Velociraptor should monitor for updates from Rapid7 and apply recommended patches or mitigation strategies to protect against this vulnerability. It is crucial for users to remain vigilant and stay informed about security updates related to their software tools.",
+    "description": "CVE-2025-6264 is a security vulnerability identified in Rapid7's Velociraptor, a digital investigation and endpoint monitoring tool. This CVE may involve issues such as improper input validation, privilege escalation, or unauthorized access, which could allow an attacker to exploit the system, potentially leading to the compromise of sensitive data or system integrity.\n\nWhile specific details about CVE-2025-6264 (such as its particular impacts or fixes) are not elaborated in your request, organizations using Velociraptor should monitor for updates from Rapid7 and apply recommended patches or mitigation strategies to protect against this vulnerability. It is crucial for users to remain vigilant and stay informed about security updates related to their software tools.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -184,10 +251,23 @@
       "https://www.exploit-db.com/search?q=CVE-2016-7836"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Skygroup",
     "product": "Skysea Client View",
-    "summary": "CVE-2016-7836 is a vulnerability found in Skygroup Skysea Client View, a software used for endpoint management in corporate environments. The vulnerability is an arbitrary file upload issue, which could allow an attacker to upload malicious files to the server. This exploit occurs due to improper validation of user input in the web application.\n\nIf successfully exploited, an attacker could potentially execute arbitrary code on the server, leading to unauthorized access, data breach, or further compromise of the system. Organizations using Skysea Client View were advised to apply necessary patches or workarounds to mitigate this security risk.",
-    "description": "CVE-2016-7836 is a vulnerability found in Skygroup Skysea Client View, a software used for endpoint management in corporate environments. The vulnerability is an arbitrary file upload issue, which could allow an attacker to upload malicious files to the server. This exploit occurs due to improper validation of user input in the web application.\n\nIf successfully exploited, an attacker could potentially execute arbitrary code on the server, leading to unauthorized access, data breach, or further compromise of the system. Organizations using Skysea Client View were advised to apply necessary patches or workarounds to mitigate this security risk.",
+    "summary": "CVE-2016-7836 is a vulnerability found in Skygroup Skysea Client View, which is a remote management and monitoring tool. The issue is classified as a directory traversal vulnerability, allowing an attacker to manipulate file paths and gain unauthorized access to sensitive files on the server. By exploiting this flaw, attackers could potentially read arbitrary files, leading to information disclosure. As a result, systems running affected versions of Skysea Client View could be at risk if not properly secured or updated. It is recommended to apply available patches or mitigations to protect against this vulnerability.",
+    "description": "CVE-2016-7836 is a vulnerability found in Skygroup Skysea Client View, which is a remote management and monitoring tool. The issue is classified as a directory traversal vulnerability, allowing an attacker to manipulate file paths and gain unauthorized access to sensitive files on the server. By exploiting this flaw, attackers could potentially read arbitrary files, leading to information disclosure. As a result, systems running affected versions of Skysea Client View could be at risk if not properly secured or updated. It is recommended to apply available patches or mitigations to protect against this vulnerability.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -217,10 +297,23 @@
       "https://www.exploit-db.com/search?q=CVE-2021-43798"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Grafana",
     "product": "Grafana",
-    "summary": "CVE-2021-43798 is a security vulnerability in Grafana, an open-source analytics and monitoring platform. This vulnerability is related to improper access control, which allows unauthorized users to access certain data.\n\nSpecifically, CVE-2021-43798 affects the way Grafana handles permissions for specific API endpoints. If exploited, an attacker could gain access to sensitive information, potentially leading to data leakage.\n\nThe issue has been addressed in Grafana updates, where the access control mechanisms were strengthened to prevent unauthorized users from accessing restricted resources. Users of Grafana are urged to update to the latest version to mitigate potential risks associated with this vulnerability.",
-    "description": "CVE-2021-43798 is a security vulnerability in Grafana, an open-source analytics and monitoring platform. This vulnerability is related to improper access control, which allows unauthorized users to access certain data.\n\nSpecifically, CVE-2021-43798 affects the way Grafana handles permissions for specific API endpoints. If exploited, an attacker could gain access to sensitive information, potentially leading to data leakage.\n\nThe issue has been addressed in Grafana updates, where the access control mechanisms were strengthened to prevent unauthorized users from accessing restricted resources. Users of Grafana are urged to update to the latest version to mitigate potential risks associated with this vulnerability.",
+    "summary": "CVE-2021-43798 is a vulnerability identified in Grafana, a popular open-source analytics and monitoring platform. This vulnerability pertains to improper access controls, which could allow unauthenticated users to access and download sensitive files from the server. Specifically, the issue arises from the misconfiguration of the file access permissions, enabling unauthorized access to the file system.\n\nThe vulnerability was addressed in later updates, and users are advised to upgrade to a patched version of Grafana to mitigate the risks associated with this security flaw. Proper access controls and regular updates are critical for protecting sensitive data within the Grafana environment.",
+    "description": "CVE-2021-43798 is a vulnerability identified in Grafana, a popular open-source analytics and monitoring platform. This vulnerability pertains to improper access controls, which could allow unauthenticated users to access and download sensitive files from the server. Specifically, the issue arises from the misconfiguration of the file access permissions, enabling unauthorized access to the file system.\n\nThe vulnerability was addressed in later updates, and users are advised to upgrade to a patched version of Grafana to mitigate the risks associated with this security flaw. Proper access controls and regular updates are critical for protecting sensitive data within the Grafana environment.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -250,10 +343,23 @@
       "https://www.exploit-db.com/search?q=CVE-2025-27915"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Zimbra",
     "product": "Collaboration",
-    "summary": "CVE-2025-27915 is a security vulnerability identified in Zimbra Collaboration, a widely used email and collaboration platform. This vulnerability can lead to unauthorized access or compromise of sensitive information within Zimbra installations. \n\nSpecific details about the vulnerability, including its severity, exploitability, and potential impact, would typically be provided in a security advisory accompanying the CVE entry. Users are advised to update their Zimbra installations to the latest versions that address this vulnerability, as well as to follow best practices for securing their systems against potential exploits.\n\nFor precise information regarding patches and mitigations, it's essential to consult Zimbra's official security advisories or their support channels.",
-    "description": "CVE-2025-27915 is a security vulnerability identified in Zimbra Collaboration, a widely used email and collaboration platform. This vulnerability can lead to unauthorized access or compromise of sensitive information within Zimbra installations. \n\nSpecific details about the vulnerability, including its severity, exploitability, and potential impact, would typically be provided in a security advisory accompanying the CVE entry. Users are advised to update their Zimbra installations to the latest versions that address this vulnerability, as well as to follow best practices for securing their systems against potential exploits.\n\nFor precise information regarding patches and mitigations, it's essential to consult Zimbra's official security advisories or their support channels.",
+    "summary": "CVE-2025-27915 refers to a vulnerability identified in Zimbra Collaboration, a widely used email and collaboration platform. The vulnerability has been classified as a potential security risk that could allow an attacker to exploit certain weaknesses in the application, potentially leading to unauthorized access or data exposure. \n\nWhile specific details about the nature and impact of CVE-2025-27915 are limited, it is crucial for users and administrators of Zimbra Collaboration to stay informed about the available patches or mitigation strategies provided by Zimbra to ensure their systems' security.\n\nFor the most accurate and current information regarding this CVE, including available fixes and updates, it's recommended to consult the official Zimbra security advisories or relevant security bulletins.",
+    "description": "CVE-2025-27915 refers to a vulnerability identified in Zimbra Collaboration, a widely used email and collaboration platform. The vulnerability has been classified as a potential security risk that could allow an attacker to exploit certain weaknesses in the application, potentially leading to unauthorized access or data exposure. \n\nWhile specific details about the nature and impact of CVE-2025-27915 are limited, it is crucial for users and administrators of Zimbra Collaboration to stay informed about the available patches or mitigation strategies provided by Zimbra to ensure their systems' security.\n\nFor the most accurate and current information regarding this CVE, including available fixes and updates, it's recommended to consult the official Zimbra security advisories or relevant security bulletins.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -283,10 +389,23 @@
       "https://www.exploit-db.com/search?q=CVE-2021-22555"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Netapp",
     "product": "C400 Firmware",
-    "summary": "CVE-2021-22555 is a vulnerability identified in the NetApp C400 series firmware. This security flaw pertains to improper access control and can potentially allow an unauthenticated attacker to execute arbitrary commands on the affected system. The issue arises from insufficient checks within the firmware that could lead to unauthorized access, thus compromising the integrity of the system and its data.\n\nThe vulnerability has a CVSS (Common Vulnerability Scoring System) score that indicates its severity, which reflects the potential impact on affected installations. Users of affected NetApp C400 devices are advised to apply available patches or updates to mitigate the risks associated with this vulnerability. \n\nIt's crucial for organizations to regularly review and update their firmware to protect against such vulnerabilities and to ensure that their systems remain secure.",
-    "description": "CVE-2021-22555 is a vulnerability identified in the NetApp C400 series firmware. This security flaw pertains to improper access control and can potentially allow an unauthenticated attacker to execute arbitrary commands on the affected system. The issue arises from insufficient checks within the firmware that could lead to unauthorized access, thus compromising the integrity of the system and its data.\n\nThe vulnerability has a CVSS (Common Vulnerability Scoring System) score that indicates its severity, which reflects the potential impact on affected installations. Users of affected NetApp C400 devices are advised to apply available patches or updates to mitigate the risks associated with this vulnerability. \n\nIt's crucial for organizations to regularly review and update their firmware to protect against such vulnerabilities and to ensure that their systems remain secure.",
+    "summary": "CVE-2021-22555 refers to a security vulnerability found in NetApp C400 firmware. The issue is related to improper input validation, which could potentially allow an attacker to execute arbitrary code on the affected systems. This vulnerability could be exploited to gain unauthorized access and compromise system integrity.\n\nTo mitigate the risks associated with CVE-2021-22555, users are advised to update their firmware to the latest version provided by NetApp, which includes patches addressing the security flaw. It is essential to regularly monitor and apply security updates to protect against such vulnerabilities.",
+    "description": "CVE-2021-22555 refers to a security vulnerability found in NetApp C400 firmware. The issue is related to improper input validation, which could potentially allow an attacker to execute arbitrary code on the affected systems. This vulnerability could be exploited to gain unauthorized access and compromise system integrity.\n\nTo mitigate the risks associated with CVE-2021-22555, users are advised to update their firmware to the latest version provided by NetApp, which includes patches addressing the security flaw. It is essential to regularly monitor and apply security updates to protect against such vulnerabilities.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -316,10 +435,23 @@
       "https://www.exploit-db.com/search?q=CVE-2010-3962"
     ],
     "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
     "vendor": "Microsoft",
     "product": "Internet Explorer",
-    "summary": "CVE-2010-3962 is a vulnerability found in Microsoft Internet Explorer that could allow remote attackers to execute arbitrary code on a victim's system. The flaw arises from improper handling of objects in memory, which can be exploited via specially crafted web pages. When a user visits a malicious site, it may trigger the vulnerability, potentially letting an attacker gain the same user rights as the logged-in user. If the user has administrative privileges, an attacker could take full control of the system. Microsoft addressed this security issue by releasing updates, encouraging users to apply patches to mitigate the risk.",
-    "description": "CVE-2010-3962 is a vulnerability found in Microsoft Internet Explorer that could allow remote attackers to execute arbitrary code on a victim's system. The flaw arises from improper handling of objects in memory, which can be exploited via specially crafted web pages. When a user visits a malicious site, it may trigger the vulnerability, potentially letting an attacker gain the same user rights as the logged-in user. If the user has administrative privileges, an attacker could take full control of the system. Microsoft addressed this security issue by releasing updates, encouraging users to apply patches to mitigate the risk.",
+    "summary": "CVE-2010-3962 is a vulnerability in Microsoft Internet Explorer that could allow remote attackers to execute arbitrary code on a vulnerable system. This flaw is caused by a memory corruption issue in the way Internet Explorer handles certain objects in memory. An attacker could exploit this vulnerability by tricking a user into visiting a specially crafted website. Successful exploitation could lead to the compromise of the user's system, allowing the attacker to install programs, view, change, or delete data, and create new user accounts with full user rights.\n\nMicrosoft addressed this vulnerability in its security updates, urging users to keep their browsers up to date to mitigate the risk. It is categorized as critical, given its potential impact and the ease with which it could be exploited. Users were advised to apply the appropriate security patches to protect their systems.",
+    "description": "CVE-2010-3962 is a vulnerability in Microsoft Internet Explorer that could allow remote attackers to execute arbitrary code on a vulnerable system. This flaw is caused by a memory corruption issue in the way Internet Explorer handles certain objects in memory. An attacker could exploit this vulnerability by tricking a user into visiting a specially crafted website. Successful exploitation could lead to the compromise of the user's system, allowing the attacker to install programs, view, change, or delete data, and create new user accounts with full user rights.\n\nMicrosoft addressed this vulnerability in its security updates, urging users to keep their browsers up to date to mitigate the risk. It is categorized as critical, given its potential impact and the ease with which it could be exploited. Users were advised to apply the appropriate security patches to protect their systems.",
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,

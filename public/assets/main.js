@@ -20,40 +20,45 @@ function renderList(data) {
     const card = document.createElement('div');
     card.className = 'card bg-gray-900 rounded-xl p-4 border border-gray-800';
 
-    // Prefer first direct Exploit-DB link, else fallback to search page
+    // Prefer direct EDB exploit URL
     const primaryExploitUrl =
       item.exploit_urls && item.exploit_urls.length
         ? item.exploit_urls[0]
         : `https://www.exploit-db.com/search?q=${item.cve}`;
 
-    // Optional count if multiple exploit links found
     const exploitCount =
       item.exploit_edb_ids && item.exploit_edb_ids.length
         ? ` (${item.exploit_edb_ids.length})`
         : '';
 
-    // Fire icon badge logic for trending CVEs
-    const isTrending = item.trend_score > 0.4 || item.trend_mentions > 5;
-    const trendBadge = isTrending
-      ? `
-        <span
-          class="fire-badge text-xs bg-orange-500/60 px-2 py-1 rounded text-yellow-100 flex items-center gap-1"
-          title="🔥 Trending — Trend score: ${(item.trend_score ?? 0).toFixed(2)}, Mentions: ${item.trend_mentions}"
-        >
-          🔥 Trending
-        </span>
-      `
-      : '';
+    // 🔥 Trend badge (if trending)
+    const trendBadge =
+      item.trend_score > 0.3
+        ? `<span title="Trending: ${item.trend_mentions} mentions" class="text-amber-400 text-lg ml-1">🔥</span>`
+        : '';
+
+    // 🤖 AI Context badge (if AI-related)
+    const aiBadge =
+      item.ai_context > 0.3
+        ? `<span
+            class="ml-1 text-blue-400 text-lg"
+            title="AI-related context detected: ${(item.ai_breakdown?.matched?.high || [])
+              .concat(item.ai_breakdown?.matched?.medium || [])
+              .join(', ') || 'AI keywords detected'}">
+            🤖
+          </span>`
+        : '';
 
     card.innerHTML = `
       <div class="flex items-start justify-between gap-3">
         <div>
           <div class="flex items-center gap-2 flex-wrap">
             <h3 class="text-lg font-semibold text-cyan-400">${item.cve}</h3>
-
             ${trendBadge}
-
-            ${item.exploit_poc ? `
+            ${aiBadge}
+            ${
+              item.exploit_poc
+                ? `
               <a
                 href="${primaryExploitUrl}"
                 class="text-xs bg-red-700/60 px-2 py-1 rounded text-red-100 hover:bg-red-700/80 focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -64,8 +69,9 @@ function renderList(data) {
                 title="Exploit PoC — click to open"
               >
                 Exploit PoC${exploitCount}
-              </a>
-            ` : ''}
+              </a>`
+                : ''
+            }
           </div>
           <p class="text-sm text-gray-400">${item.vendor ?? ''} ${item.product ?? ''}</p>
         </div>
@@ -88,20 +94,42 @@ function renderList(data) {
           <div>AI Context: ${(item.ai_context ?? 0).toFixed(2)} (w ${item.score_breakdown.ai_weight})</div>
         </div>
 
-        ${item.exploit_urls && item.exploit_urls.length ? `
+        ${
+          item.ai_breakdown && Object.values(item.ai_breakdown.matched || {}).flat().length
+            ? `
+          <div class="mt-3">
+            <div class="text-xs text-gray-400 mb-1">AI Keywords</div>
+            <ul class="list-disc list-inside text-xs text-blue-300 space-y-1">
+              ${Object.entries(item.ai_breakdown.matched)
+                .map(([lvl, terms]) =>
+                  terms.length
+                    ? `<li>${lvl}: ${terms.join(', ')}</li>`
+                    : ''
+                )
+                .join('')}
+            </ul>
+          </div>`
+            : ''
+        }
+
+        ${item.exploit_urls && item.exploit_urls.length
+          ? `
           <div class="mt-3">
             <div class="text-xs text-gray-400 mb-1">Exploit references</div>
             <ul class="list-disc list-inside text-xs text-cyan-200 space-y-1">
-              ${item.exploit_urls.map(u => `
+              ${item.exploit_urls
+                .map(
+                  u => `
                 <li>
                   <a class="underline hover:text-cyan-100 break-all" href="${u}" target="_blank" rel="noopener noreferrer">
                     ${u.replace('https://www.exploit-db.com/', '')}
                   </a>
-                </li>
-              `).join('')}
+                </li>`
+                )
+                .join('')}
             </ul>
-          </div>
-        ` : ''}
+          </div>`
+          : ''}
       </details>
     `;
 
@@ -137,5 +165,4 @@ document.getElementById('loadDateBtn')?.addEventListener('click', () => {
   loadByDate(d);
 });
 
-// Initial load
 loadToday();

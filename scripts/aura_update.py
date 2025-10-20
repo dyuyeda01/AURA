@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""AURA update orchestrator — pulls KEV CVEs, enriches from NVD, EPSS, Exploit-DB, NewsAPI (Trend), and scores."""
+"""AURA update orchestrator — pulls KEV CVEs, enriches from NVD, EPSS, Exploit-DB, NewsAPI (Trend), AI Context, and scores."""
 
 import os
 import re
@@ -16,7 +16,8 @@ from scripts.epss import get_epss_score
 from scripts.context import load_context, compute_context_fit
 from scripts.ai_summary import summarize_cve
 from scripts.exploit_poc import has_exploit_poc  # returns (has_poc, edb_ids, urls)
-from scripts.scoring import compute_aura_score  # ✅ use external scoring module
+from scripts.scoring import compute_aura_score   # must accept ai_context kwarg
+from scripts.ai_context import compute_ai_context_score  # ✅ NEW
 
 # -------------------------------------------------------------------
 # Config
@@ -99,7 +100,7 @@ def get_trend_score(cve_id: str):
         except Exception as e:
             log.warning(f"⚠️ NewsAPI lookup failed for {cve_id}: {e}")
 
-    # --- Optional GitHub fallback ---
+    # --- Optional GitHub fallback (very light heuristic) ---
     try:
         gh_url = f"https://github.com/search?q={cve_id}"
         r = requests.get(gh_url, timeout=6, headers={"User-Agent": "Mozilla/5.0"})
@@ -141,13 +142,14 @@ def main():
 
     for cve in cves:
         try:
+            # --- NVD/EPSS enrichment ---
             cvss, vendor, product = get_cvss_vendor_product(cve)
             epss = get_epss_score(cve)
             vendor = vendor or "Unknown"
             product = product or "Unknown"
             desc = f"{vendor} {product}"
 
-            # --- Exploit check ---
+            # --- Exploit-DB check (cached) ---
             if cve in exploit_cache:
                 cached = exploit_cache[cve]
                 if isinstance(cached, list) and len(cached) == 3:
@@ -170,7 +172,7 @@ def main():
             trend_score, trend_breakdown = get_trend_score(cve)
             trend_mentions = trend_breakdown.get("news_hits", 0)
 
-            # --- Context + AI summary ---
+            # --- Context fit & AI summary ---
             ctx_data = compute_context_fit(cve, vendor, product, desc, ctx)
             ctx_mult = 1.0
             if isinstance(ctx_data, dict) and "fit_score" in ctx_data:
@@ -178,7 +180,16 @@ def main():
 
             summary = summarize_cve(cve, vendor, product, desc, ctx)
 
-            # --- Compute AURA score (external function) ---
+            # --- AI Context (stronger scan includes AI summary) ✅ ---
+            ai_context, ai_breakdown = compute_ai_context_score(
+                vendor=vendor,
+                product=product,
+                description=f"{desc} {summary}",  # include AI summary for deeper context
+                references=[],
+                cpes=[],
+            )
+
+            # --- Score ---
             aura_score = compute_aura_score(
                 cvss,
                 epss=epss,
@@ -186,6 +197,7 @@ def main():
                 ctx_mult=ctx_mult,
                 trend_score=trend_score,
                 exploit_poc=exploit_found,
+                ai_context=ai_context,   # 👈 included in weighted score
             )
 
             score_breakdown = {
@@ -209,7 +221,8 @@ def main():
                 "exploit_poc": exploit_found,
                 "exploit_edb_ids": exploit_edb_ids,
                 "exploit_urls": exploit_urls,
-                "ai_context": 0.0,
+                "ai_context": round(ai_context, 3),     # 👈 NEW
+                "ai_breakdown": ai_breakdown,           # 👈 NEW (matched keywords)
                 "vendor": vendor,
                 "product": product,
                 "summary": summary,
@@ -219,7 +232,8 @@ def main():
 
             records.append(record)
             log.info(
-                f"✅ {cve} | CVSS {cvss:.1f} | EPSS {epss:.3f} | Trend {trend_mentions} hits | Exploit: {exploit_found} | AURA {aura_score:.1f}"
+                f"✅ {cve} | CVSS {cvss:.1f} | EPSS {epss:.3f} | Trend {trend_mentions} hits | "
+                f"Exploit: {exploit_found} | AI {ai_context:.2f} | AURA {aura_score:.1f}"
             )
 
         except Exception as e:
