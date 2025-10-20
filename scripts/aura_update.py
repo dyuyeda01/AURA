@@ -1,75 +1,68 @@
 #!/usr/bin/env python3
-"""AURA update orchestrator — pulls KEV CVEs, enriches from NVD, EPSS, Exploit-DB, and scores."""
+"""AURA update orchestrator — pulls KEV CVEs, enriches from NVD, EPSS, Exploit-DB, NewsAPI (Trend), and scores."""
 
 import os
+import re
 import json
+import math
 import datetime as dt
 import logging
 from typing import Any
+import requests
 
 from scripts.kev import fetch_top_kev_cves
 from scripts.nvd import get_cvss_vendor_product
 from scripts.epss import get_epss_score
 from scripts.context import load_context, compute_context_fit
 from scripts.ai_summary import summarize_cve
-from scripts.scoring import compute_aura_score
 from scripts.exploit_poc import has_exploit_poc  # returns (has_poc, edb_ids, urls)
+from scripts.scoring import compute_aura_score  # ✅ use external scoring module
 
 # -------------------------------------------------------------------
-# Config — all outputs go inside /public/data for web access
+# Config
 # -------------------------------------------------------------------
 OUTPUT_SCORES = "public/data/aura_scores.json"
 OUTPUT_MASTER = "public/data/aura_master.json"
 HISTORY_DIR = "public/data/history"
-CACHE_FILE = "data/cache/exploitdb.json"  # local cache
+CACHE_FILE = "data/cache/exploitdb.json"
 MAX_CVES = 10
+NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+NEWS_CAP = 50.0  # normalization cap for trend
 
 logging.basicConfig(
     format="[%(asctime)s] %(message)s", level=logging.INFO, datefmt="%Y-%m-%d %H:%M:%S"
 )
 log = logging.getLogger(__name__)
 
-
 # -------------------------------------------------------------------
 # Helpers
 # -------------------------------------------------------------------
 def load_exploit_cache() -> dict:
-    """Load cached Exploit-DB results. Normalizes older cache formats."""
+    """Load cached Exploit-DB results and normalize legacy formats."""
     if not os.path.exists(CACHE_FILE):
         return {}
     try:
         with open(CACHE_FILE, "r") as f:
             raw = json.load(f)
     except Exception:
-        log.debug("Failed to load exploit cache (corrupt?), starting fresh.")
+        log.debug("Failed to load exploit cache, starting fresh.")
         return {}
 
-    # Normalize entries:
-    # - older format: cache[cve] = [found_bool, urls_list]
-    # - new format: cache[cve] = [found_bool, edb_ids_list, urls_list]
     normalized: dict[str, Any] = {}
     for k, v in (raw.items() if isinstance(raw, dict) else []):
         if isinstance(v, list):
             if len(v) == 3:
                 normalized[k] = v
             elif len(v) == 2:
-                # upgrade: try to extract EDB ids from URLs if present
                 found, urls = v
                 edb_ids = []
                 if isinstance(urls, list):
                     for u in urls:
-                        # try extract numeric id from /exploits/<id>
-                        try:
-                            import re
-
-                            m = re.search(r"/exploits/(\d+)", u)
-                            if m:
-                                edb_ids.append(m.group(1))
-                        except Exception:
-                            pass
+                        m = re.search(r"/exploits/(\d+)", u)
+                        if m:
+                            edb_ids.append(m.group(1))
                 normalized[k] = [found, edb_ids, urls]
             else:
-                # unknown shape -> skip
                 normalized[k] = [False, [], []]
         else:
             normalized[k] = [False, [], []]
@@ -77,7 +70,7 @@ def load_exploit_cache() -> dict:
 
 
 def save_exploit_cache(cache: dict):
-    """Save updated cache to disk (atomic-ish)."""
+    """Persist exploit cache safely."""
     os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
     tmp = CACHE_FILE + ".tmp"
     try:
@@ -85,12 +78,48 @@ def save_exploit_cache(cache: dict):
             json.dump(cache, f, indent=2)
         os.replace(tmp, CACHE_FILE)
     except Exception:
-        try:
-            with open(CACHE_FILE, "w") as f:
-                json.dump(cache, f, indent=2)
-        except Exception as e:
-            log.warning(f"Failed to write exploit cache: {e}")
+        with open(CACHE_FILE, "w") as f:
+            json.dump(cache, f, indent=2)
 
+
+def get_trend_score(cve_id: str):
+    """Fetch trend data (NewsAPI + optional GitHub fallback)."""
+    news_hits = 0
+    gh_hits = 0
+    exploit_boost = 0.0
+
+    # --- NewsAPI lookup ---
+    if NEWSAPI_KEY:
+        try:
+            url = f"https://newsapi.org/v2/everything?q={cve_id}&apiKey={NEWSAPI_KEY}"
+            r = requests.get(url, timeout=8)
+            r.raise_for_status()
+            data = r.json()
+            news_hits = data.get("totalResults", 0)
+        except Exception as e:
+            log.warning(f"⚠️ NewsAPI lookup failed for {cve_id}: {e}")
+
+    # --- Optional GitHub fallback ---
+    try:
+        gh_url = f"https://github.com/search?q={cve_id}"
+        r = requests.get(gh_url, timeout=6, headers={"User-Agent": "Mozilla/5.0"})
+        if "repository results" in r.text.lower():
+            gh_hits = 1
+    except Exception:
+        pass
+
+    # --- Normalize ---
+    news_n = math.log1p(min(news_hits, NEWS_CAP)) / math.log1p(NEWS_CAP)
+    gh_n = 1.0 if gh_hits > 0 else 0.0
+    trend_raw = 0.7 * news_n + 0.3 * gh_n
+    trend_score = min(1.0, trend_raw + exploit_boost)
+
+    return round(trend_score, 3), {
+        "news_hits": news_hits,
+        "github_hits": gh_hits,
+        "exploit_boost": exploit_boost,
+        "trend_raw": round(trend_raw, 3),
+    }
 
 # -------------------------------------------------------------------
 # Main
@@ -112,49 +141,52 @@ def main():
 
     for cve in cves:
         try:
-            # --- Enrichment ---
             cvss, vendor, product = get_cvss_vendor_product(cve)
             epss = get_epss_score(cve)
             vendor = vendor or "Unknown"
             product = product or "Unknown"
             desc = f"{vendor} {product}"
 
-            # --- Exploit-DB PoC check (EDB-ID + URLs) with caching ---
+            # --- Exploit check ---
             if cve in exploit_cache:
-                # expect [found_bool, edb_ids_list, urls_list]
                 cached = exploit_cache[cve]
-                # normalization safety
                 if isinstance(cached, list) and len(cached) == 3:
                     exploit_found, exploit_edb_ids, exploit_urls = cached
                 elif isinstance(cached, list) and len(cached) == 2:
-                    # older shape: [found, urls]
                     exploit_found, exploit_urls = cached
-                    # derive edb ids from urls
                     exploit_edb_ids = []
-                    if isinstance(exploit_urls, list):
-                        import re
-
-                        for u in exploit_urls:
-                            m = re.search(r"/exploits/(\d+)", u)
-                            if m:
-                                exploit_edb_ids.append(m.group(1))
+                    for u in exploit_urls:
+                        m = re.search(r"/exploits/(\d+)", u)
+                        if m:
+                            exploit_edb_ids.append(m.group(1))
                 else:
                     exploit_found, exploit_edb_ids, exploit_urls = False, [], []
             else:
                 exploit_found, exploit_edb_ids, exploit_urls = has_exploit_poc(cve)
-                # ensure types
-                exploit_found = bool(exploit_found)
-                exploit_edb_ids = exploit_edb_ids or []
-                exploit_urls = exploit_urls or []
-                exploit_cache[cve] = [exploit_found, exploit_edb_ids, exploit_urls]
+                exploit_cache[cve] = [bool(exploit_found), exploit_edb_ids or [], exploit_urls or []]
                 updated_cache = True
 
-            # --- Context and AI Summary ---
-            ctx_mult = compute_context_fit(cve, vendor, product, desc, ctx)
+            # --- Trend analysis ---
+            trend_score, trend_breakdown = get_trend_score(cve)
+            trend_mentions = trend_breakdown.get("news_hits", 0)
+
+            # --- Context + AI summary ---
+            ctx_data = compute_context_fit(cve, vendor, product, desc, ctx)
+            ctx_mult = 1.0
+            if isinstance(ctx_data, dict) and "fit_score" in ctx_data:
+                ctx_mult = ctx_data["fit_score"]
+
             summary = summarize_cve(cve, vendor, product, desc, ctx)
 
-            # --- Scoring ---
-            aura_score = compute_aura_score(cvss, epss=epss, kev=True, ctx_mult=ctx_mult)
+            # --- Compute AURA score (external function) ---
+            aura_score = compute_aura_score(
+                cvss,
+                epss=epss,
+                kev=True,
+                ctx_mult=ctx_mult,
+                trend_score=trend_score,
+                exploit_poc=exploit_found,
+            )
 
             score_breakdown = {
                 "cvss_weight": 0.4,
@@ -165,17 +197,18 @@ def main():
                 "ai_weight": 0.05,
             }
 
-            # --- Final Record ---
             record = {
                 "cve": cve,
-                "aura_score": aura_score,
+                "aura_score": round(aura_score, 1),
                 "cvss": round(cvss or 0, 1),
                 "epss": round(epss or 0, 3),
                 "kev": True,
+                "trend_score": trend_score,
+                "trend_mentions": trend_mentions,
+                "trend_breakdown": trend_breakdown,
                 "exploit_poc": exploit_found,
                 "exploit_edb_ids": exploit_edb_ids,
                 "exploit_urls": exploit_urls,
-                "trend_mentions": 0,
                 "ai_context": 0.0,
                 "vendor": vendor,
                 "product": product,
@@ -186,13 +219,12 @@ def main():
 
             records.append(record)
             log.info(
-                f"✅ {cve} | CVSS {cvss:.1f} | EPSS {epss:.3f} | Exploit-DB: {exploit_found} | EDB IDs: {exploit_edb_ids}"
+                f"✅ {cve} | CVSS {cvss:.1f} | EPSS {epss:.3f} | Trend {trend_mentions} hits | Exploit: {exploit_found} | AURA {aura_score:.1f}"
             )
 
         except Exception as e:
             log.warning(f"⚠️ Failed to process {cve}: {e}")
 
-    # --- Save cache if updated ---
     if updated_cache:
         save_exploit_cache(exploit_cache)
         log.info(f"💾 Updated Exploit-DB cache with {len(exploit_cache)} entries")

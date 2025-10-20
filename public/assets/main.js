@@ -20,23 +20,39 @@ function renderList(data) {
     const card = document.createElement('div');
     card.className = 'card bg-gray-900 rounded-xl p-4 border border-gray-800';
 
-    // prefer the first direct EDB exploit URL; fallback to search page
+    // Prefer first direct Exploit-DB link, else fallback to search page
     const primaryExploitUrl =
       item.exploit_urls && item.exploit_urls.length
         ? item.exploit_urls[0]
         : `https://www.exploit-db.com/search?q=${item.cve}`;
 
-    // optional count if multiple exploits found
+    // Optional count if multiple exploit links found
     const exploitCount =
       item.exploit_edb_ids && item.exploit_edb_ids.length
         ? ` (${item.exploit_edb_ids.length})`
         : '';
+
+    // Fire icon badge logic for trending CVEs
+    const isTrending = item.trend_score > 0.4 || item.trend_mentions > 5;
+    const trendBadge = isTrending
+      ? `
+        <span
+          class="fire-badge text-xs bg-orange-500/60 px-2 py-1 rounded text-yellow-100 flex items-center gap-1"
+          title="🔥 Trending — Trend score: ${(item.trend_score ?? 0).toFixed(2)}, Mentions: ${item.trend_mentions}"
+        >
+          🔥 Trending
+        </span>
+      `
+      : '';
 
     card.innerHTML = `
       <div class="flex items-start justify-between gap-3">
         <div>
           <div class="flex items-center gap-2 flex-wrap">
             <h3 class="text-lg font-semibold text-cyan-400">${item.cve}</h3>
+
+            ${trendBadge}
+
             ${item.exploit_poc ? `
               <a
                 href="${primaryExploitUrl}"

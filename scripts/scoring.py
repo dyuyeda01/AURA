@@ -1,25 +1,41 @@
 # scripts/scoring.py
-"""Compute AURA composite risk score."""
+def compute_aura_score(
+    cvss: float = 0.0,
+    epss: float = 0.0,
+    kev: bool = False,
+    ctx_mult=None,
+    trend_score: float = 0.0,
+    exploit_poc: bool = False,
+) -> float:
+    """Compute unified AURA score, supporting dict or float context."""
+    weights = {
+        "cvss": 0.4,
+        "epss": 0.2,
+        "kev": 0.2,
+        "exploit": 0.1,
+        "trend": 0.05,
+        "ai": 0.05,
+    }
 
-def compute_aura_score(cvss: float, epss: float = 0.0, kev: bool = False, ctx_mult: dict | None = None) -> float:
-    """
-    Compute weighted AURA score (0–100) with optional context scaling.
-    EPSS values (0–1) are scaled to 0–100 range before weighting.
-    """
-    if ctx_mult is None:
-        ctx_mult = {k: 1.0 for k in ["cvss", "epss", "kev", "exploit", "trend", "ai"]}
+    # Extract numeric multiplier if dict provided
+    if isinstance(ctx_mult, dict):
+        ctx_mult = ctx_mult.get("fit_score", 1.0)
+    elif not isinstance(ctx_mult, (int, float)):
+        ctx_mult = 1.0
 
-    W_CVSS, W_EPSS, W_KEV, W_EXPLOIT, W_TREND, W_AI = 0.40, 0.20, 0.20, 0.10, 0.05, 0.05
-
-    cvss_0_100 = min(100.0, (cvss or 0.0) * 10.0)
-    epss_0_100 = min(100.0, (epss or 0.0) * 100.0)
+    cvss_n = min(max(cvss / 10, 0), 1)
+    epss_n = min(max(epss, 0), 1)
+    kev_n = 1.0 if kev else 0.0
+    exploit_n = 1.0 if exploit_poc else 0.0
+    trend_n = min(max(trend_score, 0), 1)
 
     score = (
-        cvss_0_100 * W_CVSS * ctx_mult["cvss"]
-        + epss_0_100 * W_EPSS * ctx_mult["epss"]
-        + (100 if kev else 0) * W_KEV * ctx_mult["kev"]
-        + 0 * W_EXPLOIT * ctx_mult["exploit"]
-        + 0 * W_TREND * ctx_mult["trend"]
-        + 0 * W_AI * ctx_mult["ai"]
+        cvss_n * weights["cvss"]
+        + epss_n * weights["epss"]
+        + kev_n * weights["kev"]
+        + exploit_n * weights["exploit"]
+        + trend_n * weights["trend"]
     )
-    return round(score, 1)
+
+    score *= ctx_mult
+    return round(score * 100, 1)
