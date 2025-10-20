@@ -1,42 +1,23 @@
-# AURA — AI Unified Risk Assessment
+# 🛰️ AURA — AI Unified Risk Assessment
 
-**AURA** is a free, serverless vulnerability intelligence prototype that fuses public data (KEV, NVD/CVSS, EPSS, exploit evidence, trend signals) into a single, **explainable risk score** and a daily **Top 10** feed.
+**AURA** is a **serverless vulnerability intelligence prototype** that aggregates and analyzes open-source risk data to deliver a single **explainable risk score** and a daily **Top 10 Threat Feed**.  
+It combines data from **CISA KEV**, **NVD/CVSS**, **EPSS**, and exploit repositories to identify and contextualize emerging vulnerabilities with AI-powered summaries.
 
-- ✅ Hosted on GitHub Pages (static frontend)
-- ✅ Automated with GitHub Actions (daily)
-- ✅ One-year JSON history with auto-prune
-- ✅ Elegant UI (dark cyber theme, Tailwind)
-- ✅ Trends page (Chart.js) and resources (Mermaid diagram)
-- 🧠 Placeholder collectors now; swap in live data later
-- 💸 Cost: ~$0.50/mo for OpenAI if you enable real summaries
+> Designed for security engineers, threat hunters, and analysts who want automated, explainable, and continuously updated vulnerability intelligence — without standing up infrastructure.
 
-## Quick Start
+---
 
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt  # (optional in future when adding live requests/openai)
-python scripts/aura_update.py
-# Open public/index.html in your browser (or enable GitHub Pages)
-```
+## 🔧 Key Features
 
-## Structure
-```
-scripts/           # collectors + orchestrator
-data/              # master + history snapshots
-public/            # static site (Top 10, trends, resources)
-.github/workflows/ # daily automation
-```
+- **Serverless & Automated** — Runs nightly via GitHub Actions; no servers or cron jobs to maintain  
+- **Live Data Fusion** — Integrates KEV, NVD, CVSS, EPSS, and exploit evidence  
+- **Explainable AI Scoring** — Generates plain-language insights with OpenAI (optional)  
+- **Versioned History** — Maintains a rolling one-year JSON archive with auto-prune  
+- **Modern UI** — Responsive Tailwind design with dark cyber aesthetic  
+- **Visual Intelligence** — Chart.js for trend analytics and Mermaid for system architecture diagrams  
+- **Cost-Effective** — ~$0.50/mo for OpenAI summaries (fully optional)
 
-## API Keys
-Do **not** commit keys. Set environment variable locally:
-```bash
-export OPENAI_API_KEY="sk-..."
-```
-In GitHub/GitLab, store it as a repo secret/variable.
+---
 
-## Swap to Live Data
-Edit the collectors in `scripts/collectors/` to call KEV/NVD/EPSS/Exploit-DB APIs.
-Update `scripts/aura_update.py` to generate OpenAI summaries (replace `fake_ai_summary`).
-
-## License
-MIT
+AURA was built to demonstrate how AI and open data can converge to produce actionable, transparent risk intelligence.
+It’s an evolving experiment in AI-assisted cyber threat awareness, automation, and explainable decision support — designed to inspire more open, automated security ecosystems.
