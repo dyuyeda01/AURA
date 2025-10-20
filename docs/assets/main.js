@@ -139,7 +139,7 @@ function renderList(data) {
 
 async function loadToday() {
   try {
-    const data = await fetchJSON('data/aura_scores.json');
+    const data = await fetchJSON('/data/aura_scores.json');
     renderList(data);
   } catch (e) {
     console.error(e);
@@ -151,7 +151,7 @@ async function loadToday() {
 async function loadByDate(dateStr) {
   if (!dateStr) return loadToday();
   try {
-    const path = `data/history/${dateStr}.json`;
+    const path = `/data/history/${dateStr}.json`;
     const data = await fetchJSON(path);
     renderList(data);
   } catch (e) {
