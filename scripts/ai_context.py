@@ -23,7 +23,7 @@ AI_KEYWORDS = {
         # Vector DBs commonly used in RAG
         "pinecone", "weaviate", "milvus", "qdrant", "chromadb",
         # Popular OSS toolchains
-        "ollama", "vllm", "ludwig", "deepspeed", "accelerate", "adobe",
+        "ollama", "vllm", "ludwig", "deepspeed", "accelerate", "vectra",
         # Notable vendors
         "hugging face", "huggingface", "stability ai",
     ],
