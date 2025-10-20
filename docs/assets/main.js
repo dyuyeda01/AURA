@@ -12,6 +12,15 @@ function riskColor(score) {
   return 'text-green-300';
 }
 
+// ✅ Detect correct base path (works for /AURA/, /aura/, or root)
+const basePath = (() => {
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  const repo = parts.length > 0 ? parts[0] : '';
+  const path = repo ? `/${repo}/` : '/';
+  console.log(`[AURA] Using basePath: ${path}`); // helpful debug
+  return path;
+})();
+
 function renderList(data) {
   const list = document.getElementById('top-list');
   list.innerHTML = '';
@@ -139,7 +148,7 @@ function renderList(data) {
 
 async function loadToday() {
   try {
-    const data = await fetchJSON('/data/aura_scores.json');
+    const data = await fetchJSON(`${basePath}data/aura_scores.json`);
     renderList(data);
   } catch (e) {
     console.error(e);
@@ -151,7 +160,7 @@ async function loadToday() {
 async function loadByDate(dateStr) {
   if (!dateStr) return loadToday();
   try {
-    const path = `/data/history/${dateStr}.json`;
+    const path = `${basePath}data/history/${dateStr}.json`;
     const data = await fetchJSON(path);
     renderList(data);
   } catch (e) {
@@ -165,4 +174,5 @@ document.getElementById('loadDateBtn')?.addEventListener('click', () => {
   loadByDate(d);
 });
 
+// Initial load
 loadToday();
