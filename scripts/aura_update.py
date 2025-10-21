@@ -28,7 +28,7 @@ OUTPUT_SCORES = "public/data/aura_scores.json"
 OUTPUT_MASTER = "public/data/aura_master.json"
 HISTORY_DIR = "public/data/history"
 CACHE_FILE = "data/cache/exploitdb.json"
-MAX_CVES = 35
+MAX_CVES = 4
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
 NEWS_CAP = 50.0  # normalization cap for trend
 
@@ -213,13 +213,16 @@ def main():
             if isinstance(ctx_data, dict) and "fit_score" in ctx_data:
                 ctx_mult = ctx_data["fit_score"]
 
-            summary = summarize_cve(cve, vendor, product, desc, ctx)
+            # 🔹 Dual summaries (analyst + CISO)
+            summaries = summarize_cve(cve, vendor, product, desc, ctx)
+            summary_analyst = summaries.get("analyst")
+            summary_ciso = summaries.get("ciso")
 
             # --- AI Context ---
             ai_context, ai_breakdown = compute_ai_context_score(
                 vendor=vendor,
                 product=product,
-                description=f"{desc} {summary}",
+                description=f"{desc} {summary_analyst or ''}",
                 references=[],
                 cpes=[],
             )
@@ -251,8 +254,9 @@ def main():
                 "ai_breakdown": ai_breakdown,
                 "vendor": vendor,
                 "product": product,
-                "summary": summary,
-                "description": summary,
+                "summary_analyst": summary_analyst,
+                "summary_ciso": summary_ciso,
+                "description": summary_analyst,
                 "news_article": news_article,  # 📰 Added
             }
 
