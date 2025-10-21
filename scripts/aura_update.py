@@ -238,6 +238,16 @@ def main():
                 ai_context=ai_context,
             )
 
+            # ✅ Add score breakdown for UI safety
+            score_breakdown = {
+                "cvss_weight": 0.4,
+                "epss_weight": 0.2,
+                "kev_weight": 0.2,
+                "exploit_weight": 0.1,
+                "trend_weight": 0.05,
+                "ai_weight": 0.05,
+            }
+
             record = {
                 "cve": cve,
                 "aura_score": round(aura_score, 1),
@@ -258,6 +268,7 @@ def main():
                 "summary_ciso": summary_ciso,
                 "description": summary_analyst,
                 "news_article": news_article,  # 📰 Added
+                "score_breakdown": score_breakdown,  # ✅ Added safely
             }
 
             records.append(record)
