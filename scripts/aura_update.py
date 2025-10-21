@@ -26,7 +26,7 @@ OUTPUT_SCORES = "public/data/aura_scores.json"
 OUTPUT_MASTER = "public/data/aura_master.json"
 HISTORY_DIR = "public/data/history"
 CACHE_FILE = "data/cache/exploitdb.json"
-MAX_CVES = 30  # ✅ pull 100 CVEs for scoring
+MAX_CVES = 3  # ✅ pull 100 CVEs for scoring
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
 NEWS_CAP = 50.0  # normalization cap for trend
 
