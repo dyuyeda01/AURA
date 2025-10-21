@@ -170,10 +170,28 @@ function renderList(data) {
   });
 }
 
+// ✅ New helper: populate Analyst + CISO cards
+function renderPrompts(data) {
+  if (!data || !data.length) return;
+
+  // Use first item as representative summary (simple version)
+  const analystPrompt =
+    data[0]?.summary_analyst || "No analyst notes available.";
+  const cisoPrompt =
+    data[0]?.summary_ciso || "No CISO notes available.";
+
+  const analystEl = document.getElementById("analyst-prompt");
+  const cisoEl = document.getElementById("ciso-prompt");
+
+  if (analystEl) analystEl.textContent = analystPrompt;
+  if (cisoEl) cisoEl.textContent = cisoPrompt;
+}
+
 async function loadToday() {
   try {
     const data = await fetchJSON(`${basePath}data/aura_scores.json`);
     renderList(data);
+    renderPrompts(data); // ✅ populate new UI section
   } catch (e) {
     console.error(e);
     document.getElementById("top-list").innerHTML =
@@ -187,6 +205,7 @@ async function loadByDate(dateStr) {
     const path = `${basePath}data/history/${dateStr}.json`;
     const data = await fetchJSON(path);
     renderList(data);
+    renderPrompts(data); // ✅ populate new UI section
   } catch (e) {
     document.getElementById("top-list").innerHTML =
       '<div class="text-sm text-yellow-300">No snapshot for that date.</div>';

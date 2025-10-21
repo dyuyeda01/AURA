@@ -39,6 +39,58 @@
 
     <div id="top-list" class="grid md:grid-cols-2 gap-4"></div>
 
+    <!-- ============================= -->
+    <!-- Intelligence Feed & Notes UI -->
+    <!-- ============================= -->
+    <div class="flex items-center justify-center mb-8 mt-12">
+      <div class="relative flex items-center gap-3 px-5 py-2 bg-slate-900/70 rounded-full border border-slate-700 shadow-inner">
+        <span class="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-amber-400 to-cyan-500 opacity-30 blur-md animate-pulse"></span>
+        <div class="relative flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-cyan-300 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3" />
+            <circle cx="12" cy="12" r="9" stroke-opacity="0.6" />
+          </svg>
+          <span class="text-xs font-semibold tracking-widest text-cyan-200 uppercase">
+            Intelligence Feed Active
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 my-10">
+      <!-- Analyst Intel Brief -->
+      <div class="bg-gradient-to-br from-cyan-950/80 to-slate-900 border-l-4 border-cyan-400 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/10 transition">
+        <div class="flex items-center gap-3 mb-2 group">
+          <!-- 🛰️ Radar Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-400 group-hover:animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9" stroke-opacity="0.6" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12L19 5m-7 7l3 6" />
+          </svg>
+          <h3 class="text-xl font-semibold text-cyan-300 tracking-wide">Analyst Intel Brief</h3>
+        </div>
+        <p class="text-xs text-cyan-400/70 italic mb-4">Operational insights from the analyst’s perspective</p>
+        <p id="analyst-prompt" class="text-slate-300 leading-relaxed text-sm"></p>
+      </div>
+
+      <!-- CISO Strategic Notes -->
+      <div class="bg-gradient-to-br from-amber-950/80 to-slate-900 border-l-4 border-amber-400 rounded-2xl p-6 shadow-lg hover:shadow-amber-400/10 transition">
+        <div class="flex items-center gap-3 mb-2 group">
+          <!-- 🧠 Brain Circuit Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-amber-400 group-hover:animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12a4 4 0 114 4v-2a2 2 0 002-2v-1a2 2 0 00-2-2V7a4 4 0 11-4 4z" />
+            <circle cx="6" cy="6" r="1" />
+            <circle cx="18" cy="18" r="1" />
+          </svg>
+          <h3 class="text-xl font-semibold text-amber-300 tracking-wide">CISO Strategic Notes</h3>
+        </div>
+        <p class="text-xs text-amber-400/70 italic mb-4">Executive summary and leadership-level perspective</p>
+        <p id="ciso-prompt" class="text-slate-300 leading-relaxed text-sm"></p>
+      </div>
+    </div>
+    <!-- ============================= -->
+    <!-- End Intelligence Feed Section -->
+    <!-- ============================= -->
+
     <div class="mt-10 flex gap-4 text-sm">
       <a href="trends.html" class="underline text-cyan-300 hover:text-cyan-200">Trends & Analytics</a>
       <a href="resources.html" class="underline text-cyan-300 hover:text-cyan-200">How AURA Works</a>
