@@ -25,24 +25,11 @@
   </header>
 
   <main class="max-w-6xl mx-auto px-4">
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
-      <div>
-        <h2 class="text-xl font-semibold">Today’s Top 10</h2>
-        <p class="text-sm text-gray-400">Fused from KEV, EPSS, NVD, exploit data, and AI context.</p>
-      </div>
-      <div class="flex items-center gap-3">
-        <label class="text-sm text-gray-400">View by date:</label>
-        <input id="datePicker" type="date" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-sm">
-        <button id="loadDateBtn" class="bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-200 border border-cyan-400/40 px-3 py-2 rounded text-sm">Load</button>
-      </div>
-    </div>
-
-    <div id="top-list" class="grid md:grid-cols-2 gap-4"></div>
 
     <!-- ============================= -->
     <!-- Intelligence Feed & Notes UI -->
     <!-- ============================= -->
-    <div class="flex items-center justify-center mb-8 mt-12">
+    <div class="flex items-center justify-center mb-8">
       <div class="relative flex items-center gap-3 px-5 py-2 bg-slate-900/70 rounded-full border border-slate-700 shadow-inner">
         <span class="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-amber-400 to-cyan-500 opacity-30 blur-md animate-pulse"></span>
         <div class="relative flex items-center gap-2">
@@ -68,7 +55,7 @@
           </svg>
           <h3 class="text-xl font-semibold text-cyan-300 tracking-wide">Analyst Intel Brief</h3>
         </div>
-        <p class="text-xs text-cyan-400/70 italic mb-4">Operational insights from the analyst’s perspective</p>
+        <p class="text-xs text-cyan-400/70 italic mb-4">Operational insights across today’s vulnerabilities</p>
         <p id="analyst-prompt" class="text-slate-300 leading-relaxed text-sm"></p>
       </div>
 
@@ -83,13 +70,28 @@
           </svg>
           <h3 class="text-xl font-semibold text-amber-300 tracking-wide">CISO Strategic Notes</h3>
         </div>
-        <p class="text-xs text-amber-400/70 italic mb-4">Executive summary and leadership-level perspective</p>
+        <p class="text-xs text-amber-400/70 italic mb-4">Executive-level perspective on today’s threat landscape</p>
         <p id="ciso-prompt" class="text-slate-300 leading-relaxed text-sm"></p>
       </div>
     </div>
     <!-- ============================= -->
     <!-- End Intelligence Feed Section -->
     <!-- ============================= -->
+
+    <!-- Today’s Top 10 -->
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+      <div>
+        <h2 class="text-xl font-semibold">Today’s Top 10</h2>
+        <p class="text-sm text-gray-400">Fused from KEV, EPSS, NVD, exploit data, and AI context.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <label class="text-sm text-gray-400">View by date:</label>
+        <input id="datePicker" type="date" class="bg-gray-900 border border-gray-700 rounded px-3 py-2 text-sm">
+        <button id="loadDateBtn" class="bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-200 border border-cyan-400/40 px-3 py-2 rounded text-sm">Load</button>
+      </div>
+    </div>
+
+    <div id="top-list" class="grid md:grid-cols-2 gap-4"></div>
 
     <div class="mt-10 flex gap-4 text-sm">
       <a href="trends.html" class="underline text-cyan-300 hover:text-cyan-200">Trends & Analytics</a>

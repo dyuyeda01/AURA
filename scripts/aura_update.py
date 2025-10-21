@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """AURA update orchestrator — pulls KEV CVEs, enriches from NVD, EPSS, Exploit-DB, NewsAPI (Trend & Articles),
-AI Context, and computes unified scores.
+AI Context, and computes unified scores, then generates daily analyst & CISO summaries.
 """
 
 import os
@@ -11,13 +11,14 @@ import datetime as dt
 import logging
 from typing import Any, Optional
 import requests
+from openai import OpenAI
 
 from scripts.kev import fetch_top_kev_cves
 from scripts.nvd import get_cvss_vendor_product
 from scripts.epss import get_epss_score
 from scripts.context import load_context, compute_context_fit
 from scripts.ai_summary import summarize_cve
-from scripts.exploit_poc import has_exploit_poc  # returns (has_poc, edb_ids, urls)
+from scripts.exploit_poc import has_exploit_poc
 from scripts.scoring import compute_aura_score
 from scripts.ai_context import compute_ai_context_score  # ✅ NEW
 
@@ -30,12 +31,23 @@ HISTORY_DIR = "public/data/history"
 CACHE_FILE = "data/cache/exploitdb.json"
 MAX_CVES = 40
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 NEWS_CAP = 50.0  # normalization cap for trend
 
 logging.basicConfig(
     format="[%(asctime)s] %(message)s", level=logging.INFO, datefmt="%Y-%m-%d %H:%M:%S"
 )
 log = logging.getLogger(__name__)
+
+client = None
+if OPENAI_API_KEY:
+    try:
+        client = OpenAI(api_key=OPENAI_API_KEY)
+        log.info("✅ OpenAI client initialized for daily summaries")
+    except Exception as e:
+        log.warning(f"⚠️ Failed to initialize OpenAI client: {e}")
+else:
+    log.warning("⚠️ No OPENAI_API_KEY found — summaries will be skipped")
 
 # -------------------------------------------------------------------
 # Helpers
@@ -153,6 +165,54 @@ def get_trend_score(cve_id: str):
     }
 
 # -------------------------------------------------------------------
+# Daily Summary Generator
+# -------------------------------------------------------------------
+def generate_daily_summaries(top_records: list[dict]) -> dict[str, str]:
+    """Use OpenAI to summarize the daily top 10 CVEs into Analyst and CISO notes."""
+    if not client:
+        return {"analyst": "LLM summarization skipped (no key).", "ciso": "LLM summarization skipped (no key)."}
+
+    try:
+        # Prepare structured context
+        summary_input = "\n".join(
+            [f"{r['cve']} ({r['vendor']} {r['product']}): {r.get('summary_analyst', '')}" for r in top_records]
+        )
+
+        analyst_prompt = (
+            "You are a cybersecurity analyst. Write a concise 2–4 sentence daily intelligence brief "
+            "summarizing key patterns, exploitation trends, and noteworthy vulnerabilities observed today.\n\n"
+            f"Today's Top CVEs:\n{summary_input}"
+        )
+
+        ciso_prompt = (
+            "You are a Chief Information Security Officer. Provide a 2–4 sentence executive-level summary "
+            "of today's vulnerability landscape focusing on business impact, exposure risk, and recommended focus areas.\n\n"
+            f"Today's Top CVEs:\n{summary_input}"
+        )
+
+        analyst_resp = client.responses.create(
+            model="gpt-4.1-mini",
+            input=analyst_prompt,
+            temperature=0.5,
+        )
+        ciso_resp = client.responses.create(
+            model="gpt-4.1-mini",
+            input=ciso_prompt,
+            temperature=0.4,
+        )
+
+        analyst_text = analyst_resp.output_text.strip()
+        ciso_text = ciso_resp.output_text.strip()
+
+        log.info("🧠 Generated daily Analyst + CISO summaries via OpenAI")
+        return {"analyst": analyst_text, "ciso": ciso_text}
+
+    except Exception as e:
+        log.warning(f"⚠️ Failed to generate daily summaries: {e}")
+        return {"analyst": "Summary generation error.", "ciso": "Summary generation error."}
+
+
+# -------------------------------------------------------------------
 # Main
 # -------------------------------------------------------------------
 def main():
@@ -172,14 +232,13 @@ def main():
 
     for cve in cves:
         try:
-            # --- NVD/EPSS enrichment ---
             cvss, vendor, product = get_cvss_vendor_product(cve)
             epss = get_epss_score(cve)
             vendor = vendor or "Unknown"
             product = product or "Unknown"
             desc = f"{vendor} {product}"
 
-            # --- Exploit-DB check (cached) ---
+            # Exploit-DB
             if cve in exploit_cache:
                 cached = exploit_cache[cve]
                 if isinstance(cached, list) and len(cached) == 3:
@@ -198,27 +257,22 @@ def main():
                 exploit_cache[cve] = [bool(exploit_found), exploit_edb_ids or [], exploit_urls or []]
                 updated_cache = True
 
-            # --- Trend analysis ---
+            # Trend
             trend_score, trend_breakdown = get_trend_score(cve)
             trend_mentions = trend_breakdown.get("news_hits", 0)
 
-            # 📰 News article enrichment
             news_article = get_article_for_cve(cve)
             if news_article:
                 log.info(f"📰 {cve}: {news_article['source']} — {news_article['title'][:70]}")
 
-            # --- Context fit & AI summary ---
+            # Context + Summaries
             ctx_data = compute_context_fit(cve, vendor, product, desc, ctx)
-            ctx_mult = 1.0
-            if isinstance(ctx_data, dict) and "fit_score" in ctx_data:
-                ctx_mult = ctx_data["fit_score"]
-
-            # 🔹 Dual summaries (analyst + CISO)
+            ctx_mult = ctx_data["fit_score"] if isinstance(ctx_data, dict) and "fit_score" in ctx_data else 1.0
             summaries = summarize_cve(cve, vendor, product, desc, ctx)
             summary_analyst = summaries.get("analyst")
             summary_ciso = summaries.get("ciso")
 
-            # --- AI Context ---
+            # AI Context
             ai_context, ai_breakdown = compute_ai_context_score(
                 vendor=vendor,
                 product=product,
@@ -227,7 +281,6 @@ def main():
                 cpes=[],
             )
 
-            # --- Score ---
             aura_score = compute_aura_score(
                 cvss,
                 epss=epss,
@@ -238,7 +291,6 @@ def main():
                 ai_context=ai_context,
             )
 
-            # ✅ Add score breakdown for UI safety
             score_breakdown = {
                 "cvss_weight": 0.4,
                 "epss_weight": 0.2,
@@ -267,8 +319,8 @@ def main():
                 "summary_analyst": summary_analyst,
                 "summary_ciso": summary_ciso,
                 "description": summary_analyst,
-                "news_article": news_article,  # 📰 Added
-                "score_breakdown": score_breakdown,  # ✅ Added safely
+                "news_article": news_article,
+                "score_breakdown": score_breakdown,
             }
 
             records.append(record)
@@ -293,6 +345,16 @@ def main():
         log.info(f"📊 AURA Score Range: {min_score} – {max_score}")
     log.info(f"🏆 Selected Top {len(top_records)} CVEs by AURA score")
 
+    # 🧠 Generate daily Analyst/CISO summaries via OpenAI
+    daily_summaries = generate_daily_summaries(top_records)
+
+    output_data = {
+        "generated": dt.datetime.utcnow().isoformat(),
+        "daily_analyst_summary": daily_summaries["analyst"],
+        "daily_ciso_summary": daily_summaries["ciso"],
+        "cves": top_records,
+    }
+
     os.makedirs(os.path.dirname(OUTPUT_SCORES), exist_ok=True)
     os.makedirs(HISTORY_DIR, exist_ok=True)
     os.makedirs(os.path.dirname(OUTPUT_MASTER), exist_ok=True)
@@ -300,7 +362,7 @@ def main():
     today = dt.date.today().isoformat()
     try:
         with open(OUTPUT_SCORES, "w") as f:
-            json.dump(top_records, f, indent=2)
+            json.dump(output_data, f, indent=2)
         with open(OUTPUT_MASTER, "w") as f:
             json.dump({"date": today, "records": records}, f, indent=2)
         with open(os.path.join(HISTORY_DIR, f"{today}.json"), "w") as f:
@@ -309,7 +371,7 @@ def main():
         log.error(f"Failed to write output files: {e}")
         return
 
-    log.info(f"✅ Saved Top {len(top_records)} CVEs to {OUTPUT_SCORES}")
+    log.info(f"✅ Saved Top {len(top_records)} CVEs + daily summaries to {OUTPUT_SCORES}")
     log.info(f"📅 History snapshot written to {HISTORY_DIR}/{today}.json")
 
 

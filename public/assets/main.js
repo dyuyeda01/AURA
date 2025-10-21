@@ -170,15 +170,27 @@ function renderList(data) {
   });
 }
 
-// ✅ New helper: populate Analyst + CISO cards
+// ✅ Updated helper: read daily summaries from JSON or fall back
 function renderPrompts(data) {
-  if (!data || !data.length) return;
+  let analystPrompt = "No analyst notes available.";
+  let cisoPrompt = "No CISO notes available.";
 
-  // Use first item as representative summary (simple version)
-  const analystPrompt =
-    data[0]?.summary_analyst || "No analyst notes available.";
-  const cisoPrompt =
-    data[0]?.summary_ciso || "No CISO notes available.";
+  if (Array.isArray(data)) {
+    // 🧩 Legacy array format
+    const analystSummaries = data.map(d => d.summary_analyst || d.summary).filter(Boolean);
+    const cisoSummaries = data.map(d => d.summary_ciso).filter(Boolean);
+
+    analystPrompt = analystSummaries.length
+      ? analystSummaries.join(" ").slice(0, 1200) + "..."
+      : analystPrompt;
+    cisoPrompt = cisoSummaries.length
+      ? cisoSummaries.join(" ").slice(0, 1200) + "..."
+      : cisoPrompt;
+  } else {
+    // 🧠 New object format (preferred)
+    analystPrompt = data.daily_analyst_summary || analystPrompt;
+    cisoPrompt = data.daily_ciso_summary || cisoPrompt;
+  }
 
   const analystEl = document.getElementById("analyst-prompt");
   const cisoEl = document.getElementById("ciso-prompt");
@@ -190,8 +202,9 @@ function renderPrompts(data) {
 async function loadToday() {
   try {
     const data = await fetchJSON(`${basePath}data/aura_scores.json`);
-    renderList(data);
-    renderPrompts(data); // ✅ populate new UI section
+    const cves = Array.isArray(data) ? data : data.cves || [];
+    renderList(cves);
+    renderPrompts(data);
   } catch (e) {
     console.error(e);
     document.getElementById("top-list").innerHTML =
@@ -204,8 +217,9 @@ async function loadByDate(dateStr) {
   try {
     const path = `${basePath}data/history/${dateStr}.json`;
     const data = await fetchJSON(path);
-    renderList(data);
-    renderPrompts(data); // ✅ populate new UI section
+    const cves = Array.isArray(data) ? data : data.cves || [];
+    renderList(cves);
+    renderPrompts(data);
   } catch (e) {
     document.getElementById("top-list").innerHTML =
       '<div class="text-sm text-yellow-300">No snapshot for that date.</div>';
