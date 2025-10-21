@@ -94,6 +94,18 @@ function renderList(data) {
 
       <p class="mt-2 text-sm text-gray-200">${item.summary}</p>
 
+      ${
+        // 📰 News article section — added cleanly
+        item.news_article && item.news_article.url
+          ? `
+        <a href="${item.news_article.url}" target="_blank" rel="noopener noreferrer"
+           class="block mt-2 text-xs text-cyan-300 hover:text-cyan-100 underline decoration-dotted"
+           title="${item.news_article.source || "News"}">
+          📰 ${item.news_article.title || "View related article"} (${item.news_article.source || "News"})
+        </a>`
+          : ""
+      }
+
       <details class="mt-3 bg-gray-950/60 rounded p-3">
         <summary class="cursor-pointer text-sm text-cyan-300">Scoring breakdown</summary>
         <div class="grid grid-cols-2 gap-2 text-xs text-gray-300 mt-2">
