@@ -80,22 +80,31 @@ function renderList(data) {
                 : ""
             }
           </div>
-          <p class="text-sm text-gray-400">${item.vendor ?? ""} ${
-      item.product ?? ""
-    }</p>
+          <p class="text-sm text-gray-400">${item.vendor ?? ""} ${item.product ?? ""}</p>
         </div>
         <div class="text-right">
           <div class="text-xs text-gray-500">AURA Score</div>
-          <div class="text-2xl font-bold ${riskColor(item.aura_score)}">${
-      item.aura_score
-    }</div>
+          <div class="text-2xl font-bold ${riskColor(item.aura_score)}">${item.aura_score}</div>
         </div>
       </div>
 
-      <p class="mt-2 text-sm text-gray-200">${item.summary}</p>
+      <!-- 🧠 Dual summaries -->
+      ${
+        item.summary_analyst
+          ? `<p class="mt-2 text-sm text-gray-200">${item.summary_analyst}</p>`
+          : item.summary
+          ? `<p class="mt-2 text-sm text-gray-200">${item.summary}</p>`
+          : ""
+      }
 
       ${
-        // 📰 News article section — added cleanly
+        item.summary_ciso
+          ? `<p class="mt-1 text-xs italic text-gray-400">💼 ${item.summary_ciso}</p>`
+          : ""
+      }
+
+      ${
+        // 📰 News article section
         item.news_article && item.news_article.url
           ? `
         <a href="${item.news_article.url}" target="_blank" rel="noopener noreferrer"
@@ -109,24 +118,12 @@ function renderList(data) {
       <details class="mt-3 bg-gray-950/60 rounded p-3">
         <summary class="cursor-pointer text-sm text-cyan-300">Scoring breakdown</summary>
         <div class="grid grid-cols-2 gap-2 text-xs text-gray-300 mt-2">
-          <div>CVSS: ${(item.cvss ?? 0).toFixed(1)} (w ${
-      item.score_breakdown.cvss_weight
-    })</div>
-          <div>EPSS: ${(item.epss ?? 0).toFixed(2)} (w ${
-      item.score_breakdown.epss_weight
-    })</div>
-          <div>KEV: ${item.kev ? "Yes" : "No"} (w ${
-      item.score_breakdown.kev_weight
-    })</div>
-          <div>Exploit PoC: ${item.exploit_poc ? "Yes" : "No"} (w ${
-      item.score_breakdown.exploit_weight
-    })</div>
-          <div>Trend: ${item.trend_mentions} (w ${
-      item.score_breakdown.trend_weight
-    })</div>
-          <div>AI Context: ${(item.ai_context ?? 0).toFixed(2)} (w ${
-      item.score_breakdown.ai_weight
-    })</div>
+          <div>CVSS: ${(item.cvss ?? 0).toFixed(1)} (w ${item.score_breakdown?.cvss_weight ?? "?"})</div>
+          <div>EPSS: ${(item.epss ?? 0).toFixed(2)} (w ${item.score_breakdown?.epss_weight ?? "?"})</div>
+          <div>KEV: ${item.kev ? "Yes" : "No"} (w ${item.score_breakdown?.kev_weight ?? "?"})</div>
+          <div>Exploit PoC: ${item.exploit_poc ? "Yes" : "No"} (w ${item.score_breakdown?.exploit_weight ?? "?"})</div>
+          <div>Trend: ${item.trend_mentions} (w ${item.score_breakdown?.trend_weight ?? "?"})</div>
+          <div>AI Context: ${(item.ai_context ?? 0).toFixed(2)} (w ${item.score_breakdown?.ai_weight ?? "?"})</div>
         </div>
 
         ${
