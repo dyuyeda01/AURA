@@ -1,69 +1,17 @@
 [
   {
-    "cve": "CVE-2025-61882",
-    "aura_score": 89.2,
-    "cvss": 9.8,
-    "epss": 0.823,
-    "kev": true,
-    "trend_score": 0.7,
-    "trend_mentions": 97,
-    "trend_breakdown": {
-      "news_hits": 97,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.7
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-61882"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Oracle",
-    "product": "Concurrent Processing",
-    "summary_analyst": "CVE-2025-61882 is a vulnerability in Oracle Concurrent Processing that allows an authenticated attacker to exploit improper input validation, potentially resulting in unauthorized access to sensitive data with a high severity impact.",
-    "summary_ciso": "CVE-2025-61882 poses a significant business risk to Oracle Concurrent Processing environments, as it can lead to unauthorized access and data breaches, requiring immediate attention to mitigate potential exposure and protect sensitive organizational information.",
-    "description": "CVE-2025-61882 is a vulnerability in Oracle Concurrent Processing that allows an authenticated attacker to exploit improper input validation, potentially resulting in unauthorized access to sensitive data with a high severity impact.",
-    "news_article": {
-      "title": "Oracle Rushes Patch for CVE-2025-61882 After Cl0p Exploited It in Data Theft Attacks",
-      "url": "https://thehackernews.com/2025/10/oracle-rushes-patch-for-cve-2025-61882.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
     "cve": "CVE-2025-2747",
-    "aura_score": 86.8,
+    "aura_score": 85.8,
     "cvss": 9.8,
     "epss": 0.832,
     "kev": true,
-    "trend_score": 0.196,
-    "trend_mentions": 2,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 2,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.196
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -86,14 +34,10 @@
     },
     "vendor": "Kentico",
     "product": "Xperience",
-    "summary_analyst": "CVE-2025-2747 affects Kentico Xperience due to improper input validation that allows remote attackers to execute arbitrary code, resulting in a critical severity impact on application integrity.",
-    "summary_ciso": "CVE-2025-2747 presents an urgent risk to Kentico Xperience that could lead to unauthorized data access and potential reputation damage, necessitating immediate mitigation to protect sensitive business information.",
-    "description": "CVE-2025-2747 affects Kentico Xperience due to improper input validation that allows remote attackers to execute arbitrary code, resulting in a critical severity impact on application integrity.",
-    "news_article": {
-      "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-      "source": "Cisa.gov"
-    },
+    "summary_analyst": "CVE-2025-2747 is a vulnerability in Kentico Xperience that allows remote attackers to execute arbitrary code through improper input validation in the web application component, resulting in a critical impact on system confidentiality, integrity, and availability.",
+    "summary_ciso": "CVE-2025-2747 poses a critical risk to Kentico Xperience, potentially exposing sensitive customer data, and necessitating immediate remediation to prevent data breaches and associated reputational damage.",
+    "description": "CVE-2025-2747 is a vulnerability in Kentico Xperience that allows remote attackers to execute arbitrary code through improper input validation in the web application component, resulting in a critical impact on system confidentiality, integrity, and availability.",
+    "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -104,75 +48,23 @@
     }
   },
   {
-    "cve": "CVE-2025-10035",
-    "aura_score": 85.6,
-    "cvss": 10.0,
-    "epss": 0.618,
-    "kev": true,
-    "trend_score": 0.652,
-    "trend_mentions": 38,
-    "trend_breakdown": {
-      "news_hits": 38,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.652
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-10035"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Fortra",
-    "product": "Goanywhere Managed File Transfer",
-    "summary_analyst": "CVE-2025-10035 is a critical vulnerability in Fortra Goanywhere Managed File Transfer that allows remote attackers to execute arbitrary code via crafted requests due to improper input validation, potentially leading to complete system compromise.",
-    "summary_ciso": "CVE-2025-10035 poses a critical risk to Fortra GoAnywhere Managed File Transfer, potentially exposing sensitive data to unauthorized access, necessitating immediate action to mitigate potential financial and reputational damage.",
-    "description": "CVE-2025-10035 is a critical vulnerability in Fortra Goanywhere Managed File Transfer that allows remote attackers to execute arbitrary code via crafted requests due to improper input validation, potentially leading to complete system compromise.",
-    "news_article": {
-      "title": "Is This Bad? This Feels Bad. (Fortra GoAnywhere CVE-2025-10035)",
-      "url": "https://labs.watchtowr.com/is-this-bad-this-feels-bad-goanywhere-cve-2025-10035/",
-      "source": "Watchtowr.com"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-57819",
-    "aura_score": 83.6,
+    "cve": "CVE-2025-61882",
+    "aura_score": 85.7,
     "cvss": 9.8,
-    "epss": 0.669,
+    "epss": 0.823,
     "kev": true,
-    "trend_score": 0.196,
-    "trend_mentions": 2,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 2,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.196
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
     "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-57819"
+      "https://www.exploit-db.com/search?q=CVE-2025-61882"
     ],
     "ai_context": 0.0,
     "ai_breakdown": {
@@ -188,68 +80,12 @@
         "low": 0
       }
     },
-    "vendor": "Sangoma",
-    "product": "Freepbx",
-    "summary_analyst": "CVE-2025-57819 is a vulnerability in Sangoma FreePBX that allows remote attackers to execute arbitrary code via crafted payloads targeting the authentication mechanism, leading to potential severe impacts on system integrity and confidentiality.",
-    "summary_ciso": "CVE-2025-57819, affecting Sangoma FreePBX, poses an urgent risk of unauthorized access to sensitive communications, which could lead to significant business disruptions and potential financial loss if not promptly mitigated.",
-    "description": "CVE-2025-57819 is a vulnerability in Sangoma FreePBX that allows remote attackers to execute arbitrary code via crafted payloads targeting the authentication mechanism, leading to potential severe impacts on system integrity and confidentiality.",
-    "news_article": {
-      "title": "Exploit Against FreePBX (CVE-2025-57819) with code execution., (Tue, Oct 7th)",
-      "url": "https://isc.sans.edu/diary/32350",
-      "source": "Sans.edu"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-54253",
-    "aura_score": 82.9,
-    "cvss": 10.0,
-    "epss": 0.541,
-    "kev": true,
-    "trend_score": 0.41,
-    "trend_mentions": 9,
-    "trend_breakdown": {
-      "news_hits": 9,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.41
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-54253"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Adobe",
-    "product": "Experience Manager Forms",
-    "summary_analyst": "CVE-2025-54253 affects Adobe Experience Manager Forms by allowing an attacker to exploit a vulnerability in component permissions, which may lead to unauthorized access and data exposure, resulting in a high severity impact.",
-    "summary_ciso": "CVE-2025-54253 exposes Adobe Experience Manager Forms to potential data breaches, increasing the urgency for mitigation due to the critical risk of sensitive information leakage that could severely impact customer trust and compliance.",
-    "description": "CVE-2025-54253 affects Adobe Experience Manager Forms by allowing an attacker to exploit a vulnerability in component permissions, which may lead to unauthorized access and data exposure, resulting in a high severity impact.",
-    "news_article": {
-      "title": "CISA Flags Adobe AEM Flaw with Perfect 10.0 Score \u2014 Already Under Active Attack",
-      "url": "https://thehackernews.com/2025/10/cisa-flags-adobe-aem-flaw-with-perfect.html",
-      "source": "Internet"
-    },
+    "vendor": "Oracle",
+    "product": "Concurrent Processing",
+    "summary_analyst": "CVE-2025-61882 is a vulnerability in Oracle Concurrent Processing that allows remote attackers to exploit improper access controls, potentially leading to unauthorized data exposure with a high impact severity.",
+    "summary_ciso": "CVE-2025-61882 poses a significant risk to Oracle Concurrent Processing, potentially leading to unauthorized access and data breaches, thus requiring immediate attention to mitigate exposure and protect sensitive business information.",
+    "description": "CVE-2025-61882 is a vulnerability in Oracle Concurrent Processing that allows remote attackers to exploit improper access controls, potentially leading to unauthorized data exposure with a high impact severity.",
+    "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -261,17 +97,17 @@
   },
   {
     "cve": "CVE-2025-2746",
-    "aura_score": 82.0,
+    "aura_score": 81.0,
     "cvss": 9.8,
     "epss": 0.592,
     "kev": true,
-    "trend_score": 0.196,
-    "trend_mentions": 2,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 2,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.196
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -294,61 +130,9 @@
     },
     "vendor": "Kentico",
     "product": "Xperience",
-    "summary_analyst": "CVE-2025-2746 affects Kentico Xperience by allowing unauthenticated attackers to exploit an improper input validation vulnerability, leading to remote code execution with a high severity impact.",
-    "summary_ciso": "CVE-2025-2746 poses a significant business risk to Kentico Xperience users, exposing sensitive data and critical systems to potential breaches, necessitating immediate mitigation to safeguard against exploitation.",
-    "description": "CVE-2025-2746 affects Kentico Xperience by allowing unauthenticated attackers to exploit an improper input validation vulnerability, leading to remote code execution with a high severity impact.",
-    "news_article": {
-      "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-      "source": "Cisa.gov"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-5086",
-    "aura_score": 79.6,
-    "cvss": 9.0,
-    "epss": 0.679,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-5086"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "3Ds",
-    "product": "Delmia Apriso",
-    "summary_analyst": "CVE-2025-5086 affects 3Ds Delmia Apriso by allowing an attacker to execute arbitrary code through improper input validation in the affected component, leading to a high impact severity classification due to potential system compromise.",
-    "summary_ciso": "CVE-2025-5086 poses a critical threat to 3Ds Delmia Apriso, exposing sensitive operational data and processes to potential exploitation, which requires immediate remediation to safeguard our business continuity and protect against significant financial and reputational damage.",
-    "description": "CVE-2025-5086 affects 3Ds Delmia Apriso by allowing an attacker to execute arbitrary code through improper input validation in the affected component, leading to a high impact severity classification due to potential system compromise.",
+    "summary_analyst": "CVE-2025-2746 is a high-severity vulnerability in Kentico Xperience that allows remote attackers to execute arbitrary code through improper input validation in the file upload component.",
+    "summary_ciso": "CVE-2025-2746 poses a significant security risk to Kentico Xperience, potentially exposing sensitive company data and operations to exploitation, necessitating immediate remediation to protect our business integrity and reputation.",
+    "description": "CVE-2025-2746 is a high-severity vulnerability in Kentico Xperience that allows remote attackers to execute arbitrary code through improper input validation in the file upload component.",
     "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
@@ -360,379 +144,23 @@
     }
   },
   {
-    "cve": "CVE-2025-4008",
-    "aura_score": 76.7,
-    "cvss": 8.8,
-    "epss": 0.476,
-    "kev": true,
-    "trend_score": 0.391,
-    "trend_mentions": 8,
-    "trend_breakdown": {
-      "news_hits": 8,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.391
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-4008"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Smartbedded",
-    "product": "Meteobridge Vm",
-    "summary_analyst": "CVE-2025-4008 is a critical vulnerability in Smartbedded Meteobridge Vm that allows remote attackers to execute arbitrary code due to improper input validation, potentially compromising the affected system's integrity and confidentiality.",
-    "summary_ciso": "CVE-2025-4008 exposes Smartbedded Meteobridge Vm to potential unauthorized remote access, which could compromise sensitive operational data, requiring immediate action to protect against significant business disruptions and data breaches.",
-    "description": "CVE-2025-4008 is a critical vulnerability in Smartbedded Meteobridge Vm that allows remote attackers to execute arbitrary code due to improper input validation, potentially compromising the affected system's integrity and confidentiality.",
-    "news_article": {
-      "title": "CISA Flags Meteobridge CVE-2025-4008 Flaw as Actively Exploited in the Wild",
-      "url": "https://thehackernews.com/2025/10/cisa-flags-meteobridge-cve-2025-4008.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2023-2533",
-    "aura_score": 75.6,
-    "cvss": 8.4,
-    "epss": 0.602,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2023-2533"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Papercut",
-    "product": "Papercut Mf",
-    "summary_analyst": "CVE-2023-2533 is a vulnerability in Papercut MF that can be exploited by an attacker to execute arbitrary code with elevated privileges, potentially leading to a complete system compromise.",
-    "summary_ciso": "CVE-2023-2533 poses a critical security risk to Papercut MF, allowing potential unauthorized access to sensitive data, which could result in significant business disruptions and reputational damage if not urgently mitigated.",
-    "description": "CVE-2023-2533 is a vulnerability in Papercut MF that can be exploited by an attacker to execute arbitrary code with elevated privileges, potentially leading to a complete system compromise.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2024-8069",
-    "aura_score": 74.3,
-    "cvss": 8.0,
-    "epss": 0.615,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2024-8069"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Citrix",
-    "product": "Session Recording",
-    "summary_analyst": "CVE-2024-8069 affects Citrix Session Recording by allowing an unauthenticated attacker to exploit a flaw in the system's session handling, resulting in potential unauthorized access to recorded session data, which has a high impact severity.",
-    "summary_ciso": "CVE-2024-8069 poses a significant risk to Citrix Session Recording, potentially exposing sensitive session data and demanding immediate mitigation to safeguard organizational confidentiality and compliance.",
-    "description": "CVE-2024-8069 affects Citrix Session Recording by allowing an unauthenticated attacker to exploit a flaw in the system's session handling, resulting in potential unauthorized access to recorded session data, which has a high impact severity.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-32463",
-    "aura_score": 74.1,
-    "cvss": 9.3,
-    "epss": 0.22,
-    "kev": true,
-    "trend_score": 0.504,
-    "trend_mentions": 16,
-    "trend_breakdown": {
-      "news_hits": 16,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.504
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-32463"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Sudo Project",
-    "product": "Sudo",
-    "summary_analyst": "CVE-2025-32463 is a vulnerability in the Sudo Project Sudo that allows attackers to gain elevated privileges by leveraging improper input validation in the command processing, resulting in a critical impact on system security.",
-    "summary_ciso": "CVE-2025-32463 poses an urgent risk as it potentially allows malicious users to escalate privileges on systems utilizing Sudo, exposing sensitive data and increasing the likelihood of significant operational disruptions if not swiftly mitigated.",
-    "description": "CVE-2025-32463 is a vulnerability in the Sudo Project Sudo that allows attackers to gain elevated privileges by leveraging improper input validation in the command processing, resulting in a critical impact on system security.",
-    "news_article": {
-      "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2025/09/29/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-      "source": "Cisa.gov"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-20333",
-    "aura_score": 73.4,
-    "cvss": 9.9,
-    "epss": 0.014,
-    "kev": true,
-    "trend_score": 0.7,
-    "trend_mentions": 53,
-    "trend_breakdown": {
-      "news_hits": 53,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.7
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-20333"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Cisco",
-    "product": "Adaptive Security Appliance Software",
-    "summary_analyst": "CVE-2025-20333 is a vulnerability in Cisco Adaptive Security Appliance Software that allows an unauthenticated, remote attacker to execute arbitrary code, leading to a critical impact on the affected component's confidentiality, integrity, and availability.",
-    "summary_ciso": "CVE-2025-20333 exposes critical vulnerabilities in Cisco Adaptive Security Appliance Software, potentially allowing unauthorized access to sensitive network segments, thereby necessitating immediate remediation to protect against significant data breaches and operational disruptions.",
-    "description": "CVE-2025-20333 is a vulnerability in Cisco Adaptive Security Appliance Software that allows an unauthenticated, remote attacker to execute arbitrary code, leading to a critical impact on the affected component's confidentiality, integrity, and availability.",
-    "news_article": {
-      "title": "Urgent: Cisco ASA Zero-Day Duo Under Attack; CISA Triggers Emergency Mitigation Directive",
-      "url": "https://thehackernews.com/2025/09/urgent-cisco-asa-zero-day-duo-under.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-7775",
-    "aura_score": 72.8,
-    "cvss": 9.8,
-    "epss": 0.099,
-    "kev": true,
-    "trend_score": 0.319,
-    "trend_mentions": 5,
-    "trend_breakdown": {
-      "news_hits": 5,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.319
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-7775"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Citrix",
-    "product": "Netscaler Application Delivery Controller",
-    "summary_analyst": "CVE-2025-7775 affects the Citrix Netscaler Application Delivery Controller by allowing remote attackers to exploit improper input validation, potentially leading to a denial of service (DoS) condition with a severity rating of high.",
-    "summary_ciso": "CVE-2025-7775 poses a critical security risk to Citrix Netscaler Application Delivery Controller, potentially exposing sensitive data and services to unauthorized access, necessitating immediate remediation to prevent significant operational disruptions and reputational damage.",
-    "description": "CVE-2025-7775 affects the Citrix Netscaler Application Delivery Controller by allowing remote attackers to exploit improper input validation, potentially leading to a denial of service (DoS) condition with a severity rating of high.",
-    "news_article": {
-      "title": "Suspected Salt Typhoon snoops lurking in European telco's network",
-      "url": "https://www.theregister.com/2025/10/20/salt_typhoon_european_telco/",
-      "source": "Theregister.com"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-10585",
-    "aura_score": 72.3,
-    "cvss": 9.8,
-    "epss": 0.006,
-    "kev": true,
-    "trend_score": 0.587,
-    "trend_mentions": 26,
-    "trend_breakdown": {
-      "news_hits": 26,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.587
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-10585"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Google",
-    "product": "Chrome",
-    "summary_analyst": "CVE-2025-10585 is a high-severity vulnerability in Google Chrome that can be exploited through a memory corruption issue, potentially allowing attackers to execute arbitrary code in the context of the user and compromise the affected system.",
-    "summary_ciso": "CVE-2025-10585 poses an urgent risk to business operations, as it exposes organizations to potential data breaches and system compromises through a critical vulnerability in Google Chrome that necessitates immediate mitigation to safeguard sensitive information.",
-    "description": "CVE-2025-10585 is a high-severity vulnerability in Google Chrome that can be exploited through a memory corruption issue, potentially allowing attackers to execute arbitrary code in the context of the user and compromise the affected system.",
-    "news_article": {
-      "title": "Update Chrome now: Google patches new zero-day threat",
-      "url": "https://www.foxnews.com/tech/update-chrome-now-google-patches-new-zero-day-threat",
-      "source": "Fox News"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-20281",
-    "aura_score": 72.2,
+    "cve": "CVE-2025-54253",
+    "aura_score": 80.8,
     "cvss": 10.0,
-    "epss": 0.061,
+    "epss": 0.541,
     "kev": true,
-    "trend_score": 0.196,
-    "trend_mentions": 2,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 2,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.196
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
     "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-20281"
+      "https://www.exploit-db.com/search?q=CVE-2025-54253"
     ],
     "ai_context": 0.0,
     "ai_breakdown": {
@@ -748,11 +176,11 @@
         "low": 0
       }
     },
-    "vendor": "Cisco",
-    "product": "Identity Services Engine",
-    "summary_analyst": "CVE-2025-20281 is a vulnerability in Cisco Identity Services Engine that allows an unauthenticated, remote attacker to execute arbitrary code with elevated privileges, potentially leading to a complete compromise of the affected system.",
-    "summary_ciso": "CVE-2025-20281 exposes Cisco Identity Services Engine to critical vulnerabilities that could lead to unauthorized access to sensitive information, posing a significant risk to our network integrity and requiring immediate remediation to safeguard against potential data breaches.",
-    "description": "CVE-2025-20281 is a vulnerability in Cisco Identity Services Engine that allows an unauthenticated, remote attacker to execute arbitrary code with elevated privileges, potentially leading to a complete compromise of the affected system.",
+    "vendor": "Adobe",
+    "product": "Experience Manager Forms",
+    "summary_analyst": "CVE-2025-54253 is a critical vulnerability in Adobe Experience Manager Forms that allows an attacker to execute arbitrary code remotely due to improper input validation in the affected component, potentially leading to complete system compromise.",
+    "summary_ciso": "CVE-2025-54253 poses an imminent risk to Adobe Experience Manager Forms, potentially exposing our organization to data breaches and compliance violations, necessitating immediate remediation to protect sensitive information and maintain trust with our clients.",
+    "description": "CVE-2025-54253 is a critical vulnerability in Adobe Experience Manager Forms that allows an attacker to execute arbitrary code remotely due to improper input validation in the affected component, potentially leading to complete system compromise.",
     "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
@@ -765,17 +193,17 @@
   },
   {
     "cve": "CVE-2025-33073",
-    "aura_score": 71.9,
+    "aura_score": 70.5,
     "cvss": 8.8,
     "epss": 0.264,
     "kev": true,
-    "trend_score": 0.287,
-    "trend_mentions": 4,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 4,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.287
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -798,209 +226,9 @@
     },
     "vendor": "Microsoft",
     "product": "Windows 10 1507",
-    "summary_analyst": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 version 1507 that allows an attacker to execute arbitrary code with elevated privileges through specially crafted input, potentially leading to a complete compromise of the affected system.",
-    "summary_ciso": "CVE-2025-33073 exposes Windows 10 1507 to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate mitigation efforts to safeguard sensitive business information and maintain operational integrity.",
-    "description": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 version 1507 that allows an attacker to execute arbitrary code with elevated privileges through specially crafted input, potentially leading to a complete compromise of the affected system.",
-    "news_article": {
-      "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-      "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-      "source": "Cisa.gov"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-54948",
-    "aura_score": 71.9,
-    "cvss": 9.4,
-    "epss": 0.213,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-54948"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Trendmicro",
-    "product": "Apex One",
-    "summary_analyst": "CVE-2025-54948 affects Trendmicro Apex One by allowing remote attackers to execute arbitrary code through improper input validation in the application's web console, resulting in a high severity impact on system integrity and confidentiality.",
-    "summary_ciso": "CVE-2025-54948 poses an urgent security risk to Trendmicro Apex One, which, if exploited, could lead to significant business disruptions and data breaches, necessitating immediate remediation efforts to protect sensitive information and maintain operational integrity.",
-    "description": "CVE-2025-54948 affects Trendmicro Apex One by allowing remote attackers to execute arbitrary code through improper input validation in the application's web console, resulting in a high severity impact on system integrity and confidentiality.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-20337",
-    "aura_score": 71.2,
-    "cvss": 10.0,
-    "epss": 0.013,
-    "kev": true,
-    "trend_score": 0.196,
-    "trend_mentions": 2,
-    "trend_breakdown": {
-      "news_hits": 2,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.196
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-20337"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Cisco",
-    "product": "Identity Services Engine",
-    "summary_analyst": "CVE-2025-20337 is a vulnerability in Cisco Identity Services Engine that allows an authenticated attacker to exploit improper input validation, potentially leading to a denial of service, with a high impact severity.",
-    "summary_ciso": "CVE-2025-20337 presents a critical vulnerability in Cisco Identity Services Engine that could lead to unauthorized access, exposing sensitive organizational data and necessitating immediate action to mitigate potential breaches and safeguard our assets.",
-    "description": "CVE-2025-20337 is a vulnerability in Cisco Identity Services Engine that allows an authenticated attacker to exploit improper input validation, potentially leading to a denial of service, with a high impact severity.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-53690",
-    "aura_score": 70.8,
-    "cvss": 9.0,
-    "epss": 0.209,
-    "kev": true,
-    "trend_score": 0.123,
-    "trend_mentions": 1,
-    "trend_breakdown": {
-      "news_hits": 1,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.123
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-53690"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Sitecore",
-    "product": "Experience Commerce",
-    "summary_analyst": "CVE-2025-53690 affects Sitecore Experience Commerce by enabling an attacker to exploit improper input validation, leading to remote code execution with critical impact severity.",
-    "summary_ciso": "CVE-2025-53690 exposes Sitecore Experience Commerce to critical vulnerabilities that could lead to significant data breaches, resulting in financial loss and reputational damage, necessitating immediate remediation efforts.",
-    "description": "CVE-2025-53690 affects Sitecore Experience Commerce by enabling an attacker to exploit improper input validation, leading to remote code execution with critical impact severity.",
-    "news_article": {
-      "title": "GreenboneOS: September 2025 Threat Report: New Exploits, Active Campaigns, and Critical CVEs",
-      "url": "https://www.greenbone.net/en/blog/september-2025-threat-report-new-exploits-active-campaigns-and-critical-cves/",
-      "source": "Greenbone.net"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-8876",
-    "aura_score": 70.8,
-    "cvss": 8.8,
-    "epss": 0.282,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-8876"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "N-able",
-    "product": "N-central",
-    "summary_analyst": "CVE-2025-8876 is a vulnerability in N-able N-central that allows remote attackers to execute arbitrary code via crafted requests, leading to a critical impact on system integrity and confidentiality.",
-    "summary_ciso": "CVE-2025-8876 presents a significant exposure risk for N-able N-central, potentially allowing unauthorized access and control over critical systems, necessitating immediate mitigation to safeguard our operations and customer data.",
-    "description": "CVE-2025-8876 is a vulnerability in N-able N-central that allows remote attackers to execute arbitrary code via crafted requests, leading to a critical impact on system integrity and confidentiality.",
+    "summary_analyst": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows an attacker to execute arbitrary code with elevated privileges due to improper handling of objects in memory, resulting in a critical impact on system security.",
+    "summary_ciso": "CVE-2025-33073 presents a critical vulnerability in Microsoft Windows 10 1507 that could allow attackers to gain unauthorized access to sensitive data, exposing the organization to significant financial and reputational risks, necessitating immediate mitigation efforts to safeguard our systems.",
+    "description": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows an attacker to execute arbitrary code with elevated privileges due to improper handling of objects in memory, resulting in a critical impact on system security.",
     "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
@@ -1013,17 +241,17 @@
   },
   {
     "cve": "CVE-2025-21043",
-    "aura_score": 69.4,
+    "aura_score": 67.3,
     "cvss": 8.8,
     "epss": 0.106,
     "kev": true,
-    "trend_score": 0.41,
-    "trend_mentions": 9,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 9,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.41
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -1046,161 +274,9 @@
     },
     "vendor": "Samsung",
     "product": "Android",
-    "summary_analyst": "CVE-2025-21043 is a vulnerability in Samsung Android that could allow a remote attacker to execute arbitrary code on the affected device due to improper input validation in the system component, leading to a critical impact on confidentiality and integrity.",
-    "summary_ciso": "CVE-2025-21043 poses a significant risk to Samsung Android devices, potentially exposing sensitive user data and causing reputational harm to our brand, which requires immediate mitigation to protect our customers and maintain trust.",
-    "description": "CVE-2025-21043 is a vulnerability in Samsung Android that could allow a remote attacker to execute arbitrary code on the affected device due to improper input validation in the system component, leading to a critical impact on confidentiality and integrity.",
-    "news_article": {
-      "title": "CISA Flags Meteobridge CVE-2025-4008 Flaw as Actively Exploited in the Wild",
-      "url": "https://thehackernews.com/2025/10/cisa-flags-meteobridge-cve-2025-4008.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-43300",
-    "aura_score": 67.4,
-    "cvss": 8.8,
-    "epss": 0.004,
-    "kev": true,
-    "trend_score": 0.427,
-    "trend_mentions": 10,
-    "trend_breakdown": {
-      "news_hits": 10,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.427
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-43300"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Apple",
-    "product": "Ipados",
-    "summary_analyst": "CVE-2025-43300 affects Apple iPadOS due to a buffer overflow vulnerability in the kernel, which could allow an attacker to execute arbitrary code with elevated privileges, leading to a potential complete system compromise.",
-    "summary_ciso": "CVE-2025-43300 poses a critical vulnerability in Apple iPadOS that could allow unauthorized access to sensitive data, exposing the organization to significant financial and reputational risk, necessitating immediate remediation to safeguard against potential exploitation.",
-    "description": "CVE-2025-43300 affects Apple iPadOS due to a buffer overflow vulnerability in the kernel, which could allow an attacker to execute arbitrary code with elevated privileges, leading to a potential complete system compromise.",
-    "news_article": {
-      "title": "WhatsApp 0-Click Vulnerability Exploited Using Malicious DNG File",
-      "url": "https://cybersecuritynews.com/whatsapp-0-click-vulnerability-exploited/",
-      "source": "Cybersecuritynews.com"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-8088",
-    "aura_score": 66.7,
-    "cvss": 8.8,
-    "epss": 0.046,
-    "kev": true,
-    "trend_score": 0.123,
-    "trend_mentions": 1,
-    "trend_breakdown": {
-      "news_hits": 1,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.123
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-8088"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Rarlab",
-    "product": "Winrar",
-    "summary_analyst": "CVE-2025-8088 is a vulnerability in Rarlab WinRAR that allows remote attackers to execute arbitrary code via specially crafted archive files, resulting in a critical impact on system integrity.",
-    "summary_ciso": "CVE-2025-8088 exposes Rarlab WinRAR to potential exploitation that could lead to unauthorized access or data breaches, putting sensitive company information at significant risk, necessitating immediate patching to mitigate this urgent threat.",
-    "description": "CVE-2025-8088 is a vulnerability in Rarlab WinRAR that allows remote attackers to execute arbitrary code via specially crafted archive files, resulting in a critical impact on system integrity.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-48543",
-    "aura_score": 66.2,
-    "cvss": 8.8,
-    "epss": 0.001,
-    "kev": true,
-    "trend_score": 0.196,
-    "trend_mentions": 2,
-    "trend_breakdown": {
-      "news_hits": 2,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.196
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-48543"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Google",
-    "product": "Android",
-    "summary_analyst": "CVE-2025-48543 is a critical vulnerability in Google Android that allows attackers to execute arbitrary code with elevated privileges via a specially crafted application, potentially leading to unauthorized access and control over the affected device.",
-    "summary_ciso": "The CVE-2025-48543 vulnerability in Google Android presents an urgent risk of data breaches and system compromise, potentially exposing sensitive user information and damaging the company\u2019s reputation if not promptly mitigated.",
-    "description": "CVE-2025-48543 is a critical vulnerability in Google Android that allows attackers to execute arbitrary code with elevated privileges via a specially crafted application, potentially leading to unauthorized access and control over the affected device.",
+    "summary_analyst": "CVE-2025-21043 is a vulnerability in Samsung Android that allows remote attackers to exploit improper input validation in the affected components, potentially resulting in arbitrary code execution with critical impact severity.",
+    "summary_ciso": "CVE-2025-21043 poses an urgent security risk to Samsung Android devices, potentially exposing sensitive user data and corporate information, necessitating swift mitigation measures to protect against exploitation.",
+    "description": "CVE-2025-21043 is a vulnerability in Samsung Android that allows remote attackers to exploit improper input validation in the affected components, potentially resulting in arbitrary code execution with critical impact severity.",
     "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
@@ -1213,17 +289,17 @@
   },
   {
     "cve": "CVE-2025-59230",
-    "aura_score": 65.6,
+    "aura_score": 62.5,
     "cvss": 7.8,
     "epss": 0.064,
     "kev": true,
-    "trend_score": 0.617,
-    "trend_mentions": 31,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 31,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.617
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -1246,14 +322,10 @@
     },
     "vendor": "Microsoft",
     "product": "Windows 10 1507",
-    "summary_analyst": "CVE-2025-59230 is a vulnerability in Microsoft Windows 10 1507 that allows an attacker to execute arbitrary code through a crafted application, leading to a critical impact with potential system compromise.",
-    "summary_ciso": "CVE-2025-59230 presents a critical vulnerability in Microsoft Windows 10 1507 that could expose sensitive data and systems to significant security breaches, necessitating immediate mitigation to protect the organization\u2019s assets and maintain compliance.",
-    "description": "CVE-2025-59230 is a vulnerability in Microsoft Windows 10 1507 that allows an attacker to execute arbitrary code through a crafted application, leading to a critical impact with potential system compromise.",
-    "news_article": {
-      "title": "Update Microsoft Windows Now \u2014 New 2 Week Security Deadline Confirmed",
-      "url": "https://www.forbes.com/sites/daveywinder/2025/10/16/update-microsoft-windows-now---new-2-week-security-deadline-confirmed/",
-      "source": "Forbes"
-    },
+    "summary_analyst": "CVE-2025-59230 is a vulnerability in Microsoft Windows 10 1507 that allows attackers to execute arbitrary code through a compromised application, resulting in a critical impact on system integrity and confidentiality.",
+    "summary_ciso": "CVE-2025-59230 exposes Microsoft Windows 10 1507 to significant security vulnerabilities that could lead to data breaches and operational disruptions, necessitating immediate remediation to protect critical business assets.",
+    "description": "CVE-2025-59230 is a vulnerability in Microsoft Windows 10 1507 that allows attackers to execute arbitrary code through a compromised application, resulting in a critical impact on system integrity and confidentiality.",
+    "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -1265,17 +337,17 @@
   },
   {
     "cve": "CVE-2025-24990",
-    "aura_score": 65.2,
+    "aura_score": 62.1,
     "cvss": 7.8,
     "epss": 0.045,
     "kev": true,
-    "trend_score": 0.628,
-    "trend_mentions": 33,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 33,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.628
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -1298,14 +370,10 @@
     },
     "vendor": "Microsoft",
     "product": "Windows 10 1507",
-    "summary_analyst": "CVE-2025-24990 affects Microsoft Windows 10 1507 due to a vulnerability that allows an attacker to execute arbitrary code via a maliciously crafted application, resulting in severe impact on system integrity and confidentiality.",
-    "summary_ciso": "CVE-2025-24990 exposes Microsoft Windows 10 1507 to significant cybersecurity threats, potentially allowing attackers to exploit vulnerabilities rapidly, which necessitates urgent updates to mitigate risks to our business operations and data integrity.",
-    "description": "CVE-2025-24990 affects Microsoft Windows 10 1507 due to a vulnerability that allows an attacker to execute arbitrary code via a maliciously crafted application, resulting in severe impact on system integrity and confidentiality.",
-    "news_article": {
-      "title": "Update Microsoft Windows Now \u2014 New 2 Week Security Deadline Confirmed",
-      "url": "https://www.forbes.com/sites/daveywinder/2025/10/16/update-microsoft-windows-now---new-2-week-security-deadline-confirmed/",
-      "source": "Forbes"
-    },
+    "summary_analyst": "CVE-2025-24990 is a vulnerability in Microsoft Windows 10 version 1507 that allows an attacker to execute arbitrary code due to improper validation of user input in the affected component, resulting in a critical impact severity.",
+    "summary_ciso": "CVE-2025-24990 exposes Microsoft Windows 10 (1507) to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate remediation to safeguard sensitive business information and maintain compliance.",
+    "description": "CVE-2025-24990 is a vulnerability in Microsoft Windows 10 version 1507 that allows an attacker to execute arbitrary code due to improper validation of user input in the affected component, resulting in a critical impact severity.",
+    "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -1317,17 +385,17 @@
   },
   {
     "cve": "CVE-2025-61884",
-    "aura_score": 64.9,
+    "aura_score": 62.0,
     "cvss": 7.5,
     "epss": 0.101,
     "kev": true,
-    "trend_score": 0.58,
-    "trend_mentions": 25,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 25,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.58
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -1350,362 +418,10 @@
     },
     "vendor": "Oracle",
     "product": "Configurator",
-    "summary_analyst": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution with a critical impact severity.",
-    "summary_ciso": "CVE-2025-61884 exposes Oracle Configurator to potential exploitation, which could lead to unauthorized access to sensitive data and significant operational disruptions, necessitating immediate mitigation to protect the organization's assets and reputation.",
-    "description": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution with a critical impact severity.",
-    "news_article": {
-      "title": "New Oracle E-Business Suite Bug Could Let Hackers Access Data Without Login",
-      "url": "https://thehackernews.com/2025/10/new-oracle-e-business-suite-bug-could.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-8875",
-    "aura_score": 64.5,
-    "cvss": 7.8,
-    "epss": 0.116,
-    "kev": true,
-    "trend_score": 0.196,
-    "trend_mentions": 2,
-    "trend_breakdown": {
-      "news_hits": 2,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.196
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-8875"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "N-able",
-    "product": "N-central",
-    "summary_analyst": "CVE-2025-8875 is a vulnerability in N-able N-central that allows remote attackers to execute arbitrary code due to improper input validation, leading to a critical impact on system integrity and confidentiality.",
-    "summary_ciso": "CVE-2025-8875 exposes N-able N-central to potential unauthorized access and data breaches, necessitating immediate remediation to protect sensitive customer information and maintain business integrity.",
-    "description": "CVE-2025-8875 is a vulnerability in N-able N-central that allows remote attackers to execute arbitrary code due to improper input validation, leading to a critical impact on system integrity and confidentiality.",
+    "summary_analyst": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows remote attackers to execute arbitrary code via crafted requests, leading to a critical impact on system integrity and confidentiality.",
+    "summary_ciso": "CVE-2025-61884 poses a critical risk to Oracle Configurator, potentially exposing sensitive business data and operations to unauthorized access, which requires immediate mitigation to prevent severe operational and reputational damage.",
+    "description": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows remote attackers to execute arbitrary code via crafted requests, leading to a critical impact on system integrity and confidentiality.",
     "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-20352",
-    "aura_score": 64.4,
-    "cvss": 7.7,
-    "epss": 0.006,
-    "kev": true,
-    "trend_score": 0.7,
-    "trend_mentions": 52,
-    "trend_breakdown": {
-      "news_hits": 52,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.7
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-20352"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Cisco",
-    "product": "Ios Xe Sd-wan",
-    "summary_analyst": "CVE-2025-20352 is a vulnerability in Cisco IOS XE SD-WAN that allows an attacker to execute arbitrary commands on the device with elevated privileges, leading to a potential full compromise of the affected system.",
-    "summary_ciso": "CVE-2025-20352 poses a significant risk to Cisco IOS XE SD-WAN users by potentially allowing unauthorized access to sensitive systems, necessitating immediate remediation to protect business operations and data integrity.",
-    "description": "CVE-2025-20352 is a vulnerability in Cisco IOS XE SD-WAN that allows an attacker to execute arbitrary commands on the device with elevated privileges, leading to a potential full compromise of the affected system.",
-    "news_article": {
-      "title": "Cisco Warns of Actively Exploited SNMP Vulnerability Allowing RCE or DoS in IOS Software",
-      "url": "https://thehackernews.com/2025/09/cisco-warns-of-actively-exploited-snmp.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-48384",
-    "aura_score": 63.6,
-    "cvss": 8.0,
-    "epss": 0.049,
-    "kev": true,
-    "trend_score": 0.123,
-    "trend_mentions": 1,
-    "trend_breakdown": {
-      "news_hits": 1,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.123
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-48384"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Git-scm",
-    "product": "Git",
-    "summary_analyst": "CVE-2025-48384 is a vulnerability in Git-scm Git that allows an authenticated attacker to execute arbitrary commands via a crafted post-receive hook, potentially leading to severe system compromise.",
-    "summary_ciso": "CVE-2025-48384 exposes Git-scm Git to potential code injection vulnerabilities, posing an urgent risk of data compromise and operational disruption that must be mitigated immediately to protect business integrity.",
-    "description": "CVE-2025-48384 is a vulnerability in Git-scm Git that allows an authenticated attacker to execute arbitrary commands via a crafted post-receive hook, potentially leading to severe system compromise.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-38352",
-    "aura_score": 62.6,
-    "cvss": 7.4,
-    "epss": 0.005,
-    "kev": true,
-    "trend_score": 0.58,
-    "trend_mentions": 25,
-    "trend_breakdown": {
-      "news_hits": 25,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.58
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-38352"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Linux",
-    "product": "Linux Kernel",
-    "summary_analyst": "CVE-2025-38352 is a vulnerability in the Linux Kernel that enables local attackers to escalate privileges via a flaw in the handling of user namespace, resulting in potentially severe impact on system integrity.",
-    "summary_ciso": "CVE-2025-38352 poses a critical vulnerability in the Linux kernel that could allow attackers to gain unauthorized access to sensitive data, potentially leading to significant operational disruptions and necessitating immediate mitigation efforts to safeguard business continuity.",
-    "description": "CVE-2025-38352 is a vulnerability in the Linux Kernel that enables local attackers to escalate privileges via a flaw in the handling of user namespace, resulting in potentially severe impact on system integrity.",
-    "news_article": {
-      "title": "GreenboneOS: September 2025 Threat Report: New Exploits, Active Campaigns, and Critical CVEs",
-      "url": "https://www.greenbone.net/en/blog/september-2025-threat-report-new-exploits-active-campaigns-and-critical-cves/",
-      "source": "Greenbone.net"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2024-8068",
-    "aura_score": 62.5,
-    "cvss": 8.0,
-    "epss": 0.026,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2024-8068"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Citrix",
-    "product": "Session Recording",
-    "summary_analyst": "CVE-2024-8068 affects Citrix Session Recording, allowing remote attackers to exploit improper input validation to execute arbitrary code, resulting in a critical impact on system integrity and availability.",
-    "summary_ciso": "CVE-2024-8068 poses a critical risk to Citrix Session Recording systems, potentially exposing sensitive user activity to unauthorized access, which requires immediate remediation to safeguard our data integrity and compliance.",
-    "description": "CVE-2024-8068 affects Citrix Session Recording, allowing remote attackers to exploit improper input validation to execute arbitrary code, resulting in a critical impact on system integrity and availability.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-9377",
-    "aura_score": 62.4,
-    "cvss": 7.2,
-    "epss": 0.179,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-9377"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Tp-link",
-    "product": "Tl-wr841n Firmware",
-    "summary_analyst": "CVE-2025-9377 is a vulnerability in the Tp-link TL-WR841N firmware that allows an unauthenticated remote attacker to execute arbitrary code by exploiting improper input validation in the web management interface, resulting in a critical severity impact.",
-    "summary_ciso": "CVE-2025-9377 presents a critical vulnerability in Tp-link Tl-wr841n firmware that could expose the organization to unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive information and maintain business continuity.",
-    "description": "CVE-2025-9377 is a vulnerability in the Tp-link TL-WR841N firmware that allows an unauthenticated remote attacker to execute arbitrary code by exploiting improper input validation in the web management interface, resulting in a critical severity impact.",
-    "news_article": null,
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-20362",
-    "aura_score": 62.3,
-    "cvss": 6.5,
-    "epss": 0.141,
-    "kev": true,
-    "trend_score": 0.7,
-    "trend_mentions": 87,
-    "trend_breakdown": {
-      "news_hits": 87,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.7
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-20362"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Cisco",
-    "product": "Adaptive Security Appliance Software",
-    "summary_analyst": "CVE-2025-20362 is a vulnerability in Cisco Adaptive Security Appliance Software that allows an unauthenticated, remote attacker to execute arbitrary commands on the affected system, leading to a critical compromise of device integrity and potential data breach.",
-    "summary_ciso": "CVE-2025-20362 poses a critical risk to Cisco Adaptive Security Appliance Software, potentially exposing the organization to significant data breaches and operational disruptions, necessitating immediate mitigation to safeguard our network security.",
-    "description": "CVE-2025-20362 is a vulnerability in Cisco Adaptive Security Appliance Software that allows an unauthenticated, remote attacker to execute arbitrary commands on the affected system, leading to a critical compromise of device integrity and potential data breach.",
-    "news_article": {
-      "title": "UK and US security agencies order urgent fixes as Cisco firewall bugs exploited in wild",
-      "url": "https://www.theregister.com/2025/09/26/cisco_firewall_flaws/",
-      "source": "Theregister.com"
-    },
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -1717,17 +433,17 @@
   },
   {
     "cve": "CVE-2025-27915",
-    "aura_score": 60.4,
+    "aura_score": 58.0,
     "cvss": 5.4,
     "epss": 0.322,
     "kev": true,
-    "trend_score": 0.47,
-    "trend_mentions": 13,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 13,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.47
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -1750,113 +466,9 @@
     },
     "vendor": "Zimbra",
     "product": "Collaboration",
-    "summary_analyst": "CVE-2025-27915 is a vulnerability in Zimbra Collaboration that allows remote attackers to execute arbitrary code via crafted email messages, leading to a critical impact on system integrity and confidentiality.",
-    "summary_ciso": "CVE-2025-27915 poses a critical security vulnerability in Zimbra Collaboration that can lead to unauthorized access and data breaches, significantly increasing our exposure risk and necessitating immediate mitigation to safeguard sensitive information and maintain business continuity.",
-    "description": "CVE-2025-27915 is a vulnerability in Zimbra Collaboration that allows remote attackers to execute arbitrary code via crafted email messages, leading to a critical impact on system integrity and confidentiality.",
-    "news_article": {
-      "title": "From Phishing to Malware: AI Becomes Russia's New Cyber Weapon in War on Ukraine",
-      "url": "https://thehackernews.com/2025/10/from-phishing-to-malware-ai-becomes.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-59689",
-    "aura_score": 60.3,
-    "cvss": 6.1,
-    "epss": 0.183,
-    "kev": true,
-    "trend_score": 0.457,
-    "trend_mentions": 12,
-    "trend_breakdown": {
-      "news_hits": 12,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.457
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-59689"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Libraesva",
-    "product": "Email Security Gateway",
-    "summary_analyst": "CVE-2025-59689 is a critical remote code execution vulnerability in the Libraesva Email Security Gateway that allows an attacker to execute arbitrary code by exploiting improper input validation in the email processing component, potentially leading to severe data breaches and system compromise.",
-    "summary_ciso": "CVE-2025-59689 poses a critical vulnerability in the Libraesva Email Security Gateway that could lead to unauthorized access and data breaches, exposing the organization to significant reputational and financial risks, making immediate mitigation essential.",
-    "description": "CVE-2025-59689 is a critical remote code execution vulnerability in the Libraesva Email Security Gateway that allows an attacker to execute arbitrary code by exploiting improper input validation in the email processing component, potentially leading to severe data breaches and system compromise.",
-    "news_article": {
-      "title": "State-Sponsored Hackers Exploiting Libraesva Email Security Gateway Vulnerability",
-      "url": "https://thehackernews.com/2025/09/state-sponsored-hackers-exploiting.html",
-      "source": "Internet"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2023-50224",
-    "aura_score": 57.1,
-    "cvss": 6.5,
-    "epss": 0.057,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2023-50224"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Tp-link",
-    "product": "Tl-wr841n Firmware",
-    "summary_analyst": "CVE-2023-50224 is a vulnerability in the TP-Link TL-WR841N firmware that allows remote attackers to execute arbitrary commands via crafted HTTP requests, leading to severe impact on device integrity and potential unauthorized access.",
-    "summary_ciso": "CVE-2023-50224 poses an urgent risk to our network's integrity, as it affects the Tp-link TL-WR841N firmware, potentially allowing unauthorized access and data breaches that could have significant business repercussions if not mitigated promptly.",
-    "description": "CVE-2023-50224 is a vulnerability in the TP-Link TL-WR841N firmware that allows remote attackers to execute arbitrary commands via crafted HTTP requests, leading to severe impact on device integrity and potential unauthorized access.",
+    "summary_analyst": "CVE-2025-27915 allows remote attackers to execute arbitrary code on Zimbra Collaboration by exploiting improper input validation in the email processing component, leading to a critical severity impact on system integrity and confidentiality.",
+    "summary_ciso": "CVE-2025-27915 exposes Zimbra Collaboration to potential data breaches and significant operational disruptions, necessitating immediate mitigation to safeguard sensitive information and maintain business continuity.",
+    "description": "CVE-2025-27915 allows remote attackers to execute arbitrary code on Zimbra Collaboration by exploiting improper input validation in the email processing component, leading to a critical severity impact on system integrity and confidentiality.",
     "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
@@ -1869,17 +481,17 @@
   },
   {
     "cve": "CVE-2025-6264",
-    "aura_score": 55.8,
+    "aura_score": 53.6,
     "cvss": 5.5,
     "epss": 0.081,
     "kev": true,
-    "trend_score": 0.427,
-    "trend_mentions": 10,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 10,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.427
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -1902,66 +514,10 @@
     },
     "vendor": "Rapid7",
     "product": "Velociraptor",
-    "summary_analyst": "CVE-2025-6264 affects Rapid7 Velociraptor due to improper input validation in its configuration management component, allowing an authenticated attacker to execute arbitrary code with elevated privileges, resulting in a critical impact severity.",
-    "summary_ciso": "CVE-2025-6264 poses a significant risk to Rapid7 Velociraptor users by potentially exposing sensitive data to unauthorized access, necessitating immediate action to mitigate potential breaches that could impact both reputation and compliance.",
-    "description": "CVE-2025-6264 affects Rapid7 Velociraptor due to improper input validation in its configuration management component, allowing an authenticated attacker to execute arbitrary code with elevated privileges, resulting in a critical impact severity.",
-    "news_article": {
-      "title": "Ransomware crims that exploited SharePoint 0-days add Velociraptor to their arsenal",
-      "url": "https://www.theregister.com/2025/10/10/ransomware_velociraptor/",
-      "source": "Theregister.com"
-    },
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-55177",
-    "aura_score": 53.9,
-    "cvss": 5.4,
-    "epss": 0.006,
-    "kev": true,
-    "trend_score": 0.427,
-    "trend_mentions": 10,
-    "trend_breakdown": {
-      "news_hits": 10,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.427
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-55177"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
-      },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
-      }
-    },
-    "vendor": "Whatsapp",
-    "product": "Whatsapp",
-    "summary_analyst": "CVE-2025-55177 is a critical vulnerability in WhatsApp that allows remote attackers to execute arbitrary code by sending specially crafted messages, potentially compromising the integrity and confidentiality of user data.",
-    "summary_ciso": "CVE-2025-55177 poses an immediate risk for WhatsApp users, potentially allowing attackers to exploit sensitive data vulnerabilities, which could lead to significant business disruptions and reputational damage if not addressed swiftly.",
-    "description": "CVE-2025-55177 is a critical vulnerability in WhatsApp that allows remote attackers to execute arbitrary code by sending specially crafted messages, potentially compromising the integrity and confidentiality of user data.",
-    "news_article": {
-      "title": "Samsung\u2019s Emergency Update For All Galaxy Phones\u2014New Warning",
-      "url": "https://www.forbes.com/sites/zakdoffman/2025/10/08/samsungs-emergency-update-for-all-galaxy-phones-new-warning/",
-      "source": "Forbes"
-    },
+    "summary_analyst": "CVE-2025-6264 is a vulnerability in Rapid7 Velociraptor that allows an attacker to execute arbitrary code remotely due to improper input validation, resulting in a critical impact on system integrity and confidentiality.",
+    "summary_ciso": "CVE-2025-6264 poses a significant risk to organizations using Rapid7 Velociraptor, as it exposes sensitive data to potential exploitation, necessitating immediate remediation to safeguard against breaches that could severely impact business operations and reputation.",
+    "description": "CVE-2025-6264 is a vulnerability in Rapid7 Velociraptor that allows an attacker to execute arbitrary code remotely due to improper input validation, resulting in a critical impact on system integrity and confidentiality.",
+    "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
@@ -1973,17 +529,17 @@
   },
   {
     "cve": "CVE-2025-47827",
-    "aura_score": 51.3,
+    "aura_score": 48.5,
     "cvss": 4.6,
     "epss": 0.005,
     "kev": true,
-    "trend_score": 0.558,
-    "trend_mentions": 22,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
     "trend_breakdown": {
-      "news_hits": 22,
+      "news_hits": 0,
       "github_hits": 0,
       "exploit_boost": 0.0,
-      "trend_raw": 0.558
+      "trend_raw": 0.0
     },
     "exploit_poc": true,
     "exploit_edb_ids": [],
@@ -2006,14 +562,10 @@
     },
     "vendor": "Igel",
     "product": "Igel Os",
-    "summary_analyst": "CVE-2025-47827 affects Igel OS by allowing remote attackers to exploit a vulnerability in the system's network stack, potentially leading to unauthorized access and elevated privileges, which can severely compromise the integrity and confidentiality of the affected devices.",
-    "summary_ciso": "CVE-2025-47827 represents a critical vulnerability in Igel OS that exposes our organization to potential data breaches and operational disruptions, necessitating immediate remediation efforts to protect sensitive information and maintain system integrity.",
-    "description": "CVE-2025-47827 affects Igel OS by allowing remote attackers to exploit a vulnerability in the system's network stack, potentially leading to unauthorized access and elevated privileges, which can severely compromise the integrity and confidentiality of the affected devices.",
-    "news_article": {
-      "title": "Frightful Patch Tuesday gives admins a scare with 175+ Microsoft CVEs, 3 under attack",
-      "url": "https://www.theregister.com/2025/10/14/microsoft_october_2025_patch_tuesday/",
-      "source": "Theregister.com"
-    },
+    "summary_analyst": "CVE-2025-47827 affects Igel OS by exploiting a local privilege escalation vulnerability that allows an unauthenticated attacker to gain elevated access to system resources, potentially leading to a complete compromise of the affected device.",
+    "summary_ciso": "CVE-2025-47827 affects Igel OS, exposing the organization to potential unauthorized access and data breaches, making it urgent to implement mitigations to protect sensitive information and maintain operational integrity.",
+    "description": "CVE-2025-47827 affects Igel OS by exploiting a local privilege escalation vulnerability that allows an unauthenticated attacker to gain elevated access to system resources, potentially leading to a complete compromise of the affected device.",
+    "news_article": null,
     "score_breakdown": {
       "cvss_weight": 0.4,
       "epss_weight": 0.2,
