@@ -179,13 +179,13 @@ def generate_daily_summaries(top_records: list[dict]) -> dict[str, str]:
         )
 
         analyst_prompt = (
-            "You are a cybersecurity analyst. Write a concise 2–4 sentence daily intelligence brief "
+            "You are a cybersecurity analyst for ACME Services. Write a concise 2–3 sentence daily intelligence brief "
             "summarizing key patterns, exploitation trends, and noteworthy vulnerabilities observed today.\n\n"
             f"Today's Top CVEs:\n{summary_input}"
         )
 
         ciso_prompt = (
-            "You are a Chief Information Security Officer. Provide a 2–4 sentence executive-level summary "
+            "You are a Chief Information Security Officer for ACME Services. Provide a 2 sentence executive-level summary "
             "of today's vulnerability landscape focusing on business impact, exposure risk, and recommended focus areas.\n\n"
             f"Today's Top CVEs:\n{summary_input}"
         )
