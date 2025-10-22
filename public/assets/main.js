@@ -1,20 +1,32 @@
-function renderList(data) {
+async function renderList(data) {
   const list = document.getElementById("top-list");
   list.innerHTML = "";
 
-  // 🕒 Update last updated timestamp
+  // 🕒 Update last updated timestamp using actual file Last-Modified header
   const updatedEl = document.getElementById("last-updated");
   if (updatedEl) {
-    const now = new Date();
-    const options = {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      timeZoneName: "short"
-    };
-    updatedEl.textContent = `Last updated: ${now.toLocaleString(undefined, options)}`;
+    try {
+      const res = await fetch(`${basePath}data/aura_scores.json`, { method: "HEAD", cache: "no-store" });
+      const lastModified = res.headers.get("Last-Modified");
+      if (lastModified) {
+        const date = new Date(lastModified);
+        const options = {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          timeZoneName: "short"
+        };
+        updatedEl.textContent = `Last updated: ${date.toLocaleString(undefined, options)}`;
+      } else {
+        // fallback if header not available
+        const now = new Date();
+        updatedEl.textContent = `Last updated: ${now.toLocaleString()}`;
+      }
+    } catch (e) {
+      console.warn("⚠️ Failed to read Last-Modified header:", e);
+    }
   }
 
   data.forEach((item) => {
