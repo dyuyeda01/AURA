@@ -115,7 +115,6 @@
   <!-- ✅ JS: Auto-load + Render -->
   <!-- ======================= -->
   <script type="module">
-  // ✅ Auto-detect base path (works for GitHub Pages and local)
   const basePath = (() => {
     const parts = window.location.pathname.split('/').filter(Boolean);
     const repo = parts.length > 0 ? parts[0] : '';
@@ -137,10 +136,8 @@
     if (!list) return console.error("Missing #top-list");
     list.innerHTML = "";
 
-    // 🕒 Timestamp update
     if (updatedEl) {
-      const ts = new Date();
-      updatedEl.textContent = `Last updated: ${ts.toLocaleString()}`;
+      updatedEl.textContent = `Last updated: ${new Date().toLocaleString()}`;
     }
 
     if (!Array.isArray(data) || !data.length) {
@@ -148,16 +145,17 @@
       return;
     }
 
-    // 🔁 Render each card
     data.forEach((item) => {
       const card = document.createElement("div");
       card.className = "card bg-gray-900 rounded-xl p-4 border border-gray-800";
+
       const primaryExploitUrl = item.exploit_urls?.[0] || `https://www.exploit-db.com/search?q=${item.cve}`;
       const exploitCount = item.exploit_edb_ids?.length ? ` (${item.exploit_edb_ids.length})` : "";
-      const trendBadge = item.trend_score > 0.3 ? "<span class='text-amber-400 text-lg ml-1'>🔥</span>" : "";
-      const aiBadge = item.ai_context > 0.3 ? "<span class='ml-1 text-blue-400 text-lg'>🤖</span>" : "";
+      const trendBadge = item.trend_score > 0.3 ? `<span class='text-amber-400 text-lg ml-1'>🔥</span>` : "";
+      const aiBadge = item.ai_context > 0.3 ? `<span class='ml-1 text-blue-400 text-lg'>🤖</span>` : "";
       const mainSummary = item.summary_ciso || item.summary_analyst || item.summary || "No summary available.";
 
+      // Header and summary
       card.innerHTML = `
         <div class="flex items-start justify-between gap-3">
           <div>
@@ -175,6 +173,69 @@
         </div>
         <p class="mt-2 text-sm text-gray-200">${item.summary_ciso ? "💼 " : ""}${mainSummary}</p>
       `;
+
+      // 🔽 Expandable details section
+      const details = document.createElement("details");
+      details.className = "mt-3 bg-gray-950/60 rounded p-3";
+      details.innerHTML = `
+        <summary class="cursor-pointer text-sm text-cyan-300">View technical details</summary>
+        <div class="grid grid-cols-2 gap-2 text-xs text-gray-300 mt-2">
+          <div>CVSS: ${(item.cvss ?? 0).toFixed(1)} (w ${item.score_breakdown?.cvss_weight ?? "?"})</div>
+          <div>EPSS: ${(item.epss ?? 0).toFixed(2)} (w ${item.score_breakdown?.epss_weight ?? "?"})</div>
+          <div>KEV: ${item.kev ? "Yes" : "No"} (w ${item.score_breakdown?.kev_weight ?? "?"})</div>
+          <div>Exploit PoC: ${item.exploit_poc ? "Yes" : "No"} (w ${item.score_breakdown?.exploit_weight ?? "?"})</div>
+          <div>Trend: ${item.trend_mentions ?? 0} (w ${item.score_breakdown?.trend_weight ?? "?"})</div>
+          <div>AI Context: ${(item.ai_context ?? 0).toFixed(2)} (w ${item.score_breakdown?.ai_weight ?? "?"})</div>
+        </div>
+      `;
+
+      // 🧠 AI keywords
+      if (item.ai_breakdown && Object.values(item.ai_breakdown.matched || {}).flat().length) {
+        const aiDiv = document.createElement("div");
+        aiDiv.className = "mt-3";
+        aiDiv.innerHTML = `
+          <div class="text-xs text-gray-400 mb-1">AI Keywords</div>
+          <ul class="list-disc list-inside text-xs text-blue-300 space-y-1">
+            ${Object.entries(item.ai_breakdown.matched)
+              .map(([lvl, terms]) => (terms.length ? `<li>${lvl}: ${terms.join(", ")}</li>` : ""))
+              .join("")}
+          </ul>`;
+        details.appendChild(aiDiv);
+      }
+
+      // 💥 Exploit URLs
+      if (item.exploit_urls?.length) {
+        const exDiv = document.createElement("div");
+        exDiv.className = "mt-3";
+        exDiv.innerHTML = `
+          <div class="text-xs text-gray-400 mb-1">Exploit references</div>
+          <ul class="list-disc list-inside text-xs text-cyan-200 space-y-1">
+            ${item.exploit_urls
+              .map(
+                (u) =>
+                  `<li><a class="underline hover:text-cyan-100 break-all" href="${u}" target="_blank" rel="noopener noreferrer">${u.replace(
+                    "https://www.exploit-db.com/",
+                    ""
+                  )}</a></li>`
+              )
+              .join("")}
+          </ul>`;
+        details.appendChild(exDiv);
+      }
+
+      // 📰 Related article
+      if (item.news_article?.url) {
+        const newsLink = document.createElement("a");
+        newsLink.href = item.news_article.url;
+        newsLink.target = "_blank";
+        newsLink.rel = "noopener noreferrer";
+        newsLink.className =
+          "block mt-3 text-xs text-cyan-300 hover:text-cyan-100 underline decoration-dotted";
+        newsLink.textContent = `📰 ${item.news_article.title || "View related article"} (${item.news_article.source || "News"})`;
+        details.appendChild(newsLink);
+      }
+
+      card.appendChild(details);
       list.appendChild(card);
     });
   }
