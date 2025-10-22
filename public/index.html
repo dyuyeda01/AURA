@@ -12,17 +12,29 @@
   </style>
 </head>
 <body class="text-gray-100">
-  <header class="py-12 text-center max-w-3xl mx-auto">
-    <h1 class="text-6xl font-extrabold text-cyan-400 aura-glow tracking-wide">AURA</h1>
-    <p class="text-cyan-200 text-lg mt-2 italic">What’s your cybersecurity AURA?</p>
-    <p class="text-gray-300 text-sm mt-4 leading-relaxed">
-      The AI Unified Risk Assessment (AURA) platform is an AI-powered risk intelligence engine that fuses threat data from CISA KEV, NVD, EPSS, Exploit-DB, and global security news.
-      It helps analysts cut through noise by revealing which vulnerabilities truly matter — and why.
-    </p>
-    <p class="text-gray-400 text-xs mt-2">
-      Real-time context. Measurable risk. AI-driven clarity.
-    </p>
-  </header>
+
+  <!-- 🌌 AURA Header Section -->
+  <section class="relative overflow-hidden">
+    <!-- Background image -->
+    <img src="assets/bg-cyber.jpg" alt="Cyber network background" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none">
+
+    <!-- Overlay content -->
+    <div class="relative py-12 text-center max-w-3xl mx-auto">
+      <h1 class="text-6xl font-extrabold text-cyan-400 aura-glow tracking-wide">AURA</h1>
+      <p class="text-cyan-200 text-lg mt-2 italic">What’s your cybersecurity AURA?</p>
+      <p class="text-gray-300 text-sm mt-4 leading-relaxed">
+        The AI Unified Risk Assessment (AURA) platform is an AI-powered risk intelligence engine that fuses threat data from CISA KEV, NVD, EPSS, Exploit-DB, and global security news.
+        It helps analysts cut through noise by revealing which vulnerabilities truly matter — and why.
+      </p>
+      <p class="text-gray-400 text-xs mt-2">
+        Real-time context. Measurable risk. AI-driven clarity.
+      </p>
+      <p id="last-updated" class="text-gray-400 text-xs mt-3 italic"></p>
+    </div>
+
+    <!-- Optional bottom fade -->
+    <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#0f172a] to-transparent"></div>
+  </section>
 
   <main class="max-w-6xl mx-auto px-4">
 

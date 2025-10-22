@@ -18,6 +18,15 @@ jobs:
       - name: 🧩 Checkout repository
         uses: actions/checkout@v4
 
+      # 🕒 Identify trigger source (manual vs. schedule)
+      - name: 🕒 Log trigger source
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "🕐 Triggered automatically by nightly schedule (cron)."
+          else
+            echo "🚀 Triggered manually via workflow_dispatch."
+          fi
+
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:

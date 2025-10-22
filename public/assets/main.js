@@ -1,29 +1,21 @@
-// public/assets/main.js
-async function fetchJSON(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`Failed to fetch ${path}`);
-  return res.json();
-}
-
-function riskColor(score) {
-  if (score >= 90) return "text-red-300";
-  if (score >= 80) return "text-orange-300";
-  if (score >= 70) return "text-yellow-300";
-  return "text-green-300";
-}
-
-// ✅ Robust base path fix (works for localhost + GitHub Pages /AURA/)
-const isLocal =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1";
-const pathParts = window.location.pathname.split("/").filter(Boolean);
-const repoName = !isLocal && pathParts.length > 0 ? `/${pathParts[0]}/` : "/";
-const basePath = isLocal ? "/" : repoName;
-console.log(`[AURA] Base path resolved to: ${basePath}`);
-
 function renderList(data) {
   const list = document.getElementById("top-list");
   list.innerHTML = "";
+
+  // 🕒 Update last updated timestamp
+  const updatedEl = document.getElementById("last-updated");
+  if (updatedEl) {
+    const now = new Date();
+    const options = {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZoneName: "short"
+    };
+    updatedEl.textContent = `Last updated: ${now.toLocaleString(undefined, options)}`;
+  }
 
   data.forEach((item) => {
     const card = document.createElement("div");
@@ -58,6 +50,13 @@ function renderList(data) {
           </span>`
         : "";
 
+    // 🧠 Unified summary logic (only one)
+    const mainSummary =
+      item.summary_ciso ||
+      item.summary_analyst ||
+      item.summary ||
+      "No summary available.";
+
     card.innerHTML = `
       <div class="flex items-start justify-between gap-3">
         <div>
@@ -88,20 +87,8 @@ function renderList(data) {
         </div>
       </div>
 
-      <!-- 🧠 Dual summaries -->
-      ${
-        item.summary_analyst
-          ? `<p class="mt-2 text-sm text-gray-200">${item.summary_analyst}</p>`
-          : item.summary
-          ? `<p class="mt-2 text-sm text-gray-200">${item.summary}</p>`
-          : ""
-      }
-
-      ${
-        item.summary_ciso
-          ? `<p class="mt-1 text-xs italic text-gray-400">💼 ${item.summary_ciso}</p>`
-          : ""
-      }
+      <!-- 🧠 Single summary (prefers AI/business tone) -->
+      <p class="mt-2 text-sm text-gray-200">${item.summary_ciso ? "💼 " : ""}${mainSummary}</p>
 
       ${
         // 📰 News article section
@@ -127,16 +114,13 @@ function renderList(data) {
         </div>
 
         ${
-          item.ai_breakdown &&
-          Object.values(item.ai_breakdown.matched || {}).flat().length
+          item.ai_breakdown && Object.values(item.ai_breakdown.matched || {}).flat().length
             ? `
           <div class="mt-3">
             <div class="text-xs text-gray-400 mb-1">AI Keywords</div>
             <ul class="list-disc list-inside text-xs text-blue-300 space-y-1">
               ${Object.entries(item.ai_breakdown.matched)
-                .map(([lvl, terms]) =>
-                  terms.length ? `<li>${lvl}: ${terms.join(", ")}</li>` : ""
-                )
+                .map(([lvl, terms]) => (terms.length ? `<li>${lvl}: ${terms.join(", ")}</li>` : ""))
                 .join("")}
             </ul>
           </div>`
@@ -169,67 +153,3 @@ function renderList(data) {
     list.appendChild(card);
   });
 }
-
-// ✅ Updated helper: read daily summaries from JSON or fall back
-function renderPrompts(data) {
-  let analystPrompt = "No analyst notes available.";
-  let cisoPrompt = "No CISO notes available.";
-
-  if (Array.isArray(data)) {
-    // 🧩 Legacy array format
-    const analystSummaries = data.map(d => d.summary_analyst || d.summary).filter(Boolean);
-    const cisoSummaries = data.map(d => d.summary_ciso).filter(Boolean);
-
-    analystPrompt = analystSummaries.length
-      ? analystSummaries.join(" ").slice(0, 1200) + "..."
-      : analystPrompt;
-    cisoPrompt = cisoSummaries.length
-      ? cisoSummaries.join(" ").slice(0, 1200) + "..."
-      : cisoPrompt;
-  } else {
-    // 🧠 New object format (preferred)
-    analystPrompt = data.daily_analyst_summary || analystPrompt;
-    cisoPrompt = data.daily_ciso_summary || cisoPrompt;
-  }
-
-  const analystEl = document.getElementById("analyst-prompt");
-  const cisoEl = document.getElementById("ciso-prompt");
-
-  if (analystEl) analystEl.textContent = analystPrompt;
-  if (cisoEl) cisoEl.textContent = cisoPrompt;
-}
-
-async function loadToday() {
-  try {
-    const data = await fetchJSON(`${basePath}data/aura_scores.json`);
-    const cves = Array.isArray(data) ? data : data.cves || [];
-    renderList(cves);
-    renderPrompts(data);
-  } catch (e) {
-    console.error(e);
-    document.getElementById("top-list").innerHTML =
-      '<div class="text-sm text-red-300">Failed to load today\'s feed.</div>';
-  }
-}
-
-async function loadByDate(dateStr) {
-  if (!dateStr) return loadToday();
-  try {
-    const path = `${basePath}data/history/${dateStr}.json`;
-    const data = await fetchJSON(path);
-    const cves = Array.isArray(data) ? data : data.cves || [];
-    renderList(cves);
-    renderPrompts(data);
-  } catch (e) {
-    document.getElementById("top-list").innerHTML =
-      '<div class="text-sm text-yellow-300">No snapshot for that date.</div>';
-  }
-}
-
-document.getElementById("loadDateBtn")?.addEventListener("click", () => {
-  const d = document.getElementById("datePicker").value;
-  loadByDate(d);
-});
-
-// Initial load
-loadToday();
