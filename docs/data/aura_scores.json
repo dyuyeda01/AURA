@@ -1,140 +1,515 @@
-[
-  {
-    "cve": "CVE-2025-2747",
-    "aura_score": 69.3,
-    "cvss": 9.8,
-    "epss": 0.007,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-2747"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
+{
+  "generated": "2025-10-22T03:19:50.149651",
+  "daily_analyst_summary": "Today's intelligence highlights a surge in critical remote code execution vulnerabilities across diverse platforms, notably Kentico Xperience, Fortra Goanywhere MFT, and Sangoma FreePBX, primarily driven by improper input validation flaws. Oracle Concurrent Processing and Adobe Experience Manager Forms also present high-severity risks related to unauthorized data access. Additionally, unauthenticated access issues in Citrix Session Recording and Kentico Xperience underscore the growing exploitation trend targeting session management and authentication mechanisms. Organizations should prioritize patching these vulnerabilities to mitigate potential system compromise and data breaches.",
+  "daily_ciso_summary": "The current vulnerability landscape presents significant risks to business operations, with multiple critical and high-severity flaws enabling remote code execution and unauthorized data access across widely-used enterprise platforms such as Oracle, Kentico Xperience, Fortra Goanywhere, and Adobe Experience Manager. These vulnerabilities expose organizations to potential system compromise, data breaches, and operational disruptions, particularly where improper input validation and authentication weaknesses exist. Immediate focus should be on patching critical remote code execution vulnerabilities, enhancing input validation controls, and strengthening authentication mechanisms to mitigate exposure and protect sensitive data assets. Additionally, continuous monitoring and rapid incident response capabilities are essential to address exploitation attempts in real time.",
+  "cves": [
+    {
+      "cve": "CVE-2025-61882",
+      "aura_score": 89.2,
+      "cvss": 9.8,
+      "epss": 0.823,
+      "kev": true,
+      "trend_score": 0.7,
+      "trend_mentions": 97,
+      "trend_breakdown": {
+        "news_hits": 97,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.7
       },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-61882"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Oracle",
+      "product": "Concurrent Processing",
+      "summary_analyst": "CVE-2025-61882 is a vulnerability in Oracle Concurrent Processing that allows an authenticated attacker to exploit improper input validation, potentially resulting in unauthorized access to sensitive data with a high severity impact.",
+      "summary_ciso": "CVE-2025-61882 poses a significant business risk to Oracle Concurrent Processing environments, as it can lead to unauthorized access and data breaches, requiring immediate attention to mitigate potential exposure and protect sensitive organizational information.",
+      "description": "CVE-2025-61882 is a vulnerability in Oracle Concurrent Processing that allows an authenticated attacker to exploit improper input validation, potentially resulting in unauthorized access to sensitive data with a high severity impact.",
+      "news_article": {
+        "title": "Oracle Rushes Patch for CVE-2025-61882 After Cl0p Exploited It in Data Theft Attacks",
+        "url": "https://thehackernews.com/2025/10/oracle-rushes-patch-for-cve-2025-61882.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
       }
     },
-    "vendor": "Kentico",
-    "product": "Xperience",
-    "summary": "As of my last update, I don't have specific details about CVE-2025-2747, as it references a future event beyond my training data. However, CVEs (Common Vulnerabilities and Exposures) typically represent security vulnerabilities in software that may allow unauthorized access or other malicious actions.\n\nFor detailed and accurate information regarding CVE-2025-2747, I recommend checking the official CVE database or security advisories related to Kentico Xperience directly. These sources will provide the most up-to-date information on the nature of the vulnerability, its impact, affected versions, and any recommended mitigations or patches.",
-    "description": "As of my last update, I don't have specific details about CVE-2025-2747, as it references a future event beyond my training data. However, CVEs (Common Vulnerabilities and Exposures) typically represent security vulnerabilities in software that may allow unauthorized access or other malicious actions.\n\nFor detailed and accurate information regarding CVE-2025-2747, I recommend checking the official CVE database or security advisories related to Kentico Xperience directly. These sources will provide the most up-to-date information on the nature of the vulnerability, its impact, affected versions, and any recommended mitigations or patches.",
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-2746",
-    "aura_score": 69.2,
-    "cvss": 9.8,
-    "epss": 0.002,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-2746"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
+    {
+      "cve": "CVE-2025-2747",
+      "aura_score": 86.8,
+      "cvss": 9.8,
+      "epss": 0.832,
+      "kev": true,
+      "trend_score": 0.196,
+      "trend_mentions": 2,
+      "trend_breakdown": {
+        "news_hits": 2,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.196
       },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-2747"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Kentico",
+      "product": "Xperience",
+      "summary_analyst": "CVE-2025-2747 affects Kentico Xperience due to improper input validation that allows remote attackers to execute arbitrary code, resulting in a critical severity impact on application integrity.",
+      "summary_ciso": "CVE-2025-2747 presents an urgent risk to Kentico Xperience that could lead to unauthorized data access and potential reputation damage, necessitating immediate mitigation to protect sensitive business information.",
+      "description": "CVE-2025-2747 affects Kentico Xperience due to improper input validation that allows remote attackers to execute arbitrary code, resulting in a critical severity impact on application integrity.",
+      "news_article": {
+        "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
       }
     },
-    "vendor": "Kentico",
-    "product": "Xperience",
-    "summary": "CVE-2025-2746 pertains to a security vulnerability found in Kentico Xperience, a content management system (CMS) used for creating and managing websites. The vulnerability could potentially allow unauthorized access or compromise the integrity of the system, depending on its specifics.\n\nTo mitigate such vulnerabilities, it\u2019s essential for users and administrators of Kentico Xperience to update their systems to the latest version, apply any available security patches, and follow best practices for securing web applications. Regular monitoring for security updates and implementing proper access controls can help minimize the risks associated with this and similar vulnerabilities.\n\nFor detailed technical information and fixes, it's advisable to refer to the official Kentico documentation or security advisories.",
-    "description": "CVE-2025-2746 pertains to a security vulnerability found in Kentico Xperience, a content management system (CMS) used for creating and managing websites. The vulnerability could potentially allow unauthorized access or compromise the integrity of the system, depending on its specifics.\n\nTo mitigate such vulnerabilities, it\u2019s essential for users and administrators of Kentico Xperience to update their systems to the latest version, apply any available security patches, and follow best practices for securing web applications. Regular monitoring for security updates and implementing proper access controls can help minimize the risks associated with this and similar vulnerabilities.\n\nFor detailed technical information and fixes, it's advisable to refer to the official Kentico documentation or security advisories.",
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
-    }
-  },
-  {
-    "cve": "CVE-2025-33073",
-    "aura_score": 66.1,
-    "cvss": 8.8,
-    "epss": 0.043,
-    "kev": true,
-    "trend_score": 0.0,
-    "trend_mentions": 0,
-    "trend_breakdown": {
-      "news_hits": 0,
-      "github_hits": 0,
-      "exploit_boost": 0.0,
-      "trend_raw": 0.0
-    },
-    "exploit_poc": true,
-    "exploit_edb_ids": [],
-    "exploit_urls": [
-      "https://www.exploit-db.com/search?q=CVE-2025-33073"
-    ],
-    "ai_context": 0.0,
-    "ai_breakdown": {
-      "score": 0.0,
-      "matched": {
-        "high": [],
-        "medium": [],
-        "low": []
+    {
+      "cve": "CVE-2025-10035",
+      "aura_score": 85.6,
+      "cvss": 10.0,
+      "epss": 0.618,
+      "kev": true,
+      "trend_score": 0.652,
+      "trend_mentions": 38,
+      "trend_breakdown": {
+        "news_hits": 38,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.652
       },
-      "counts": {
-        "high": 0,
-        "medium": 0,
-        "low": 0
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-10035"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Fortra",
+      "product": "Goanywhere Managed File Transfer",
+      "summary_analyst": "CVE-2025-10035 is a critical vulnerability in Fortra Goanywhere Managed File Transfer that allows remote attackers to execute arbitrary code via crafted requests due to improper input validation, potentially leading to complete system compromise.",
+      "summary_ciso": "CVE-2025-10035 poses a critical risk to Fortra GoAnywhere Managed File Transfer, potentially exposing sensitive data to unauthorized access, necessitating immediate action to mitigate potential financial and reputational damage.",
+      "description": "CVE-2025-10035 is a critical vulnerability in Fortra Goanywhere Managed File Transfer that allows remote attackers to execute arbitrary code via crafted requests due to improper input validation, potentially leading to complete system compromise.",
+      "news_article": {
+        "title": "Is This Bad? This Feels Bad. (Fortra GoAnywhere CVE-2025-10035)",
+        "url": "https://labs.watchtowr.com/is-this-bad-this-feels-bad-goanywhere-cve-2025-10035/",
+        "source": "Watchtowr.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
       }
     },
-    "vendor": "Microsoft",
-    "product": "Windows 10 1507",
-    "summary": "CVE-2025-33073 is a security vulnerability impacting Microsoft Windows 10 version 1507. This vulnerability may allow an attacker to execute arbitrary code on the affected system, which could potentially lead to system compromise. The risk arises from improper handling of objects in memory. Microsoft has recommended users to apply the necessary security updates to mitigate this vulnerability. Users should ensure their systems are updated to the latest supported versions of Windows to minimize the risk associated with this and other known vulnerabilities.",
-    "description": "CVE-2025-33073 is a security vulnerability impacting Microsoft Windows 10 version 1507. This vulnerability may allow an attacker to execute arbitrary code on the affected system, which could potentially lead to system compromise. The risk arises from improper handling of objects in memory. Microsoft has recommended users to apply the necessary security updates to mitigate this vulnerability. Users should ensure their systems are updated to the latest supported versions of Windows to minimize the risk associated with this and other known vulnerabilities.",
-    "score_breakdown": {
-      "cvss_weight": 0.4,
-      "epss_weight": 0.2,
-      "kev_weight": 0.2,
-      "exploit_weight": 0.1,
-      "trend_weight": 0.05,
-      "ai_weight": 0.05
+    {
+      "cve": "CVE-2025-57819",
+      "aura_score": 83.6,
+      "cvss": 9.8,
+      "epss": 0.669,
+      "kev": true,
+      "trend_score": 0.196,
+      "trend_mentions": 2,
+      "trend_breakdown": {
+        "news_hits": 2,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.196
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-57819"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Sangoma",
+      "product": "Freepbx",
+      "summary_analyst": "CVE-2025-57819 is a vulnerability in Sangoma FreePBX that allows remote attackers to execute arbitrary code via crafted payloads targeting the authentication mechanism, leading to potential severe impacts on system integrity and confidentiality.",
+      "summary_ciso": "CVE-2025-57819, affecting Sangoma FreePBX, poses an urgent risk of unauthorized access to sensitive communications, which could lead to significant business disruptions and potential financial loss if not promptly mitigated.",
+      "description": "CVE-2025-57819 is a vulnerability in Sangoma FreePBX that allows remote attackers to execute arbitrary code via crafted payloads targeting the authentication mechanism, leading to potential severe impacts on system integrity and confidentiality.",
+      "news_article": {
+        "title": "Exploit Against FreePBX (CVE-2025-57819) with code execution., (Tue, Oct 7th)",
+        "url": "https://isc.sans.edu/diary/32350",
+        "source": "Sans.edu"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-54253",
+      "aura_score": 82.9,
+      "cvss": 10.0,
+      "epss": 0.541,
+      "kev": true,
+      "trend_score": 0.41,
+      "trend_mentions": 9,
+      "trend_breakdown": {
+        "news_hits": 9,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.41
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-54253"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Adobe",
+      "product": "Experience Manager Forms",
+      "summary_analyst": "CVE-2025-54253 affects Adobe Experience Manager Forms by allowing an attacker to exploit a vulnerability in component permissions, which may lead to unauthorized access and data exposure, resulting in a high severity impact.",
+      "summary_ciso": "CVE-2025-54253 exposes Adobe Experience Manager Forms to potential data breaches, increasing the urgency for mitigation due to the critical risk of sensitive information leakage that could severely impact customer trust and compliance.",
+      "description": "CVE-2025-54253 affects Adobe Experience Manager Forms by allowing an attacker to exploit a vulnerability in component permissions, which may lead to unauthorized access and data exposure, resulting in a high severity impact.",
+      "news_article": {
+        "title": "CISA Flags Adobe AEM Flaw with Perfect 10.0 Score \u2014 Already Under Active Attack",
+        "url": "https://thehackernews.com/2025/10/cisa-flags-adobe-aem-flaw-with-perfect.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-2746",
+      "aura_score": 82.0,
+      "cvss": 9.8,
+      "epss": 0.592,
+      "kev": true,
+      "trend_score": 0.196,
+      "trend_mentions": 2,
+      "trend_breakdown": {
+        "news_hits": 2,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.196
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-2746"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Kentico",
+      "product": "Xperience",
+      "summary_analyst": "CVE-2025-2746 affects Kentico Xperience by allowing unauthenticated attackers to exploit an improper input validation vulnerability, leading to remote code execution with a high severity impact.",
+      "summary_ciso": "CVE-2025-2746 poses a significant business risk to Kentico Xperience users, exposing sensitive data and critical systems to potential breaches, necessitating immediate mitigation to safeguard against exploitation.",
+      "description": "CVE-2025-2746 affects Kentico Xperience by allowing unauthenticated attackers to exploit an improper input validation vulnerability, leading to remote code execution with a high severity impact.",
+      "news_article": {
+        "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-5086",
+      "aura_score": 79.6,
+      "cvss": 9.0,
+      "epss": 0.679,
+      "kev": true,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
+      "trend_breakdown": {
+        "news_hits": 0,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.0
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-5086"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "3Ds",
+      "product": "Delmia Apriso",
+      "summary_analyst": "CVE-2025-5086 affects 3Ds Delmia Apriso by allowing an attacker to execute arbitrary code through improper input validation in the affected component, leading to a high impact severity classification due to potential system compromise.",
+      "summary_ciso": "CVE-2025-5086 poses a critical threat to 3Ds Delmia Apriso, exposing sensitive operational data and processes to potential exploitation, which requires immediate remediation to safeguard our business continuity and protect against significant financial and reputational damage.",
+      "description": "CVE-2025-5086 affects 3Ds Delmia Apriso by allowing an attacker to execute arbitrary code through improper input validation in the affected component, leading to a high impact severity classification due to potential system compromise.",
+      "news_article": null,
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-4008",
+      "aura_score": 76.7,
+      "cvss": 8.8,
+      "epss": 0.476,
+      "kev": true,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
+      "trend_breakdown": {
+        "news_hits": 8,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.391
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-4008"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Smartbedded",
+      "product": "Meteobridge Vm",
+      "summary_analyst": "CVE-2025-4008 is a critical vulnerability in Smartbedded Meteobridge Vm that allows remote attackers to execute arbitrary code due to improper input validation, potentially compromising the affected system's integrity and confidentiality.",
+      "summary_ciso": "CVE-2025-4008 exposes Smartbedded Meteobridge Vm to potential unauthorized remote access, which could compromise sensitive operational data, requiring immediate action to protect against significant business disruptions and data breaches.",
+      "description": "CVE-2025-4008 is a critical vulnerability in Smartbedded Meteobridge Vm that allows remote attackers to execute arbitrary code due to improper input validation, potentially compromising the affected system's integrity and confidentiality.",
+      "news_article": {
+        "title": "CISA Flags Meteobridge CVE-2025-4008 Flaw as Actively Exploited in the Wild",
+        "url": "https://thehackernews.com/2025/10/cisa-flags-meteobridge-cve-2025-4008.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2023-2533",
+      "aura_score": 75.6,
+      "cvss": 8.4,
+      "epss": 0.602,
+      "kev": true,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
+      "trend_breakdown": {
+        "news_hits": 0,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.0
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2023-2533"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Papercut",
+      "product": "Papercut Mf",
+      "summary_analyst": "CVE-2023-2533 is a vulnerability in Papercut MF that can be exploited by an attacker to execute arbitrary code with elevated privileges, potentially leading to a complete system compromise.",
+      "summary_ciso": "CVE-2023-2533 poses a critical security risk to Papercut MF, allowing potential unauthorized access to sensitive data, which could result in significant business disruptions and reputational damage if not urgently mitigated.",
+      "description": "CVE-2023-2533 is a vulnerability in Papercut MF that can be exploited by an attacker to execute arbitrary code with elevated privileges, potentially leading to a complete system compromise.",
+      "news_article": null,
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2024-8069",
+      "aura_score": 74.3,
+      "cvss": 8.0,
+      "epss": 0.615,
+      "kev": true,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
+      "trend_breakdown": {
+        "news_hits": 0,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.0
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2024-8069"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Citrix",
+      "product": "Session Recording",
+      "summary_analyst": "CVE-2024-8069 affects Citrix Session Recording by allowing an unauthenticated attacker to exploit a flaw in the system's session handling, resulting in potential unauthorized access to recorded session data, which has a high impact severity.",
+      "summary_ciso": "CVE-2024-8069 poses a significant risk to Citrix Session Recording, potentially exposing sensitive session data and demanding immediate mitigation to safeguard organizational confidentiality and compliance.",
+      "description": "CVE-2024-8069 affects Citrix Session Recording by allowing an unauthenticated attacker to exploit a flaw in the system's session handling, resulting in potential unauthorized access to recorded session data, which has a high impact severity.",
+      "news_article": null,
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
     }
-  }
-]
+  ]
+}

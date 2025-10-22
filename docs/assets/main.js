@@ -1,29 +1,21 @@
-// public/assets/main.js
-async function fetchJSON(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`Failed to fetch ${path}`);
-  return res.json();
-}
-
-function riskColor(score) {
-  if (score >= 90) return "text-red-300";
-  if (score >= 80) return "text-orange-300";
-  if (score >= 70) return "text-yellow-300";
-  return "text-green-300";
-}
-
-// ✅ Robust base path fix (works for localhost + GitHub Pages /AURA/)
-const isLocal =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1";
-const pathParts = window.location.pathname.split("/").filter(Boolean);
-const repoName = !isLocal && pathParts.length > 0 ? `/${pathParts[0]}/` : "/";
-const basePath = isLocal ? "/" : repoName;
-console.log(`[AURA] Base path resolved to: ${basePath}`);
-
 function renderList(data) {
   const list = document.getElementById("top-list");
   list.innerHTML = "";
+
+  // 🕒 Update last updated timestamp
+  const updatedEl = document.getElementById("last-updated");
+  if (updatedEl) {
+    const now = new Date();
+    const options = {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZoneName: "short"
+    };
+    updatedEl.textContent = `Last updated: ${now.toLocaleString(undefined, options)}`;
+  }
 
   data.forEach((item) => {
     const card = document.createElement("div");
@@ -58,6 +50,13 @@ function renderList(data) {
           </span>`
         : "";
 
+    // 🧠 Unified summary logic (only one)
+    const mainSummary =
+      item.summary_ciso ||
+      item.summary_analyst ||
+      item.summary ||
+      "No summary available.";
+
     card.innerHTML = `
       <div class="flex items-start justify-between gap-3">
         <div>
@@ -80,54 +79,48 @@ function renderList(data) {
                 : ""
             }
           </div>
-          <p class="text-sm text-gray-400">${item.vendor ?? ""} ${
-      item.product ?? ""
-    }</p>
+          <p class="text-sm text-gray-400">${item.vendor ?? ""} ${item.product ?? ""}</p>
         </div>
         <div class="text-right">
           <div class="text-xs text-gray-500">AURA Score</div>
-          <div class="text-2xl font-bold ${riskColor(item.aura_score)}">${
-      item.aura_score
-    }</div>
+          <div class="text-2xl font-bold ${riskColor(item.aura_score)}">${item.aura_score}</div>
         </div>
       </div>
 
-      <p class="mt-2 text-sm text-gray-200">${item.summary}</p>
+      <!-- 🧠 Single summary (prefers AI/business tone) -->
+      <p class="mt-2 text-sm text-gray-200">${item.summary_ciso ? "💼 " : ""}${mainSummary}</p>
+
+      ${
+        // 📰 News article section
+        item.news_article && item.news_article.url
+          ? `
+        <a href="${item.news_article.url}" target="_blank" rel="noopener noreferrer"
+           class="block mt-2 text-xs text-cyan-300 hover:text-cyan-100 underline decoration-dotted"
+           title="${item.news_article.source || "News"}">
+          📰 ${item.news_article.title || "View related article"} (${item.news_article.source || "News"})
+        </a>`
+          : ""
+      }
 
       <details class="mt-3 bg-gray-950/60 rounded p-3">
         <summary class="cursor-pointer text-sm text-cyan-300">Scoring breakdown</summary>
         <div class="grid grid-cols-2 gap-2 text-xs text-gray-300 mt-2">
-          <div>CVSS: ${(item.cvss ?? 0).toFixed(1)} (w ${
-      item.score_breakdown.cvss_weight
-    })</div>
-          <div>EPSS: ${(item.epss ?? 0).toFixed(2)} (w ${
-      item.score_breakdown.epss_weight
-    })</div>
-          <div>KEV: ${item.kev ? "Yes" : "No"} (w ${
-      item.score_breakdown.kev_weight
-    })</div>
-          <div>Exploit PoC: ${item.exploit_poc ? "Yes" : "No"} (w ${
-      item.score_breakdown.exploit_weight
-    })</div>
-          <div>Trend: ${item.trend_mentions} (w ${
-      item.score_breakdown.trend_weight
-    })</div>
-          <div>AI Context: ${(item.ai_context ?? 0).toFixed(2)} (w ${
-      item.score_breakdown.ai_weight
-    })</div>
+          <div>CVSS: ${(item.cvss ?? 0).toFixed(1)} (w ${item.score_breakdown?.cvss_weight ?? "?"})</div>
+          <div>EPSS: ${(item.epss ?? 0).toFixed(2)} (w ${item.score_breakdown?.epss_weight ?? "?"})</div>
+          <div>KEV: ${item.kev ? "Yes" : "No"} (w ${item.score_breakdown?.kev_weight ?? "?"})</div>
+          <div>Exploit PoC: ${item.exploit_poc ? "Yes" : "No"} (w ${item.score_breakdown?.exploit_weight ?? "?"})</div>
+          <div>Trend: ${item.trend_mentions} (w ${item.score_breakdown?.trend_weight ?? "?"})</div>
+          <div>AI Context: ${(item.ai_context ?? 0).toFixed(2)} (w ${item.score_breakdown?.ai_weight ?? "?"})</div>
         </div>
 
         ${
-          item.ai_breakdown &&
-          Object.values(item.ai_breakdown.matched || {}).flat().length
+          item.ai_breakdown && Object.values(item.ai_breakdown.matched || {}).flat().length
             ? `
           <div class="mt-3">
             <div class="text-xs text-gray-400 mb-1">AI Keywords</div>
             <ul class="list-disc list-inside text-xs text-blue-300 space-y-1">
               ${Object.entries(item.ai_breakdown.matched)
-                .map(([lvl, terms]) =>
-                  terms.length ? `<li>${lvl}: ${terms.join(", ")}</li>` : ""
-                )
+                .map(([lvl, terms]) => (terms.length ? `<li>${lvl}: ${terms.join(", ")}</li>` : ""))
                 .join("")}
             </ul>
           </div>`
@@ -160,34 +153,3 @@ function renderList(data) {
     list.appendChild(card);
   });
 }
-
-async function loadToday() {
-  try {
-    const data = await fetchJSON(`${basePath}data/aura_scores.json`);
-    renderList(data);
-  } catch (e) {
-    console.error(e);
-    document.getElementById("top-list").innerHTML =
-      '<div class="text-sm text-red-300">Failed to load today\'s feed.</div>';
-  }
-}
-
-async function loadByDate(dateStr) {
-  if (!dateStr) return loadToday();
-  try {
-    const path = `${basePath}data/history/${dateStr}.json`;
-    const data = await fetchJSON(path);
-    renderList(data);
-  } catch (e) {
-    document.getElementById("top-list").innerHTML =
-      '<div class="text-sm text-yellow-300">No snapshot for that date.</div>';
-  }
-}
-
-document.getElementById("loadDateBtn")?.addEventListener("click", () => {
-  const d = document.getElementById("datePicker").value;
-  loadByDate(d);
-});
-
-// Initial load
-loadToday();
