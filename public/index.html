@@ -114,7 +114,7 @@
   <!-- ======================= -->
   <!-- ✅ JS: Auto-load + Render -->
   <!-- ======================= -->
-  <script>
+  <script type="module">
   // ✅ Auto-detect base path (works for GitHub Pages and local)
   const basePath = (() => {
     const parts = window.location.pathname.split('/').filter(Boolean);
@@ -136,27 +136,16 @@
     const updatedEl = document.getElementById("last-updated");
     if (!list) return console.error("Missing #top-list");
     list.innerHTML = "";
-    if (!Array.isArray(data)) {
-      list.innerHTML = `<div class="p-4 text-sm text-red-300">No data to display.</div>`;
-      return;
-    }
 
     // 🕒 Timestamp update
     if (updatedEl) {
-      try {
-        const res = await fetch(`${basePath}data/aura_scores.json`, { cache: "no-store" });
-        const lastModified = res.headers.get("Last-Modified");
-        let date = lastModified ? new Date(lastModified) : null;
-        if (!date || isNaN(date)) {
-          const json = await res.clone().json().catch(() => null);
-          const ts = json?.last_run || json?.meta?.last_run || json?.generated_at;
-          if (ts) date = new Date(ts);
-        }
-        if (!date || isNaN(date)) date = new Date();
-        updatedEl.textContent = `Last updated: ${date.toLocaleString()}`;
-      } catch (e) {
-        updatedEl.textContent = `Last updated: ${new Date().toLocaleString()}`;
-      }
+      const ts = new Date();
+      updatedEl.textContent = `Last updated: ${ts.toLocaleString()}`;
+    }
+
+    if (!Array.isArray(data) || !data.length) {
+      list.innerHTML = `<div class="p-4 text-sm text-yellow-300">No CVEs found for today.</div>`;
+      return;
     }
 
     // 🔁 Render each card
@@ -165,8 +154,8 @@
       card.className = "card bg-gray-900 rounded-xl p-4 border border-gray-800";
       const primaryExploitUrl = item.exploit_urls?.[0] || `https://www.exploit-db.com/search?q=${item.cve}`;
       const exploitCount = item.exploit_edb_ids?.length ? ` (${item.exploit_edb_ids.length})` : "";
-      const trendBadge = item.trend_score > 0.3 ? `<span class='text-amber-400 text-lg ml-1'>🔥</span>` : "";
-      const aiBadge = item.ai_context > 0.3 ? `<span class='ml-1 text-blue-400 text-lg'>🤖</span>` : "";
+      const trendBadge = item.trend_score > 0.3 ? "<span class='text-amber-400 text-lg ml-1'>🔥</span>" : "";
+      const aiBadge = item.ai_context > 0.3 ? "<span class='ml-1 text-blue-400 text-lg'>🤖</span>" : "";
       const mainSummary = item.summary_ciso || item.summary_analyst || item.summary || "No summary available.";
 
       card.innerHTML = `
@@ -188,9 +177,6 @@
       `;
       list.appendChild(card);
     });
-
-    if (!data.length)
-      list.innerHTML = `<div class="p-4 text-sm text-yellow-300">No CVEs found for today.</div>`;
   }
 
   // 🚀 Auto-load JSON and render
@@ -198,7 +184,16 @@
     try {
       const res = await fetch(`${basePath}data/aura_scores.json`, { cache: "no-store" });
       const json = await res.json();
-      const items = Array.isArray(json) ? json : json.items || json.results || [];
+      console.log("[AURA] JSON keys:", Object.keys(json));
+
+      const items = Array.isArray(json) ? json : (Array.isArray(json.cves) ? json.cves : []);
+      console.log("[AURA] Detected", items.length, "CVEs");
+
+      if (json.daily_analyst_summary)
+        document.getElementById("analyst-prompt").textContent = json.daily_analyst_summary;
+      if (json.daily_ciso_summary)
+        document.getElementById("ciso-prompt").textContent = json.daily_ciso_summary;
+
       await renderList(items);
     } catch (err) {
       console.error("Failed to load aura_scores.json", err);
