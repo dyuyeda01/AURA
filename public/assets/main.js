@@ -23,28 +23,42 @@ function riskColor(score) {
 async function renderList() {
   const list = document.getElementById("top-list");
   const updatedEl = document.getElementById("last-updated");
+  const analystEl = document.getElementById("analyst-prompt");
+  const cisoEl = document.getElementById("ciso-prompt");
+
   if (!list) {
     console.error("❌ Missing #top-list in DOM — cannot render.");
     return;
   }
 
-  // temporary loading message
+  // Temporary loading message
   list.innerHTML = `<div class="p-4 text-sm text-gray-400 italic">Loading AURA data...</div>`;
 
   try {
     const res = await fetch(`${basePath}data/aura_scores.json`, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
+    console.log("[AURA] JSON structure keys:", Object.keys(json));
 
-    // ✅ FIX: use json.top[] from your live structure
-    const data = Array.isArray(json) ? json : json.top || json.items || json.results || [];
+    // ✅ FIX: Use json.cves[] from your live structure
+    const data = Array.isArray(json)
+      ? json
+      : json.cves || json.top || json.items || json.results || [];
+
     console.log(`🧠 Loaded ${data.length} records from AURA feed`);
 
-    list.innerHTML = ""; // clear loading text
+    // Populate daily summaries if available
+    if (analystEl && json.daily_analyst_summary)
+      analystEl.textContent = json.daily_analyst_summary;
+    if (cisoEl && json.daily_ciso_summary)
+      cisoEl.textContent = json.daily_ciso_summary;
+
+    list.innerHTML = ""; // Clear loading text
 
     // 🕒 Update "Last updated" timestamp
     if (updatedEl) {
-      const ts = json?.meta?.last_run || json?.last_run || json?.generated_at;
+      const ts =
+        json?.meta?.last_run || json?.last_run || json?.generated || json?.generated_at;
       const date = ts ? new Date(ts) : new Date();
       const options = {
         year: "numeric",
