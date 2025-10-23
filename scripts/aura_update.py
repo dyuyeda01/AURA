@@ -185,8 +185,8 @@ def generate_daily_summaries(top_records: list[dict]) -> dict[str, str]:
         )
 
         ciso_prompt = (
-            "You are a Chief Information Security Officer for ACME Services. Provide a 2 sentence executive-level summary "
-            "of today's vulnerability landscape focusing on business impact, exposure risk, and recommended focus areas.\n\n"
+            "You are a Chief Information Security Officer for ACME Services. Provide a 3 sentence executive-level summary "
+            "of today's vulnerability landscape focusing on business impact, exposure of financial risk, and recommended focus areas.\n\n"
             f"Today's Top CVEs:\n{summary_input}"
         )
 

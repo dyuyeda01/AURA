@@ -30,8 +30,8 @@ def summarize_cve(cve_id: str, vendor: str, product: str, description: str, ctx:
                     "role": "system",
                     "content": (
                         "You are a cybersecurity analyst summarizing technical vulnerabilities. "
-                        "Write one clear, factual sentence focusing on exploit mechanics, "
-                        "affected component, and impact severity."
+                        "Write one clear, factual sentence focusing on exploit mechanics, and "
+                        "affected component."
                     ),
                 },
                 {
