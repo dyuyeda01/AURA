@@ -6,7 +6,7 @@
   <title>AURA Resources</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.4/dist/mermaid.esm.min.mjs";
     mermaid.initialize({ startOnLoad: true, theme: "dark" });
   </script>
   <style>
@@ -123,24 +123,25 @@
       </ul>
     </section>
 
-    <!-- How AURA Works (Scroll-triggered Animated Mermaid Diagram) -->
+    <!-- How AURA Works (Scroll-triggered Mermaid Diagram) -->
     <section class="bg-gray-900/60 rounded-xl p-6">
       <h2 class="text-xl font-semibold text-cyan-300">How AURA Works</h2>
       <p class="text-gray-300 text-sm mt-2">
         The diagram below shows how AURA fuses threat intelligence sources into a unified explainable risk score.
-        The data flow activates dynamically when you scroll into view.
+        The animation triggers dynamically when you scroll into view.
       </p>
 
+      <!-- ✅ Mermaid-safe diagram (no leading spaces or trailing whitespace) -->
       <pre id="aura-diagram" class="mermaid bg-gray-950/80 p-4 rounded text-sm text-cyan-200 mt-4">
 flowchart TD
-  A[CISA KEV] --> F[AURA Fusion Engine]
-  B[NVD (CVSS)] --> F
-  C[FIRST EPSS] --> F
-  D[Exploit-DB / GitHub PoCs] --> F
-  E[News & AI Context Feeds] --> F
-  F --> G[AURA Score 0–100]
-  G --> H[Top 10 CVEs Dashboard]
-      </pre>
+A[CISA KEV] --> F[AURA Fusion Engine]
+B[NVD (CVSS)] --> F
+C[FIRST EPSS] --> F
+D[Exploit-DB / GitHub PoCs] --> F
+E[News & AI Context Feeds] --> F
+F --> G[AURA Score 0–100]
+G --> H[Top 10 CVEs Dashboard]
+</pre>
     </section>
 
     <!-- Legal Disclaimer -->
@@ -160,7 +161,7 @@ flowchart TD
     <a href="index.html" class="underline text-cyan-300">← Back to AURA Feed</a>
   </footer>
 
-  <!-- 🎯 Scroll-trigger animation script -->
+  <!-- 🎯 Scroll-trigger animation -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const diagram = document.getElementById("aura-diagram");
@@ -170,7 +171,7 @@ flowchart TD
             if (entry.isIntersecting) {
               const svg = diagram.querySelector("svg");
               if (svg) svg.classList.add("glow-active");
-              observer.unobserve(diagram); // trigger once
+              observer.unobserve(diagram); // Trigger once only
             }
           });
         },
