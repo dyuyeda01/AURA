@@ -5,8 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AURA Resources</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true, theme: "dark" });
+  </script>
   <style>
     body { background:#0f172a; }
+    a.resource-link { color:#22d3ee; text-decoration:underline; }
+    a.resource-link:hover { color:#a5f3fc; }
+
+    /* ✨ Pulse Glow Animation */
+    @keyframes pulse-glow {
+      0%, 100% { filter: drop-shadow(0 0 0px rgba(6,182,212,0)); }
+      50% { filter: drop-shadow(0 0 12px rgba(6,182,212,0.8)); }
+    }
+
+    .glow-active g {
+      animation: pulse-glow 3s ease-in-out forwards;
+    }
+
+    /* Cascading delay per node */
+    .glow-active g:nth-child(2) { animation-delay: 0.3s; }
+    .glow-active g:nth-child(3) { animation-delay: 0.6s; }
+    .glow-active g:nth-child(4) { animation-delay: 0.9s; }
+    .glow-active g:nth-child(5) { animation-delay: 1.2s; }
+    .glow-active g:nth-child(6) { animation-delay: 1.5s; }
+    .glow-active g:nth-child(7) { animation-delay: 1.8s; }
   </style>
 </head>
 <body class="text-gray-100">
@@ -43,41 +67,37 @@
 
       <ul class="list-disc ml-6 mt-3 text-gray-300 text-sm space-y-3">
         <li>
-          <strong>CISA Known Exploited Vulnerabilities (KEV)</strong> — Identifies 
-          vulnerabilities confirmed as actively exploited in the wild. This dataset drives 
-          AURA’s baseline prioritization and marks which CVEs are proven threats.
+          <strong><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener noreferrer" class="resource-link">
+            CISA Known Exploited Vulnerabilities (KEV)
+          </a></strong> — Identifies vulnerabilities confirmed as actively exploited in the wild.
         </li>
-
         <li>
-          <strong>National Vulnerability Database (NVD)</strong> — Supplies 
-          standardized metadata and CVSS severity scores, enabling consistency in 
-          measuring technical impact and base risk.
+          <strong><a href="https://nvd.nist.gov/" target="_blank" rel="noopener noreferrer" class="resource-link">
+            National Vulnerability Database (NVD)
+          </a></strong> — Supplies standardized metadata and CVSS severity scores.
         </li>
-
         <li>
-          <strong>FIRST Exploit Prediction Scoring System (EPSS)</strong> — Provides 
-          a probabilistic forecast of exploitation. AURA integrates EPSS to 
-          reflect real-world likelihood rather than theoretical severity.
+          <strong><a href="https://www.first.org/epss/" target="_blank" rel="noopener noreferrer" class="resource-link">
+            FIRST Exploit Prediction Scoring System (EPSS)
+          </a></strong> — Provides a probabilistic forecast of exploitation.
         </li>
-
         <li>
-          <strong>Exploit-DB and GitHub Proof-of-Concepts</strong> — Confirms the 
-          public availability of exploit code or demonstrations. When present, this 
-          factor elevates urgency due to increased attacker accessibility.
+          <strong><a href="https://www.exploit-db.com/" target="_blank" rel="noopener noreferrer" class="resource-link">
+            Exploit-DB
+          </a></strong> and 
+          <strong><a href="https://github.com/topics/exploit" target="_blank" rel="noopener noreferrer" class="resource-link">
+            GitHub Proof-of-Concepts
+          </a></strong> — Confirms public exploit availability.
         </li>
-
         <li>
-          <strong>News & Advisory Feeds (NewsAPI)</strong> — Tracks how often a 
-          CVE appears in trusted security publications. This “Trend” score indicates 
-          visibility and awareness across the cybersecurity community.
+          <strong><a href="https://newsapi.org/" target="_blank" rel="noopener noreferrer" class="resource-link">
+            News & Advisory Feeds (NewsAPI)
+          </a></strong> — Measures visibility across cybersecurity publications.
         </li>
-
         <li>
-          <strong>AI Context Analysis</strong> — Detects whether a CVE affects 
-          machine learning frameworks, AI supply chain tools, or model-serving 
-          infrastructure (e.g., TensorFlow, PyTorch, Vertex AI, Hugging Face). 
-          This helps highlight risks that could impact AI-driven operations or 
-          software supply chains.
+          <strong><a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer" class="resource-link">
+            AI Context Analysis
+          </a></strong> — Detects risks affecting ML/AI frameworks and pipelines.
         </li>
       </ul>
     </section>
@@ -86,12 +106,12 @@
     <section class="bg-gray-900/60 rounded-xl p-6">
       <h2 class="text-xl font-semibold text-cyan-300">AURA Scoring Framework</h2>
       <p class="text-gray-300 text-sm mt-2">
-        The AURA Score is a composite index that blends technical severity, 
+        The AURA Score is a composite index blending technical severity, 
         exploit probability, active exploitation, exposure trends, and AI-related 
         context into a unified 0–100 risk scale.
       </p>
       <p class="text-gray-400 text-xs mt-2">
-        Weights are dynamically tuned to balance technical accuracy with operational relevance:
+        Weights are dynamically tuned for balanced technical accuracy and operational relevance:
       </p>
       <ul class="ml-6 mt-2 text-gray-300 text-xs space-y-1">
         <li>CVSS: 40%</li>
@@ -101,6 +121,26 @@
         <li>Trend Awareness: 5%</li>
         <li>AI Context: 5%</li>
       </ul>
+    </section>
+
+    <!-- How AURA Works (Scroll-triggered Animated Mermaid Diagram) -->
+    <section class="bg-gray-900/60 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-cyan-300">How AURA Works</h2>
+      <p class="text-gray-300 text-sm mt-2">
+        The diagram below shows how AURA fuses threat intelligence sources into a unified explainable risk score.
+        The data flow activates dynamically when you scroll into view.
+      </p>
+
+      <pre id="aura-diagram" class="mermaid bg-gray-950/80 p-4 rounded text-sm text-cyan-200 mt-4">
+flowchart TD
+  A[CISA KEV] --> F[AURA Fusion Engine]
+  B[NVD (CVSS)] --> F
+  C[FIRST EPSS] --> F
+  D[Exploit-DB / GitHub PoCs] --> F
+  E[News & AI Context Feeds] --> F
+  F --> G[AURA Score 0–100]
+  G --> H[Top 10 CVEs Dashboard]
+      </pre>
     </section>
 
     <!-- Legal Disclaimer -->
@@ -119,5 +159,25 @@
   <footer class="text-center text-gray-500 text-xs py-10">
     <a href="index.html" class="underline text-cyan-300">← Back to AURA Feed</a>
   </footer>
+
+  <!-- 🎯 Scroll-trigger animation script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const diagram = document.getElementById("aura-diagram");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const svg = diagram.querySelector("svg");
+              if (svg) svg.classList.add("glow-active");
+              observer.unobserve(diagram); // trigger once
+            }
+          });
+        },
+        { threshold: 0.4 }
+      );
+      observer.observe(diagram);
+    });
+  </script>
 </body>
 </html>
