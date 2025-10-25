@@ -348,7 +348,12 @@ def main():
     # 🧠 Generate daily Analyst/CISO summaries via OpenAI
     daily_summaries = generate_daily_summaries(top_records)
 
+    # ✅ ADD REAL UTC TIMESTAMP FIELD
+    last_run_utc = dt.datetime.now(dt.timezone.utc).isoformat()
+    log.info(f"🕒 AURA data generated at {last_run_utc}")
+
     output_data = {
+        "last_run": last_run_utc,  # ✅ used by frontend
         "generated": dt.datetime.utcnow().isoformat(),
         "daily_analyst_summary": daily_summaries["analyst"],
         "daily_ciso_summary": daily_summaries["ciso"],
