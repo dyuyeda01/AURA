@@ -1,6 +1,58 @@
 {
-  "date": "2025-10-30",
+  "date": "2025-10-31",
   "records": [
+    {
+      "cve": "CVE-2025-24893",
+      "aura_score": 89.3,
+      "cvss": 9.8,
+      "epss": 0.943,
+      "kev": true,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
+      "trend_breakdown": {
+        "news_hits": 3,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.247
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-24893"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Xwiki",
+      "product": "Xwiki",
+      "summary_analyst": "CVE-2025-24893 affects Xwiki by allowing remote attackers to exploit a server-side request forgery (SSRF) vulnerability in the application, potentially leading to unauthorized access to internal services.",
+      "summary_ciso": "CVE-2025-24893 exposes Xwiki to potential data breaches and operational disruptions, necessitating immediate patching to safeguard sensitive information and maintain business continuity.",
+      "description": "CVE-2025-24893 affects Xwiki by allowing remote attackers to exploit a server-side request forgery (SSRF) vulnerability in the application, potentially leading to unauthorized access to internal services.",
+      "news_article": {
+        "title": "Active Exploits Hit Dassault and XWiki \u2014 CISA Confirms Critical Flaws Under Attack",
+        "url": "https://thehackernews.com/2025/10/active-exploits-hit-dassault-and-xwiki.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
     {
       "cve": "CVE-2025-2747",
       "aura_score": 87.1,
@@ -36,9 +88,9 @@
       },
       "vendor": "Kentico",
       "product": "Xperience",
-      "summary_analyst": "CVE-2025-2747 is a vulnerability in Kentico Xperience that allows an authenticated attacker to exploit improper input validation in the content management component, potentially leading to unauthorized access or manipulation of sensitive data.",
-      "summary_ciso": "CVE-2025-2747 poses a significant risk to Kentico Xperience, potentially exposing sensitive customer data and undermining brand trust, necessitating immediate action to mitigate the threat and protect our business integrity.",
-      "description": "CVE-2025-2747 is a vulnerability in Kentico Xperience that allows an authenticated attacker to exploit improper input validation in the content management component, potentially leading to unauthorized access or manipulation of sensitive data.",
+      "summary_analyst": "CVE-2025-2747 allows attackers to exploit a vulnerability in Kentico Xperience by leveraging insufficient input validation, potentially leading to remote code execution on the affected component.",
+      "summary_ciso": "CVE-2025-2747 poses a significant risk to Kentico Xperience users, potentially leading to unauthorized access and data breaches, necessitating immediate remediation to protect sensitive information and safeguard business continuity.",
+      "description": "CVE-2025-2747 allows attackers to exploit a vulnerability in Kentico Xperience by leveraging insufficient input validation, potentially leading to remote code execution on the affected component.",
       "news_article": {
         "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
         "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
@@ -88,9 +140,9 @@
       },
       "vendor": "Kentico",
       "product": "Xperience",
-      "summary_analyst": "CVE-2025-2746 affects Kentico Xperience due to improper input validation in the web application, allowing an attacker to execute arbitrary code via crafted HTTP requests targeting the application's endpoint.",
-      "summary_ciso": "CVE-2025-2746 poses a significant risk to Kentico Xperience, with potential data breaches and operational disruptions that could lead to substantial financial loss and reputational damage, necessitating immediate remediation to safeguard our business.",
-      "description": "CVE-2025-2746 affects Kentico Xperience due to improper input validation in the web application, allowing an attacker to execute arbitrary code via crafted HTTP requests targeting the application's endpoint.",
+      "summary_analyst": "CVE-2025-2746 affects Kentico Xperience by allowing an attacker to exploit improper input validation in the user interface, potentially leading to code execution or data manipulation.",
+      "summary_ciso": "CVE-2025-2746 poses an urgent risk to Kentico Xperience users, exposing sensitive data and potentially compromising business operations, necessitating immediate mitigation to protect customer trust and prevent financial loss.",
+      "description": "CVE-2025-2746 affects Kentico Xperience by allowing an attacker to exploit improper input validation in the user interface, potentially leading to code execution or data manipulation.",
       "news_article": {
         "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
         "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
@@ -140,9 +192,9 @@
       },
       "vendor": "Adobe",
       "product": "Commerce",
-      "summary_analyst": "CVE-2025-54236 affects Adobe Commerce through a vulnerability that allows an authenticated attacker to execute arbitrary code via crafted input due to improper input validation in the component handling user inputs.",
-      "summary_ciso": "CVE-2025-54236 poses a critical risk to Adobe Commerce, potentially exposing sensitive customer data and compromising business operations, necessitating immediate action to prevent data breaches and protect brand reputation.",
-      "description": "CVE-2025-54236 affects Adobe Commerce through a vulnerability that allows an authenticated attacker to execute arbitrary code via crafted input due to improper input validation in the component handling user inputs.",
+      "summary_analyst": "CVE-2025-54236 is a vulnerability in Adobe Commerce that allows an authenticated attacker to exploit improper input validation in a specific component, potentially leading to remote code execution.",
+      "summary_ciso": "CVE-2025-54236 poses a critical risk to Adobe Commerce, potentially exposing sensitive customer data to unauthorized access, which requires immediate attention to mitigate severe financial and reputational harm to the organization.",
+      "description": "CVE-2025-54236 is a vulnerability in Adobe Commerce that allows an authenticated attacker to exploit improper input validation in a specific component, potentially leading to remote code execution.",
       "news_article": {
         "title": "Critical Adobe Commerce, Magento vulnerability under attack (CVE-2025-54236)",
         "url": "https://www.helpnetsecurity.com/2025/10/23/adobe-magento-cve-2025-54236-attack/",
@@ -192,9 +244,9 @@
       },
       "vendor": "Adobe",
       "product": "Experience Manager Forms",
-      "summary_analyst": "CVE-2025-54253 affects Adobe Experience Manager Forms by allowing an attacker to exploit improper input validation, leading to potential unauthorized access to sensitive data.",
-      "summary_ciso": "CVE-2025-54253 poses a significant business risk to organizations using Adobe Experience Manager Forms due to potential unauthorized access to sensitive data, necessitating immediate mitigation efforts to protect against data breaches and reputational damage.",
-      "description": "CVE-2025-54253 affects Adobe Experience Manager Forms by allowing an attacker to exploit improper input validation, leading to potential unauthorized access to sensitive data.",
+      "summary_analyst": "CVE-2025-54253 is a vulnerability in Adobe Experience Manager Forms that allows an unauthenticated attacker to exploit improper input validation, potentially leading to arbitrary code execution.",
+      "summary_ciso": "CVE-2025-54253 poses a critical risk to Adobe Experience Manager Forms, potentially exposing sensitive customer data and operational integrity, necessitating immediate mitigation to prevent significant business impact and reputational damage.",
+      "description": "CVE-2025-54253 is a vulnerability in Adobe Experience Manager Forms that allows an unauthenticated attacker to exploit improper input validation, potentially leading to arbitrary code execution.",
       "news_article": {
         "title": "CISA Flags Adobe AEM Flaw with Perfect 10.0 Score \u2014 Already Under Active Attack",
         "url": "https://thehackernews.com/2025/10/cisa-flags-adobe-aem-flaw-with-perfect.html",
@@ -244,9 +296,9 @@
       },
       "vendor": "3Ds",
       "product": "Delmia Apriso",
-      "summary_analyst": "CVE-2025-6205 is a vulnerability in 3Ds Delmia Apriso that allows an attacker to execute arbitrary commands on the server due to improper input validation in the web interface, potentially compromising the affected component.",
-      "summary_ciso": "CVE-2025-6205 poses a significant risk to 3Ds Delmia Apriso, as it could lead to unauthorized access and potential data breaches, necessitating immediate mitigation to safeguard sensitive operational data and maintain business integrity.",
-      "description": "CVE-2025-6205 is a vulnerability in 3Ds Delmia Apriso that allows an attacker to execute arbitrary commands on the server due to improper input validation in the web interface, potentially compromising the affected component.",
+      "summary_analyst": "CVE-2025-6205 is a vulnerability in 3Ds Delmia Apriso that allows remote attackers to execute arbitrary code via crafted input, specifically targeting the application\u2019s input processing component.",
+      "summary_ciso": "CVE-2025-6205, impacting 3Ds Delmia Apriso, poses a significant risk of data breaches and operational disruptions due to its vulnerabilities, necessitating immediate mitigation to protect our sensitive operations and maintain business continuity.",
+      "description": "CVE-2025-6205 is a vulnerability in 3Ds Delmia Apriso that allows remote attackers to execute arbitrary code via crafted input, specifically targeting the application\u2019s input processing component.",
       "news_article": {
         "title": "Active Exploits Hit Dassault and XWiki \u2014 CISA Confirms Critical Flaws Under Attack",
         "url": "https://thehackernews.com/2025/10/active-exploits-hit-dassault-and-xwiki.html",
@@ -296,9 +348,9 @@
       },
       "vendor": "Microsoft",
       "product": "Windows 10 1507",
-      "summary_analyst": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows attackers to execute arbitrary code via a crafted application, due to improper input validation in the system's component handling.",
-      "summary_ciso": "CVE-2025-33073 poses an immediate risk to our operations by allowing potential exploits in Microsoft Windows 10 1507, which could lead to unauthorized access to sensitive data, necessitating urgent mitigation efforts to protect our business integrity and customer trust.",
-      "description": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows attackers to execute arbitrary code via a crafted application, due to improper input validation in the system's component handling.",
+      "summary_analyst": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows remote attackers to execute arbitrary code via crafted packets sent to the affected component's network interface.",
+      "summary_ciso": "CVE-2025-33073 poses a critical vulnerability in Microsoft Windows 10 1507 that could lead to unauthorized access and potential data breaches, necessitating immediate remediation to mitigate significant business risk and protect sensitive information.",
+      "description": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows remote attackers to execute arbitrary code via crafted packets sent to the affected component's network interface.",
       "news_article": {
         "title": "CISA warns of Windows SMB flaw under active exploitation (CVE-2025-33073)",
         "url": "https://www.helpnetsecurity.com/2025/10/21/cisa-warns-of-windows-smb-flaw-under-active-exploitation-cve-2025-33073/",
@@ -320,9 +372,9 @@
       "epss": 0.094,
       "kev": true,
       "trend_score": 0.7,
-      "trend_mentions": 88,
+      "trend_mentions": 92,
       "trend_breakdown": {
-        "news_hits": 88,
+        "news_hits": 92,
         "github_hits": 0,
         "exploit_boost": 0.0,
         "trend_raw": 0.7
@@ -348,9 +400,9 @@
       },
       "vendor": "Microsoft",
       "product": "Windows Server 2012",
-      "summary_analyst": "CVE-2025-59287 is a vulnerability in Microsoft Windows Server 2012 that allows remote attackers to execute arbitrary code due to improper validation of user-supplied input in the Windows Network Driver.",
-      "summary_ciso": "CVE-2025-59287 poses an urgent risk to Microsoft Windows Server 2012, potentially allowing unauthorized access to sensitive data, which could lead to significant business disruptions and reputational damage if not promptly mitigated.",
-      "description": "CVE-2025-59287 is a vulnerability in Microsoft Windows Server 2012 that allows remote attackers to execute arbitrary code due to improper validation of user-supplied input in the Windows Network Driver.",
+      "summary_analyst": "CVE-2025-59287 is a vulnerability in Microsoft Windows Server 2012 that allows attackers to exploit an elevation of privilege issue by executing arbitrary code in the context of a user with elevated privileges.",
+      "summary_ciso": "CVE-2025-59287 presents a critical vulnerability in Microsoft Windows Server 2012, exposing the organization to potential data breaches and operational disruptions, necessitating immediate remediation to safeguard sensitive information and maintain business continuity.",
+      "description": "CVE-2025-59287 is a vulnerability in Microsoft Windows Server 2012 that allows attackers to exploit an elevation of privilege issue by executing arbitrary code in the context of a user with elevated privileges.",
       "news_article": {
         "title": "Everybody's warning about critical Windows Server WSUS bug exploits ... but Microsoft's mum",
         "url": "https://www.theregister.com/2025/10/24/exploitation_of_critical_windows_server/",
@@ -400,9 +452,9 @@
       },
       "vendor": "Motex",
       "product": "Lanscope Endpoint Manager",
-      "summary_analyst": "CVE-2025-61932 is a vulnerability in Motex Lanscope Endpoint Manager that allows attackers to execute arbitrary code via crafted input sent to the affected component, potentially compromising the integrity of the system.",
-      "summary_ciso": "CVE-2025-61932 poses an urgent risk to Motex Lanscope Endpoint Manager, potentially exposing sensitive data and operational integrity to significant breaches unless mitigated promptly.",
-      "description": "CVE-2025-61932 is a vulnerability in Motex Lanscope Endpoint Manager that allows attackers to execute arbitrary code via crafted input sent to the affected component, potentially compromising the integrity of the system.",
+      "summary_analyst": "CVE-2025-61932 is a vulnerability in Motex Lanscope Endpoint Manager that could allow an attacker to execute arbitrary code by exploiting improper input validation in the component handling user authentication.",
+      "summary_ciso": "CVE-2025-61932 exposes Motex Lanscope Endpoint Manager to significant security risks, potentially allowing unauthorized access to critical organizational data, which necessitates urgent mitigation to protect business operations and safeguard sensitive information.",
+      "description": "CVE-2025-61932 is a vulnerability in Motex Lanscope Endpoint Manager that could allow an attacker to execute arbitrary code by exploiting improper input validation in the component handling user authentication.",
       "news_article": {
         "title": "Lanscope Endpoint Manager vulnerability exploited in zero-day attacks (CVE-2025-61932)",
         "url": "https://www.helpnetsecurity.com/2025/10/23/cve-2025-61932-lanscope-endpoint-manager-exploited/",
@@ -452,9 +504,9 @@
       },
       "vendor": "3Ds",
       "product": "Delmia Apriso",
-      "summary_analyst": "CVE-2025-6204 is a vulnerability in 3Ds Delmia Apriso that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution on the affected component.",
-      "summary_ciso": "CVE-2025-6204 exposes 3Ds Delmia Apriso to critical security vulnerabilities that could lead to significant operational disruptions and data breaches, requiring immediate remediation to safeguard business continuity and protect sensitive information.",
-      "description": "CVE-2025-6204 is a vulnerability in 3Ds Delmia Apriso that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution on the affected component.",
+      "summary_analyst": "CVE-2025-6204 affects 3Ds Delmia Apriso by allowing remote attackers to execute arbitrary code via crafted input that influences the software's memory handling.",
+      "summary_ciso": "CVE-2025-6204 poses a significant exposure risk to our manufacturing operations by potentially allowing unauthorized access and manipulation of critical data within the 3Ds Delmia Apriso platform, necessitating immediate mitigation to safeguard business integrity and operational continuity.",
+      "description": "CVE-2025-6204 affects 3Ds Delmia Apriso by allowing remote attackers to execute arbitrary code via crafted input that influences the software's memory handling.",
       "news_article": {
         "title": "Active Exploits Hit Dassault and XWiki \u2014 CISA Confirms Critical Flaws Under Attack",
         "url": "https://thehackernews.com/2025/10/active-exploits-hit-dassault-and-xwiki.html",
@@ -470,23 +522,23 @@
       }
     },
     {
-      "cve": "CVE-2025-24990",
-      "aura_score": 65.0,
+      "cve": "CVE-2025-41244",
+      "aura_score": 64.7,
       "cvss": 7.8,
-      "epss": 0.034,
+      "epss": 0.014,
       "kev": true,
-      "trend_score": 0.628,
-      "trend_mentions": 33,
+      "trend_score": 0.633,
+      "trend_mentions": 34,
       "trend_breakdown": {
-        "news_hits": 33,
+        "news_hits": 34,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.628
+        "trend_raw": 0.633
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-24990"
+        "https://www.exploit-db.com/search?q=CVE-2025-41244"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -502,15 +554,15 @@
           "low": 0
         }
       },
-      "vendor": "Microsoft",
-      "product": "Windows 10 1507",
-      "summary_analyst": "CVE-2025-24990 is a vulnerability in Microsoft Windows 10 version 1507 that allows an attacker to exploit a flaw in the operating system's file handling mechanism, potentially leading to privilege escalation.",
-      "summary_ciso": "CVE-2025-24990 poses a critical risk for businesses using Microsoft Windows 10 1507, exposing systems to potential exploitation and urgently requiring mitigation to prevent data breaches and operational disruptions.",
-      "description": "CVE-2025-24990 is a vulnerability in Microsoft Windows 10 version 1507 that allows an attacker to exploit a flaw in the operating system's file handling mechanism, potentially leading to privilege escalation.",
+      "vendor": "Unknown",
+      "product": "Unknown",
+      "summary_analyst": "CVE-2025-41244 is a vulnerability that allows remote code execution due to improper input validation in the affected component, which could lead to exploitation if a targeted attack is successfully executed.",
+      "summary_ciso": "CVE-2025-41244 presents a critical vulnerability with unknown implications that could lead to significant operational disruption and financial loss, necessitating immediate action to mitigate exposure risks.",
+      "description": "CVE-2025-41244 is a vulnerability that allows remote code execution due to improper input validation in the affected component, which could lead to exploitation if a targeted attack is successfully executed.",
       "news_article": {
-        "title": "Update Microsoft Windows Now \u2014 New 2 Week Security Deadline Confirmed",
-        "url": "https://www.forbes.com/sites/daveywinder/2025/10/16/update-microsoft-windows-now---new-2-week-security-deadline-confirmed/",
-        "source": "Forbes"
+        "title": "This Week in Security: CVSS 0, Chwoot, and Not in the Threat Model",
+        "url": "https://hackaday.com/2025/10/03/this-week-in-security-cvss-0-chwoot-and-not-in-the-threat-model/",
+        "source": "Hackaday"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -556,65 +608,13 @@
       },
       "vendor": "Oracle",
       "product": "Configurator",
-      "summary_analyst": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected component.",
-      "summary_ciso": "CVE-2025-61884 exposes Oracle Configurator to critical vulnerabilities that could lead to significant data breaches, posing an urgent risk to business continuity and customer trust if not mitigated promptly.",
-      "description": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected component.",
+      "summary_analyst": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows an attacker to exploit an improper input validation mechanism, potentially leading to unauthorized access to sensitive data or functions within the application.",
+      "summary_ciso": "CVE-2025-61884 poses a significant risk to Oracle Configurator, potentially exposing sensitive data and critical business operations, necessitating immediate mitigation to prevent exploitation and safeguard organizational integrity.",
+      "description": "CVE-2025-61884 is a vulnerability in Oracle Configurator that allows an attacker to exploit an improper input validation mechanism, potentially leading to unauthorized access to sensitive data or functions within the application.",
       "news_article": {
         "title": "New Oracle E-Business Suite Bug Could Let Hackers Access Data Without Login",
         "url": "https://thehackernews.com/2025/10/new-oracle-e-business-suite-bug-could.html",
         "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-47827",
-      "aura_score": 51.3,
-      "cvss": 4.6,
-      "epss": 0.007,
-      "kev": true,
-      "trend_score": 0.558,
-      "trend_mentions": 22,
-      "trend_breakdown": {
-        "news_hits": 22,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.558
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-47827"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Igel",
-      "product": "Igel Os",
-      "summary_analyst": "CVE-2025-47827 allows remote attackers to exploit a buffer overflow vulnerability in Igel OS, potentially leading to arbitrary code execution on the affected component.",
-      "summary_ciso": "CVE-2025-47827 poses a critical security risk to Igel OS, potentially exposing sensitive corporate data and systems to exploitation, necessitating immediate remediation to protect organizational integrity and compliance.",
-      "description": "CVE-2025-47827 allows remote attackers to exploit a buffer overflow vulnerability in Igel OS, potentially leading to arbitrary code execution on the affected component.",
-      "news_article": {
-        "title": "Frightful Patch Tuesday gives admins a scare with 175+ Microsoft CVEs, 3 under attack",
-        "url": "https://www.theregister.com/2025/10/14/microsoft_october_2025_patch_tuesday/",
-        "source": "Theregister.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
