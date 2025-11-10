@@ -21,3 +21,12 @@ It combines data from **CISA KEV**, **NVD/CVSS**, **EPSS**, and exploit reposito
 
 AURA was built to demonstrate how AI and open data can converge to produce actionable, transparent risk intelligence.
 It’s an evolving experiment in AI-assisted cyber threat awareness, automation, and explainable decision support — designed to inspire more open, automated security ecosystems.
+
+⚠️ Disclaimer
+
+This project is a personal side project created for educational and experimental purposes only.
+All ideas and implementations are original and independently developed by the author, with assistance from ChatGPT for code generation and formatting.
+All data used in this project is sourced entirely from publicly available and open sources.
+Nothing in this repository is proprietary, affiliated with, or represents the author’s employer, clients, or business entities.
+This project is not used for advertising, commercial services, or any official work-related purpose.
+
