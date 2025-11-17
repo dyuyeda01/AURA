@@ -1,22 +1,22 @@
 {
-  "last_run": "2025-11-10T15:36:05.681003+00:00",
-  "generated": "2025-11-10T15:36:05.681087",
-  "daily_analyst_summary": "Today's exploitation trends highlight a surge in vulnerabilities stemming from improper input validation across multiple platforms, including Kentico Xperience, Control-webpanel, and 3Ds Delmia Apriso, often leading to remote code execution or unauthorized access. Noteworthy are critical path traversal and SSRF flaws in Xwiki and Adobe Commerce respectively, which enable attackers to access sensitive files and internal services, emphasizing the need for immediate patching and enhanced input sanitization controls.",
-  "daily_ciso_summary": "The current vulnerability landscape presents significant business risks, with multiple critical flaws enabling unauthorized access, remote code execution, and data manipulation across widely used platforms such as Adobe Commerce, Microsoft Windows, and Kentico Xperience, potentially exposing sensitive financial and operational data. These vulnerabilities elevate the risk of financial loss through data breaches, operational disruption, and regulatory penalties, especially given the exploitation of content management and commerce systems integral to revenue generation. Immediate focus should be on patch management, strengthening input validation controls, and enhancing monitoring for anomalous activity in web-facing applications and endpoint management systems to mitigate exploitation and limit business impact.",
+  "last_run": "2025-11-17T15:37:29.548636+00:00",
+  "generated": "2025-11-17T15:37:29.548685",
+  "daily_analyst_summary": "Today\u2019s intelligence highlights a surge in remote code execution and unauthorized access vulnerabilities driven primarily by improper input validation and insecure file handling across multiple platforms, including Xwiki (CVE-2025-24893), Watchguard Fireware (CVE-2025-9242), and Fortinet FortiWeb (CVE-2025-64446). Noteworthy trends include exploitation of file upload and web interface flaws, with critical risks also observed in authentication bypass (Control-webpanel, CVE-2025-48703) and insecure direct object references (Adobe Commerce, CVE-2025-54236), emphasizing the need for urgent patching and enhanced input validation controls.",
+  "daily_ciso_summary": "Today's vulnerability landscape presents significant business risks due to multiple critical remote code execution and unauthorized access flaws across widely used platforms, including Xwiki, Fortinet FortiWeb, and Adobe Commerce, which could lead to severe operational disruptions and data breaches. The exposure of financial risk is heightened by vulnerabilities in e-commerce and file-sharing systems that may result in theft of sensitive financial data, regulatory penalties, and loss of customer trust. Immediate focus should be on patching remote code execution vulnerabilities, strengthening input validation controls, and enhancing access management to mitigate potential exploitation and safeguard critical business assets.",
   "cves": [
     {
       "cve": "CVE-2025-24893",
-      "aura_score": 90.1,
+      "aura_score": 90.3,
       "cvss": 9.8,
-      "epss": 0.942,
+      "epss": 0.943,
       "kev": true,
-      "trend_score": 0.41,
-      "trend_mentions": 9,
+      "trend_score": 0.457,
+      "trend_mentions": 12,
       "trend_breakdown": {
-        "news_hits": 9,
+        "news_hits": 12,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.41
+        "trend_raw": 0.457
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -39,12 +39,168 @@
       },
       "vendor": "Xwiki",
       "product": "Xwiki",
-      "summary_analyst": "CVE-2025-24893 affects Xwiki by allowing an attacker to exploit a path traversal vulnerability that enables unauthorized access to sensitive files on the server.",
-      "summary_ciso": "CVE-2025-24893 poses an urgent risk to Xwiki systems, potentially exposing sensitive data to unauthorized access, which could severely impact business operations and reputation if not mitigated promptly.",
-      "description": "CVE-2025-24893 affects Xwiki by allowing an attacker to exploit a path traversal vulnerability that enables unauthorized access to sensitive files on the server.",
+      "summary_analyst": "CVE-2025-24893 affects Xwiki by allowing remote attackers to execute arbitrary code via crafted input that exploits improper input validation in the file upload functionality.",
+      "summary_ciso": "CVE-2025-24893 poses a significant risk to Xwiki systems, potentially exposing sensitive data and disrupting operations, necessitating immediate remediation to safeguard against potential breaches and data loss.",
+      "description": "CVE-2025-24893 affects Xwiki by allowing remote attackers to execute arbitrary code via crafted input that exploits improper input validation in the file upload functionality.",
       "news_article": {
-        "title": "XWiki SolrSearch Exploit Attempts (CVE-2025-24893) with link to Chicago Gangs/Rappers, (Mon, Nov 3rd)",
-        "url": "https://isc.sans.edu/diary/32444",
+        "title": "RondoDox Exploits Unpatched XWiki Servers to Pull More Devices Into Its Botnet",
+        "url": "https://thehackernews.com/2025/11/rondodox-exploits-unpatched-xwiki.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-9242",
+      "aura_score": 87.1,
+      "cvss": 9.8,
+      "epss": 0.77,
+      "kev": true,
+      "trend_score": 0.494,
+      "trend_mentions": 15,
+      "trend_breakdown": {
+        "news_hits": 15,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.494
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-9242"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Watchguard",
+      "product": "Fireware",
+      "summary_analyst": "CVE-2025-9242 is a vulnerability in Watchguard Fireware that allows an unauthenticated remote attacker to exploit a buffer overflow in the web interface, potentially leading to arbitrary code execution on the affected component.",
+      "summary_ciso": "CVE-2025-9242 poses a critical vulnerability in Watchguard Fireware that could allow attackers to exploit system weaknesses, potentially leading to significant data breaches and operational disruptions, necessitating immediate mitigation to protect our organizational assets.",
+      "description": "CVE-2025-9242 is a vulnerability in Watchguard Fireware that allows an unauthenticated remote attacker to exploit a buffer overflow in the web interface, potentially leading to arbitrary code execution on the affected component.",
+      "news_article": {
+        "title": "Researchers Uncover WatchGuard VPN Bug That Could Let Attackers Take Over Devices",
+        "url": "https://thehackernews.com/2025/10/researchers-uncover-watchguard-vpn-bug.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-12480",
+      "aura_score": 80.4,
+      "cvss": 9.1,
+      "epss": 0.573,
+      "kev": true,
+      "trend_score": 0.515,
+      "trend_mentions": 17,
+      "trend_breakdown": {
+        "news_hits": 17,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.515
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-12480"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Gladinet",
+      "product": "Triofox",
+      "summary_analyst": "CVE-2025-12480 affects Gladinet Triofox by enabling unauthorized remote code execution through an insufficient input validation vulnerability in the file upload functionality.",
+      "summary_ciso": "CVE-2025-12480 exposes Gladinet Triofox to potential data breaches due to vulnerabilities that could be exploited, necessitating immediate remediation to protect sensitive information and mitigate financial and reputational harm.",
+      "description": "CVE-2025-12480 affects Gladinet Triofox by enabling unauthorized remote code execution through an insufficient input validation vulnerability in the file upload functionality.",
+      "news_article": {
+        "title": "Hackers Exploiting Triofox Flaw to Install Remote Access Tools via Antivirus Feature",
+        "url": "https://thehackernews.com/2025/11/hackers-exploiting-triofox-flaw-to.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-64446",
+      "aura_score": 78.3,
+      "cvss": 9.8,
+      "epss": 0.36,
+      "kev": true,
+      "trend_score": 0.37,
+      "trend_mentions": 7,
+      "trend_breakdown": {
+        "news_hits": 7,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.37
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-64446"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Fortinet",
+      "product": "Fortiweb",
+      "summary_analyst": "CVE-2025-64446 is a vulnerability in Fortinet FortiWeb that allows an unauthenticated attacker to exploit improper input validation in the web application firewall through crafted HTTP requests, potentially leading to remote code execution.",
+      "summary_ciso": "CVE-2025-64446 exposes Fortinet FortiWeb to severe security vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate action to mitigate potential business disruption and reputational damage.",
+      "description": "CVE-2025-64446 is a vulnerability in Fortinet FortiWeb that allows an unauthenticated attacker to exploit improper input validation in the web application firewall through crafted HTTP requests, potentially leading to remote code execution.",
+      "news_article": {
+        "title": "Honeypot: FortiWeb CVE-2025-64446 Exploits, (Sat, Nov 15th)",
+        "url": "https://isc.sans.edu/diary/32486",
         "source": "Sans.edu"
       },
       "score_breakdown": {
@@ -57,122 +213,18 @@
       }
     },
     {
-      "cve": "CVE-2025-2747",
-      "aura_score": 87.2,
-      "cvss": 9.8,
-      "epss": 0.806,
-      "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
-      "trend_breakdown": {
-        "news_hits": 7,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.37
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-2747"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Kentico",
-      "product": "Xperience",
-      "summary_analyst": "CVE-2025-2747 affects Kentico Xperience by exploiting improper input validation in the content management component, allowing unauthenticated attackers to execute arbitrary code.",
-      "summary_ciso": "CVE-2025-2747 poses an urgent risk to Kentico Xperience, exposing sensitive data to potential breaches that could result in significant financial losses and reputational damage if not mitigated promptly.",
-      "description": "CVE-2025-2747 affects Kentico Xperience by exploiting improper input validation in the content management component, allowing unauthenticated attackers to execute arbitrary code.",
-      "news_article": {
-        "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-2746",
-      "aura_score": 84.4,
-      "cvss": 9.8,
-      "epss": 0.667,
-      "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
-      "trend_breakdown": {
-        "news_hits": 7,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.37
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-2746"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Kentico",
-      "product": "Xperience",
-      "summary_analyst": "CVE-2025-2746 affects Kentico Xperience by allowing an attacker to exploit improper input validation in the web-based administration interface, potentially leading to unauthorized access and manipulation of sensitive data.",
-      "summary_ciso": "CVE-2025-2746 poses an urgent risk to Kentico Xperience, potentially exposing sensitive customer data to unauthorized access, which could lead to significant reputational damage and financial loss if not mitigated promptly.",
-      "description": "CVE-2025-2746 affects Kentico Xperience by allowing an attacker to exploit improper input validation in the web-based administration interface, potentially leading to unauthorized access and manipulation of sensitive data.",
-      "news_article": {
-        "title": "CISA Adds Five Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2025/10/20/cisa-adds-five-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2025-48703",
-      "aura_score": 78.9,
+      "aura_score": 78.3,
       "cvss": 9.0,
-      "epss": 0.554,
+      "epss": 0.516,
       "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
       "trend_breakdown": {
-        "news_hits": 7,
+        "news_hits": 8,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.37
+        "trend_raw": 0.391
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -195,9 +247,9 @@
       },
       "vendor": "Control-webpanel",
       "product": "Webpanel",
-      "summary_analyst": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows an attacker to exploit improper input validation, potentially leading to unauthorized access or data manipulation within the affected component.",
-      "summary_ciso": "CVE-2025-48703 poses an urgent risk to Control-Webpanel, allowing attackers potential unauthorized access to sensitive data and systems, which could severely disrupt business operations and compromise customer trust if not remediated promptly.",
-      "description": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows an attacker to exploit improper input validation, potentially leading to unauthorized access or data manipulation within the affected component.",
+      "summary_analyst": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows an attacker to exploit improper input validation in the user authentication process, potentially leading to unauthorized access.",
+      "summary_ciso": "CVE-2025-48703 poses a significant risk to Control-webpanel Webpanel, exposing critical business operations to potential data breaches and system disruptions, necessitating immediate mitigation to safeguard sensitive information and maintain operational integrity.",
+      "description": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows an attacker to exploit improper input validation in the user authentication process, potentially leading to unauthorized access.",
       "news_article": {
         "title": "Critical Control Web Panel vulnerability is actively exploited (CVE-2025-48703)",
         "url": "https://www.helpnetsecurity.com/2025/11/05/control-web-panel-cve-2025-48703-exploited/",
@@ -214,9 +266,9 @@
     },
     {
       "cve": "CVE-2025-54236",
-      "aura_score": 78.4,
+      "aura_score": 78.0,
       "cvss": 9.1,
-      "epss": 0.472,
+      "epss": 0.454,
       "kev": true,
       "trend_score": 0.504,
       "trend_mentions": 16,
@@ -247,64 +299,12 @@
       },
       "vendor": "Adobe",
       "product": "Commerce",
-      "summary_analyst": "CVE-2025-54236 affects Adobe Commerce by exploiting a server-side request forgery vulnerability that allows attackers to send crafted requests to internal services, potentially leading to unauthorized access to sensitive data.",
-      "summary_ciso": "CVE-2025-54236 poses a significant risk to Adobe Commerce, exposing businesses to potential data breaches and financial loss, and requires immediate mitigation to safeguard customer trust and compliance.",
-      "description": "CVE-2025-54236 affects Adobe Commerce by exploiting a server-side request forgery vulnerability that allows attackers to send crafted requests to internal services, potentially leading to unauthorized access to sensitive data.",
+      "summary_analyst": "CVE-2025-54236 is a vulnerability in Adobe Commerce that allows an unauthenticated attacker to exploit an insecure direct object reference, potentially leading to unauthorized access to sensitive data.",
+      "summary_ciso": "CVE-2025-54236 poses an immediate risk to Adobe Commerce users, potentially exposing sensitive customer data to unauthorized access, which could result in significant financial loss and reputational damage if not urgently mitigated.",
+      "description": "CVE-2025-54236 is a vulnerability in Adobe Commerce that allows an unauthenticated attacker to exploit an insecure direct object reference, potentially leading to unauthorized access to sensitive data.",
       "news_article": {
         "title": "Critical Adobe Commerce, Magento vulnerability under attack (CVE-2025-54236)",
         "url": "https://www.helpnetsecurity.com/2025/10/23/adobe-magento-cve-2025-54236-attack/",
-        "source": "Help Net Security"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-33073",
-      "aura_score": 76.6,
-      "cvss": 8.8,
-      "epss": 0.444,
-      "kev": true,
-      "trend_score": 0.494,
-      "trend_mentions": 15,
-      "trend_breakdown": {
-        "news_hits": 15,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.494
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-33073"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Microsoft",
-      "product": "Windows 10 1507",
-      "summary_analyst": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows attackers to execute arbitrary code through the exploitation of improperly handled objects in memory.",
-      "summary_ciso": "CVE-2025-33073 exposes Microsoft Windows 10 1507 to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate mitigation efforts to protect sensitive business information and maintain regulatory compliance.",
-      "description": "CVE-2025-33073 is a vulnerability in Microsoft Windows 10 1507 that allows attackers to execute arbitrary code through the exploitation of improperly handled objects in memory.",
-      "news_article": {
-        "title": "CISA warns of Windows SMB flaw under active exploitation (CVE-2025-33073)",
-        "url": "https://www.helpnetsecurity.com/2025/10/21/cisa-warns-of-windows-smb-flaw-under-active-exploitation-cve-2025-33073/",
         "source": "Help Net Security"
       },
       "score_breakdown": {
@@ -351,9 +351,9 @@
       },
       "vendor": "3Ds",
       "product": "Delmia Apriso",
-      "summary_analyst": "CVE-2025-6205 affects 3Ds Delmia Apriso by allowing an attacker to exploit improper input validation, potentially leading to remote code execution on the affected component.",
-      "summary_ciso": "The critical vulnerability CVE-2025-6205 in 3Ds Delmia Apriso risks exposing sensitive operational data, potentially disrupting our manufacturing processes and requiring immediate action to mitigate potential financial and reputational damage.",
-      "description": "CVE-2025-6205 affects 3Ds Delmia Apriso by allowing an attacker to exploit improper input validation, potentially leading to remote code execution on the affected component.",
+      "summary_analyst": "CVE-2025-6205 affects 3Ds Delmia Apriso and involves vulnerabilities that can be exploited through improper input validation, allowing an attacker to execute arbitrary code on the affected system.",
+      "summary_ciso": "CVE-2025-6205 in 3Ds Delmia Apriso poses a significant security risk that could lead to unauthorized access and potential data breaches, necessitating immediate mitigation efforts to protect sensitive operational information and ensure business continuity.",
+      "description": "CVE-2025-6205 affects 3Ds Delmia Apriso and involves vulnerabilities that can be exploited through improper input validation, allowing an attacker to execute arbitrary code on the affected system.",
       "news_article": {
         "title": "Active Exploits Hit Dassault and XWiki \u2014 CISA Confirms Critical Flaws Under Attack",
         "url": "https://thehackernews.com/2025/10/active-exploits-hit-dassault-and-xwiki.html",
@@ -369,122 +369,18 @@
       }
     },
     {
-      "cve": "CVE-2025-59287",
-      "aura_score": 75.0,
-      "cvss": 9.8,
-      "epss": 0.113,
-      "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 136,
-      "trend_breakdown": {
-        "news_hits": 136,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.7
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-59287"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Microsoft",
-      "product": "Windows Server 2012",
-      "summary_analyst": "CVE-2025-59287 is a vulnerability in Microsoft Windows Server 2012 that allows remote attackers to exploit an improper input validation flaw in the operating system's networking component, potentially leading to unauthorized access or system compromise.",
-      "summary_ciso": "CVE-2025-59287 exposes Microsoft Windows Server 2012 to critical vulnerabilities, potentially compromising sensitive data and system integrity, requiring immediate mitigation to safeguard business operations and protect against significant financial and reputational damage.",
-      "description": "CVE-2025-59287 is a vulnerability in Microsoft Windows Server 2012 that allows remote attackers to exploit an improper input validation flaw in the operating system's networking component, potentially leading to unauthorized access or system compromise.",
-      "news_article": {
-        "title": "Everybody's warning about critical Windows Server WSUS bug exploits ... but Microsoft's mum",
-        "url": "https://www.theregister.com/2025/10/24/exploitation_of_critical_windows_server/",
-        "source": "Theregister.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-61932",
-      "aura_score": 74.3,
-      "cvss": 9.8,
-      "epss": 0.131,
-      "kev": true,
-      "trend_score": 0.494,
-      "trend_mentions": 15,
-      "trend_breakdown": {
-        "news_hits": 15,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.494
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-61932"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Motex",
-      "product": "Lanscope Endpoint Manager",
-      "summary_analyst": "CVE-2025-61932 affects Motex Lanscope Endpoint Manager by allowing remote attackers to execute arbitrary code via crafted requests, due to improper input validation in the application's network processing component.",
-      "summary_ciso": "CVE-2025-61932 exposes Motex Lanscope Endpoint Manager to critical vulnerabilities, potentially leading to significant data breaches and operational disruptions, requiring immediate action to mitigate risks to our organization's assets and reputation.",
-      "description": "CVE-2025-61932 affects Motex Lanscope Endpoint Manager by allowing remote attackers to execute arbitrary code via crafted requests, due to improper input validation in the application's network processing component.",
-      "news_article": {
-        "title": "Lanscope Endpoint Manager vulnerability exploited in zero-day attacks (CVE-2025-61932)",
-        "url": "https://www.helpnetsecurity.com/2025/10/23/cve-2025-61932-lanscope-endpoint-manager-exploited/",
-        "source": "Help Net Security"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2025-11371",
-      "aura_score": 68.7,
+      "aura_score": 73.7,
       "cvss": 7.5,
-      "epss": 0.31,
+      "epss": 0.57,
       "kev": true,
-      "trend_score": 0.504,
-      "trend_mentions": 16,
+      "trend_score": 0.47,
+      "trend_mentions": 13,
       "trend_breakdown": {
-        "news_hits": 16,
+        "news_hits": 13,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.504
+        "trend_raw": 0.47
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -507,13 +403,117 @@
       },
       "vendor": "Gladinet",
       "product": "Centrestack",
-      "summary_analyst": "CVE-2025-11371 affects Gladinet Centrestack by allowing an authenticated attacker to execute arbitrary commands on the server through improper input validation in the file upload functionality.",
-      "summary_ciso": "CVE-2025-11371 poses an immediate risk to Gladinet Centrestack users by potentially allowing unauthorized access to sensitive data, which could lead to significant financial loss and reputational damage if not addressed promptly.",
-      "description": "CVE-2025-11371 affects Gladinet Centrestack by allowing an authenticated attacker to execute arbitrary commands on the server through improper input validation in the file upload functionality.",
+      "summary_analyst": "CVE-2025-11371 affects Gladinet Centrestack by allowing an attacker to exploit improper access control in the file-sharing feature, leading to unauthorized exposure of sensitive files.",
+      "summary_ciso": "CVE-2025-11371 poses an urgent risk to Gladinet Centrestack, potentially exposing sensitive data to unauthorized access, which could result in substantial financial and reputational damage if not mitigated promptly.",
+      "description": "CVE-2025-11371 affects Gladinet Centrestack by allowing an attacker to exploit improper access control in the file-sharing feature, leading to unauthorized exposure of sensitive files.",
       "news_article": {
-        "title": "Zero-day in file-sharing software leads to RCE, and attacks are ongoing",
-        "url": "https://www.theregister.com/2025/10/10/zeroday_in_filesharing_software_leads/",
+        "title": "Hackers Exploiting Triofox Flaw to Install Remote Access Tools via Antivirus Feature",
+        "url": "https://thehackernews.com/2025/11/hackers-exploiting-triofox-flaw-to.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-21042",
+      "aura_score": 73.0,
+      "cvss": 8.8,
+      "epss": 0.216,
+      "kev": true,
+      "trend_score": 0.7,
+      "trend_mentions": 61,
+      "trend_breakdown": {
+        "news_hits": 61,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.7
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-21042"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Samsung",
+      "product": "Android",
+      "summary_analyst": "CVE-2025-21042 is a vulnerability in Samsung Android that allows an attacker to exploit improper input validation in the system's component, potentially leading to arbitrary code execution.",
+      "summary_ciso": "CVE-2025-21042 poses a significant risk to Samsung Android devices, potentially compromising sensitive user data and system integrity, necessitating immediate mitigation to safeguard against exploitation and reputational damage.",
+      "description": "CVE-2025-21042 is a vulnerability in Samsung Android that allows an attacker to exploit improper input validation in the system's component, potentially leading to arbitrary code execution.",
+      "news_article": {
+        "title": "Previously unknown Landfall spyware used in 0-day attacks on Samsung phones",
+        "url": "https://www.theregister.com/2025/11/07/landfall_spyware_samsung_0days/",
         "source": "Theregister.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-6204",
+      "aura_score": 67.0,
+      "cvss": 8.0,
+      "epss": 0.165,
+      "kev": true,
+      "trend_score": 0.346,
+      "trend_mentions": 6,
+      "trend_breakdown": {
+        "news_hits": 6,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.346
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-6204"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "3Ds",
+      "product": "Delmia Apriso",
+      "summary_analyst": "CVE-2025-6204 involves a path traversal vulnerability in 3Ds Delmia Apriso, allowing an attacker to gain unauthorized access to files in the web application\u2019s directory structure through crafted input.",
+      "summary_ciso": "CVE-2025-6204 presents a critical vulnerability in 3Ds Delmia Apriso that could lead to unauthorized access to sensitive operational data, exposing the organization to significant operational disruptions and potential financial losses, necessitating immediate remediation efforts to mitigate risk.",
+      "description": "CVE-2025-6204 involves a path traversal vulnerability in 3Ds Delmia Apriso, allowing an attacker to gain unauthorized access to files in the web application\u2019s directory structure through crafted input.",
+      "news_article": {
+        "title": "Active Exploits Hit Dassault and XWiki \u2014 CISA Confirms Critical Flaws Under Attack",
+        "url": "https://thehackernews.com/2025/10/active-exploits-hit-dassault-and-xwiki.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
