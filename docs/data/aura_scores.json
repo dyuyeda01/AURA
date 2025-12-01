@@ -1,22 +1,22 @@
 {
-  "last_run": "2025-11-24T15:38:46.977882+00:00",
-  "generated": "2025-11-24T15:38:46.977933",
-  "daily_analyst_summary": "Today\u2019s intelligence highlights a surge in exploitation of improper input validation across diverse platforms, notably enabling remote code execution in Watchguard Fireware (CVE-2025-9242), Fortinet Fortiweb (CVE-2025-64446), and multiple Gladinet products (CVE-2025-12480, CVE-2025-11371). Additionally, stored cross-site scripting in Xwiki (CVE-2025-24893) and external entity injection in Control-webpanel (CVE-2025-48703) pose significant risks for data disclosure and persistent browser-based attacks. Organizations should prioritize patching these critical vulnerabilities to mitigate escalating remote exploitation threats.",
-  "daily_ciso_summary": "The current vulnerability landscape poses significant business risks, particularly through remote code execution and improper input validation flaws in critical infrastructure and identity management systems, which could lead to unauthorized access and data breaches impacting operational continuity and customer trust. Financial exposure is heightened by vulnerabilities in widely used platforms such as Oracle Identity Manager, Fortinet Fortiweb, and Watchguard Fireware, where exploitation could result in costly remediation, regulatory fines, and loss of sensitive financial data. To mitigate these risks, focus should be on rapid patch management, strengthening input validation controls, and enhancing monitoring of web management interfaces and identity systems to prevent exploitation and limit potential damage.",
+  "last_run": "2025-12-01T15:37:34.024763+00:00",
+  "generated": "2025-12-01T15:37:34.024827",
+  "daily_analyst_summary": "Today\u2019s threat landscape highlights a surge in remote code execution vulnerabilities primarily targeting web application interfaces and file upload functionalities across multiple platforms, including Xwiki, Fortinet Fortiweb, and Gladinet products. Noteworthy exploitation trends focus on improper input validation and web management interface flaws, while critical vulnerabilities in widely used software such as Google Chrome and Samsung Android emphasize the ongoing risks in client-side and mobile environments. Organizations should prioritize patching these high-impact CVEs to mitigate risks of unauthorized access and system compromise.",
+  "daily_ciso_summary": "The current vulnerability landscape presents significant business risks due to multiple critical remote code execution and unauthorized access flaws across widely used platforms such as Xwiki, Fortinet Fortiweb, Oracle Identity Manager, and Google Chrome, exposing organizations to potential data breaches and operational disruptions. These vulnerabilities directly increase financial risk by threatening the confidentiality and integrity of sensitive data, potentially leading to regulatory fines, loss of customer trust, and costly incident response efforts. To mitigate these risks, the focus should be on rapid patch management, strengthening input validation controls, and enhancing monitoring of web-facing applications and identity management systems to prevent exploitation.",
   "cves": [
     {
       "cve": "CVE-2025-24893",
-      "aura_score": 90.6,
+      "aura_score": 90.3,
       "cvss": 9.8,
       "epss": 0.942,
       "kev": true,
-      "trend_score": 0.504,
-      "trend_mentions": 16,
+      "trend_score": 0.457,
+      "trend_mentions": 12,
       "trend_breakdown": {
-        "news_hits": 16,
+        "news_hits": 12,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.504
+        "trend_raw": 0.457
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -39,9 +39,9 @@
       },
       "vendor": "Xwiki",
       "product": "Xwiki",
-      "summary_analyst": "CVE-2025-24893 is a stored cross-site scripting vulnerability affecting Xwiki, allowing attackers to inject malicious scripts into web pages that are then executed in a victim's browser when accessing affected components.",
-      "summary_ciso": "CVE-2025-24893 exposes Xwiki to potential data breaches and operational disruptions, necessitating immediate mitigation to safeguard sensitive information and ensure business continuity.",
-      "description": "CVE-2025-24893 is a stored cross-site scripting vulnerability affecting Xwiki, allowing attackers to inject malicious scripts into web pages that are then executed in a victim's browser when accessing affected components.",
+      "summary_analyst": "CVE-2025-24893 affects Xwiki by allowing remote attackers to execute arbitrary code via crafted input that is improperly handled in the file upload functionality.",
+      "summary_ciso": "CVE-2025-24893 poses an immediate risk to Xwiki users, as it can potentially expose sensitive data through an unpatched vulnerability, necessitating urgent mitigation to prevent data breaches and protect business continuity.",
+      "description": "CVE-2025-24893 affects Xwiki by allowing remote attackers to execute arbitrary code via crafted input that is improperly handled in the file upload functionality.",
       "news_article": {
         "title": "RondoDox Exploits Unpatched XWiki Servers to Pull More Devices Into Its Botnet",
         "url": "https://thehackernews.com/2025/11/rondodox-exploits-unpatched-xwiki.html",
@@ -57,70 +57,18 @@
       }
     },
     {
-      "cve": "CVE-2025-9242",
-      "aura_score": 86.3,
-      "cvss": 9.8,
-      "epss": 0.75,
-      "kev": true,
-      "trend_score": 0.41,
-      "trend_mentions": 9,
-      "trend_breakdown": {
-        "news_hits": 9,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.41
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-9242"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Watchguard",
-      "product": "Fireware",
-      "summary_analyst": "CVE-2025-9242 affects Watchguard Fireware by enabling remote attackers to execute arbitrary code via crafted HTTP requests, exploiting insufficient input validation in the web management interface.",
-      "summary_ciso": "CVE-2025-9242 poses a significant security vulnerability in Watchguard Fireware that could lead to unauthorized access and data breaches, threatening our business operations and requiring immediate mitigation to prevent potential financial and reputational damage.",
-      "description": "CVE-2025-9242 affects Watchguard Fireware by enabling remote attackers to execute arbitrary code via crafted HTTP requests, exploiting insufficient input validation in the web management interface.",
-      "news_article": {
-        "title": "CISA Flags Critical WatchGuard Fireware Flaw Exposing 54,000 Fireboxes to No-Login Attacks",
-        "url": "https://thehackernews.com/2025/11/cisa-flags-critical-watchguard-fireware.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2025-64446",
-      "aura_score": 85.5,
+      "aura_score": 86.0,
       "cvss": 9.8,
-      "epss": 0.669,
+      "epss": 0.694,
       "kev": true,
-      "trend_score": 0.58,
-      "trend_mentions": 25,
+      "trend_score": 0.587,
+      "trend_mentions": 26,
       "trend_breakdown": {
-        "news_hits": 25,
+        "news_hits": 26,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.58
+        "trend_raw": 0.587
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -143,9 +91,9 @@
       },
       "vendor": "Fortinet",
       "product": "Fortiweb",
-      "summary_analyst": "CVE-2025-64446 is a vulnerability in Fortinet Fortiweb that allows an attacker to exploit improper input validation in the web management interface, potentially leading to remote code execution.",
-      "summary_ciso": "CVE-2025-64446 poses a critical risk to Fortinet Fortiweb, potentially exposing sensitive data and systems to exploitation, which urgently necessitates immediate mitigation to safeguard our business operations and reputation.",
-      "description": "CVE-2025-64446 is a vulnerability in Fortinet Fortiweb that allows an attacker to exploit improper input validation in the web management interface, potentially leading to remote code execution.",
+      "summary_analyst": "CVE-2025-64446 affects the Fortinet Fortiweb web application firewall, allowing a remote attacker to execute arbitrary code via crafted requests due to improper validation of input parameters.",
+      "summary_ciso": "CVE-2025-64446 exposes Fortinet FortiWeb to critical vulnerabilities that could lead to substantial business disruptions and data breaches, necessitating immediate mitigation to protect sensitive information and maintain operational integrity.",
+      "description": "CVE-2025-64446 affects the Fortinet Fortiweb web application firewall, allowing a remote attacker to execute arbitrary code via crafted requests due to improper validation of input parameters.",
       "news_article": {
         "title": "Honeypot: FortiWeb CVE-2025-64446 Exploits, (Sat, Nov 15th)",
         "url": "https://isc.sans.edu/diary/32486",
@@ -161,18 +109,70 @@
       }
     },
     {
-      "cve": "CVE-2025-61757",
-      "aura_score": 85.2,
+      "cve": "CVE-2025-9242",
+      "aura_score": 84.1,
       "cvss": 9.8,
-      "epss": 0.712,
+      "epss": 0.645,
       "kev": true,
-      "trend_score": 0.346,
-      "trend_mentions": 6,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
       "trend_breakdown": {
-        "news_hits": 6,
+        "news_hits": 8,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.346
+        "trend_raw": 0.391
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-9242"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Watchguard",
+      "product": "Fireware",
+      "summary_analyst": "CVE-2025-9242 affects WatchGuard Fireware, allowing remote attackers to exploit a vulnerability in the web management interface to execute arbitrary code via crafted HTTP requests.",
+      "summary_ciso": "CVE-2025-9242 poses a critical risk to our network security by allowing potential unauthorized access to sensitive data through vulnerabilities in Watchguard Fireware, necessitating immediate mitigation efforts to prevent significant business disruption and data breaches.",
+      "description": "CVE-2025-9242 affects WatchGuard Fireware, allowing remote attackers to exploit a vulnerability in the web management interface to execute arbitrary code via crafted HTTP requests.",
+      "news_article": {
+        "title": "CISA Flags Critical WatchGuard Fireware Flaw Exposing 54,000 Fireboxes to No-Login Attacks",
+        "url": "https://thehackernews.com/2025/11/cisa-flags-critical-watchguard-fireware.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-61757",
+      "aura_score": 83.7,
+      "cvss": 9.8,
+      "epss": 0.61,
+      "kev": true,
+      "trend_score": 0.47,
+      "trend_mentions": 13,
+      "trend_breakdown": {
+        "news_hits": 13,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.47
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -195,13 +195,13 @@
       },
       "vendor": "Oracle",
       "product": "Identity Manager",
-      "summary_analyst": "CVE-2025-61757 is a vulnerability in Oracle Identity Manager that allows an attacker to execute arbitrary code by exploiting improper input validation in user authentication processes.",
-      "summary_ciso": "CVE-2025-61757 poses a significant risk to Oracle Identity Manager, potentially exposing sensitive identity data and compromising user accounts, necessitating immediate remediation to protect the organization\u2019s integrity and safeguard its assets.",
-      "description": "CVE-2025-61757 is a vulnerability in Oracle Identity Manager that allows an attacker to execute arbitrary code by exploiting improper input validation in user authentication processes.",
+      "summary_analyst": "CVE-2025-61757 is a vulnerability in Oracle Identity Manager that allows an unauthenticated attacker to exploit a flaw in the web interface, potentially leading to unauthorized access and manipulation of user accounts.",
+      "summary_ciso": "CVE-2025-61757 presents a critical vulnerability in Oracle Identity Manager that could lead to unauthorized access and significant data breaches, posing an immediate threat to our data security and necessitating prompt remediation to protect our business assets.",
+      "description": "CVE-2025-61757 is a vulnerability in Oracle Identity Manager that allows an unauthenticated attacker to exploit a flaw in the web interface, potentially leading to unauthorized access and manipulation of user accounts.",
       "news_article": {
-        "title": "CISA Warns of Actively Exploited Critical Oracle Identity Manager Zero-Day Vulnerability",
-        "url": "https://thehackernews.com/2025/11/cisa-warns-of-actively-exploited.html",
-        "source": "Internet"
+        "title": "CISA orders feds to patch Oracle Identity Manager zero-day after signs of abuse",
+        "url": "https://www.theregister.com/2025/11/24/cisa_oracle_identity_manager/",
+        "source": "Theregister.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -214,9 +214,9 @@
     },
     {
       "cve": "CVE-2025-12480",
-      "aura_score": 81.7,
+      "aura_score": 83.6,
       "cvss": 9.1,
-      "epss": 0.627,
+      "epss": 0.726,
       "kev": true,
       "trend_score": 0.542,
       "trend_mentions": 20,
@@ -247,9 +247,9 @@
       },
       "vendor": "Gladinet",
       "product": "Triofox",
-      "summary_analyst": "CVE-2025-12480 affects the Gladinet Triofox application, allowing remote attackers to execute arbitrary code via a crafted request due to improper validation of user input in the application's file handling component.",
-      "summary_ciso": "CVE-2025-12480 exposes Gladinet Triofox to potential data breaches and operational disruptions, necessitating immediate mitigation to safeguard sensitive information and maintain business continuity.",
-      "description": "CVE-2025-12480 affects the Gladinet Triofox application, allowing remote attackers to execute arbitrary code via a crafted request due to improper validation of user input in the application's file handling component.",
+      "summary_analyst": "CVE-2025-12480 affects Gladinet Triofox, allowing attackers to exploit improper input validation in the file upload feature to execute arbitrary code on the server.",
+      "summary_ciso": "CVE-2025-12480 exposes Gladinet Triofox users to significant data breaches and compliance violations, necessitating immediate mitigation actions to protect sensitive information and uphold business integrity.",
+      "description": "CVE-2025-12480 affects Gladinet Triofox, allowing attackers to exploit improper input validation in the file upload feature to execute arbitrary code on the server.",
       "news_article": {
         "title": "Hackers Exploiting Triofox Flaw to Install Remote Access Tools via Antivirus Feature",
         "url": "https://thehackernews.com/2025/11/hackers-exploiting-triofox-flaw-to.html",
@@ -266,9 +266,9 @@
     },
     {
       "cve": "CVE-2025-48703",
-      "aura_score": 81.5,
+      "aura_score": 81.6,
       "cvss": 9.0,
-      "epss": 0.681,
+      "epss": 0.688,
       "kev": true,
       "trend_score": 0.37,
       "trend_mentions": 7,
@@ -299,9 +299,9 @@
       },
       "vendor": "Control-webpanel",
       "product": "Webpanel",
-      "summary_analyst": "CVE-2025-48703 describes an external entity injection vulnerability in the Control-webpanel Webpanel, allowing attackers to exploit improperly sanitized user input to disclose sensitive information by manipulating XML data parsing.",
-      "summary_ciso": "CVE-2025-48703 exposes Control-webpanel to potential unauthorized access and data breaches, requiring immediate action to mitigate risks as it could significantly compromise sensitive information and operational integrity.",
-      "description": "CVE-2025-48703 describes an external entity injection vulnerability in the Control-webpanel Webpanel, allowing attackers to exploit improperly sanitized user input to disclose sensitive information by manipulating XML data parsing.",
+      "summary_analyst": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows remote attackers to execute arbitrary code via crafted input, exploiting insufficient input validation in user-uploaded files.",
+      "summary_ciso": "CVE-2025-48703 exposes Control-webpanel Webpanel to potential unauthorized access and data breaches, posing an urgent risk to our business operations and customer trust that must be mitigated immediately.",
+      "description": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows remote attackers to execute arbitrary code via crafted input, exploiting insufficient input validation in user-uploaded files.",
       "news_article": {
         "title": "Critical Control Web Panel vulnerability is actively exploited (CVE-2025-48703)",
         "url": "https://www.helpnetsecurity.com/2025/11/05/control-web-panel-cve-2025-48703-exploited/",
@@ -351,9 +351,9 @@
       },
       "vendor": "Gladinet",
       "product": "Centrestack",
-      "summary_analyst": "CVE-2025-11371 is a vulnerability in Gladinet Centrestack that allows an attacker to exploit improper input validation in file upload functions, potentially leading to arbitrary code execution on the affected system.",
-      "summary_ciso": "CVE-2025-11371 poses a critical security risk to Gladinet Centrestack, potentially exposing sensitive data to unauthorized access, and requires immediate mitigation to prevent significant business disruption and reputational damage.",
-      "description": "CVE-2025-11371 is a vulnerability in Gladinet Centrestack that allows an attacker to exploit improper input validation in file upload functions, potentially leading to arbitrary code execution on the affected system.",
+      "summary_analyst": "CVE-2025-11371 affects Gladinet Centrestack by allowing an attacker to exploit a directory traversal vulnerability, enabling unauthorized access to sensitive files on the server.",
+      "summary_ciso": "CVE-2025-11371 poses an urgent risk to Gladinet Centrestack, potentially leading to unauthorized data access that could jeopardize sensitive business information and integrity, necessitating immediate mitigation efforts.",
+      "description": "CVE-2025-11371 affects Gladinet Centrestack by allowing an attacker to exploit a directory traversal vulnerability, enabling unauthorized access to sensitive files on the server.",
       "news_article": {
         "title": "Hackers Exploiting Triofox Flaw to Install Remote Access Tools via Antivirus Feature",
         "url": "https://thehackernews.com/2025/11/hackers-exploiting-triofox-flaw-to.html",
@@ -369,15 +369,67 @@
       }
     },
     {
+      "cve": "CVE-2025-58034",
+      "aura_score": 71.1,
+      "cvss": 7.2,
+      "epss": 0.486,
+      "kev": true,
+      "trend_score": 0.524,
+      "trend_mentions": 18,
+      "trend_breakdown": {
+        "news_hits": 18,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.524
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-58034"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Fortinet",
+      "product": "Fortiweb",
+      "summary_analyst": "CVE-2025-58034 is a vulnerability in Fortinet Fortiweb that allows attackers to exploit improperly validated input, leading to potential remote code execution on the affected component.",
+      "summary_ciso": "CVE-2025-58034 exposes Fortinet Fortiweb to critical vulnerabilities that could lead to significant business disruptions and data breaches, requiring immediate remediation to mitigate potential severe financial and reputational damage.",
+      "description": "CVE-2025-58034 is a vulnerability in Fortinet Fortiweb that allows attackers to exploit improperly validated input, leading to potential remote code execution on the affected component.",
+      "news_article": {
+        "title": "Fortinet Warns of New FortiWeb CVE-2025-58034 Vulnerability Exploited in the Wild",
+        "url": "https://thehackernews.com/2025/11/fortinet-warns-of-new-fortiweb-cve-2025.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
       "cve": "CVE-2025-13223",
-      "aura_score": 71.9,
+      "aura_score": 69.9,
       "cvss": 8.8,
-      "epss": 0.161,
+      "epss": 0.058,
       "kev": true,
       "trend_score": 0.7,
-      "trend_mentions": 67,
+      "trend_mentions": 91,
       "trend_breakdown": {
-        "news_hits": 67,
+        "news_hits": 91,
         "github_hits": 0,
         "exploit_boost": 0.0,
         "trend_raw": 0.7
@@ -403,9 +455,9 @@
       },
       "vendor": "Google",
       "product": "Chrome",
-      "summary_analyst": "CVE-2025-13223 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free condition in the browser's audio component, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2025-13223 poses a significant security risk for organizations using Google Chrome, as it could lead to data breaches or exploitation of vulnerabilities, necessitating immediate updates to mitigate potential impacts on business operations and customer trust.",
-      "description": "CVE-2025-13223 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free condition in the browser's audio component, potentially leading to arbitrary code execution.",
+      "summary_analyst": "CVE-2025-13223 is a vulnerability in Google Chrome that enables an attacker to exploit a use-after-free condition in the browser\u2019s rendering engine, potentially allowing arbitrary code execution.",
+      "summary_ciso": "CVE-2025-13223 is a critical vulnerability in Google Chrome that exposes organizations to potential data breaches and significant reputational damage, necessitating urgent patching to mitigate risks.",
+      "description": "CVE-2025-13223 is a vulnerability in Google Chrome that enables an attacker to exploit a use-after-free condition in the browser\u2019s rendering engine, potentially allowing arbitrary code execution.",
       "news_article": {
         "title": "Google patches yet another exploited Chrome zero-day (CVE-2025-13223)",
         "url": "https://www.helpnetsecurity.com/2025/11/18/chrome-cve-2025-13223-exploited/",
@@ -427,9 +479,9 @@
       "epss": 0.04,
       "kev": true,
       "trend_score": 0.7,
-      "trend_mentions": 62,
+      "trend_mentions": 65,
       "trend_breakdown": {
-        "news_hits": 62,
+        "news_hits": 65,
         "github_hits": 0,
         "exploit_boost": 0.0,
         "trend_raw": 0.7
@@ -455,65 +507,13 @@
       },
       "vendor": "Samsung",
       "product": "Android",
-      "summary_analyst": "CVE-2025-21042 is a vulnerability in Samsung Android that allows attackers to exploit an improper input validation flaw in the binary components, potentially leading to elevation of privileges.",
-      "summary_ciso": "CVE-2025-21042 exposes Samsung Android devices to significant security breaches, requiring immediate mitigation to protect sensitive user data and uphold brand reputation amidst increasing cyber threats.",
-      "description": "CVE-2025-21042 is a vulnerability in Samsung Android that allows attackers to exploit an improper input validation flaw in the binary components, potentially leading to elevation of privileges.",
+      "summary_analyst": "CVE-2025-21042 is a vulnerability in Samsung Android that allows attackers to exploit a flaw in the media processing component, enabling remote code execution through specially crafted media files.",
+      "summary_ciso": "CVE-2025-21042 poses a significant risk to Samsung Android devices, potentially exposing sensitive user data and enabling unauthorized access, which requires immediate remediation to prevent critical business impacts and protect customer trust.",
+      "description": "CVE-2025-21042 is a vulnerability in Samsung Android that allows attackers to exploit a flaw in the media processing component, enabling remote code execution through specially crafted media files.",
       "news_article": {
         "title": "Previously unknown Landfall spyware used in 0-day attacks on Samsung phones",
         "url": "https://www.theregister.com/2025/11/07/landfall_spyware_samsung_0days/",
         "source": "Theregister.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-41244",
-      "aura_score": 63.8,
-      "cvss": 7.8,
-      "epss": 0.008,
-      "kev": true,
-      "trend_score": 0.482,
-      "trend_mentions": 14,
-      "trend_breakdown": {
-        "news_hits": 14,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.482
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-41244"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Vmware",
-      "product": "Aria Operations",
-      "summary_analyst": "CVE-2025-41244 affects VMware Aria Operations, where an improper input validation may allow an authenticated attacker to execute arbitrary commands on the affected component.",
-      "summary_ciso": "CVE-2025-41244 poses a critical risk to VMware Aria Operations by potentially allowing unauthorized access to sensitive data, which could lead to significant financial losses and reputational damage if not urgently mitigated.",
-      "description": "CVE-2025-41244 affects VMware Aria Operations, where an improper input validation may allow an authenticated attacker to execute arbitrary commands on the affected component.",
-      "news_article": {
-        "title": "CISA Flags VMware Zero-Day Exploited by China-Linked Hackers in Active Attacks",
-        "url": "https://thehackernews.com/2025/10/cisa-flags-vmware-zero-day-exploited-by.html",
-        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
