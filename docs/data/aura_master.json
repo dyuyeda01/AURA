@@ -1,11 +1,11 @@
 {
-  "date": "2025-12-08",
+  "date": "2025-12-15",
   "records": [
     {
       "cve": "CVE-2025-64446",
-      "aura_score": 89.8,
+      "aura_score": 89.9,
       "cvss": 9.8,
-      "epss": 0.878,
+      "epss": 0.882,
       "kev": true,
       "trend_score": 0.606,
       "trend_mentions": 29,
@@ -36,13 +36,65 @@
       },
       "vendor": "Fortinet",
       "product": "Fortiweb",
-      "summary_analyst": "CVE-2025-64446 is a vulnerability in Fortinet Fortiweb that could allow an attacker to exploit a path traversal flaw, enabling unauthorized access to sensitive files on the affected web application firewall.",
-      "summary_ciso": "CVE-2025-64446 exposes Fortinet FortiWeb to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect sensitive business information and maintain customer trust.",
-      "description": "CVE-2025-64446 is a vulnerability in Fortinet Fortiweb that could allow an attacker to exploit a path traversal flaw, enabling unauthorized access to sensitive files on the affected web application firewall.",
+      "summary_analyst": "CVE-2025-64446 is a vulnerability in Fortinet Fortiweb that allows an unauthenticated attacker to exploit a flaw in the HTTP/2 protocol handling, potentially enabling remote code execution on the affected component.",
+      "summary_ciso": "CVE-2025-64446 poses an urgent risk to our organization's cybersecurity by potentially allowing unauthorized access and data breaches in Fortinet Fortiweb, necessitating immediate mitigation to protect sensitive information and maintain business continuity.",
+      "description": "CVE-2025-64446 is a vulnerability in Fortinet Fortiweb that allows an unauthenticated attacker to exploit a flaw in the HTTP/2 protocol handling, potentially enabling remote code execution on the affected component.",
       "news_article": {
         "title": "Honeypot: FortiWeb CVE-2025-64446 Exploits, (Sat, Nov 15th)",
         "url": "https://isc.sans.edu/diary/32486",
         "source": "Sans.edu"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-55182",
+      "aura_score": 88.7,
+      "cvss": 10.0,
+      "epss": 0.76,
+      "kev": true,
+      "trend_score": 0.7,
+      "trend_mentions": 143,
+      "trend_breakdown": {
+        "news_hits": 143,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.7
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-55182"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Facebook",
+      "product": "React",
+      "summary_analyst": "CVE-2025-55182 is a vulnerability in Facebook React that allows an attacker to execute arbitrary code through a crafted component, exploiting the improper sanitization of user-inputted data.",
+      "summary_ciso": "CVE-2025-55182 exposes businesses using Facebook React to potential data breaches and application tampering risks, necessitating immediate action to mitigate vulnerabilities and protect sensitive user information.",
+      "description": "CVE-2025-55182 is a vulnerability in Facebook React that allows an attacker to execute arbitrary code through a crafted component, exploiting the improper sanitization of user-inputted data.",
+      "news_article": {
+        "title": "Critical RCE Vulnerabilities in React and Next.js",
+        "url": "https://www.wiz.io/blog/critical-vulnerability-in-react-cve-2025-55182",
+        "source": "Www.wiz.io"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -88,9 +140,9 @@
       },
       "vendor": "Oracle",
       "product": "Identity Manager",
-      "summary_analyst": "CVE-2025-61757 affects Oracle Identity Manager by allowing an unauthenticated attacker to exploit an input validation flaw in the application\u2019s web interface, enabling them to execute arbitrary code on the server.",
-      "summary_ciso": "CVE-2025-61757 poses an urgent risk to Oracle Identity Manager, potentially allowing unauthorized access to sensitive user data, which could lead to significant financial and reputational damage if not mitigated promptly.",
-      "description": "CVE-2025-61757 affects Oracle Identity Manager by allowing an unauthenticated attacker to exploit an input validation flaw in the application\u2019s web interface, enabling them to execute arbitrary code on the server.",
+      "summary_analyst": "CVE-2025-61757 allows attackers to exploit a vulnerability in Oracle Identity Manager by leveraging improper input validation to execute arbitrary code, potentially compromising the affected component.",
+      "summary_ciso": "CVE-2025-61757 poses a critical risk to Oracle Identity Manager that could lead to unauthorized access and exposure of sensitive data, necessitating immediate remediation to protect against potential breaches and reputational damage.",
+      "description": "CVE-2025-61757 allows attackers to exploit a vulnerability in Oracle Identity Manager by leveraging improper input validation to execute arbitrary code, potentially compromising the affected component.",
       "news_article": {
         "title": "CISA orders feds to patch Oracle Identity Manager zero-day after signs of abuse",
         "url": "https://www.theregister.com/2025/11/24/cisa_oracle_identity_manager/",
@@ -106,179 +158,23 @@
       }
     },
     {
-      "cve": "CVE-2025-9242",
-      "aura_score": 86.0,
-      "cvss": 9.8,
-      "epss": 0.744,
-      "kev": true,
-      "trend_score": 0.391,
-      "trend_mentions": 8,
-      "trend_breakdown": {
-        "news_hits": 8,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.391
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-9242"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Watchguard",
-      "product": "Fireware",
-      "summary_analyst": "CVE-2025-9242 is a vulnerability in Watchguard Fireware that allows an attacker to exploit improper input validation in the web interface, enabling remote code execution on affected devices.",
-      "summary_ciso": "CVE-2025-9242 poses a significant risk to Watchguard Fireware, potentially exposing critical systems to unauthorized access and data breaches, necessitating immediate mitigation to safeguard our organization\u2019s sensitive information and ensure operational continuity.",
-      "description": "CVE-2025-9242 is a vulnerability in Watchguard Fireware that allows an attacker to exploit improper input validation in the web interface, enabling remote code execution on affected devices.",
-      "news_article": {
-        "title": "CISA Flags Critical WatchGuard Fireware Flaw Exposing 54,000 Fireboxes to No-Login Attacks",
-        "url": "https://thehackernews.com/2025/11/cisa-flags-critical-watchguard-fireware.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-12480",
-      "aura_score": 83.5,
-      "cvss": 9.1,
-      "epss": 0.717,
-      "kev": true,
-      "trend_score": 0.558,
-      "trend_mentions": 22,
-      "trend_breakdown": {
-        "news_hits": 22,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.558
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-12480"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Gladinet",
-      "product": "Triofox",
-      "summary_analyst": "CVE-2025-12480 affects Gladinet Triofox by allowing an attacker to exploit improper input validation, leading to remote code execution on the affected component.",
-      "summary_ciso": "CVE-2025-12480 exposes Gladinet Triofox to potential data breaches and unauthorized access, necessitating immediate mitigation to protect sensitive information and maintain operational integrity.",
-      "description": "CVE-2025-12480 affects Gladinet Triofox by allowing an attacker to exploit improper input validation, leading to remote code execution on the affected component.",
-      "news_article": {
-        "title": "Hackers Exploiting Triofox Flaw to Install Remote Access Tools via Antivirus Feature",
-        "url": "https://thehackernews.com/2025/11/hackers-exploiting-triofox-flaw-to.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-48703",
-      "aura_score": 81.5,
-      "cvss": 9.0,
-      "epss": 0.694,
-      "kev": true,
-      "trend_score": 0.319,
-      "trend_mentions": 5,
-      "trend_breakdown": {
-        "news_hits": 5,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.319
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-48703"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Control-webpanel",
-      "product": "Webpanel",
-      "summary_analyst": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows remote authenticated attackers to execute arbitrary code via crafted input due to improper input validation in the application's file processing component.",
-      "summary_ciso": "CVE-2025-48703 poses an imminent risk to our Control-webpanel Webpanel, potentially exposing sensitive data and operational integrity, necessitating urgent mitigation to safeguard our business from significant security breaches and financial loss.",
-      "description": "CVE-2025-48703 is a vulnerability in Control-webpanel Webpanel that allows remote authenticated attackers to execute arbitrary code via crafted input due to improper input validation in the application's file processing component.",
-      "news_article": {
-        "title": "Week in review: Cisco fixes critical UCCX flaws, November 2025 Patch Tuesday forecast",
-        "url": "https://www.helpnetsecurity.com/2025/11/09/week-in-review-cisco-fixes-critical-uccx-flaws-november-2025-patch-tuesday-forecast/",
-        "source": "Help Net Security"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-55182",
+      "cve": "CVE-2025-58360",
       "aura_score": 78.9,
-      "cvss": 10.0,
-      "epss": 0.272,
+      "cvss": 8.2,
+      "epss": 0.719,
       "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 73,
+      "trend_score": 0.346,
+      "trend_mentions": 6,
       "trend_breakdown": {
-        "news_hits": 73,
+        "news_hits": 6,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.7
+        "trend_raw": 0.346
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-55182"
+        "https://www.exploit-db.com/search?q=CVE-2025-58360"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -294,15 +190,15 @@
           "low": 0
         }
       },
-      "vendor": "Facebook",
-      "product": "React",
-      "summary_analyst": "CVE-2025-55182 is a vulnerability in Facebook React that allows remote attackers to execute arbitrary code via crafted component props due to improper input validation in the rendering process.",
-      "summary_ciso": "CVE-2025-55182 presents a critical vulnerability in Facebook React that, if exploited, could lead to significant data breaches and operational disruptions, necessitating immediate action to mitigate potential risks to our applications and user trust.",
-      "description": "CVE-2025-55182 is a vulnerability in Facebook React that allows remote attackers to execute arbitrary code via crafted component props due to improper input validation in the rendering process.",
+      "vendor": "Geoserver",
+      "product": "Geoserver",
+      "summary_analyst": "CVE-2025-58360 allows remote attackers to exploit a vulnerability in Geoserver Geoserver through crafted requests that bypass authentication mechanisms, potentially leading to unauthorized access to sensitive data.",
+      "summary_ciso": "CVE-2025-58360 poses a critical security risk to Geoserver, potentially allowing unauthorized access to sensitive geospatial data, which requires immediate mitigation to protect our business operations and prevent data breaches.",
+      "description": "CVE-2025-58360 allows remote attackers to exploit a vulnerability in Geoserver Geoserver through crafted requests that bypass authentication mechanisms, potentially leading to unauthorized access to sensitive data.",
       "news_article": {
-        "title": "Critical RCE Vulnerabilities in React and Next.js",
-        "url": "https://www.wiz.io/blog/critical-vulnerability-in-react-cve-2025-55182",
-        "source": "Www.wiz.io"
+        "title": "CISA Flags Actively Exploited GeoServer XXE Flaw in Updated KEV Catalog",
+        "url": "https://thehackernews.com/2025/12/cisa-flags-actively-exploited-geoserver.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -315,17 +211,17 @@
     },
     {
       "cve": "CVE-2025-58034",
-      "aura_score": 71.2,
+      "aura_score": 72.2,
       "cvss": 7.2,
-      "epss": 0.486,
+      "epss": 0.532,
       "kev": true,
-      "trend_score": 0.533,
-      "trend_mentions": 19,
+      "trend_score": 0.55,
+      "trend_mentions": 21,
       "trend_breakdown": {
-        "news_hits": 19,
+        "news_hits": 21,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.533
+        "trend_raw": 0.55
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -348,9 +244,9 @@
       },
       "vendor": "Fortinet",
       "product": "Fortiweb",
-      "summary_analyst": "CVE-2025-58034 is a vulnerability in Fortinet FortiWeb that allows an authenticated attacker to execute arbitrary commands on the affected component through crafted HTTP requests.",
-      "summary_ciso": "CVE-2025-58034 exposes Fortinet FortiWeb to critical vulnerabilities that could lead to data breaches and service disruptions, requiring immediate mitigation to protect sensitive customer information and maintain business continuity.",
-      "description": "CVE-2025-58034 is a vulnerability in Fortinet FortiWeb that allows an authenticated attacker to execute arbitrary commands on the affected component through crafted HTTP requests.",
+      "summary_analyst": "CVE-2025-58034 affects Fortinet FortiWeb, allowing remote attackers to exploit a vulnerability in the web application firewall's input validation, potentially leading to arbitrary command execution.",
+      "summary_ciso": "CVE-2025-58034 presents a critical vulnerability in Fortinet Fortiweb that could expose sensitive customer data, risking significant financial and reputational damage if not swiftly mitigated.",
+      "description": "CVE-2025-58034 affects Fortinet FortiWeb, allowing remote attackers to exploit a vulnerability in the web application firewall's input validation, potentially leading to arbitrary command execution.",
       "news_article": {
         "title": "Fortinet Warns of New FortiWeb CVE-2025-58034 Vulnerability Exploited in the Wild",
         "url": "https://thehackernews.com/2025/11/fortinet-warns-of-new-fortiweb-cve-2025.html",
@@ -366,23 +262,23 @@
       }
     },
     {
-      "cve": "CVE-2025-21042",
-      "aura_score": 69.5,
+      "cve": "CVE-2025-14174",
+      "aura_score": 69.2,
       "cvss": 8.8,
-      "epss": 0.04,
+      "epss": 0.062,
       "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 60,
+      "trend_score": 0.55,
+      "trend_mentions": 21,
       "trend_breakdown": {
-        "news_hits": 60,
+        "news_hits": 21,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.7
+        "trend_raw": 0.55
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-21042"
+        "https://www.exploit-db.com/search?q=CVE-2025-14174"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -398,15 +294,15 @@
           "low": 0
         }
       },
-      "vendor": "Samsung",
-      "product": "Android",
-      "summary_analyst": "CVE-2025-21042 is a vulnerability in Samsung Android that allows attackers to execute arbitrary code by exploiting a flaw in the device's memory management.",
-      "summary_ciso": "CVE-2025-21042 presents a critical vulnerability in Samsung Android devices that could lead to unauthorized access to sensitive user data, posing an urgent risk of data breaches and potential loss of customer trust if not promptly addressed.",
-      "description": "CVE-2025-21042 is a vulnerability in Samsung Android that allows attackers to execute arbitrary code by exploiting a flaw in the device's memory management.",
+      "vendor": "Google",
+      "product": "Chrome",
+      "summary_analyst": "CVE-2025-14174 is a vulnerability in Google Chrome that allows remote attackers to execute arbitrary code via a crafted HTML page, exploiting a memory corruption issue in the rendering engine.",
+      "summary_ciso": "CVE-2025-14174 exposes Google Chrome users to potential data breaches and malicious exploits, necessitating immediate updates to mitigate the risk of significant business disruption and reputational damage.",
+      "description": "CVE-2025-14174 is a vulnerability in Google Chrome that allows remote attackers to execute arbitrary code via a crafted HTML page, exploiting a memory corruption issue in the rendering engine.",
       "news_article": {
-        "title": "Previously unknown Landfall spyware used in 0-day attacks on Samsung phones",
-        "url": "https://www.theregister.com/2025/11/07/landfall_spyware_samsung_0days/",
-        "source": "Theregister.com"
+        "title": "Apple Issues Security Updates After Two WebKit Flaws Found Exploited in the Wild",
+        "url": "https://thehackernews.com/2025/12/apple-issues-security-updates-after-two.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -424,9 +320,9 @@
       "epss": 0.012,
       "kev": true,
       "trend_score": 0.7,
-      "trend_mentions": 135,
+      "trend_mentions": 141,
       "trend_breakdown": {
-        "news_hits": 135,
+        "news_hits": 141,
         "github_hits": 0,
         "exploit_boost": 0.0,
         "trend_raw": 0.7
@@ -452,9 +348,9 @@
       },
       "vendor": "Google",
       "product": "Chrome",
-      "summary_analyst": "CVE-2025-13223 is a vulnerability in Google Chrome that allows attackers to exploit a heap buffer overflow in the rendering engine, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2025-13223 poses a significant risk to business operations, as it allows potential attackers to exploit vulnerabilities in Google Chrome, leading to data breaches or system compromises, thus requiring immediate attention to mitigate exposure and safeguard our organization's assets.",
-      "description": "CVE-2025-13223 is a vulnerability in Google Chrome that allows attackers to exploit a heap buffer overflow in the rendering engine, potentially leading to arbitrary code execution.",
+      "summary_analyst": "CVE-2025-13223 is a vulnerability in Google Chrome that allows an attacker to exploit a use-after-free condition in the browser's rendering engine, potentially leading to remote code execution.",
+      "summary_ciso": "CVE-2025-13223 is a critical vulnerability in Google Chrome that poses an immediate risk of data breaches and potential exploitation by attackers, necessitating urgent updates to mitigate exposure and protect our organization's sensitive information.",
+      "description": "CVE-2025-13223 is a vulnerability in Google Chrome that allows an attacker to exploit a use-after-free condition in the browser's rendering engine, potentially leading to remote code execution.",
       "news_article": {
         "title": "Google patches yet another exploited Chrome zero-day (CVE-2025-13223)",
         "url": "https://www.helpnetsecurity.com/2025/11/18/chrome-cve-2025-13223-exploited/",
@@ -470,23 +366,23 @@
       }
     },
     {
-      "cve": "CVE-2025-62215",
-      "aura_score": 61.3,
-      "cvss": 7.0,
-      "epss": 0.006,
+      "cve": "CVE-2025-62221",
+      "aura_score": 64.7,
+      "cvss": 7.8,
+      "epss": 0.029,
       "kev": true,
-      "trend_score": 0.633,
-      "trend_mentions": 34,
+      "trend_score": 0.593,
+      "trend_mentions": 27,
       "trend_breakdown": {
-        "news_hits": 34,
+        "news_hits": 27,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.633
+        "trend_raw": 0.593
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-62215"
+        "https://www.exploit-db.com/search?q=CVE-2025-62221"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -504,65 +400,13 @@
       },
       "vendor": "Microsoft",
       "product": "Windows 10 1809",
-      "summary_analyst": "CVE-2025-62215 exploits a privilege escalation vulnerability in Microsoft Windows 10 1809 by leveraging improper access control mechanisms, allowing attackers to gain elevated permissions on the system.",
-      "summary_ciso": "CVE-2025-62215 poses an urgent risk to Microsoft Windows 10 1809 users by potentially allowing attackers to execute arbitrary code, which could lead to significant data breaches and operational disruptions if not mitigated promptly.",
-      "description": "CVE-2025-62215 exploits a privilege escalation vulnerability in Microsoft Windows 10 1809 by leveraging improper access control mechanisms, allowing attackers to gain elevated permissions on the system.",
+      "summary_analyst": "CVE-2025-62221 is a vulnerability in Microsoft Windows 10 version 1809 that allows an attacker to execute arbitrary code by exploiting a flaw in the Windows kernel's handling of objects in memory.",
+      "summary_ciso": "CVE-2025-62221 represents a critical vulnerability in Microsoft Windows 10 1809 that could expose the organization to significant data breaches and operational disruptions if not addressed urgently.",
+      "description": "CVE-2025-62221 is a vulnerability in Microsoft Windows 10 version 1809 that allows an attacker to execute arbitrary code by exploiting a flaw in the Windows kernel's handling of objects in memory.",
       "news_article": {
-        "title": "Patch Tuesday: Microsoft fixes actively exploited Windows kernel vulnerability (CVE-2025-62215)",
-        "url": "https://www.helpnetsecurity.com/2025/11/12/patch-tuesday-microsoft-cve-2025-62215/",
-        "source": "Help Net Security"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-48633",
-      "aura_score": 33.2,
-      "cvss": 0,
-      "epss": 0,
-      "kev": true,
-      "trend_score": 0.638,
-      "trend_mentions": 35,
-      "trend_breakdown": {
-        "news_hits": 35,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.638
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-48633"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Unknown",
-      "product": "Unknown",
-      "summary_analyst": "CVE-2025-48633 allows an attacker to execute arbitrary code by exploiting a vulnerability in the unspecified component's handling of input validation.",
-      "summary_ciso": "CVE-2025-48633 poses a significant risk due to its potential to compromise sensitive data and operations, demanding immediate attention to mitigate the exposure and safeguard our organization's assets.",
-      "description": "CVE-2025-48633 allows an attacker to execute arbitrary code by exploiting a vulnerability in the unspecified component's handling of input validation.",
-      "news_article": {
-        "title": "Google fixes Android vulnerabilities \u201cunder targeted exploitation\u201d (CVE-2025-48633, CVE-2025-48572)",
-        "url": "https://www.helpnetsecurity.com/2025/12/02/android-cve-2025-48633-cve-2025-48572/",
-        "source": "Help Net Security"
+        "title": "This Week in Security: Hornet, Gogs, and Blinkenlights",
+        "url": "https://hackaday.com/2025/12/12/this-week-in-security-hornet-gogs-and-blinkenlights/",
+        "source": "Hackaday"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -575,17 +419,17 @@
     },
     {
       "cve": "CVE-2025-48572",
-      "aura_score": 33.1,
-      "cvss": 0,
-      "epss": 0,
+      "aura_score": 64.7,
+      "cvss": 7.8,
+      "epss": 0.007,
       "kev": true,
-      "trend_score": 0.611,
-      "trend_mentions": 30,
+      "trend_score": 0.678,
+      "trend_mentions": 44,
       "trend_breakdown": {
-        "news_hits": 30,
+        "news_hits": 44,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.611
+        "trend_raw": 0.678
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -606,15 +450,171 @@
           "low": 0
         }
       },
-      "vendor": "Unknown",
-      "product": "Unknown",
-      "summary_analyst": "CVE-2025-48572 involves a vulnerability in an unspecified component, allowing attackers to exploit it through unverified input, which could lead to unauthorized access or data manipulation.",
-      "summary_ciso": "CVE-2025-48572 represents a critical vulnerability in Unknown Unknown that could lead to significant data breaches and operational disruptions, necessitating immediate attention to mitigate potential financial and reputational damage.",
-      "description": "CVE-2025-48572 involves a vulnerability in an unspecified component, allowing attackers to exploit it through unverified input, which could lead to unauthorized access or data manipulation.",
+      "vendor": "Google",
+      "product": "Android",
+      "summary_analyst": "CVE-2025-48572 is a vulnerability in Google Android that allows an attacker to execute arbitrary code through a specially crafted input, affecting the system's multimedia processing component.",
+      "summary_ciso": "CVE-2025-48572 poses a significant risk to Google Android users by potentially exposing sensitive data, necessitating immediate mitigation efforts to protect against exploitation that could lead to substantial business impacts and reputational damage.",
+      "description": "CVE-2025-48572 is a vulnerability in Google Android that allows an attacker to execute arbitrary code through a specially crafted input, affecting the system's multimedia processing component.",
       "news_article": {
         "title": "107 Android flaws just got patched by Google - here's how to make sure you're up to date",
         "url": "https://www.techradar.com/pro/security/107-android-flaws-just-got-patched-by-google-heres-how-to-make-sure-youre-up-to-date",
         "source": "TechRadar"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-6218",
+      "aura_score": 64.4,
+      "cvss": 7.8,
+      "epss": 0.072,
+      "kev": true,
+      "trend_score": 0.346,
+      "trend_mentions": 6,
+      "trend_breakdown": {
+        "news_hits": 6,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.346
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-6218"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Rarlab",
+      "product": "Winrar",
+      "summary_analyst": "CVE-2025-6218 presents a vulnerability in Rarlab WinRAR that allows attackers to exploit a buffer overflow in the processing of specially crafted ZIP archive files, potentially leading to arbitrary code execution.",
+      "summary_ciso": "CVE-2025-6218 affects Rarlab WinRAR, posing a significant risk of data breaches due to its potential exploitation, which necessitates immediate updates to safeguard sensitive information and prevent financial and reputational damage.",
+      "description": "CVE-2025-6218 presents a vulnerability in Rarlab WinRAR that allows attackers to exploit a buffer overflow in the processing of specially crafted ZIP archive files, potentially leading to arbitrary code execution.",
+      "news_article": {
+        "title": "Warning: WinRAR Vulnerability CVE-2025-6218 Under Active Attack by Multiple Threat Groups",
+        "url": "https://thehackernews.com/2025/12/warning-winrar-vulnerability-cve-2025.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-66644",
+      "aura_score": 60.5,
+      "cvss": 7.2,
+      "epss": 0.035,
+      "kev": true,
+      "trend_score": 0.196,
+      "trend_mentions": 2,
+      "trend_breakdown": {
+        "news_hits": 2,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.196
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-66644"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Arraynetworks",
+      "product": "Arrayos Ag",
+      "summary_analyst": "CVE-2025-66644 is a vulnerability in Arraynetworks Arrayos Ag that allows an attacker to execute arbitrary code remotely by exploiting improper input validation in the web management interface.",
+      "summary_ciso": "CVE-2025-66644 exposes Arraynetworks Arrayos Ag to significant security vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive business information and maintain customer trust.",
+      "description": "CVE-2025-66644 is a vulnerability in Arraynetworks Arrayos Ag that allows an attacker to execute arbitrary code remotely by exploiting improper input validation in the web management interface.",
+      "news_article": {
+        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2025/12/08/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-48633",
+      "aura_score": 55.6,
+      "cvss": 5.5,
+      "epss": 0.004,
+      "kev": true,
+      "trend_score": 0.696,
+      "trend_mentions": 49,
+      "trend_breakdown": {
+        "news_hits": 49,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.696
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-48633"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Google",
+      "product": "Android",
+      "summary_analyst": "CVE-2025-48633 is a vulnerability in Google Android that allows attackers to exploit improper input validation in the system's processing of certain data, potentially leading to unauthorized access or escalation of privileges.",
+      "summary_ciso": "CVE-2025-48633 exposes Google Android devices to significant data compromise risks due to a critical vulnerability, necessitating immediate mitigation efforts to protect sensitive user information and maintain operational integrity.",
+      "description": "CVE-2025-48633 is a vulnerability in Google Android that allows attackers to exploit improper input validation in the system's processing of certain data, potentially leading to unauthorized access or escalation of privileges.",
+      "news_article": {
+        "title": "Google fixes Android vulnerabilities \u201cunder targeted exploitation\u201d (CVE-2025-48633, CVE-2025-48572)",
+        "url": "https://www.helpnetsecurity.com/2025/12/02/android-cve-2025-48633-cve-2025-48572/",
+        "source": "Help Net Security"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
