@@ -1,0 +1,600 @@
+[
+  {
+    "cve": "CVE-2025-37164",
+    "aura_score": 79.7,
+    "cvss": 10.0,
+    "epss": 0.849,
+    "kev": true,
+    "trend_score": 0.55,
+    "trend_mentions": 21,
+    "trend_breakdown": {
+      "news_hits": 21,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.55
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Hpe",
+    "product": "Oneview",
+    "summary_analyst": "CVE-2025-37164 is a vulnerability in HPE OneView that allows an attacker to execute arbitrary code on the affected component due to insufficient input validation in the API, leading to potential unauthorized access.",
+    "summary_ciso": "CVE-2025-37164 poses a significant risk to HPE OneView by potentially allowing unauthorized access to sensitive data, threatening business operations, and requiring immediate action to mitigate exposure and ensure compliance.",
+    "description": "CVE-2025-37164 is a vulnerability in HPE OneView that allows an attacker to execute arbitrary code on the affected component due to insufficient input validation in the API, leading to potential unauthorized access.",
+    "news_article": {
+      "title": "CISA Flags Microsoft Office and HPE OneView Bugs as Actively Exploited",
+      "url": "https://thehackernews.com/2026/01/cisa-flags-microsoft-office-and-hpe.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-52163",
+    "aura_score": 70.0,
+    "cvss": 8.8,
+    "epss": 0.678,
+    "kev": true,
+    "trend_score": 0.247,
+    "trend_mentions": 3,
+    "trend_breakdown": {
+      "news_hits": 3,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.247
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Digiever",
+    "product": "Ds-2105 Pro Firmware",
+    "summary_analyst": "CVE-2023-52163 is a vulnerability in the Digiever Ds-2105 Pro Firmware that allows attackers to execute arbitrary code on the device due to improper input validation in the firmware's handling of user authentication.",
+    "summary_ciso": "CVE-2023-52163 exposes Digiever Ds-2105 Pro Firmware to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect sensitive business information and maintain operational integrity.",
+    "description": "CVE-2023-52163 is a vulnerability in the Digiever Ds-2105 Pro Firmware that allows attackers to execute arbitrary code on the device due to improper input validation in the firmware's handling of user authentication.",
+    "news_article": {
+      "title": "CISA Flags Actively Exploited Digiever NVR Vulnerability Allowing Remote Code Execution",
+      "url": "https://thehackernews.com/2025/12/cisa-flags-actively-exploited-digiever.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-14611",
+    "aura_score": 69.9,
+    "cvss": 9.8,
+    "epss": 0.486,
+    "kev": true,
+    "trend_score": 0.196,
+    "trend_mentions": 2,
+    "trend_breakdown": {
+      "news_hits": 2,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.196
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Gladinet",
+    "product": "Centrestack",
+    "summary_analyst": "CVE-2025-14611 affects Gladinet Centrestack, where an attacker can exploit a path traversal vulnerability to gain unauthorized access to restricted files on the server.",
+    "summary_ciso": "CVE-2025-14611 exposes Gladinet Centrestack to potential data breaches and unauthorized access, necessitating immediate remediation to protect sensitive information and maintain operational integrity.",
+    "description": "CVE-2025-14611 affects Gladinet Centrestack, where an attacker can exploit a path traversal vulnerability to gain unauthorized access to restricted files on the server.",
+    "news_article": null,
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-14733",
+    "aura_score": 69.6,
+    "cvss": 9.8,
+    "epss": 0.388,
+    "kev": true,
+    "trend_score": 0.533,
+    "trend_mentions": 19,
+    "trend_breakdown": {
+      "news_hits": 19,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.533
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Watchguard",
+    "product": "Fireware",
+    "summary_analyst": "CVE-2025-14733 is a vulnerability in Watchguard Fireware that allows an attacker to exploit improper input validation within the authentication process, potentially leading to unauthorized access to the network device.",
+    "summary_ciso": "CVE-2025-14733 presents a critical vulnerability in Watchguard Fireware that could expose our network to potential breaches, necessitating immediate mitigation to safeguard sensitive data and maintain operational integrity.",
+    "description": "CVE-2025-14733 is a vulnerability in Watchguard Fireware that allows an attacker to exploit improper input validation within the authentication process, potentially leading to unauthorized access to the network device.",
+    "news_article": {
+      "title": "WatchGuard Warns of Active Exploitation of Critical Fireware OS VPN Vulnerability",
+      "url": "https://thehackernews.com/2025/12/watchguard-warns-of-active-exploitation.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-43529",
+    "aura_score": 68.5,
+    "cvss": 8.8,
+    "epss": 0.0,
+    "kev": true,
+    "trend_score": 0.657,
+    "trend_mentions": 39,
+    "trend_breakdown": {
+      "news_hits": 39,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.657
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-43529"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apple",
+    "product": "Safari",
+    "summary_analyst": "CVE-2025-43529 is a vulnerability in Apple Safari that enables attackers to exploit a memory corruption issue to execute arbitrary code on the affected component when processing malicious web content.",
+    "summary_ciso": "CVE-2025-43529 presents a critical vulnerability in Apple Safari that exposes user data to potential exploitation, necessitating immediate mitigation to protect sensitive information and maintain compliance with security standards.",
+    "description": "CVE-2025-43529 is a vulnerability in Apple Safari that enables attackers to exploit a memory corruption issue to execute arbitrary code on the affected component when processing malicious web content.",
+    "news_article": {
+      "title": "January 2026 Patch Tuesday forecast: And so it continues",
+      "url": "https://www.helpnetsecurity.com/2026/01/09/january-2026-patch-tuesday-forecast/",
+      "source": "Help Net Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-59374",
+    "aura_score": 67.3,
+    "cvss": 9.8,
+    "epss": 0.309,
+    "kev": true,
+    "trend_score": 0.391,
+    "trend_mentions": 8,
+    "trend_breakdown": {
+      "news_hits": 8,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.391
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Asus",
+    "product": "Live Update",
+    "summary_analyst": "CVE-2025-59374 is a vulnerability in Asus Live Update that allows an attacker to execute arbitrary code due to improper input validation in the software's update process.",
+    "summary_ciso": "CVE-2025-59374 exposes Asus Live Update users to critical security vulnerabilities that could lead to unauthorized access and compromise sensitive data, necessitating immediate action to mitigate potential business impacts.",
+    "description": "CVE-2025-59374 is a vulnerability in Asus Live Update that allows an attacker to execute arbitrary code due to improper input validation in the software's update process.",
+    "news_article": {
+      "title": "Not all CISA-linked alerts are urgent: ASUS Live Update CVE-2025-59374",
+      "url": "https://www.bleepingcomputer.com/news/security/not-all-cisa-linked-alerts-are-urgent-asus-live-update-cve-2025-59374/",
+      "source": "BleepingComputer"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-20393",
+    "aura_score": 63.6,
+    "cvss": 10.0,
+    "epss": 0.039,
+    "kev": true,
+    "trend_score": 0.566,
+    "trend_mentions": 23,
+    "trend_breakdown": {
+      "news_hits": 23,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.566
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Asyncos",
+    "summary_analyst": "CVE-2025-20393 is a vulnerability in Cisco Asyncos that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution on the affected system.",
+    "summary_ciso": "CVE-2025-20393 poses a critical risk to Cisco Asyncos, potentially exposing sensitive data and increasing the urgency for mitigation to safeguard our business operations from cyber threats.",
+    "description": "CVE-2025-20393 is a vulnerability in Cisco Asyncos that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution on the affected system.",
+    "news_article": {
+      "title": "Cisco finally fixes max-severity bug under active attack for weeks",
+      "url": "https://www.theregister.com/2026/01/15/cisco_fixes_cve_2025_20393/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-59718",
+    "aura_score": 62.2,
+    "cvss": 9.8,
+    "epss": 0.023,
+    "kev": true,
+    "trend_score": 0.504,
+    "trend_mentions": 16,
+    "trend_breakdown": {
+      "news_hits": 16,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.504
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Fortiproxy",
+    "summary_analyst": "CVE-2025-59718 affects Fortinet Fortiproxy, exploiting improper validation of user inputs in the web-based management interface, which could lead to unauthorized access and control over the affected component.",
+    "summary_ciso": "CVE-2025-59718 poses an urgent risk to Fortinet Fortiproxy that could potentially compromise sensitive data and disrupt operations, necessitating immediate mitigation to protect the organization from significant financial and reputational damage.",
+    "description": "CVE-2025-59718 affects Fortinet Fortiproxy, exploiting improper validation of user inputs in the web-based management interface, which could lead to unauthorized access and control over the affected component.",
+    "news_article": {
+      "title": "WatchGuard Warns of Active Exploitation of Critical Fireware OS VPN Vulnerability",
+      "url": "https://thehackernews.com/2025/12/watchguard-warns-of-active-exploitation.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-8110",
+    "aura_score": 58.0,
+    "cvss": 8.8,
+    "epss": 0.021,
+    "kev": true,
+    "trend_score": 0.47,
+    "trend_mentions": 13,
+    "trend_breakdown": {
+      "news_hits": 13,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.47
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Gogs",
+    "product": "Gogs",
+    "summary_analyst": "CVE-2025-8110 affects Gogs, allowing an attacker to exploit a command injection vulnerability in the application's webhook handling component, enabling unauthorized command execution on the server.",
+    "summary_ciso": "CVE-2025-8110 exposes Gogs Gogs to potential unauthorized access and data breaches, necessitating immediate remediation to protect sensitive information and maintain business continuity.",
+    "description": "CVE-2025-8110 affects Gogs, allowing an attacker to exploit a command injection vulnerability in the application's webhook handling component, enabling unauthorized command execution on the server.",
+    "news_article": {
+      "title": "US government told to patch high-severity Gogs security issue or face attack",
+      "url": "https://www.techradar.com/pro/security/us-government-told-to-patch-high-severity-gogs-security-issue-or-face-attack",
+      "source": "TechRadar"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-14847",
+    "aura_score": 58.0,
+    "cvss": 7.5,
+    "epss": 0.226,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 54,
+    "trend_breakdown": {
+      "news_hits": 54,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Mongodb",
+    "product": "Mongodb",
+    "summary_analyst": "CVE-2025-14847 is a vulnerability in MongoDB that allows unauthorized users to exploit inadequate access controls to gain sensitive data from the database.",
+    "summary_ciso": "CVE-2025-14847 exposes MongoDB databases to potential unauthorized access, posing a critical risk to sensitive business data and requiring immediate remediation to prevent data breaches and compliance violations.",
+    "description": "CVE-2025-14847 is a vulnerability in MongoDB that allows unauthorized users to exploit inadequate access controls to gain sensitive data from the database.",
+    "news_article": {
+      "title": "MongoDB Vulnerability CVE-2025-14847 Under Active Exploitation Worldwide",
+      "url": "https://thehackernews.com/2025/12/mongodb-vulnerability-cve-2025-14847.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-40602",
+    "aura_score": 48.3,
+    "cvss": 6.6,
+    "epss": 0.003,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Sonicwall",
+    "product": "Sma6200 Firmware",
+    "summary_analyst": "CVE-2025-40602 is a vulnerability in Sonicwall SMA6200 firmware that allows an unauthenticated remote attacker to exploit an improper access control mechanism, potentially leading to unauthorized access to sensitive information.",
+    "summary_ciso": "CVE-2025-40602 exposes the SonicWall SMA6200 firmware to critical vulnerabilities that could lead to unauthorized access and significant data breaches, necessitating immediate patching to protect sensitive information and mitigate potential operational disruptions.",
+    "description": "CVE-2025-40602 is a vulnerability in Sonicwall SMA6200 firmware that allows an unauthenticated remote attacker to exploit an improper access control mechanism, potentially leading to unauthorized access to sensitive information.",
+    "news_article": {
+      "title": "\u26a1 Weekly Recap: Firewall Exploits, AI Data Theft, Android Hacks, APT Attacks, Insider Leaks & More",
+      "url": "https://thehackernews.com/2025/12/weekly-recap-firewall-exploits-ai-data.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20805",
+    "aura_score": 46.5,
+    "cvss": 5.5,
+    "epss": 0.067,
+    "kev": true,
+    "trend_score": 0.628,
+    "trend_mentions": 33,
+    "trend_breakdown": {
+      "news_hits": 33,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.628
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Windows 10 1607",
+    "summary_analyst": "CVE-2026-20805 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to execute arbitrary code through a malformed 3D graphics object due to improper validation in the graphics component.",
+    "summary_ciso": "CVE-2026-20805 poses an urgent risk to Microsoft Windows 10 1607 users, as its exploitation could lead to significant data breaches and operational disruptions, necessitating immediate mitigation efforts to safeguard sensitive information and maintain business continuity.",
+    "description": "CVE-2026-20805 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to execute arbitrary code through a malformed 3D graphics object due to improper validation in the graphics component.",
+    "news_article": {
+      "title": "Patch Tuesday, January 2026 Edition",
+      "url": "https://krebsonsecurity.com/2026/01/patch-tuesday-january-2026-edition/",
+      "source": "Krebs on Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
