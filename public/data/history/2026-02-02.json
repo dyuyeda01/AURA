@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2025-52691",
+    "aura_score": 87.8,
+    "cvss": 10.0,
+    "epss": 0.8,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-52691"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Smartertools",
+    "product": "Smartermail",
+    "summary_analyst": "CVE-2025-52691 affects Smartertools Smartermail by allowing an attacker to exploit a vulnerability in the email server's handling of malformed email headers, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2025-52691 exposes Smartertools Smartermail to potential unauthorized access and data breaches, necessitating immediate action to mitigate risks that could lead to significant reputational and financial damage to our organization.",
+    "description": "CVE-2025-52691 affects Smartertools Smartermail by allowing an attacker to exploit a vulnerability in the email server's handling of malformed email headers, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "U.S. CISA adds Microsoft Office, GNU InetUtils,\u00a0SmarterTools SmarterMail, and Linux Kernel flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/187375/security/u-s-cisa-adds-microsoft-office-gnu-inetutils-smartertools-smartermail-and-linux-kernel-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-37079",
+    "aura_score": 87.2,
+    "cvss": 9.8,
+    "epss": 0.793,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-37079"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Vmware",
+    "product": "Cloud Foundation",
+    "summary_analyst": "CVE-2024-37079 is a vulnerability in VMware Cloud Foundation that could allow an attacker to exploit improper input validation in the component handling user authentication, potentially enabling unauthorized access to sensitive resources.",
+    "summary_ciso": "CVE-2024-37079 exposes VMware Cloud Foundation to potential unauthorized access and data leakage, necessitating immediate remediation to mitigate significant business impact and protect sensitive information.",
+    "description": "CVE-2024-37079 is a vulnerability in VMware Cloud Foundation that could allow an attacker to exploit improper input validation in the component handling user authentication, potentially enabling unauthorized access to sensitive resources.",
+    "news_article": {
+      "title": "Patch or die: VMware vCenter Server bug fixed in 2024 under attack today",
+      "url": "https://www.theregister.com/2026/01/23/critical_vmware_vcenter_server_bug/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-23760",
+    "aura_score": 81.5,
+    "cvss": 9.8,
+    "epss": 0.524,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-23760"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Smartertools",
+    "product": "Smartermail",
+    "summary_analyst": "CVE-2026-23760 is a vulnerability in Smartertools Smartermail that allows an attacker to exploit improper input validation in the email processing component, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2026-23760 poses a critical security vulnerability in Smartertools Smartermail that could lead to unauthorized access and data breaches, presenting a significant risk to our data integrity and requiring immediate remediation to protect sensitive information and maintain business operations.",
+    "description": "CVE-2026-23760 is a vulnerability in Smartertools Smartermail that allows an attacker to exploit improper input validation in the email processing component, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "SmarterMail Fixes Critical Unauthenticated RCE Flaw with CVSS 9.3 Score",
+      "url": "https://thehackernews.com/2026/01/smartermail-fixes-critical.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-24061",
+    "aura_score": 78.0,
+    "cvss": 9.8,
+    "epss": 0.296,
+    "kev": true,
+    "trend_score": 0.573,
+    "trend_mentions": 24,
+    "trend_breakdown": {
+      "news_hits": 24,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.573
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-24061"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Gnu",
+    "product": "Inetutils",
+    "summary_analyst": "CVE-2026-24061 is a vulnerability in Gnu Inetutils that allows remote attackers to execute arbitrary commands due to improper handling of input in the FTP server component.",
+    "summary_ciso": "CVE-2026-24061 presents a critical vulnerability in Gnu Inetutils that could lead to significant data leaks and service disruptions, necessitating immediate mitigation efforts to safeguard our organization's operations and reputation.",
+    "description": "CVE-2026-24061 is a vulnerability in Gnu Inetutils that allows remote attackers to execute arbitrary commands due to improper handling of input in the FTP server component.",
+    "news_article": {
+      "title": "Critical GNU InetUtils telnetd Flaw Lets Attackers Bypass Login and Gain Root Access",
+      "url": "https://thehackernews.com/2026/01/critical-gnu-inetutils-telnetd-flaw.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-1281",
+    "aura_score": 73.9,
+    "cvss": 9.8,
+    "epss": 0.131,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-1281"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ivanti",
+    "product": "Endpoint Manager Mobile",
+    "summary_analyst": "CVE-2026-1281 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an attacker to exploit improper input validation in web requests to execute unauthorized commands within the application, potentially compromising sensitive data.",
+    "summary_ciso": "CVE-2026-1281 exposes Ivanti Endpoint Manager Mobile to significant security vulnerabilities that could lead to unauthorized data access, necessitating immediate mitigation to protect sensitive organizational information and maintain compliance.",
+    "description": "CVE-2026-1281 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an attacker to exploit improper input validation in web requests to execute unauthorized commands within the application, potentially compromising sensitive data.",
+    "news_article": {
+      "title": "January blues return as Ivanti coughs up exploited EPMM zero-days",
+      "url": "https://www.theregister.com/2026/01/30/ivanti_epmm_zero_days/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-24858",
+    "aura_score": 72.4,
+    "cvss": 9.8,
+    "epss": 0.037,
+    "kev": true,
+    "trend_score": 0.482,
+    "trend_mentions": 14,
+    "trend_breakdown": {
+      "news_hits": 14,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.482
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-24858"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Fortianalyzer",
+    "summary_analyst": "CVE-2026-24858 affects Fortinet Fortianalyzer by allowing remote attackers to execute arbitrary code on the system via crafted HTTP requests due to improper input validation in the web interface.",
+    "summary_ciso": "CVE-2026-24858 exposes Fortinet Fortianalyzer to a critical vulnerability that could lead to significant data breaches, compromising sensitive information and resulting in potential financial loss and reputational damage, necessitating immediate mitigation efforts.",
+    "description": "CVE-2026-24858 affects Fortinet Fortianalyzer by allowing remote attackers to execute arbitrary code on the system via crafted HTTP requests due to improper input validation in the web interface.",
+    "news_article": {
+      "title": "Fortinet Patches CVE-2026-24858 After Active FortiOS SSO Exploitation Detected",
+      "url": "https://thehackernews.com/2026/01/fortinet-patches-cve-2026-24858-after.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-68645",
+    "aura_score": 71.7,
+    "cvss": 8.8,
+    "epss": 0.233,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-68645"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Synacor",
+    "product": "Zimbra Collaboration Suite",
+    "summary_analyst": "CVE-2025-68645 affects the Synacor Zimbra Collaboration Suite, enabling remote attackers to exploit an improper input validation vulnerability to execute arbitrary code on the server through crafted email attachments.",
+    "summary_ciso": "The CVE-2025-68645 vulnerability in Synacor Zimbra Collaboration Suite exposes organizations to significant data breaches due to inadequate security measures, necessitating immediate action to mitigate potential impacts on customer trust and compliance.",
+    "description": "CVE-2025-68645 affects the Synacor Zimbra Collaboration Suite, enabling remote attackers to exploit an improper input validation vulnerability to execute arbitrary code on the server through crafted email attachments.",
+    "news_article": {
+      "title": "CISA Updates KEV Catalog with Four Actively Exploited Software Vulnerabilities",
+      "url": "https://thehackernews.com/2026/01/cisa-updates-kev-catalog-with-four.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-34026",
+    "aura_score": 70.9,
+    "cvss": 7.5,
+    "epss": 0.458,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-34026"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Versa-networks",
+    "product": "Concerto",
+    "summary_analyst": "CVE-2025-34026 affects Versa-networks Concerto by exploiting a vulnerability in the user authentication process, allowing an attacker to gain unauthorized access to sensitive network configurations.",
+    "summary_ciso": "CVE-2025-34026 exposes Versa Networks Concerto users to significant security risks that could lead to unauthorized access and potential data breaches, necessitating immediate remediation to protect sensitive information and maintain operational integrity.",
+    "description": "CVE-2025-34026 affects Versa-networks Concerto by exploiting a vulnerability in the user authentication process, allowing an attacker to gain unauthorized access to sensitive network configurations.",
+    "news_article": {
+      "title": "CISA Updates KEV Catalog with Four Actively Exploited Software Vulnerabilities",
+      "url": "https://thehackernews.com/2026/01/cisa-updates-kev-catalog-with-four.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-31125",
+    "aura_score": 66.6,
+    "cvss": 5.3,
+    "epss": 0.685,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-31125"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Vitejs",
+    "product": "Vite",
+    "summary_analyst": "CVE-2025-31125 affects Vitejs Vite and allows attackers to exploit an unchecked input validation vulnerability in the plugin configuration, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2025-31125 exposes Vitejs Vite to critical security vulnerabilities that could compromise application integrity, potentially leading to significant data breaches and operational disruptions, necessitating immediate mitigation efforts to protect business assets.",
+    "description": "CVE-2025-31125 affects Vitejs Vite and allows attackers to exploit an unchecked input validation vulnerability in the plugin configuration, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "CISA Updates KEV Catalog with Four Actively Exploited Software Vulnerabilities",
+      "url": "https://thehackernews.com/2026/01/cisa-updates-kev-catalog-with-four.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20045",
+    "aura_score": 65.6,
+    "cvss": 8.2,
+    "epss": 0.011,
+    "kev": true,
+    "trend_score": 0.515,
+    "trend_mentions": 17,
+    "trend_breakdown": {
+      "news_hits": 17,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.515
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20045"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Unified Communications Manager",
+    "summary_analyst": "CVE-2026-20045 allows remote attackers to exploit a vulnerability in the Cisco Unified Communications Manager by sending specially crafted requests to the affected component, potentially leading to unauthorized access and data disclosure.",
+    "summary_ciso": "CVE-2026-20045 poses an urgent risk to our communications infrastructure, as it can lead to unauthorized access and potential disruption of critical operations, necessitating immediate mitigation to safeguard sensitive business communications.",
+    "description": "CVE-2026-20045 allows remote attackers to exploit a vulnerability in the Cisco Unified Communications Manager by sending specially crafted requests to the affected component, potentially leading to unauthorized access and data disclosure.",
+    "news_article": {
+      "title": "Cisco Fixes Actively Exploited Zero-Day CVE-2026-20045 in Unified CM and Webex",
+      "url": "https://thehackernews.com/2026/01/cisco-fixes-actively-exploited-zero-day.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-21509",
+    "aura_score": 65.2,
+    "cvss": 7.8,
+    "epss": 0.029,
+    "kev": true,
+    "trend_score": 0.682,
+    "trend_mentions": 45,
+    "trend_breakdown": {
+      "news_hits": 45,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.682
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-21509"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "365 Apps",
+    "summary_analyst": "CVE-2026-21509 is a vulnerability in Microsoft 365 Apps that allows an attacker to execute arbitrary code on the affected component through specially crafted Office documents.",
+    "summary_ciso": "CVE-2026-21509 presents an urgent risk to Microsoft 365 Apps, potentially allowing unauthorized access to sensitive data, which could lead to significant business disruptions and reputational damage if not addressed promptly.",
+    "description": "CVE-2026-21509 is a vulnerability in Microsoft 365 Apps that allows an attacker to execute arbitrary code on the affected component through specially crafted Office documents.",
+    "news_article": {
+      "title": "Microsoft Office Zero-Day (CVE-2026-21509) - Emergency Patch Issued for Active Exploitation",
+      "url": "https://thehackernews.com/2026/01/microsoft-issues-emergency-patch-for.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-54313",
+    "aura_score": 63.0,
+    "cvss": 7.5,
+    "epss": 0.041,
+    "kev": true,
+    "trend_score": 0.442,
+    "trend_mentions": 11,
+    "trend_breakdown": {
+      "news_hits": 11,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.442
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-54313"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Prettier",
+    "product": "Eslint-config-prettier",
+    "summary_analyst": "CVE-2025-54313 is a vulnerability in Prettier Eslint-config-prettier that allows an attacker to execute arbitrary code through a crafted configuration file due to improper validation of user-supplied input.",
+    "summary_ciso": "CVE-2025-54313 exposes Prettier Eslint-config-prettier to potential code execution vulnerabilities that could compromise development workflows and lead to severe data breaches, necessitating immediate remediation to safeguard our software development practices.",
+    "description": "CVE-2025-54313 is a vulnerability in Prettier Eslint-config-prettier that allows an attacker to execute arbitrary code through a crafted configuration file due to improper validation of user-supplied input.",
+    "news_article": {
+      "title": "CISA Updates KEV Catalog with Four Actively Exploited Software Vulnerabilities",
+      "url": "https://thehackernews.com/2026/01/cisa-updates-kev-catalog-with-four.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
