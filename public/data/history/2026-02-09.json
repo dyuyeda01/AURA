@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2025-52691",
+    "aura_score": 88.4,
+    "cvss": 10.0,
+    "epss": 0.827,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-52691"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Smartertools",
+    "product": "Smartermail",
+    "summary_analyst": "CVE-2025-52691 allows an attacker to exploit a directory traversal vulnerability in Smartertools Smartermail, potentially enabling unauthorized access to sensitive files on the server.",
+    "summary_ciso": "CVE-2025-52691 poses an urgent threat to SmarterTools SmarterMail as it could lead to unauthorized access and data breaches, exposing sensitive information and requiring immediate mitigation to protect our organization's reputation and compliance.",
+    "description": "CVE-2025-52691 allows an attacker to exploit a directory traversal vulnerability in Smartertools Smartermail, potentially enabling unauthorized access to sensitive files on the server.",
+    "news_article": {
+      "title": "Ransomware attackers are exploiting critical SmarterMail vulnerability (CVE-2026-24423)",
+      "url": "https://www.helpnetsecurity.com/2026/02/06/ransomware-smartermail-cve-2026-24423/",
+      "source": "Help Net Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-37079",
+    "aura_score": 87.3,
+    "cvss": 9.8,
+    "epss": 0.793,
+    "kev": true,
+    "trend_score": 0.442,
+    "trend_mentions": 11,
+    "trend_breakdown": {
+      "news_hits": 11,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.442
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-37079"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Vmware",
+    "product": "Cloud Foundation",
+    "summary_analyst": "CVE-2024-37079 is a vulnerability in VMware Cloud Foundation that allows an authenticated attacker to exploit improper input validation, potentially enabling arbitrary file read access on affected systems.",
+    "summary_ciso": "CVE-2024-37079 poses a critical risk to VMware Cloud Foundation, exposing sensitive organizational data to potential breaches with immediate urgency for mitigation to prevent operational disruption and reputational damage.",
+    "description": "CVE-2024-37079 is a vulnerability in VMware Cloud Foundation that allows an authenticated attacker to exploit improper input validation, potentially enabling arbitrary file read access on affected systems.",
+    "news_article": {
+      "title": "Patch or die: VMware vCenter Server bug fixed in 2024 under attack today",
+      "url": "https://www.theregister.com/2026/01/23/critical_vmware_vcenter_server_bug/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-40551",
+    "aura_score": 82.8,
+    "cvss": 9.8,
+    "epss": 0.55,
+    "kev": true,
+    "trend_score": 0.524,
+    "trend_mentions": 18,
+    "trend_breakdown": {
+      "news_hits": 18,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.524
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-40551"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Solarwinds",
+    "product": "Web Help Desk",
+    "summary_analyst": "CVE-2025-40551 is a vulnerability in SolarWinds Web Help Desk that allows an attacker to exploit insufficient input validation in the login functionality, potentially leading to unauthorized access to sensitive user information.",
+    "summary_ciso": "CVE-2025-40551 poses a critical risk to SolarWinds Web Help Desk, potentially exposing sensitive customer data and system integrity, necessitating immediate action to mitigate the threat and safeguard our operations.",
+    "description": "CVE-2025-40551 is a vulnerability in SolarWinds Web Help Desk that allows an attacker to exploit insufficient input validation in the login functionality, potentially leading to unauthorized access to sensitive user information.",
+    "news_article": {
+      "title": "Critical SolarWinds Web Help Desk bug under attack",
+      "url": "https://www.theregister.com/2026/02/04/critical_solarwinds_web_help_desk/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-23760",
+    "aura_score": 82.4,
+    "cvss": 9.8,
+    "epss": 0.555,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-23760"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Smartertools",
+    "product": "Smartermail",
+    "summary_analyst": "CVE-2026-23760 is a vulnerability in Smartertools SmarterMail that allows remote attackers to bypass authentication and gain unauthorized access to the application by exploiting improper input validation in the user login process.",
+    "summary_ciso": "CVE-2026-23760 poses an immediate risk to Smartertools Smartermail, potentially exposing sensitive email data and compromising user confidentiality, necessitating prompt mitigation to safeguard our organizational integrity and customer trust.",
+    "description": "CVE-2026-23760 is a vulnerability in Smartertools SmarterMail that allows remote attackers to bypass authentication and gain unauthorized access to the application by exploiting improper input validation in the user login process.",
+    "news_article": {
+      "title": "SmarterMail Fixes Critical Unauthenticated RCE Flaw with CVSS 9.3 Score",
+      "url": "https://thehackernews.com/2026/01/smartermail-fixes-critical.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-24061",
+    "aura_score": 78.8,
+    "cvss": 9.8,
+    "epss": 0.325,
+    "kev": true,
+    "trend_score": 0.617,
+    "trend_mentions": 31,
+    "trend_breakdown": {
+      "news_hits": 31,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.617
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-24061"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Gnu",
+    "product": "Inetutils",
+    "summary_analyst": "CVE-2026-24061 affects Gnu Inetutils, allowing an attacker to exploit a buffer overflow in the FTP server component, potentially enabling remote code execution.",
+    "summary_ciso": "CVE-2026-24061 poses an immediate risk to our systems using Gnu Inetutils due to a vulnerability that could allow for unauthorized access and data breaches, necessitating urgent mitigation to protect sensitive information and ensure business continuity.",
+    "description": "CVE-2026-24061 affects Gnu Inetutils, allowing an attacker to exploit a buffer overflow in the FTP server component, potentially enabling remote code execution.",
+    "news_article": {
+      "title": "Critical GNU InetUtils telnetd Flaw Lets Attackers Bypass Login and Gain Root Access",
+      "url": "https://thehackernews.com/2026/01/critical-gnu-inetutils-telnetd-flaw.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-1281",
+    "aura_score": 75.0,
+    "cvss": 9.8,
+    "epss": 0.164,
+    "kev": true,
+    "trend_score": 0.504,
+    "trend_mentions": 16,
+    "trend_breakdown": {
+      "news_hits": 16,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.504
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-1281"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ivanti",
+    "product": "Endpoint Manager Mobile",
+    "summary_analyst": "CVE-2026-1281 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an attacker to execute arbitrary code on affected systems due to improper input validation in the application\u2019s web interface.",
+    "summary_ciso": "CVE-2026-1281 poses a significant threat to Ivanti Endpoint Manager Mobile, exposing the organization to potential data breaches and operational disruptions, thus requiring immediate mitigation to safeguard sensitive information and maintain business continuity.",
+    "description": "CVE-2026-1281 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an attacker to execute arbitrary code on affected systems due to improper input validation in the application\u2019s web interface.",
+    "news_article": {
+      "title": "January blues return as Ivanti coughs up exploited EPMM zero-days",
+      "url": "https://www.theregister.com/2026/01/30/ivanti_epmm_zero_days/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-24423",
+    "aura_score": 73.1,
+    "cvss": 9.8,
+    "epss": 0.092,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-24423"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Smartertools",
+    "product": "Smartermail",
+    "summary_analyst": "CVE-2026-24423 affects Smartertools SmarterMail by allowing an attacker to exploit improper input validation in the email processing component, which could lead to remote code execution.",
+    "summary_ciso": "CVE-2026-24423 exposes Smartertools Smartermail to significant data breach risks, which could lead to unauthorized access to sensitive communications and urgent financial implications, necessitating immediate mitigation efforts to protect our organization\u2019s reputation and customer trust.",
+    "description": "CVE-2026-24423 affects Smartertools SmarterMail by allowing an attacker to exploit improper input validation in the email processing component, which could lead to remote code execution.",
+    "news_article": {
+      "title": "SmarterMail Fixes Critical Unauthenticated RCE Flaw with CVSS 9.3 Score",
+      "url": "https://thehackernews.com/2026/01/smartermail-fixes-critical.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-68645",
+    "aura_score": 72.8,
+    "cvss": 8.8,
+    "epss": 0.281,
+    "kev": true,
+    "trend_score": 0.391,
+    "trend_mentions": 8,
+    "trend_breakdown": {
+      "news_hits": 8,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.391
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-68645"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Synacor",
+    "product": "Zimbra Collaboration Suite",
+    "summary_analyst": "CVE-2025-68645 involves a command injection vulnerability in the Synacor Zimbra Collaboration Suite, allowing an authenticated attacker to execute arbitrary commands on the server through crafted requests.",
+    "summary_ciso": "The CVE-2025-68645 vulnerability in Synacor Zimbra Collaboration Suite poses an immediate risk of data breaches and service disruptions, necessitating urgent mitigation actions to protect sensitive client information and maintain operational integrity.",
+    "description": "CVE-2025-68645 involves a command injection vulnerability in the Synacor Zimbra Collaboration Suite, allowing an authenticated attacker to execute arbitrary commands on the server through crafted requests.",
+    "news_article": {
+      "title": "CISA Updates KEV Catalog with Four Actively Exploited Software Vulnerabilities",
+      "url": "https://thehackernews.com/2026/01/cisa-updates-kev-catalog-with-four.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-11953",
+    "aura_score": 72.6,
+    "cvss": 9.8,
+    "epss": 0.07,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-11953"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "React-native-community",
+    "product": "React Native Community Cli",
+    "summary_analyst": "CVE-2025-11953 is a vulnerability in the React-native-community React Native Community CLI that allows attackers to execute arbitrary code due to improper validation of input parameters.",
+    "summary_ciso": "CVE-2025-11953 poses a critical risk to our applications built on React Native Community CLI, potentially exposing sensitive data and operational integrity, making immediate mitigation essential to safeguard our business continuity and customer trust.",
+    "description": "CVE-2025-11953 is a vulnerability in the React-native-community React Native Community CLI that allows attackers to execute arbitrary code due to improper validation of input parameters.",
+    "news_article": {
+      "title": "Critical React Native Metro dev server bug under attack as researchers scream into the void",
+      "url": "https://www.theregister.com/2026/02/03/critical_react_native_metro_server/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-24858",
+    "aura_score": 72.6,
+    "cvss": 9.8,
+    "epss": 0.034,
+    "kev": true,
+    "trend_score": 0.55,
+    "trend_mentions": 21,
+    "trend_breakdown": {
+      "news_hits": 21,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.55
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-24858"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Fortianalyzer",
+    "summary_analyst": "CVE-2026-24858 is a vulnerability in Fortinet Fortianalyzer that allows an attacker to execute arbitrary commands through crafted HTTP requests, potentially compromising the affected component's integrity.",
+    "summary_ciso": "CVE-2026-24858 poses a critical risk to Fortinet FortiAnalyzer users, potentially exposing sensitive data and compliance violations, necessitating immediate remediation to prevent severe operational and reputational damage.",
+    "description": "CVE-2026-24858 is a vulnerability in Fortinet Fortianalyzer that allows an attacker to execute arbitrary commands through crafted HTTP requests, potentially compromising the affected component's integrity.",
+    "news_article": {
+      "title": "Fortinet Patches CVE-2026-24858 After Active FortiOS SSO Exploitation Detected",
+      "url": "https://thehackernews.com/2026/01/fortinet-patches-cve-2026-24858-after.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-21509",
+    "aura_score": 65.3,
+    "cvss": 7.8,
+    "epss": 0.029,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 80,
+    "trend_breakdown": {
+      "news_hits": 80,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-21509"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "365 Apps",
+    "summary_analyst": "CVE-2026-21509 is a vulnerability in Microsoft 365 Apps that allows an attacker to exploit improperly handled input, potentially leading to remote code execution on the affected component.",
+    "summary_ciso": "CVE-2026-21509 poses an urgent security risk to Microsoft 365 Apps, potentially exposing sensitive business data and operations to exploitation if not swiftly mitigated.",
+    "description": "CVE-2026-21509 is a vulnerability in Microsoft 365 Apps that allows an attacker to exploit improperly handled input, potentially leading to remote code execution on the affected component.",
+    "news_article": {
+      "title": "APT28 Uses Microsoft Office CVE-2026-21509 in Espionage-Focused Malware Attacks",
+      "url": "https://thehackernews.com/2026/02/apt28-uses-microsoft-office-cve-2026.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-64328",
+    "aura_score": 64.3,
+    "cvss": 7.2,
+    "epss": 0.206,
+    "kev": true,
+    "trend_score": 0.287,
+    "trend_mentions": 4,
+    "trend_breakdown": {
+      "news_hits": 4,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.287
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-64328"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Sangoma",
+    "product": "Freepbx",
+    "summary_analyst": "CVE-2025-64328 is a vulnerability in Sangoma FreePBX that allows an authenticated attacker to execute arbitrary code on the server by exploiting improper input validation in the system's web interface.",
+    "summary_ciso": "CVE-2025-64328 poses a significant security risk to Sangoma FreePBX, potentially exposing sensitive communication data to unauthorized access, which requires immediate attention to mitigate the risk of data breaches and operational disruption.",
+    "description": "CVE-2025-64328 is a vulnerability in Sangoma FreePBX that allows an authenticated attacker to execute arbitrary code on the server by exploiting improper input validation in the system's web interface.",
+    "news_article": {
+      "title": "U.S. CISA adds SolarWinds Web Help Desk, Sangoma FreePBX,\u00a0and GitLab flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/187592/security/u-s-cisa-adds-solarwinds-web-help-desk-sangoma-freepbx-and-gitlab-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
