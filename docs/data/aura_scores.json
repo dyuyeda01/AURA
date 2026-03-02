@@ -1,22 +1,22 @@
 {
-  "last_run": "2026-02-23T16:27:59.562754+00:00",
-  "generated": "2026-02-23T16:27:59.562802",
-  "daily_analyst_summary": "Today\u2019s threat landscape highlights a surge in exploitation targeting webmail and remote access platforms, with critical vulnerabilities in Roundcube Webmail (CVE-2025-49113, CVE-2025-68461) and Beyondtrust Privileged Remote Access (CVE-2026-1731) enabling arbitrary code execution via improper input validation and authentication flaws. Additionally, memory corruption and buffer overflow issues persist across major software such as Microsoft Windows 10 (CVE-2026-21513), Google Chrome (CVE-2026-2441), and Notepad++ (CVE-2025-15556), underscoring the need for urgent patching to mitigate remote code execution risks.",
-  "daily_ciso_summary": "The current vulnerability landscape presents significant business risks due to multiple critical remote code execution and unauthorized access flaws across widely used enterprise software such as Roundcube Webmail, Microsoft Configuration Manager, and BeyondTrust Privileged Remote Access, potentially exposing sensitive financial data and operational systems. These vulnerabilities increase the likelihood of data breaches, ransomware attacks, and system manipulation, directly impacting financial stability and regulatory compliance. We recommend prioritizing patch management for remote code execution flaws, enhancing network segmentation, and strengthening authentication controls to mitigate exposure and reduce financial risk.",
+  "last_run": "2026-03-02T15:57:45.245010+00:00",
+  "generated": "2026-03-02T15:57:45.245082",
+  "daily_analyst_summary": "Today\u2019s intelligence highlights a surge in remote code execution vulnerabilities driven primarily by improper input validation across widely used enterprise and consumer software, including Roundcube Webmail (CVE-2025-49113), Microsoft Configuration Manager (CVE-2024-43468), and SolarWinds Web Help Desk (CVE-2025-40536). Notably, authentication bypass in Beyondtrust Privileged Remote Access (CVE-2026-1731) and unauthenticated code execution in Dell RecoverPoint for VMs (CVE-2026-22769) emphasize escalating risks to privileged access and virtual infrastructure. Additionally, memory corruption issues in Google Chrome (CVE-2026-2441) and input handling flaws in Apple iPadOS (CVE-2026-20700) underscore ongoing threats to endpoint security.",
+  "daily_ciso_summary": "The current vulnerability landscape presents significant business risks due to multiple critical remote code execution and authentication bypass flaws across widely used enterprise applications, including Microsoft Configuration Manager, BeyondTrust Privileged Access, and SolarWinds Web Help Desk, which could lead to unauthorized access and data breaches impacting financial and operational stability. These vulnerabilities expose organizations to elevated financial risk through potential data theft, operational disruption, and regulatory penalties, especially given the prevalence of affected software in critical infrastructure and privileged environments. Immediate focus should be on prioritizing patch management, strengthening input validation controls, and enhancing monitoring of privileged access systems to mitigate exploitation and reduce attack surface exposure.",
   "cves": [
     {
       "cve": "CVE-2025-49113",
-      "aura_score": 89.0,
+      "aura_score": 89.6,
       "cvss": 9.9,
-      "epss": 0.9,
+      "epss": 0.904,
       "kev": true,
-      "trend_score": 0.287,
-      "trend_mentions": 4,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
       "trend_breakdown": {
-        "news_hits": 4,
+        "news_hits": 8,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.287
+        "trend_raw": 0.391
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -39,9 +39,9 @@
       },
       "vendor": "Roundcube",
       "product": "Webmail",
-      "summary_analyst": "CVE-2025-49113 affects Roundcube Webmail by allowing remote attackers to exploit a vulnerability in the application's file handling mechanism that could lead to arbitrary file upload and code execution.",
-      "summary_ciso": "CVE-2025-49113 represents a critical vulnerability in Roundcube Webmail that could lead to unauthorized access to sensitive user data, posing significant business risks and necessitating immediate remediation to prevent potential data breaches.",
-      "description": "CVE-2025-49113 affects Roundcube Webmail by allowing remote attackers to exploit a vulnerability in the application's file handling mechanism that could lead to arbitrary file upload and code execution.",
+      "summary_analyst": "CVE-2025-49113 affects Roundcube Webmail by allowing an attacker to exploit improper input validation, leading to potential remote code execution through crafted email messages.",
+      "summary_ciso": "CVE-2025-49113 poses an urgent risk to Roundcube Webmail that could lead to unauthorized access to sensitive communications, potentially exposing the organization to data breaches and compliance violations if not promptly addressed.",
+      "description": "CVE-2025-49113 affects Roundcube Webmail by allowing an attacker to exploit improper input validation, leading to potential remote code execution through crafted email messages.",
       "news_article": {
         "title": "U.S. CISA adds RoundCube Webmail flaws to its Known Exploited Vulnerabilities catalog",
         "url": "https://securityaffairs.com/188324/security/u-s-cisa-adds-roundcube-webmail-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
@@ -58,17 +58,17 @@
     },
     {
       "cve": "CVE-2024-43468",
-      "aura_score": 88.0,
+      "aura_score": 88.1,
       "cvss": 9.8,
       "epss": 0.846,
       "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
       "trend_breakdown": {
-        "news_hits": 7,
+        "news_hits": 8,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.37
+        "trend_raw": 0.391
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -91,9 +91,9 @@
       },
       "vendor": "Microsoft",
       "product": "Configuration Manager 2403",
-      "summary_analyst": "CVE-2024-43468 is a vulnerability in Microsoft Configuration Manager 2403 that allows an attacker to execute arbitrary code by manipulating the handling of crafted network packets.",
-      "summary_ciso": "CVE-2024-43468 presents a critical vulnerability in Microsoft Configuration Manager 2403 that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect sensitive organizational information and maintain compliance.",
-      "description": "CVE-2024-43468 is a vulnerability in Microsoft Configuration Manager 2403 that allows an attacker to execute arbitrary code by manipulating the handling of crafted network packets.",
+      "summary_analyst": "CVE-2024-43468 involves a remote code execution vulnerability in Microsoft Configuration Manager 2403, allowing an attacker to exploit certain input validation weaknesses to execute arbitrary code on the affected system.",
+      "summary_ciso": "CVE-2024-43468 poses a significant risk to Microsoft Configuration Manager 2403, potentially exposing sensitive organizational data to unauthorized access, and necessitating immediate mitigation efforts to prevent substantial business disruption and compliance violations.",
+      "description": "CVE-2024-43468 involves a remote code execution vulnerability in Microsoft Configuration Manager 2403, allowing an attacker to exploit certain input validation weaknesses to execute arbitrary code on the affected system.",
       "news_article": {
         "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
         "url": "https://www.cisa.gov/news-events/alerts/2026/02/12/cisa-adds-four-known-exploited-vulnerabilities-catalog",
@@ -110,17 +110,17 @@
     },
     {
       "cve": "CVE-2026-1731",
-      "aura_score": 82.1,
+      "aura_score": 84.5,
       "cvss": 9.8,
-      "epss": 0.497,
+      "epss": 0.609,
       "kev": true,
-      "trend_score": 0.593,
-      "trend_mentions": 27,
+      "trend_score": 0.617,
+      "trend_mentions": 31,
       "trend_breakdown": {
-        "news_hits": 27,
+        "news_hits": 31,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.593
+        "trend_raw": 0.617
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -143,9 +143,9 @@
       },
       "vendor": "Beyondtrust",
       "product": "Privileged Remote Access",
-      "summary_analyst": "CVE-2026-1731 is a vulnerability in Beyondtrust Privileged Remote Access that allows an unauthenticated remote attacker to execute arbitrary commands on the affected system due to improper input validation in the application's authentication mechanism.",
-      "summary_ciso": "CVE-2026-1731 poses a critical risk to BeyondTrust Privileged Remote Access, exposing sensitive organizational assets to potential unauthorized access, thus necessitating immediate mitigation to safeguard against significant operational and reputational damage.",
-      "description": "CVE-2026-1731 is a vulnerability in Beyondtrust Privileged Remote Access that allows an unauthenticated remote attacker to execute arbitrary commands on the affected system due to improper input validation in the application's authentication mechanism.",
+      "summary_analyst": "CVE-2026-1731 affects Beyondtrust Privileged Remote Access by allowing remote attackers to exploit an authentication bypass vulnerability due to improper validation of user credentials, potentially granting unauthorized access to sensitive systems.",
+      "summary_ciso": "CVE-2026-1731 exposes Beyondtrust Privileged Remote Access to critical vulnerabilities that could allow unauthorized access to sensitive systems, necessitating immediate remediation to protect against potential data breaches and operational disruptions.",
+      "description": "CVE-2026-1731 affects Beyondtrust Privileged Remote Access by allowing remote attackers to exploit an authentication bypass vulnerability due to improper validation of user credentials, potentially granting unauthorized access to sensitive systems.",
       "news_article": {
         "title": "Hackers probe, exploit newly patched BeyondTrust RCE flaw (CVE-2026-1731)",
         "url": "https://www.helpnetsecurity.com/2026/02/13/beyondtrust-cve-2026-1731-poc-exploit-activity/",
@@ -162,17 +162,17 @@
     },
     {
       "cve": "CVE-2026-22769",
-      "aura_score": 79.4,
+      "aura_score": 79.5,
       "cvss": 10.0,
       "epss": 0.342,
       "kev": true,
-      "trend_score": 0.515,
-      "trend_mentions": 17,
+      "trend_score": 0.524,
+      "trend_mentions": 18,
       "trend_breakdown": {
-        "news_hits": 17,
+        "news_hits": 18,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.515
+        "trend_raw": 0.524
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -195,9 +195,9 @@
       },
       "vendor": "Dell",
       "product": "Recoverpoint For Virtual Machines",
-      "summary_analyst": "CVE-2026-22769 affects Dell RecoverPoint for Virtual Machines by allowing an authenticated attacker to exploit improper access control in the web interface, potentially leading to unauthorized changes in system configurations.",
-      "summary_ciso": "CVE-2026-22769 poses a critical vulnerability in Dell RecoverPoint for Virtual Machines that could lead to unauthorized access and data breaches, exposing our organization to significant operational and financial risks, necessitating immediate remediation efforts.",
-      "description": "CVE-2026-22769 affects Dell RecoverPoint for Virtual Machines by allowing an authenticated attacker to exploit improper access control in the web interface, potentially leading to unauthorized changes in system configurations.",
+      "summary_analyst": "CVE-2026-22769 affects Dell RecoverPoint for Virtual Machines by allowing an unauthenticated attacker to execute arbitrary code on the server through a vulnerability in the application's handling of specially crafted requests.",
+      "summary_ciso": "CVE-2026-22769 presents a critical vulnerability in Dell RecoverPoint for Virtual Machines that could lead to unauthorized access and potential data breaches, necessitating immediate remediation to safeguard sensitive information and maintain operational integrity.",
+      "description": "CVE-2026-22769 affects Dell RecoverPoint for Virtual Machines by allowing an unauthenticated attacker to execute arbitrary code on the server through a vulnerability in the application's handling of specially crafted requests.",
       "news_article": {
         "title": "China-linked snoops have been exploiting Dell 0-day since mid-2024, using 'ghost NICs' to avoid detection",
         "url": "https://www.theregister.com/2026/02/18/dell_0day_brickstorm_campaign/",
@@ -214,17 +214,17 @@
     },
     {
       "cve": "CVE-2025-40536",
-      "aura_score": 78.4,
+      "aura_score": 78.5,
       "cvss": 8.1,
-      "epss": 0.666,
+      "epss": 0.681,
       "kev": true,
-      "trend_score": 0.533,
-      "trend_mentions": 19,
+      "trend_score": 0.494,
+      "trend_mentions": 15,
       "trend_breakdown": {
-        "news_hits": 19,
+        "news_hits": 15,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.533
+        "trend_raw": 0.494
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -247,13 +247,13 @@
       },
       "vendor": "Solarwinds",
       "product": "Web Help Desk",
-      "summary_analyst": "CVE-2025-40536 allows remote attackers to exploit an improper input validation vulnerability in the Solarwinds Web Help Desk, enabling unauthorized access to sensitive data and potential manipulation of the system.",
-      "summary_ciso": "CVE-2025-40536 exposes SolarWinds Web Help Desk to significant risk of unauthorized access and potential data breaches, requiring immediate mitigation to safeguard sensitive customer and organizational information.",
-      "description": "CVE-2025-40536 allows remote attackers to exploit an improper input validation vulnerability in the Solarwinds Web Help Desk, enabling unauthorized access to sensitive data and potential manipulation of the system.",
+      "summary_analyst": "CVE-2025-40536 is a vulnerability in SolarWinds Web Help Desk that allows an attacker to exploit improper input validation to execute arbitrary code on the server, potentially compromising the affected component.",
+      "summary_ciso": "CVE-2025-40536 poses a significant risk to Solarwinds Web Help Desk, exposing sensitive data to potential breaches, and requiring immediate mitigation to protect customer information and maintain trust in our services.",
+      "description": "CVE-2025-40536 is a vulnerability in SolarWinds Web Help Desk that allows an attacker to exploit improper input validation to execute arbitrary code on the server, potentially compromising the affected component.",
       "news_article": {
-        "title": "SolarWinds Fixes Four Critical Web Help Desk Flaws With Unauthenticated RCE and Auth Bypass",
-        "url": "https://thehackernews.com/2026/01/solarwinds-fixes-four-critical-web-help.html",
-        "source": "Internet"
+        "title": "Someone's attacking SolarWinds WHD to steal high\u2011privilege credentials - but we don't know who or how",
+        "url": "https://www.theregister.com/2026/02/09/solarwinds_mystery_whd_attack/",
+        "source": "Theregister.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -265,23 +265,23 @@
       }
     },
     {
-      "cve": "CVE-2026-21513",
-      "aura_score": 69.3,
-      "cvss": 8.8,
-      "epss": 0.041,
+      "cve": "CVE-2026-20127",
+      "aura_score": 73.2,
+      "cvss": 10.0,
+      "epss": 0.022,
       "kev": true,
-      "trend_score": 0.657,
-      "trend_mentions": 39,
+      "trend_score": 0.558,
+      "trend_mentions": 22,
       "trend_breakdown": {
-        "news_hits": 39,
+        "news_hits": 22,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.657
+        "trend_raw": 0.558
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-21513"
+        "https://www.exploit-db.com/search?q=CVE-2026-20127"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -297,15 +297,67 @@
           "low": 0
         }
       },
-      "vendor": "Microsoft",
-      "product": "Windows 10 1607",
-      "summary_analyst": "CVE-2026-21513 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to exploit a memory corruption issue to execute arbitrary code in the context of the affected system.",
-      "summary_ciso": "CVE-2026-21513 presents a critical vulnerability in Microsoft Windows 10 1607 that could allow attackers to gain unauthorized access to sensitive data, posing significant exposure risks to our organization, and urgent action is required to mitigate this threat to protect our assets and ensure business continuity.",
-      "description": "CVE-2026-21513 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to exploit a memory corruption issue to execute arbitrary code in the context of the affected system.",
+      "vendor": "Cisco",
+      "product": "Catalyst Sd-wan Manager",
+      "summary_analyst": "CVE-2026-20127 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an authenticated attacker to exploit insufficient input validation, potentially leading to remote code execution on the affected component.",
+      "summary_ciso": "CVE-2026-20127 poses an urgent risk to Cisco Catalyst SD-WAN Manager by potentially allowing unauthorized access to sensitive network configurations, which could lead to significant operational disruptions and reputational damage if not remediated promptly.",
+      "description": "CVE-2026-20127 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an authenticated attacker to exploit insufficient input validation, potentially leading to remote code execution on the affected component.",
       "news_article": {
-        "title": "Patch Tuesday, February 2026 Edition",
-        "url": "https://krebsonsecurity.com/2026/02/patch-tuesday-february-2026-edition/",
-        "source": "Krebs on Security"
+        "title": "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access",
+        "url": "https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-25108",
+      "aura_score": 71.1,
+      "cvss": 8.8,
+      "epss": 0.186,
+      "kev": true,
+      "trend_score": 0.427,
+      "trend_mentions": 10,
+      "trend_breakdown": {
+        "news_hits": 10,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.427
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-25108"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Soliton",
+      "product": "Filezen",
+      "summary_analyst": "CVE-2026-25108 is a vulnerability in Soliton Filezen that allows remote attackers to exploit the web application's handling of file uploads, potentially leading to arbitrary file execution on the server.",
+      "summary_ciso": "CVE-2026-25108 presents a critical risk to Soliton Filezen, potentially exposing sensitive data to unauthorized access, which necessitates immediate action to mitigate potential financial and reputational damage to the organization.",
+      "description": "CVE-2026-25108 is a vulnerability in Soliton Filezen that allows remote attackers to exploit the web application's handling of file uploads, potentially leading to arbitrary file execution on the server.",
+      "news_article": {
+        "title": "CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability",
+        "url": "https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -320,12 +372,12 @@
       "cve": "CVE-2026-2441",
       "aura_score": 68.8,
       "cvss": 8.8,
-      "epss": 0.004,
+      "epss": 0.003,
       "kev": true,
       "trend_score": 0.7,
-      "trend_mentions": 59,
+      "trend_mentions": 64,
       "trend_breakdown": {
-        "news_hits": 59,
+        "news_hits": 64,
         "github_hits": 0,
         "exploit_boost": 0.0,
         "trend_raw": 0.7
@@ -351,13 +403,13 @@
       },
       "vendor": "Google",
       "product": "Chrome",
-      "summary_analyst": "CVE-2026-2441 is a vulnerability in Google Chrome that allows an attacker to execute arbitrary code by leveraging a heap buffer overflow in the browser's rendering engine.",
-      "summary_ciso": "CVE-2026-2441 poses an immediate threat to Google Chrome users, potentially exposing sensitive data and organizational assets to cyberattacks, highlighting the urgent need for prompt security updates to mitigate this vulnerability.",
-      "description": "CVE-2026-2441 is a vulnerability in Google Chrome that allows an attacker to execute arbitrary code by leveraging a heap buffer overflow in the browser's rendering engine.",
+      "summary_analyst": "CVE-2026-2441 is a vulnerability in Google Chrome that allows remote attackers to execute arbitrary code via a crafted web page due to improper handling of memory, potentially leading to a compromise of the affected browser component.",
+      "summary_ciso": "CVE-2026-2441 presents a critical vulnerability in Google Chrome that could expose users to significant security risks, requiring immediate action to mitigate potential data breaches and protect organizational integrity.",
+      "description": "CVE-2026-2441 is a vulnerability in Google Chrome that allows remote attackers to execute arbitrary code via a crafted web page due to improper handling of memory, potentially leading to a compromise of the affected browser component.",
       "news_article": {
-        "title": "CISA Flags Four Security Flaws Under Active Exploitation in Latest KEV Update",
-        "url": "https://thehackernews.com/2026/02/cisa-flags-four-security-flaws-under.html",
-        "source": "Internet"
+        "title": "An Exploit \u2026 in CSS?!",
+        "url": "https://css-tricks.com/an-exploit-in-css/",
+        "source": "Css-tricks.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -375,9 +427,9 @@
       "epss": 0.004,
       "kev": true,
       "trend_score": 0.7,
-      "trend_mentions": 100,
+      "trend_mentions": 133,
       "trend_breakdown": {
-        "news_hits": 100,
+        "news_hits": 133,
         "github_hits": 0,
         "exploit_boost": 0.0,
         "trend_raw": 0.7
@@ -403,65 +455,13 @@
       },
       "vendor": "Apple",
       "product": "Ipados",
-      "summary_analyst": "CVE-2026-20700 is a vulnerability in Apple iPadOS that allows attackers to exploit a memory corruption issue in the operating system's components, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2026-20700 poses an immediate risk to Apple iPadOS users through a critical vulnerability that could lead to unauthorized access and data breaches, necessitating urgent software updates to safeguard sensitive information and maintain business integrity.",
-      "description": "CVE-2026-20700 is a vulnerability in Apple iPadOS that allows attackers to exploit a memory corruption issue in the operating system's components, potentially leading to arbitrary code execution.",
+      "summary_analyst": "CVE-2026-20700 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code due to improper handling of certain input, potentially compromising the affected system.",
+      "summary_ciso": "CVE-2026-20700 poses a critical risk to Apple iPadOS environments, potentially exposing sensitive user data to exploitation, and requires immediate attention to mitigate severe business impacts.",
+      "description": "CVE-2026-20700 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code due to improper handling of certain input, potentially compromising the affected system.",
       "news_article": {
         "title": "Apple Fixes Exploited Zero-Day Affecting iOS, macOS, and Apple Devices",
         "url": "https://thehackernews.com/2026/02/apple-fixes-exploited-zero-day.html",
         "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-68461",
-      "aura_score": 62.7,
-      "cvss": 7.2,
-      "epss": 0.135,
-      "kev": true,
-      "trend_score": 0.247,
-      "trend_mentions": 3,
-      "trend_breakdown": {
-        "news_hits": 3,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.247
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-68461"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Roundcube",
-      "product": "Webmail",
-      "summary_analyst": "CVE-2025-68461 involves a vulnerability in Roundcube Webmail that allows an authenticated attacker to leverage improper input validation in the file upload feature to execute arbitrary code on the server.",
-      "summary_ciso": "CVE-2025-68461 poses an urgent risk to Roundcube Webmail, potentially exposing sensitive customer data to unauthorized access, which if not mitigated promptly, could lead to significant reputational harm and financial losses for the organization.",
-      "description": "CVE-2025-68461 involves a vulnerability in Roundcube Webmail that allows an authenticated attacker to leverage improper input validation in the file upload feature to execute arbitrary code on the server.",
-      "news_article": {
-        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/02/20/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -507,9 +507,9 @@
       },
       "vendor": "Notepad-plus-plus",
       "product": "Notepad\\+\\+",
-      "summary_analyst": "CVE-2025-15556 is a vulnerability in Notepad-plus-plus that allows an attacker to exploit a buffer overflow in the handling of specific file types, leading to possible code execution.",
-      "summary_ciso": "CVE-2025-15556 exposes Notepad++ users to potential data breaches and compromise of sensitive information, necessitating immediate action to mitigate risks and protect our organizational integrity.",
-      "description": "CVE-2025-15556 is a vulnerability in Notepad-plus-plus that allows an attacker to exploit a buffer overflow in the handling of specific file types, leading to possible code execution.",
+      "summary_analyst": "CVE-2025-15556 is a vulnerability in Notepad++ that allows an attacker to exploit a stack-based buffer overflow via crafted file input, potentially leading to arbitrary code execution.",
+      "summary_ciso": "CVE-2025-15556 poses a critical vulnerability in Notepad++ that could lead to unauthorized access and data breaches, requiring immediate action to mitigate exposure potential and protect sensitive information.",
+      "description": "CVE-2025-15556 is a vulnerability in Notepad++ that allows an attacker to exploit a stack-based buffer overflow via crafted file input, potentially leading to arbitrary code execution.",
       "news_article": {
         "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
         "url": "https://www.cisa.gov/news-events/alerts/2026/02/12/cisa-adds-four-known-exploited-vulnerabilities-catalog",
