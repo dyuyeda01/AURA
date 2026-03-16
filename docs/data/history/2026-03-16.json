@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2025-49113",
+    "aura_score": 89.6,
+    "cvss": 9.9,
+    "epss": 0.904,
+    "kev": true,
+    "trend_score": 0.391,
+    "trend_mentions": 8,
+    "trend_breakdown": {
+      "news_hits": 8,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.391
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-49113"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Roundcube",
+    "product": "Webmail",
+    "summary_analyst": "CVE-2025-49113 affects Roundcube Webmail due to a vulnerability that allows attackers to execute arbitrary code via crafted email messages, exploiting improper input validation in the mail processing component.",
+    "summary_ciso": "CVE-2025-49113 exposes Roundcube Webmail to critical security vulnerabilities that can lead to unauthorized access to sensitive data, requiring immediate remediation to protect our organization's confidential information and prevent potential financial and reputational damage.",
+    "description": "CVE-2025-49113 affects Roundcube Webmail due to a vulnerability that allows attackers to execute arbitrary code via crafted email messages, exploiting improper input validation in the mail processing component.",
+    "news_article": {
+      "title": "U.S. CISA adds RoundCube Webmail flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/188324/security/u-s-cisa-adds-roundcube-webmail-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-68613",
+    "aura_score": 87.2,
+    "cvss": 9.9,
+    "epss": 0.769,
+    "kev": true,
+    "trend_score": 0.442,
+    "trend_mentions": 11,
+    "trend_breakdown": {
+      "news_hits": 11,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.442
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-68613"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "N8N",
+    "product": "N8N",
+    "summary_analyst": "CVE-2025-68613 affects N8N N8N due to improper input validation that allows an authenticated user to execute arbitrary code via crafted requests, potentially compromising the application.",
+    "summary_ciso": "CVE-2025-68613 poses a critical security risk to N8N N8N, potentially exposing sensitive data and operational integrity, and requires immediate remediation to prevent potential business disruption and data breaches.",
+    "description": "CVE-2025-68613 affects N8N N8N due to improper input validation that allows an authenticated user to execute arbitrary code via crafted requests, potentially compromising the application.",
+    "news_article": {
+      "title": "CISA Flags Actively Exploited n8n RCE Bug as 24,700 Instances Remain Exposed",
+      "url": "https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-26399",
+    "aura_score": 76.5,
+    "cvss": 9.8,
+    "epss": 0.288,
+    "kev": true,
+    "trend_score": 0.319,
+    "trend_mentions": 5,
+    "trend_breakdown": {
+      "news_hits": 5,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.319
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-26399"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Solarwinds",
+    "product": "Web Help Desk",
+    "summary_analyst": "CVE-2025-26399 is a vulnerability in Solarwinds Web Help Desk that allows an unauthenticated remote attacker to execute arbitrary commands on the server due to improper input validation in the application's handling of user requests.",
+    "summary_ciso": "CVE-2025-26399 presents an urgent risk to our operations by potentially allowing unauthorized access to sensitive customer data in Solarwinds Web Help Desk, necessitating immediate mitigation to protect our business reputation and comply with data protection regulations.",
+    "description": "CVE-2025-26399 is a vulnerability in Solarwinds Web Help Desk that allows an unauthenticated remote attacker to execute arbitrary commands on the server due to improper input validation in the application's handling of user requests.",
+    "news_article": {
+      "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
+      "url": "https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-1603",
+    "aura_score": 75.3,
+    "cvss": 8.6,
+    "epss": 0.457,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-1603"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ivanti",
+    "product": "Endpoint Manager",
+    "summary_analyst": "CVE-2026-1603 allows attackers to exploit a vulnerability in Ivanti Endpoint Manager by sending specially crafted requests that bypass authentication, potentially leading to unauthorized access and control over the affected system.",
+    "summary_ciso": "CVE-2026-1603 exposes Ivanti Endpoint Manager to significant security risks, potentially compromising sensitive data and operational integrity, necessitating immediate mitigation to protect against exploitation.",
+    "description": "CVE-2026-1603 allows attackers to exploit a vulnerability in Ivanti Endpoint Manager by sending specially crafted requests that bypass authentication, potentially leading to unauthorized access and control over the affected system.",
+    "news_article": {
+      "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
+      "url": "https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-3909",
+    "aura_score": 73.7,
+    "cvss": 8.8,
+    "epss": 0.271,
+    "kev": true,
+    "trend_score": 0.611,
+    "trend_mentions": 30,
+    "trend_breakdown": {
+      "news_hits": 30,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.611
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-3909"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Google",
+    "product": "Chrome",
+    "summary_analyst": "CVE-2026-3909 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free condition in the audio component, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-3909 poses an urgent risk to our organization as it affects Google Chrome, potentially exposing sensitive data and undermining user security if not mitigated promptly.",
+    "description": "CVE-2026-3909 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free condition in the audio component, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
+      "url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20127",
+    "aura_score": 73.7,
+    "cvss": 10.0,
+    "epss": 0.026,
+    "kev": true,
+    "trend_score": 0.643,
+    "trend_mentions": 36,
+    "trend_breakdown": {
+      "news_hits": 36,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.643
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20127"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Catalyst Sd-wan Manager",
+    "summary_analyst": "CVE-2026-20127 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying system through crafted API requests.",
+    "summary_ciso": "CVE-2026-20127 exposes Cisco Catalyst SD-WAN Manager to significant security vulnerabilities that could lead to data breaches and operational disruptions, necessitating immediate corrective actions to mitigate potential business impact.",
+    "description": "CVE-2026-20127 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying system through crafted API requests.",
+    "news_article": {
+      "title": "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access",
+      "url": "https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-3910",
+    "aura_score": 72.6,
+    "cvss": 8.8,
+    "epss": 0.219,
+    "kev": true,
+    "trend_score": 0.611,
+    "trend_mentions": 30,
+    "trend_breakdown": {
+      "news_hits": 30,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.611
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-3910"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Google",
+    "product": "Chrome",
+    "summary_analyst": "CVE-2026-3910 is a vulnerability in Google Chrome that allows an attacker to exploit a heap buffer overflow in the browser's rendering engine through crafted web content, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-3910 poses a significant risk to business operations due to a critical vulnerability in Google Chrome that could be exploited to gain unauthorized access to sensitive data, necessitating immediate mitigation to protect against potential breaches and compliance violations.",
+    "description": "CVE-2026-3910 is a vulnerability in Google Chrome that allows an attacker to exploit a heap buffer overflow in the browser's rendering engine through crafted web content, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
+      "url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-25108",
+    "aura_score": 70.8,
+    "cvss": 8.8,
+    "epss": 0.186,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-25108"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Soliton",
+    "product": "Filezen",
+    "summary_analyst": "CVE-2026-25108 is a vulnerability in Soliton Filezen that allows remote attackers to exploit an improper authentication mechanism, potentially gaining unauthorized access to sensitive files.",
+    "summary_ciso": "CVE-2026-25108 poses a significant risk to Soliton Filezen, potentially exposing sensitive data to unauthorized access, which necessitates immediate attention to mitigate the escalating threat to our business integrity and compliance.",
+    "description": "CVE-2026-25108 is a vulnerability in Soliton Filezen that allows remote attackers to exploit an improper authentication mechanism, potentially gaining unauthorized access to sensitive files.",
+    "news_article": {
+      "title": "CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability",
+      "url": "https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-43000",
+    "aura_score": 68.6,
+    "cvss": 8.8,
+    "epss": 0.001,
+    "kev": true,
+    "trend_score": 0.685,
+    "trend_mentions": 46,
+    "trend_breakdown": {
+      "news_hits": 46,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.685
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2023-43000"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apple",
+    "product": "Safari",
+    "summary_analyst": "CVE-2023-43000 is a vulnerability in Apple Safari that allows an attacker to exploit a logic issue in the web browser, potentially leading to arbitrary code execution on affected systems.",
+    "summary_ciso": "CVE-2023-43000 presents a critical security vulnerability in Apple Safari that could allow attackers to exploit affected systems, potentially leading to unauthorized access to sensitive data, thereby necessitating immediate mitigation to protect our organization from significant business disruption and financial loss.",
+    "description": "CVE-2023-43000 is a vulnerability in Apple Safari that allows an attacker to exploit a logic issue in the web browser, potentially leading to arbitrary code execution on affected systems.",
+    "news_article": {
+      "title": "Apple releases iOS 15.8.7 to fix Coruna exploit for iPhone 6S from 2015",
+      "url": "https://support.apple.com/en-us/126632",
+      "source": "Apple Newsroom"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-22719",
+    "aura_score": 66.2,
+    "cvss": 8.1,
+    "epss": 0.074,
+    "kev": true,
+    "trend_score": 0.47,
+    "trend_mentions": 13,
+    "trend_breakdown": {
+      "news_hits": 13,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.47
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-22719"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Vmware",
+    "product": "Aria Operations",
+    "summary_analyst": "CVE-2026-22719 affects VMware Aria Operations by allowing attackers to exploit a flaw in the data processing component, enabling unauthorized access to sensitive information.",
+    "summary_ciso": "CVE-2026-22719 exposes VMware Aria Operations to potential unauthorized access, which could lead to significant data breaches and operational disruptions, necessitating immediate remediation to safeguard sensitive information and maintain business continuity.",
+    "description": "CVE-2026-22719 affects VMware Aria Operations by allowing attackers to exploit a flaw in the data processing component, enabling unauthorized access to sensitive information.",
+    "news_article": {
+      "title": "US Cybersecurity Adds Exploited VMware Aria Operations To KEV Catalog",
+      "url": "https://it.slashdot.org/story/26/03/04/2314224/us-cybersecurity-adds-exploited-vmware-aria-operations-to-kev-catalog",
+      "source": "Slashdot.org"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-21385",
+    "aura_score": 64.4,
+    "cvss": 7.8,
+    "epss": 0.004,
+    "kev": true,
+    "trend_score": 0.628,
+    "trend_mentions": 33,
+    "trend_breakdown": {
+      "news_hits": 33,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.628
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-21385"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Qualcomm",
+    "product": "Sm7675p Firmware",
+    "summary_analyst": "CVE-2026-21385 is a vulnerability in the Qualcomm SM7675P firmware that allows for an attacker to exploit a buffer overflow, potentially leading to arbitrary code execution on affected devices.",
+    "summary_ciso": "CVE-2026-21385 poses an urgent risk to Qualcomm Sm7675p Firmware, potentially exposing sensitive data and systems to exploitation, which could significantly harm business operations and reputation if not promptly mitigated.",
+    "description": "CVE-2026-21385 is a vulnerability in the Qualcomm SM7675P firmware that allows for an attacker to exploit a buffer overflow, potentially leading to arbitrary code execution on affected devices.",
+    "news_article": {
+      "title": "Android devices hit by exploited Qualcomm flaw CVE-2026-21385",
+      "url": "https://securityaffairs.com/188823/security/android-devices-hit-by-exploited-qualcomm-flaw-cve-2026-21385.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-41974",
+    "aura_score": 64.1,
+    "cvss": 7.8,
+    "epss": 0.007,
+    "kev": true,
+    "trend_score": 0.558,
+    "trend_mentions": 22,
+    "trend_breakdown": {
+      "news_hits": 22,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.558
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2023-41974"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apple",
+    "product": "Ipados",
+    "summary_analyst": "CVE-2023-41974 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with kernel privileges through a maliciously crafted app, compromising the integrity of the affected component.",
+    "summary_ciso": "CVE-2023-41974 poses a significant security risk for Apple iPadOS users, potentially exposing sensitive data to unauthorized access, and requires immediate mitigation to protect against exploitation in a rapidly evolving threat landscape.",
+    "description": "CVE-2023-41974 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with kernel privileges through a maliciously crafted app, compromising the integrity of the affected component.",
+    "news_article": {
+      "title": "Apple releases iOS 15.8.7 to fix Coruna exploit for iPhone 6S from 2015",
+      "url": "https://support.apple.com/en-us/126632",
+      "source": "Apple Newsroom"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
