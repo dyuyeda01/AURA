@@ -1,27 +1,27 @@
 {
-  "last_run": "2026-03-16T16:18:20.125093+00:00",
-  "generated": "2026-03-16T16:18:20.125155",
-  "daily_analyst_summary": "Today\u2019s intelligence highlights a surge in critical remote code execution vulnerabilities across widely used platforms, including Roundcube Webmail (CVE-2025-49113), Solarwinds Web Help Desk (CVE-2025-26399), and multiple Google Chrome flaws (CVE-2026-3909, CVE-2026-3910), emphasizing the exploitation of improper input validation and memory corruption issues. Additionally, unauthorized access risks persist with authentication bypasses in Ivanti Endpoint Manager (CVE-2026-1603) and Soliton Filezen (CVE-2026-25108), underscoring the need for immediate patching and enhanced monitoring of exposed services.",
-  "daily_ciso_summary": "The current vulnerability landscape presents significant business risks, with multiple critical flaws enabling remote code execution and unauthorized access across widely used platforms such as Roundcube Webmail, Solarwinds Web Help Desk, and Cisco SD-WAN Manager, directly threatening operational continuity and data integrity. These vulnerabilities expose ACME Services to heightened financial risk through potential data breaches, regulatory fines, and costly incident response efforts, especially given the exposure of sensitive financial and operational data. Immediate focus should be placed on patch management, enhanced input validation controls, and strengthening authentication mechanisms to mitigate exploitation of these high-impact vulnerabilities.",
+  "last_run": "2026-03-23T16:12:56.469608+00:00",
+  "generated": "2026-03-23T16:12:56.469686",
+  "daily_analyst_summary": "Today's intelligence highlights a surge in remote code execution vulnerabilities across widely-used platforms, with critical flaws in web applications like Craft CMS (CVE-2025-32432), Laravel Livewire (CVE-2025-54068), and Synacor Zimbra (CVE-2025-66376) exploiting improper input validation and file upload handling. Notably, browser-based vulnerabilities in Google Chrome (CVE-2026-3909, CVE-2026-3910) and Apple Safari/iPadOS (CVE-2025-31277, CVE-2025-43510) continue to pose significant risks through memory corruption and heap overflow exploits. Additionally, unauthenticated remote command execution threats persist in enterprise-grade systems such as Cisco Secure Firewall Management Center (CVE-2026-20131) and Microsoft SharePoint Server (CVE-2026-20963), underscoring the need for urgent patching and enhanced input validation controls.",
+  "daily_ciso_summary": "The current vulnerability landscape presents significant business risks, with multiple critical flaws across widely used platforms such as Cisco Secure Firewall, Microsoft SharePoint, and popular web browsers that could lead to remote code execution and unauthorized access, directly exposing sensitive financial data and operational systems. These vulnerabilities increase the likelihood of data breaches, ransomware attacks, and service disruptions, potentially resulting in substantial financial losses, regulatory penalties, and reputational damage. We recommend prioritizing patch management for critical infrastructure, enhancing input validation controls, and focusing on securing web-facing services and collaboration tools to mitigate remote exploitation risks effectively.",
   "cves": [
     {
-      "cve": "CVE-2025-49113",
-      "aura_score": 89.6,
-      "cvss": 9.9,
-      "epss": 0.904,
+      "cve": "CVE-2025-32432",
+      "aura_score": 89.1,
+      "cvss": 10.0,
+      "epss": 0.894,
       "kev": true,
-      "trend_score": 0.391,
-      "trend_mentions": 8,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
       "trend_breakdown": {
-        "news_hits": 8,
+        "news_hits": 3,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.391
+        "trend_raw": 0.247
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-49113"
+        "https://www.exploit-db.com/search?q=CVE-2025-32432"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -37,15 +37,15 @@
           "low": 0
         }
       },
-      "vendor": "Roundcube",
-      "product": "Webmail",
-      "summary_analyst": "CVE-2025-49113 affects Roundcube Webmail due to a vulnerability that allows attackers to execute arbitrary code via crafted email messages, exploiting improper input validation in the mail processing component.",
-      "summary_ciso": "CVE-2025-49113 exposes Roundcube Webmail to critical security vulnerabilities that can lead to unauthorized access to sensitive data, requiring immediate remediation to protect our organization's confidential information and prevent potential financial and reputational damage.",
-      "description": "CVE-2025-49113 affects Roundcube Webmail due to a vulnerability that allows attackers to execute arbitrary code via crafted email messages, exploiting improper input validation in the mail processing component.",
+      "vendor": "Craftcms",
+      "product": "Craft Cms",
+      "summary_analyst": "CVE-2025-32432 is a security vulnerability in Craft CMS that allows an attacker to exploit improper input validation in the craft component, potentially leading to remote code execution.",
+      "summary_ciso": "CVE-2025-32432 exposes Craft CMS to potential compromise through unresolved vulnerabilities, posing a significant risk of data breaches and operational disruptions, necessitating immediate attention to mitigate potential financial and reputational impacts on the business.",
+      "description": "CVE-2025-32432 is a security vulnerability in Craft CMS that allows an attacker to exploit improper input validation in the craft component, potentially leading to remote code execution.",
       "news_article": {
-        "title": "U.S. CISA adds RoundCube Webmail flaws to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/188324/security/u-s-cisa-adds-roundcube-webmail-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-        "source": "Securityaffairs.com"
+        "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
+        "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -91,9 +91,9 @@
       },
       "vendor": "N8N",
       "product": "N8N",
-      "summary_analyst": "CVE-2025-68613 affects N8N N8N due to improper input validation that allows an authenticated user to execute arbitrary code via crafted requests, potentially compromising the application.",
-      "summary_ciso": "CVE-2025-68613 poses a critical security risk to N8N N8N, potentially exposing sensitive data and operational integrity, and requires immediate remediation to prevent potential business disruption and data breaches.",
-      "description": "CVE-2025-68613 affects N8N N8N due to improper input validation that allows an authenticated user to execute arbitrary code via crafted requests, potentially compromising the application.",
+      "summary_analyst": "CVE-2025-68613 affects N8N N8N by allowing an unauthenticated remote attacker to exploit a vulnerability in the component's webhook handling, potentially leading to unauthorized data access or service disruption.",
+      "summary_ciso": "CVE-2025-68613 poses a significant risk to N8N N8N by potentially allowing unauthorized access to sensitive workflows, which underscores the urgent need for prompt mitigation to protect our data integrity and operational continuity.",
+      "description": "CVE-2025-68613 affects N8N N8N by allowing an unauthenticated remote attacker to exploit a vulnerability in the component's webhook handling, potentially leading to unauthorized data access or service disruption.",
       "news_article": {
         "title": "CISA Flags Actively Exploited n8n RCE Bug as 24,700 Instances Remain Exposed",
         "url": "https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html",
@@ -109,23 +109,23 @@
       }
     },
     {
-      "cve": "CVE-2025-26399",
-      "aura_score": 76.5,
+      "cve": "CVE-2025-54068",
+      "aura_score": 79.8,
       "cvss": 9.8,
-      "epss": 0.288,
+      "epss": 0.46,
       "kev": true,
-      "trend_score": 0.319,
-      "trend_mentions": 5,
+      "trend_score": 0.287,
+      "trend_mentions": 4,
       "trend_breakdown": {
-        "news_hits": 5,
+        "news_hits": 4,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.319
+        "trend_raw": 0.287
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-26399"
+        "https://www.exploit-db.com/search?q=CVE-2025-54068"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -141,14 +141,14 @@
           "low": 0
         }
       },
-      "vendor": "Solarwinds",
-      "product": "Web Help Desk",
-      "summary_analyst": "CVE-2025-26399 is a vulnerability in Solarwinds Web Help Desk that allows an unauthenticated remote attacker to execute arbitrary commands on the server due to improper input validation in the application's handling of user requests.",
-      "summary_ciso": "CVE-2025-26399 presents an urgent risk to our operations by potentially allowing unauthorized access to sensitive customer data in Solarwinds Web Help Desk, necessitating immediate mitigation to protect our business reputation and comply with data protection regulations.",
-      "description": "CVE-2025-26399 is a vulnerability in Solarwinds Web Help Desk that allows an unauthenticated remote attacker to execute arbitrary commands on the server due to improper input validation in the application's handling of user requests.",
+      "vendor": "Laravel",
+      "product": "Livewire",
+      "summary_analyst": "CVE-2025-54068 is a vulnerability in Laravel Livewire that allows an authenticated attacker to execute arbitrary code on the server by manipulating file uploads due to inadequate validation of uploaded file types.",
+      "summary_ciso": "CVE-2025-54068 exposes Laravel Livewire applications to potential data breaches due to improper input validation, necessitating immediate mitigation to protect sensitive customer information and maintain trust in our brand.",
+      "description": "CVE-2025-54068 is a vulnerability in Laravel Livewire that allows an authenticated attacker to execute arbitrary code on the server by manipulating file uploads due to inadequate validation of uploaded file types.",
       "news_article": {
-        "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
-        "url": "https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html",
+        "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
+        "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -161,23 +161,23 @@
       }
     },
     {
-      "cve": "CVE-2026-1603",
-      "aura_score": 75.3,
-      "cvss": 8.6,
-      "epss": 0.457,
+      "cve": "CVE-2026-20131",
+      "aura_score": 73.1,
+      "cvss": 10.0,
+      "epss": 0.006,
       "kev": true,
-      "trend_score": 0.346,
-      "trend_mentions": 6,
+      "trend_score": 0.599,
+      "trend_mentions": 28,
       "trend_breakdown": {
-        "news_hits": 6,
+        "news_hits": 28,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.346
+        "trend_raw": 0.599
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-1603"
+        "https://www.exploit-db.com/search?q=CVE-2026-20131"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -193,14 +193,14 @@
           "low": 0
         }
       },
-      "vendor": "Ivanti",
-      "product": "Endpoint Manager",
-      "summary_analyst": "CVE-2026-1603 allows attackers to exploit a vulnerability in Ivanti Endpoint Manager by sending specially crafted requests that bypass authentication, potentially leading to unauthorized access and control over the affected system.",
-      "summary_ciso": "CVE-2026-1603 exposes Ivanti Endpoint Manager to significant security risks, potentially compromising sensitive data and operational integrity, necessitating immediate mitigation to protect against exploitation.",
-      "description": "CVE-2026-1603 allows attackers to exploit a vulnerability in Ivanti Endpoint Manager by sending specially crafted requests that bypass authentication, potentially leading to unauthorized access and control over the affected system.",
+      "vendor": "Cisco",
+      "product": "Secure Firewall Management Center",
+      "summary_analyst": "CVE-2026-20131 is a vulnerability in Cisco Secure Firewall Management Center that allows an unauthenticated remote attacker to execute arbitrary commands on the system by exploiting improper input validation in the web-based management interface.",
+      "summary_ciso": "CVE-2026-20131 poses a significant risk to our Cisco Secure Firewall Management Center, potentially exposing critical network infrastructures to exploitation that could lead to unauthorized access, data breaches, and operational disruptions, necessitating immediate remediation to safeguard our assets and maintain business continuity.",
+      "description": "CVE-2026-20131 is a vulnerability in Cisco Secure Firewall Management Center that allows an unauthenticated remote attacker to execute arbitrary commands on the system by exploiting improper input validation in the web-based management interface.",
       "news_article": {
-        "title": "CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited",
-        "url": "https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html",
+        "title": "CISA Warns of Zimbra, SharePoint Flaw Exploits; Cisco Zero-Day Hit in Ransomware Attacks",
+        "url": "https://thehackernews.com/2026/03/cisa-warns-of-zimbra-sharepoint-flaw.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -214,17 +214,17 @@
     },
     {
       "cve": "CVE-2026-3909",
-      "aura_score": 73.7,
+      "aura_score": 69.5,
       "cvss": 8.8,
-      "epss": 0.271,
+      "epss": 0.044,
       "kev": true,
-      "trend_score": 0.611,
-      "trend_mentions": 30,
+      "trend_score": 0.689,
+      "trend_mentions": 47,
       "trend_breakdown": {
-        "news_hits": 30,
+        "news_hits": 47,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.611
+        "trend_raw": 0.689
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -247,9 +247,9 @@
       },
       "vendor": "Google",
       "product": "Chrome",
-      "summary_analyst": "CVE-2026-3909 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free condition in the audio component, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2026-3909 poses an urgent risk to our organization as it affects Google Chrome, potentially exposing sensitive data and undermining user security if not mitigated promptly.",
-      "description": "CVE-2026-3909 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free condition in the audio component, potentially leading to arbitrary code execution.",
+      "summary_analyst": "CVE-2026-3909 is a vulnerability in Google Chrome that can be exploited through a use-after-free condition in the web browser's handling of certain objects, potentially allowing an attacker to execute arbitrary code.",
+      "summary_ciso": "CVE-2026-3909 exposes Google Chrome users to potential data breaches and security vulnerabilities, necessitating immediate updates to mitigate risks to sensitive information and maintain trust in our digital operations.",
+      "description": "CVE-2026-3909 is a vulnerability in Google Chrome that can be exploited through a use-after-free condition in the web browser's handling of certain objects, potentially allowing an attacker to execute arbitrary code.",
       "news_article": {
         "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
         "url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html",
@@ -265,70 +265,18 @@
       }
     },
     {
-      "cve": "CVE-2026-20127",
-      "aura_score": 73.7,
-      "cvss": 10.0,
-      "epss": 0.026,
-      "kev": true,
-      "trend_score": 0.643,
-      "trend_mentions": 36,
-      "trend_breakdown": {
-        "news_hits": 36,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.643
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-20127"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Cisco",
-      "product": "Catalyst Sd-wan Manager",
-      "summary_analyst": "CVE-2026-20127 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying system through crafted API requests.",
-      "summary_ciso": "CVE-2026-20127 exposes Cisco Catalyst SD-WAN Manager to significant security vulnerabilities that could lead to data breaches and operational disruptions, necessitating immediate corrective actions to mitigate potential business impact.",
-      "description": "CVE-2026-20127 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying system through crafted API requests.",
-      "news_article": {
-        "title": "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access",
-        "url": "https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2026-3910",
-      "aura_score": 72.6,
+      "aura_score": 68.9,
       "cvss": 8.8,
-      "epss": 0.219,
+      "epss": 0.013,
       "kev": true,
-      "trend_score": 0.611,
-      "trend_mentions": 30,
+      "trend_score": 0.685,
+      "trend_mentions": 46,
       "trend_breakdown": {
-        "news_hits": 30,
+        "news_hits": 46,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.611
+        "trend_raw": 0.685
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -351,9 +299,9 @@
       },
       "vendor": "Google",
       "product": "Chrome",
-      "summary_analyst": "CVE-2026-3910 is a vulnerability in Google Chrome that allows an attacker to exploit a heap buffer overflow in the browser's rendering engine through crafted web content, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2026-3910 poses a significant risk to business operations due to a critical vulnerability in Google Chrome that could be exploited to gain unauthorized access to sensitive data, necessitating immediate mitigation to protect against potential breaches and compliance violations.",
-      "description": "CVE-2026-3910 is a vulnerability in Google Chrome that allows an attacker to exploit a heap buffer overflow in the browser's rendering engine through crafted web content, potentially leading to arbitrary code execution.",
+      "summary_analyst": "CVE-2026-3910 is a vulnerability in Google Chrome that allows an attacker to execute arbitrary code via a heap overflow in the Blink rendering engine, affecting the browser's handling of web content.",
+      "summary_ciso": "CVE-2026-3910 presents a critical vulnerability in Google Chrome that could expose our organization to significant data breaches and credential theft, necessitating immediate mitigation to protect sensitive information and maintain customer trust.",
+      "description": "CVE-2026-3910 is a vulnerability in Google Chrome that allows an attacker to execute arbitrary code via a heap overflow in the Blink rendering engine, affecting the browser's handling of web content.",
       "news_article": {
         "title": "Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8",
         "url": "https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html",
@@ -369,23 +317,23 @@
       }
     },
     {
-      "cve": "CVE-2026-25108",
-      "aura_score": 70.8,
+      "cve": "CVE-2026-20963",
+      "aura_score": 68.7,
       "cvss": 8.8,
-      "epss": 0.186,
+      "epss": 0.08,
       "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
       "trend_breakdown": {
-        "news_hits": 7,
+        "news_hits": 8,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.37
+        "trend_raw": 0.391
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-25108"
+        "https://www.exploit-db.com/search?q=CVE-2026-20963"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -401,15 +349,15 @@
           "low": 0
         }
       },
-      "vendor": "Soliton",
-      "product": "Filezen",
-      "summary_analyst": "CVE-2026-25108 is a vulnerability in Soliton Filezen that allows remote attackers to exploit an improper authentication mechanism, potentially gaining unauthorized access to sensitive files.",
-      "summary_ciso": "CVE-2026-25108 poses a significant risk to Soliton Filezen, potentially exposing sensitive data to unauthorized access, which necessitates immediate attention to mitigate the escalating threat to our business integrity and compliance.",
-      "description": "CVE-2026-25108 is a vulnerability in Soliton Filezen that allows remote attackers to exploit an improper authentication mechanism, potentially gaining unauthorized access to sensitive files.",
+      "vendor": "Microsoft",
+      "product": "Sharepoint Server",
+      "summary_analyst": "CVE-2026-20963 is a vulnerability in Microsoft SharePoint Server that allows an attacker to execute arbitrary code due to improper handling of input validation in the affected component's API.",
+      "summary_ciso": "CVE-2026-20963 poses an urgent risk to Microsoft SharePoint Server, potentially exposing critical business data to unauthorized access, thereby necessitating immediate mitigation to safeguard organizational integrity and prevent reputational damage.",
+      "description": "CVE-2026-20963 is a vulnerability in Microsoft SharePoint Server that allows an attacker to execute arbitrary code due to improper handling of input validation in the affected component's API.",
       "news_article": {
-        "title": "CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability",
-        "url": "https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html",
-        "source": "Internet"
+        "title": "Unknown attackers exploit yet another critical SharePoint bug",
+        "url": "https://www.theregister.com/2026/03/19/unknown_attackers_exploit_yet_another/",
+        "source": "Theregister.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -421,23 +369,23 @@
       }
     },
     {
-      "cve": "CVE-2023-43000",
-      "aura_score": 68.6,
+      "cve": "CVE-2025-31277",
+      "aura_score": 67.9,
       "cvss": 8.8,
-      "epss": 0.001,
+      "epss": 0.003,
       "kev": true,
-      "trend_score": 0.685,
-      "trend_mentions": 46,
+      "trend_score": 0.533,
+      "trend_mentions": 19,
       "trend_breakdown": {
-        "news_hits": 46,
+        "news_hits": 19,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.685
+        "trend_raw": 0.533
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2023-43000"
+        "https://www.exploit-db.com/search?q=CVE-2025-31277"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -455,13 +403,13 @@
       },
       "vendor": "Apple",
       "product": "Safari",
-      "summary_analyst": "CVE-2023-43000 is a vulnerability in Apple Safari that allows an attacker to exploit a logic issue in the web browser, potentially leading to arbitrary code execution on affected systems.",
-      "summary_ciso": "CVE-2023-43000 presents a critical security vulnerability in Apple Safari that could allow attackers to exploit affected systems, potentially leading to unauthorized access to sensitive data, thereby necessitating immediate mitigation to protect our organization from significant business disruption and financial loss.",
-      "description": "CVE-2023-43000 is a vulnerability in Apple Safari that allows an attacker to exploit a logic issue in the web browser, potentially leading to arbitrary code execution on affected systems.",
+      "summary_analyst": "CVE-2025-31277 is a vulnerability in Apple Safari that allows attackers to execute arbitrary code due to a memory corruption issue in the browser's rendering engine.",
+      "summary_ciso": "CVE-2025-31277 exposes Apple Safari users to potential data breaches and malicious exploits, necessitating immediate updates to safeguard sensitive information and maintain business trust.",
+      "description": "CVE-2025-31277 is a vulnerability in Apple Safari that allows attackers to execute arbitrary code due to a memory corruption issue in the browser's rendering engine.",
       "news_article": {
-        "title": "Apple releases iOS 15.8.7 to fix Coruna exploit for iPhone 6S from 2015",
-        "url": "https://support.apple.com/en-us/126632",
-        "source": "Apple Newsroom"
+        "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
+        "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -473,23 +421,23 @@
       }
     },
     {
-      "cve": "CVE-2026-22719",
-      "aura_score": 66.2,
-      "cvss": 8.1,
-      "epss": 0.074,
+      "cve": "CVE-2025-43510",
+      "aura_score": 63.9,
+      "cvss": 7.8,
+      "epss": 0.003,
       "kev": true,
-      "trend_score": 0.47,
-      "trend_mentions": 13,
+      "trend_score": 0.524,
+      "trend_mentions": 18,
       "trend_breakdown": {
-        "news_hits": 13,
+        "news_hits": 18,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.47
+        "trend_raw": 0.524
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-22719"
+        "https://www.exploit-db.com/search?q=CVE-2025-43510"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -505,15 +453,67 @@
           "low": 0
         }
       },
-      "vendor": "Vmware",
-      "product": "Aria Operations",
-      "summary_analyst": "CVE-2026-22719 affects VMware Aria Operations by allowing attackers to exploit a flaw in the data processing component, enabling unauthorized access to sensitive information.",
-      "summary_ciso": "CVE-2026-22719 exposes VMware Aria Operations to potential unauthorized access, which could lead to significant data breaches and operational disruptions, necessitating immediate remediation to safeguard sensitive information and maintain business continuity.",
-      "description": "CVE-2026-22719 affects VMware Aria Operations by allowing attackers to exploit a flaw in the data processing component, enabling unauthorized access to sensitive information.",
+      "vendor": "Apple",
+      "product": "Ipados",
+      "summary_analyst": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with elevated privileges due to improper handling of memory, potentially compromising the affected device.",
+      "summary_ciso": "CVE-2025-43510 presents a critical vulnerability in Apple iPadOS that could allow attackers to compromise sensitive data, posing an immediate threat to the organization's data security and necessitating swift mitigation to protect our assets.",
+      "description": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with elevated privileges due to improper handling of memory, potentially compromising the affected device.",
       "news_article": {
-        "title": "US Cybersecurity Adds Exploited VMware Aria Operations To KEV Catalog",
-        "url": "https://it.slashdot.org/story/26/03/04/2314224/us-cybersecurity-adds-exploited-vmware-aria-operations-to-kev-catalog",
-        "source": "Slashdot.org"
+        "title": "More than 220 million iPhones under attack from new DarkSword exploit \u2014 how to stay safe",
+        "url": "https://www.tomsguide.com/phones/iphones/more-than-220-million-iphones-under-attack-from-new-darksword-exploit-how-to-stay-safe",
+        "source": "Tom's Guide"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-66376",
+      "aura_score": 62.9,
+      "cvss": 7.2,
+      "epss": 0.1,
+      "kev": true,
+      "trend_score": 0.41,
+      "trend_mentions": 9,
+      "trend_breakdown": {
+        "news_hits": 9,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.41
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-66376"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Synacor",
+      "product": "Zimbra Collaboration Suite",
+      "summary_analyst": "CVE-2025-66376 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows remote attackers to execute arbitrary commands on the server due to improper input validation in the file upload functionality.",
+      "summary_ciso": "CVE-2025-66376 poses a critical risk to the Synacor Zimbra Collaboration Suite, potentially exposing sensitive organizational data to unauthorized access, thus necessitating immediate mitigation efforts to safeguard our business integrity and protect against data breaches.",
+      "description": "CVE-2025-66376 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows remote attackers to execute arbitrary commands on the server due to improper input validation in the file upload functionality.",
+      "news_article": {
+        "title": "CISA Warns of Zimbra, SharePoint Flaw Exploits; Cisco Zero-Day Hit in Ransomware Attacks",
+        "url": "https://thehackernews.com/2026/03/cisa-warns-of-zimbra-sharepoint-flaw.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
