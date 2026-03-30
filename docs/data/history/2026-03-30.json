@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2025-32432",
+    "aura_score": 89.0,
+    "cvss": 10.0,
+    "epss": 0.877,
+    "kev": true,
+    "trend_score": 0.287,
+    "trend_mentions": 4,
+    "trend_breakdown": {
+      "news_hits": 4,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.287
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-32432"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Craftcms",
+    "product": "Craft Cms",
+    "summary_analyst": "CVE-2025-32432 affects Craft CMS, where an attacker can exploit a vulnerability in the template rendering process to execute arbitrary code due to insufficient input validation in user-supplied templates.",
+    "summary_ciso": "CVE-2025-32432 exposes Craft CMS to potential data breaches and operational disruptions, necessitating immediate attention to mitigate significant risks to our business continuity and customer trust.",
+    "description": "CVE-2025-32432 affects Craft CMS, where an attacker can exploit a vulnerability in the template rendering process to execute arbitrary code due to insufficient input validation in user-supplied templates.",
+    "news_article": {
+      "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
+      "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-54068",
+    "aura_score": 80.6,
+    "cvss": 9.8,
+    "epss": 0.489,
+    "kev": true,
+    "trend_score": 0.319,
+    "trend_mentions": 5,
+    "trend_breakdown": {
+      "news_hits": 5,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.319
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-54068"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Laravel",
+    "product": "Livewire",
+    "summary_analyst": "CVE-2025-54068 affects Laravel Livewire by allowing unauthenticated users to execute arbitrary actions through improper validation of user inputs, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2025-54068 poses a critical risk to our applications using Laravel Livewire, potentially exposing sensitive user data and requiring immediate mitigation to safeguard our operations and reputation.",
+    "description": "CVE-2025-54068 affects Laravel Livewire by allowing unauthenticated users to execute arbitrary actions through improper validation of user inputs, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
+      "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-53521",
+    "aura_score": 75.1,
+    "cvss": 9.8,
+    "epss": 0.192,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-53521"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "F5",
+    "product": "Big-ip Access Policy Manager",
+    "summary_analyst": "CVE-2025-53521 allows an attacker to exploit a vulnerability in F5 Big-IP Access Policy Manager by sending specially crafted requests, which can lead to unauthorized access or manipulation of the access policies.",
+    "summary_ciso": "CVE-2025-53521 exposes F5 Big-IP Access Policy Manager to critical vulnerabilities that could allow unauthorized access to sensitive data, necessitating immediate mitigation to prevent potential data breaches and financial losses.",
+    "description": "CVE-2025-53521 allows an attacker to exploit a vulnerability in F5 Big-IP Access Policy Manager by sending specially crafted requests, which can lead to unauthorized access or manipulation of the access policies.",
+    "news_article": {
+      "title": "CISA Adds CVE-2025-53521 to KEV After Active F5 BIG-IP APM Exploitation",
+      "url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20131",
+    "aura_score": 73.2,
+    "cvss": 10.0,
+    "epss": 0.006,
+    "kev": true,
+    "trend_score": 0.622,
+    "trend_mentions": 32,
+    "trend_breakdown": {
+      "news_hits": 32,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.622
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20131"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Secure Firewall Management Center",
+    "summary_analyst": "CVE-2026-20131 is a vulnerability in Cisco Secure Firewall Management Center that allows an authenticated attacker to execute arbitrary commands with elevated privileges due to improper input validation.",
+    "summary_ciso": "CVE-2026-20131 exposes Cisco Secure Firewall Management Center to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating urgent mitigation to protect sensitive organizational assets and maintain regulatory compliance.",
+    "description": "CVE-2026-20131 is a vulnerability in Cisco Secure Firewall Management Center that allows an authenticated attacker to execute arbitrary commands with elevated privileges due to improper input validation.",
+    "news_article": {
+      "title": "CISA Warns of Zimbra, SharePoint Flaw Exploits; Cisco Zero-Day Hit in Ransomware Attacks",
+      "url": "https://thehackernews.com/2026/03/cisa-warns-of-zimbra-sharepoint-flaw.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-33017",
+    "aura_score": 72.8,
+    "cvss": 9.8,
+    "epss": 0.057,
+    "kev": true,
+    "trend_score": 0.494,
+    "trend_mentions": 15,
+    "trend_breakdown": {
+      "news_hits": 15,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.494
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-33017"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Langflow",
+    "product": "Langflow",
+    "summary_analyst": "CVE-2026-33017 impacts Langflow by allowing an attacker to exploit improper input validation, which could lead to the execution of arbitrary code within the affected component.",
+    "summary_ciso": "CVE-2026-33017 poses a significant risk to Langflow, exposing critical business operations to potential data breaches and operational disruptions that require immediate action to mitigate.",
+    "description": "CVE-2026-33017 impacts Langflow by allowing an attacker to exploit improper input validation, which could lead to the execution of arbitrary code within the affected component.",
+    "news_article": {
+      "title": "U.S. CISA adds a Langflow flaw to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/190018/security/u-s-cisa-adds-a-langflow-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-33634",
+    "aura_score": 71.8,
+    "cvss": 8.8,
+    "epss": 0.208,
+    "kev": true,
+    "trend_score": 0.482,
+    "trend_mentions": 14,
+    "trend_breakdown": {
+      "news_hits": 14,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.482
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-33634"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Aquasec",
+    "product": "Setup-trivy",
+    "summary_analyst": "CVE-2026-33634 involves a remote code execution vulnerability in Aquasec Setup-trivy, where an attacker can exploit improper input validation to execute arbitrary commands on the system.",
+    "summary_ciso": "CVE-2026-33634 exposes Aquasec's Setup-trivy to potential vulnerabilities that could compromise the integrity of container security, necessitating immediate mitigation to protect sensitive data and maintain operational resilience.",
+    "description": "CVE-2026-33634 involves a remote code execution vulnerability in Aquasec Setup-trivy, where an attacker can exploit improper input validation to execute arbitrary commands on the system.",
+    "news_article": {
+      "title": "TeamPCP Supply Chain Campaign: Update 001 ? Checkmarx Scope Wider Than Reported, CISA KEV Entry, and Detection Tools Available, (Thu, Mar 26th)",
+      "url": "https://isc.sans.edu/diary/32834",
+      "source": "Sans.edu"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20963",
+    "aura_score": 68.7,
+    "cvss": 8.8,
+    "epss": 0.071,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20963"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Sharepoint Server",
+    "summary_analyst": "CVE-2026-20963 is a vulnerability in Microsoft SharePoint Server that allows an authenticated attacker to execute arbitrary code on the server by exploiting improper validation of user-supplied input in list-related operations.",
+    "summary_ciso": "CVE-2026-20963 poses a critical risk to Microsoft SharePoint Server that could lead to significant data breaches and operational disruptions, necessitating immediate mitigation efforts to protect sensitive organizational information and maintain business continuity.",
+    "description": "CVE-2026-20963 is a vulnerability in Microsoft SharePoint Server that allows an authenticated attacker to execute arbitrary code on the server by exploiting improper validation of user-supplied input in list-related operations.",
+    "news_article": {
+      "title": "Unknown attackers exploit yet another critical SharePoint bug",
+      "url": "https://www.theregister.com/2026/03/19/unknown_attackers_exploit_yet_another/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-31277",
+    "aura_score": 68.0,
+    "cvss": 8.8,
+    "epss": 0.003,
+    "kev": true,
+    "trend_score": 0.55,
+    "trend_mentions": 21,
+    "trend_breakdown": {
+      "news_hits": 21,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.55
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-31277"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apple",
+    "product": "Safari",
+    "summary_analyst": "CVE-2025-31277 is a vulnerability in Apple Safari that allows attackers to exploit improper validation of user input, potentially leading to remote code execution on the affected component.",
+    "summary_ciso": "CVE-2025-31277 poses a significant risk to Apple Safari users, potentially exposing sensitive personal data and corporate information, necessitating immediate mitigation to protect against exploitation.",
+    "description": "CVE-2025-31277 is a vulnerability in Apple Safari that allows attackers to exploit improper validation of user input, potentially leading to remote code execution on the affected component.",
+    "news_article": {
+      "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
+      "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-43510",
+    "aura_score": 64.0,
+    "cvss": 7.8,
+    "epss": 0.005,
+    "kev": true,
+    "trend_score": 0.542,
+    "trend_mentions": 20,
+    "trend_breakdown": {
+      "news_hits": 20,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.542
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-43510"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apple",
+    "product": "Ipados",
+    "summary_analyst": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with kernel privileges through a maliciously crafted application, affecting the system's security and integrity.",
+    "summary_ciso": "CVE-2025-43510 presents a critical vulnerability in Apple iPadOS that could expose sensitive user data to unauthorized access, necessitating immediate action to mitigate potential data breaches and ensure business continuity.",
+    "description": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with kernel privileges through a maliciously crafted application, affecting the system's security and integrity.",
+    "news_article": {
+      "title": "More than 220 million iPhones under attack from new DarkSword exploit \u2014 how to stay safe",
+      "url": "https://www.tomsguide.com/phones/iphones/more-than-220-million-iphones-under-attack-from-new-darksword-exploit-how-to-stay-safe",
+      "source": "Tom's Guide"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-66376",
+    "aura_score": 62.9,
+    "cvss": 7.2,
+    "epss": 0.1,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-66376"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Synacor",
+    "product": "Zimbra Collaboration Suite",
+    "summary_analyst": "CVE-2025-66376 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an authenticated attacker to execute arbitrary code via crafted input, impacting the application's server component.",
+    "summary_ciso": "CVE-2025-66376 poses a significant risk to organizations using the Synacor Zimbra Collaboration Suite, potentially exposing sensitive data to unauthorized access, necessitating immediate action to mitigate the vulnerabilities before they can be exploited.",
+    "description": "CVE-2025-66376 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an authenticated attacker to execute arbitrary code via crafted input, impacting the application's server component.",
+    "news_article": {
+      "title": "CISA Warns of Zimbra, SharePoint Flaw Exploits; Cisco Zero-Day Hit in Ransomware Attacks",
+      "url": "https://thehackernews.com/2026/03/cisa-warns-of-zimbra-sharepoint-flaw.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-43520",
+    "aura_score": 61.2,
+    "cvss": 7.1,
+    "epss": 0.005,
+    "kev": true,
+    "trend_score": 0.55,
+    "trend_mentions": 21,
+    "trend_breakdown": {
+      "news_hits": 21,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.55
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-43520"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apple",
+    "product": "Ipados",
+    "summary_analyst": "CVE-2025-43520 is a vulnerability in Apple iPadOS that allows attackers to execute arbitrary code with elevated privileges due to improper validation of user input in the affected component, the operating system kernel.",
+    "summary_ciso": "CVE-2025-43520 poses a significant risk to Apple iPadOS users by exposing sensitive data to potential breaches, necessitating urgent updates to protect against exploitation and maintain user trust.",
+    "description": "CVE-2025-43520 is a vulnerability in Apple iPadOS that allows attackers to execute arbitrary code with elevated privileges due to improper validation of user input in the affected component, the operating system kernel.",
+    "news_article": {
+      "title": "More than 220 million iPhones under attack from new DarkSword exploit \u2014 how to stay safe",
+      "url": "https://www.tomsguide.com/phones/iphones/more-than-220-million-iphones-under-attack-from-new-darksword-exploit-how-to-stay-safe",
+      "source": "Tom's Guide"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-47813",
+    "aura_score": 53.0,
+    "cvss": 4.3,
+    "epss": 0.204,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-47813"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Wftpserver",
+    "product": "Wing Ftp Server",
+    "summary_analyst": "CVE-2025-47813 is a vulnerability in the Wftpserver Wing FTP Server that allows remote attackers to exploit a buffer overflow in certain command inputs, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2025-47813 poses a critical risk to Wftpserver Wing FTP Server, potentially exposing sensitive data to unauthorized access, necessitating immediate mitigation to safeguard our organization's reputation and compliance.",
+    "description": "CVE-2025-47813 is a vulnerability in the Wftpserver Wing FTP Server that allows remote attackers to exploit a buffer overflow in certain command inputs, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "U.S. CISA adds a flaw in Wing FTP Server to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/189530/security/u-s-cisa-adds-a-flaw-in-wing-ftp-server-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
