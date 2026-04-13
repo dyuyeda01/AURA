@@ -1,11 +1,11 @@
 {
-  "date": "2026-04-06",
+  "date": "2026-04-13",
   "records": [
     {
       "cve": "CVE-2025-32432",
-      "aura_score": 79.0,
+      "aura_score": 89.1,
       "cvss": 10.0,
-      "epss": 0.877,
+      "epss": 0.884,
       "kev": true,
       "trend_score": 0.287,
       "trend_mentions": 4,
@@ -15,9 +15,11 @@
         "exploit_boost": 0.0,
         "trend_raw": 0.287
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-32432"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -34,9 +36,9 @@
       },
       "vendor": "Craftcms",
       "product": "Craft Cms",
-      "summary_analyst": "CVE-2025-32432 is a technical vulnerability in Craft CMS that allows an attacker to perform SQL injection by manipulating crafted input to the affected database query.",
-      "summary_ciso": "CVE-2025-32432 poses an urgent risk to Craft CMS, as its vulnerability could lead to unauthorized access and data breaches, potentially jeopardizing customer trust and resulting in significant financial and reputational damage if not promptly mitigated.",
-      "description": "CVE-2025-32432 is a technical vulnerability in Craft CMS that allows an attacker to perform SQL injection by manipulating crafted input to the affected database query.",
+      "summary_analyst": "CVE-2025-32432 is a vulnerability in CraftCMS that allows an attacker to exploit a flaw in the user authentication mechanism, potentially leading to unauthorized access to sensitive data.",
+      "summary_ciso": "CVE-2025-32432 poses a significant risk to Craftcms Craft CMS, potentially exposing sensitive user data and compromising website integrity, making urgent mitigation essential to protect our brand reputation and customer trust.",
+      "description": "CVE-2025-32432 is a vulnerability in CraftCMS that allows an attacker to exploit a flaw in the user authentication mechanism, potentially leading to unauthorized access to sensitive data.",
       "news_article": {
         "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
         "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
@@ -52,22 +54,76 @@
       }
     },
     {
-      "cve": "CVE-2025-54068",
-      "aura_score": 72.5,
+      "cve": "CVE-2026-1340",
+      "aura_score": 84.5,
       "cvss": 9.8,
-      "epss": 0.583,
+      "epss": 0.678,
       "kev": true,
-      "trend_score": 0.319,
-      "trend_mentions": 5,
+      "trend_score": 0.346,
+      "trend_mentions": 6,
       "trend_breakdown": {
-        "news_hits": 5,
+        "news_hits": 6,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.319
+        "trend_raw": 0.346
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-1340"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Ivanti",
+      "product": "Endpoint Manager Mobile",
+      "summary_analyst": "CVE-2026-1340 is a vulnerability in Ivanti Endpoint Manager Mobile that allows attackers to exploit improper input validation, potentially leading to unauthorized access to sensitive data within the affected application.",
+      "summary_ciso": "CVE-2026-1340 poses an urgent risk to business operations as it can lead to unauthorized access and data breaches within Ivanti Endpoint Manager Mobile, necessitating immediate mitigation to protect sensitive information and ensure continued trust with clients.",
+      "description": "CVE-2026-1340 is a vulnerability in Ivanti Endpoint Manager Mobile that allows attackers to exploit improper input validation, potentially leading to unauthorized access to sensitive data within the affected application.",
+      "news_article": {
+        "title": "U.S. CISA adds a flaw in Ivanti EPMM to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/190519/security/u-s-cisa-adds-a-flaw-in-ivanti-epmm-to-its-known-exploited-vulnerabilities-catalog-2.html",
+        "source": "Securityaffairs.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-54068",
+      "aura_score": 82.5,
+      "cvss": 9.8,
+      "epss": 0.594,
+      "kev": true,
+      "trend_score": 0.287,
+      "trend_mentions": 4,
+      "trend_breakdown": {
+        "news_hits": 4,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.287
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-54068"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -84,9 +140,9 @@
       },
       "vendor": "Laravel",
       "product": "Livewire",
-      "summary_analyst": "CVE-2025-54068 is a vulnerability in Laravel Livewire that allows an authenticated attacker to exploit improperly validated component properties, potentially leading to unintended data exposure or manipulation.",
-      "summary_ciso": "CVE-2025-54068 exposes critical vulnerabilities in Laravel Livewire that could allow unauthorized access to sensitive data, posing an immediate risk to business reputation and operations if not promptly addressed.",
-      "description": "CVE-2025-54068 is a vulnerability in Laravel Livewire that allows an authenticated attacker to exploit improperly validated component properties, potentially leading to unintended data exposure or manipulation.",
+      "summary_analyst": "CVE-2025-54068 affects Laravel Livewire by allowing attackers to exploit improper input validation, potentially enabling remote code execution through crafted requests to the application's components.",
+      "summary_ciso": "CVE-2025-54068 exposes Laravel Livewire applications to potential remote code execution, significantly increasing business risk and requiring immediate mitigation to safeguard sensitive data and maintain operational integrity.",
+      "description": "CVE-2025-54068 affects Laravel Livewire by allowing attackers to exploit improper input validation, potentially enabling remote code execution through crafted requests to the application's components.",
       "news_article": {
         "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
         "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
@@ -102,72 +158,24 @@
       }
     },
     {
-      "cve": "CVE-2025-53521",
-      "aura_score": 71.0,
-      "cvss": 9.8,
-      "epss": 0.414,
-      "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 52,
-      "trend_breakdown": {
-        "news_hits": 52,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.7
-      },
-      "exploit_poc": false,
-      "exploit_edb_ids": [],
-      "exploit_urls": [],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "F5",
-      "product": "Big-ip Access Policy Manager",
-      "summary_analyst": "CVE-2025-53521 affects F5 Big-IP Access Policy Manager due to improper input validation, allowing an authenticated attacker to execute arbitrary commands on the underlying operating system.",
-      "summary_ciso": "CVE-2025-53521 poses a critical risk to F5 Big-IP Access Policy Manager, potentially exposing sensitive data and systems to unauthorized access, necessitating immediate action to mitigate the threat and protect business operations.",
-      "description": "CVE-2025-53521 affects F5 Big-IP Access Policy Manager due to improper input validation, allowing an authenticated attacker to execute arbitrary commands on the underlying operating system.",
-      "news_article": {
-        "title": "CISA Adds CVE-2025-53521 to KEV After Active F5 BIG-IP APM Exploitation",
-        "url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2026-3055",
-      "aura_score": 70.9,
+      "aura_score": 82.2,
       "cvss": 9.8,
-      "epss": 0.443,
+      "epss": 0.508,
       "kev": true,
-      "trend_score": 0.558,
-      "trend_mentions": 22,
+      "trend_score": 0.573,
+      "trend_mentions": 24,
       "trend_breakdown": {
-        "news_hits": 22,
+        "news_hits": 24,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.558
+        "trend_raw": 0.573
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-3055"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -184,9 +192,9 @@
       },
       "vendor": "Citrix",
       "product": "Netscaler Application Delivery Controller",
-      "summary_analyst": "CVE-2026-3055 is a vulnerability in Citrix Netscaler Application Delivery Controller that allows an authenticated attacker to execute arbitrary code through a crafted HTTP request, exploiting improper input validation in the affected component.",
-      "summary_ciso": "CVE-2026-3055 presents a significant exposure risk for organizations using Citrix Netscaler Application Delivery Controllers, potentially allowing attackers to exploit vulnerabilities that could lead to data breaches and operational disruptions, necessitating immediate mitigation efforts to safeguard business continuity and customer trust.",
-      "description": "CVE-2026-3055 is a vulnerability in Citrix Netscaler Application Delivery Controller that allows an authenticated attacker to execute arbitrary code through a crafted HTTP request, exploiting improper input validation in the affected component.",
+      "summary_analyst": "CVE-2026-3055 allows remote attackers to exploit a vulnerability in the Citrix Netscaler Application Delivery Controller by sending crafted HTTP requests, potentially leading to unauthorized access and data exposure.",
+      "summary_ciso": "CVE-2026-3055 poses a critical security vulnerability in the Citrix Netscaler Application Delivery Controller, exposing our systems to potential data breaches and operational disruptions, necessitating immediate mitigation to protect sensitive business assets and maintain service integrity.",
+      "description": "CVE-2026-3055 allows remote attackers to exploit a vulnerability in the Citrix Netscaler Application Delivery Controller by sending crafted HTTP requests, potentially leading to unauthorized access and data exposure.",
       "news_article": {
         "title": "Citrix NetScaler Under Active Recon for CVE-2026-3055 (CVSS 9.3) Memory Overread Bug",
         "url": "https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html",
@@ -202,22 +210,128 @@
       }
     },
     {
+      "cve": "CVE-2025-53521",
+      "aura_score": 81.0,
+      "cvss": 9.8,
+      "epss": 0.414,
+      "kev": true,
+      "trend_score": 0.7,
+      "trend_mentions": 63,
+      "trend_breakdown": {
+        "news_hits": 63,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.7
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-53521"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "F5",
+      "product": "Big-ip Access Policy Manager",
+      "summary_analyst": "CVE-2025-53521 affects F5 Big-IP Access Policy Manager by allowing an authenticated attacker to exploit a flaw in the session management implementation, potentially leading to unauthorized access or session hijacking.",
+      "summary_ciso": "CVE-2025-53521 poses a critical risk to F5 Big-IP Access Policy Manager, potentially exposing sensitive data and allowing unauthorized access, necessitating immediate mitigation to safeguard our organization's security posture and compliance.",
+      "description": "CVE-2025-53521 affects F5 Big-IP Access Policy Manager by allowing an authenticated attacker to exploit a flaw in the session management implementation, potentially leading to unauthorized access or session hijacking.",
+      "news_article": {
+        "title": "CISA Adds CVE-2025-53521 to KEV After Active F5 BIG-IP APM Exploitation",
+        "url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-35616",
+      "aura_score": 77.7,
+      "cvss": 9.8,
+      "epss": 0.253,
+      "kev": true,
+      "trend_score": 0.682,
+      "trend_mentions": 45,
+      "trend_breakdown": {
+        "news_hits": 45,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.682
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-35616"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Fortinet",
+      "product": "Forticlientems",
+      "summary_analyst": "CVE-2026-35616 is a vulnerability in Fortinet Forticlientems that allows an authenticated attacker to exploit improper input validation in the API, potentially leading to remote code execution on the affected system.",
+      "summary_ciso": "CVE-2026-35616 poses a critical risk to our organization by potentially allowing remote attackers to exploit vulnerabilities in Fortinet ForticlientEMS, leading to unauthorized access to sensitive data; immediate mitigation is essential to protect our assets and maintain compliance.",
+      "description": "CVE-2026-35616 is a vulnerability in Fortinet Forticlientems that allows an authenticated attacker to exploit improper input validation in the API, potentially leading to remote code execution on the affected system.",
+      "news_article": {
+        "title": "Fortinet Patches Actively Exploited CVE-2026-35616 in FortiClient EMS",
+        "url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
       "cve": "CVE-2026-33017",
-      "aura_score": 62.9,
+      "aura_score": 73.0,
       "cvss": 9.8,
       "epss": 0.057,
       "kev": true,
-      "trend_score": 0.515,
-      "trend_mentions": 17,
+      "trend_score": 0.542,
+      "trend_mentions": 20,
       "trend_breakdown": {
-        "news_hits": 17,
+        "news_hits": 20,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.515
+        "trend_raw": 0.542
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-33017"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -234,9 +348,9 @@
       },
       "vendor": "Langflow",
       "product": "Langflow",
-      "summary_analyst": "CVE-2026-33017 affects Langflow by allowing an attacker to exploit inadequate input validation to execute arbitrary code on the affected component.",
-      "summary_ciso": "CVE-2026-33017 poses an urgent security risk to Langflow, exposing the organization to potential data breaches and operational disruptions that could significantly impact business continuity and reputation if not promptly addressed.",
-      "description": "CVE-2026-33017 affects Langflow by allowing an attacker to exploit inadequate input validation to execute arbitrary code on the affected component.",
+      "summary_analyst": "CVE-2026-33017 affects Langflow Langflow by allowing an authenticated attacker to exploit improper input validation, leading to potential injection attacks in the application's data handling component.",
+      "summary_ciso": "CVE-2026-33017 presents a critical vulnerability in Langflow that could be exploited to compromise sensitive data, necessitating immediate action to mitigate potential financial and reputational damage to the organization.",
+      "description": "CVE-2026-33017 affects Langflow Langflow by allowing an authenticated attacker to exploit improper input validation, leading to potential injection attacks in the application's data handling component.",
       "news_article": {
         "title": "U.S. CISA adds a Langflow flaw to its Known Exploited Vulnerabilities catalog",
         "url": "https://securityaffairs.com/190018/security/u-s-cisa-adds-a-langflow-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
@@ -253,21 +367,23 @@
     },
     {
       "cve": "CVE-2026-33634",
-      "aura_score": 62.1,
+      "aura_score": 72.3,
       "cvss": 8.8,
       "epss": 0.212,
       "kev": true,
-      "trend_score": 0.542,
-      "trend_mentions": 20,
+      "trend_score": 0.566,
+      "trend_mentions": 23,
       "trend_breakdown": {
-        "news_hits": 20,
+        "news_hits": 23,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.542
+        "trend_raw": 0.566
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-33634"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -284,9 +400,9 @@
       },
       "vendor": "Aquasec",
       "product": "Setup-trivy",
-      "summary_analyst": "CVE-2026-33634 is a vulnerability in Aquasec Setup-trivy that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution within the affected component.",
-      "summary_ciso": "CVE-2026-33634 exposes Aquasec Setup-trivy to critical vulnerabilities that could lead to unauthorized access and exploitation of container images, necessitating immediate mitigation to protect our cloud assets and maintain regulatory compliance.",
-      "description": "CVE-2026-33634 is a vulnerability in Aquasec Setup-trivy that allows an attacker to exploit improper input validation, potentially leading to arbitrary code execution within the affected component.",
+      "summary_analyst": "CVE-2026-33634 affects Aquasec Setup-trivy by allowing an attacker to exploit a command injection vulnerability in the setup script, potentially leading to unauthorized code execution on the affected system.",
+      "summary_ciso": "CVE-2026-33634 poses an urgent risk to our systems by exposing vulnerabilities in Aquasec's Setup-trivy, potentially allowing unauthorized access to sensitive data and compromising our security posture if not swiftly addressed.",
+      "description": "CVE-2026-33634 affects Aquasec Setup-trivy by allowing an attacker to exploit a command injection vulnerability in the setup script, potentially leading to unauthorized code execution on the affected system.",
       "news_article": {
         "title": "TeamPCP Supply Chain Campaign: Update 001 ? Checkmarx Scope Wider Than Reported, CISA KEV Entry, and Detection Tools Available, (Thu, Mar 26th)",
         "url": "https://isc.sans.edu/diary/32834",
@@ -302,72 +418,24 @@
       }
     },
     {
-      "cve": "CVE-2026-35616",
-      "aura_score": 60.8,
-      "cvss": 9.8,
-      "epss": 0.0,
-      "kev": true,
-      "trend_score": 0.319,
-      "trend_mentions": 5,
-      "trend_breakdown": {
-        "news_hits": 5,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.319
-      },
-      "exploit_poc": false,
-      "exploit_edb_ids": [],
-      "exploit_urls": [],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Unknown",
-      "product": "Unknown",
-      "summary_analyst": "CVE-2026-35616 involves a vulnerability in an unspecified component that allows an attacker to exploit insufficient input validation, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2026-35616 presents a critical security vulnerability in Unknown Unknown that could expose our sensitive data to significant breaches, necessitating immediate mitigation to safeguard our business reputation and compliance.",
-      "description": "CVE-2026-35616 involves a vulnerability in an unspecified component that allows an attacker to exploit insufficient input validation, potentially leading to arbitrary code execution.",
-      "news_article": {
-        "title": "Fortinet Patches Actively Exploited CVE-2026-35616 in FortiClient EMS",
-        "url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2026-5281",
-      "aura_score": 58.8,
+      "aura_score": 69.4,
       "cvss": 8.8,
-      "epss": 0.03,
+      "epss": 0.033,
       "kev": true,
-      "trend_score": 0.599,
-      "trend_mentions": 28,
+      "trend_score": 0.7,
+      "trend_mentions": 60,
       "trend_breakdown": {
-        "news_hits": 28,
+        "news_hits": 60,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.599
+        "trend_raw": 0.7
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-5281"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -384,9 +452,9 @@
       },
       "vendor": "Google",
       "product": "Chrome",
-      "summary_analyst": "CVE-2026-5281 is a vulnerability in Google Chrome that allows remote attackers to execute arbitrary code via a crafted web page due to improper handling of objects in memory.",
-      "summary_ciso": "CVE-2026-5281 poses a critical risk to business operations as it exposes sensitive data and systems to potential exploitation, necessitating immediate mitigation to safeguard against possible breaches and maintain trust with customers and stakeholders.",
-      "description": "CVE-2026-5281 is a vulnerability in Google Chrome that allows remote attackers to execute arbitrary code via a crafted web page due to improper handling of objects in memory.",
+      "summary_analyst": "CVE-2026-5281 is a vulnerability in Google Chrome that allows an attacker to execute arbitrary code via a crafted HTML page due to improper input validation in the browser's rendering engine.",
+      "summary_ciso": "The CVE-2026-5281 vulnerability in Google Chrome poses an urgent risk of significant business disruption due to potential exploitation that could lead to data breaches and loss of customer trust, necessitating immediate mitigation efforts.",
+      "description": "CVE-2026-5281 is a vulnerability in Google Chrome that allows an attacker to execute arbitrary code via a crafted HTML page due to improper input validation in the browser's rendering engine.",
       "news_article": {
         "title": "If You See This Message In Google Chrome, You Are Now At Risk",
         "url": "https://www.forbes.com/sites/zakdoffman/2026/04/04/if-you-see-this-message-in-google-chrome-you-are-now-at-risk/",
@@ -402,72 +470,24 @@
       }
     },
     {
-      "cve": "CVE-2025-31277",
-      "aura_score": 58.2,
-      "cvss": 8.8,
-      "epss": 0.002,
-      "kev": true,
-      "trend_score": 0.593,
-      "trend_mentions": 27,
-      "trend_breakdown": {
-        "news_hits": 27,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.593
-      },
-      "exploit_poc": false,
-      "exploit_edb_ids": [],
-      "exploit_urls": [],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Apple",
-      "product": "Safari",
-      "summary_analyst": "CVE-2025-31277 is a vulnerability in Apple Safari that allows remote attackers to execute arbitrary code by exploiting a use-after-free condition in the WebCore component when processing maliciously crafted web content.",
-      "summary_ciso": "CVE-2025-31277 exposes Apple Safari to critical vulnerabilities that could lead to unauthorized access to sensitive user data, necessitating immediate attention to mitigate potential breaches and safeguard our reputation.",
-      "description": "CVE-2025-31277 is a vulnerability in Apple Safari that allows remote attackers to execute arbitrary code by exploiting a use-after-free condition in the WebCore component when processing maliciously crafted web content.",
-      "news_article": {
-        "title": "CISA Flags Apple, Craft CMS, Laravel Bugs in KEV, Orders Patching by April 3, 2026",
-        "url": "https://thehackernews.com/2026/03/cisa-flags-apple-craft-cms-laravel-bugs.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2025-43510",
-      "aura_score": 54.2,
+      "aura_score": 64.2,
       "cvss": 7.8,
       "epss": 0.005,
       "kev": true,
-      "trend_score": 0.573,
-      "trend_mentions": 24,
+      "trend_score": 0.58,
+      "trend_mentions": 25,
       "trend_breakdown": {
-        "news_hits": 24,
+        "news_hits": 25,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.573
+        "trend_raw": 0.58
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-43510"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -484,9 +504,9 @@
       },
       "vendor": "Apple",
       "product": "Ipados",
-      "summary_analyst": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to exploit a memory corruption issue, potentially leading to arbitrary code execution on affected devices.",
-      "summary_ciso": "CVE-2025-43510 poses an urgent risk to Apple iPadOS devices, exposing critical user data to potential exploitation, which could lead to significant financial and reputational damage if not swiftly mitigated.",
-      "description": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to exploit a memory corruption issue, potentially leading to arbitrary code execution on affected devices.",
+      "summary_analyst": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to exploit a memory corruption issue, potentially leading to arbitrary code execution on the affected device.",
+      "summary_ciso": "CVE-2025-43510 presents a significant risk to Apple iPadOS, potentially exposing sensitive user data and business operations, necessitating immediate mitigation to safeguard against exploitation.",
+      "description": "CVE-2025-43510 is a vulnerability in Apple iPadOS that allows an attacker to exploit a memory corruption issue, potentially leading to arbitrary code execution on the affected device.",
       "news_article": {
         "title": "More than 220 million iPhones under attack from new DarkSword exploit \u2014 how to stay safe",
         "url": "https://www.tomsguide.com/phones/iphones/more-than-220-million-iphones-under-attack-from-new-darksword-exploit-how-to-stay-safe",
@@ -503,21 +523,23 @@
     },
     {
       "cve": "CVE-2026-3502",
-      "aura_score": 53.3,
+      "aura_score": 63.5,
       "cvss": 7.8,
-      "epss": 0.013,
+      "epss": 0.015,
       "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
       "trend_breakdown": {
-        "news_hits": 7,
+        "news_hits": 8,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.37
+        "trend_raw": 0.391
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-3502"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -534,9 +556,9 @@
       },
       "vendor": "Trueconf",
       "product": "Trueconf",
-      "summary_analyst": "CVE-2026-3502 affects Trueconf by allowing remote attackers to execute arbitrary code via crafted input to the affected component, leading to potential system compromise.",
-      "summary_ciso": "CVE-2026-3502 exposes Trueconf to potential data breaches and operational disruptions, creating an urgent need for mitigation to protect sensitive information and maintain business continuity.",
-      "description": "CVE-2026-3502 affects Trueconf by allowing remote attackers to execute arbitrary code via crafted input to the affected component, leading to potential system compromise.",
+      "summary_analyst": "CVE-2026-3502 affects Trueconf, allowing attackers to exploit improper input validation in the software to execute arbitrary code remotely.",
+      "summary_ciso": "CVE-2026-3502 poses a significant risk to Trueconf systems, potentially exposing sensitive communication data to unauthorized access, necessitating immediate mitigation to protect business continuity and stakeholder trust.",
+      "description": "CVE-2026-3502 affects Trueconf, allowing attackers to exploit improper input validation in the software to execute arbitrary code remotely.",
       "news_article": {
         "title": "TrueConf Zero-Day Exploited in Attacks on Southeast Asian Government Networks",
         "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
@@ -553,7 +575,7 @@
     },
     {
       "cve": "CVE-2025-43520",
-      "aura_score": 45.0,
+      "aura_score": 55.0,
       "cvss": 5.5,
       "epss": 0.003,
       "kev": true,
@@ -565,9 +587,11 @@
         "exploit_boost": 0.0,
         "trend_raw": 0.58
       },
-      "exploit_poc": false,
+      "exploit_poc": true,
       "exploit_edb_ids": [],
-      "exploit_urls": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-43520"
+      ],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -584,9 +608,9 @@
       },
       "vendor": "Apple",
       "product": "Ipados",
-      "summary_analyst": "CVE-2025-43520 affects Apple iPadOS, allowing attackers to exploit a memory corruption vulnerability in the kernel to execute arbitrary code with kernel privileges, potentially compromising the entire system.",
-      "summary_ciso": "CVE-2025-43520 poses a critical risk to Apple iPadOS, potentially allowing attackers to exploit vulnerabilities leading to data breaches and system compromises, making immediate remediation essential to safeguard sensitive user information and maintain business integrity.",
-      "description": "CVE-2025-43520 affects Apple iPadOS, allowing attackers to exploit a memory corruption vulnerability in the kernel to execute arbitrary code with kernel privileges, potentially compromising the entire system.",
+      "summary_analyst": "CVE-2025-43520 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with elevated privileges due to improper handling of memory, potentially compromising the affected device's security.",
+      "summary_ciso": "CVE-2025-43520 poses a significant risk to Apple iPadOS, as it could allow attackers to exploit vulnerabilities that compromise sensitive data and user privacy, making immediate mitigation critical to protect our organization from potential data breaches and financial loss.",
+      "description": "CVE-2025-43520 is a vulnerability in Apple iPadOS that allows an attacker to execute arbitrary code with elevated privileges due to improper handling of memory, potentially compromising the affected device's security.",
       "news_article": {
         "title": "More than 220 million iPhones under attack from new DarkSword exploit \u2014 how to stay safe",
         "url": "https://www.tomsguide.com/phones/iphones/more-than-220-million-iphones-under-attack-from-new-darksword-exploit-how-to-stay-safe",
