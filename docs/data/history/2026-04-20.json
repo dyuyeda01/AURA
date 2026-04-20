@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2026-1340",
+    "aura_score": 86.2,
+    "cvss": 9.8,
+    "epss": 0.758,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-1340"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ivanti",
+    "product": "Endpoint Manager Mobile",
+    "summary_analyst": "CVE-2026-1340 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an unauthenticated attacker to exploit a flaw in the authentication mechanism, potentially leading to unauthorized access to sensitive data.",
+    "summary_ciso": "CVE-2026-1340 presents a critical vulnerability in Ivanti Endpoint Manager Mobile, exposing our organization to potential data breaches and operational disruptions that require immediate remedial action to safeguard sensitive enterprise information.",
+    "description": "CVE-2026-1340 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an unauthenticated attacker to exploit a flaw in the authentication mechanism, potentially leading to unauthorized access to sensitive data.",
+    "news_article": {
+      "title": "U.S. CISA adds a flaw in Ivanti EPMM to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/190519/security/u-s-cisa-adds-a-flaw-in-ivanti-epmm-to-its-known-exploited-vulnerabilities-catalog-2.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-3055",
+    "aura_score": 83.2,
+    "cvss": 9.8,
+    "epss": 0.557,
+    "kev": true,
+    "trend_score": 0.573,
+    "trend_mentions": 24,
+    "trend_breakdown": {
+      "news_hits": 24,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.573
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-3055"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Citrix",
+    "product": "Netscaler Application Delivery Controller",
+    "summary_analyst": "CVE-2026-3055 affects the Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation, potentially leading to remote code execution and unauthorized access to system resources.",
+    "summary_ciso": "CVE-2026-3055 poses a critical risk to Citrix Netscaler Application Delivery Controllers, potentially exposing sensitive data and disrupting services, necessitating immediate action to mitigate vulnerabilities and protect business operations.",
+    "description": "CVE-2026-3055 affects the Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation, potentially leading to remote code execution and unauthorized access to system resources.",
+    "news_article": {
+      "title": "Citrix NetScaler Under Active Recon for CVE-2026-3055 (CVSS 9.3) Memory Overread Bug",
+      "url": "https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-21643",
+    "aura_score": 79.0,
+    "cvss": 9.8,
+    "epss": 0.339,
+    "kev": true,
+    "trend_score": 0.599,
+    "trend_mentions": 28,
+    "trend_breakdown": {
+      "news_hits": 28,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.599
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-21643"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Forticlientems",
+    "summary_analyst": "CVE-2026-21643 is a vulnerability in Fortinet FortiClient EMS that allows an attacker to execute arbitrary code via a crafted packet sent to the affected component's network interface.",
+    "summary_ciso": "CVE-2026-21643 poses an urgent risk to Fortinet FortiClientEMS users, potentially exposing sensitive business data to unauthorized access, necessitating immediate mitigation to prevent operational disruption and financial loss.",
+    "description": "CVE-2026-21643 is a vulnerability in Fortinet FortiClient EMS that allows an attacker to execute arbitrary code via a crafted packet sent to the affected component's network interface.",
+    "news_article": {
+      "title": "CISA Adds 6 Known Exploited Flaws in Fortinet, Microsoft, and Adobe Software",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-6-known-exploited-flaws-in.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-35616",
+    "aura_score": 77.8,
+    "cvss": 9.8,
+    "epss": 0.253,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 74,
+    "trend_breakdown": {
+      "news_hits": 74,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-35616"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Forticlientems",
+    "summary_analyst": "CVE-2026-35616 is a vulnerability in Fortinet Forticlientems that allows attackers to exploit improper input validation in the application's handling of certain API endpoints, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2026-35616 poses a critical risk to Fortinet FortiClient EMS users, potentially allowing attackers unauthorized access to sensitive data, which requires urgent mitigation to safeguard the organization's reputation and prevent significant financial loss.",
+    "description": "CVE-2026-35616 is a vulnerability in Fortinet Forticlientems that allows attackers to exploit improper input validation in the application's handling of certain API endpoints, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "Fortinet Patches Actively Exploited CVE-2026-35616 in FortiClient EMS",
+      "url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-34197",
+    "aura_score": 77.0,
+    "cvss": 8.8,
+    "epss": 0.466,
+    "kev": true,
+    "trend_score": 0.504,
+    "trend_mentions": 16,
+    "trend_breakdown": {
+      "news_hits": 16,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.504
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-34197"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apache",
+    "product": "Activemq",
+    "summary_analyst": "CVE-2026-34197 affects Apache ActiveMQ by allowing an unauthenticated attacker to exploit a broken authentication mechanism, potentially leading to unauthorized access to messaging queues.",
+    "summary_ciso": "CVE-2026-34197 exposes businesses using Apache ActiveMQ to critical data breaches and service disruptions, necessitating immediate remediation to safeguard sensitive information and operational integrity.",
+    "description": "CVE-2026-34197 affects Apache ActiveMQ by allowing an unauthenticated attacker to exploit a broken authentication mechanism, potentially leading to unauthorized access to messaging queues.",
+    "news_article": {
+      "title": "Apache ActiveMQ CVE-2026-34197 Added to CISA KEV Amid Active Exploitation",
+      "url": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-21529",
+    "aura_score": 74.3,
+    "cvss": 8.8,
+    "epss": 0.35,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2023-21529"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Exchange Server",
+    "summary_analyst": "CVE-2023-21529 is a vulnerability in Microsoft Exchange Server that allows an attacker to exploit improper validation of web requests, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2023-21529 poses a significant risk to Microsoft Exchange Server, potentially exposing sensitive organizational data through remote exploitation, necessitating immediate mitigation to safeguard our operations and reputation.",
+    "description": "CVE-2023-21529 is a vulnerability in Microsoft Exchange Server that allows an attacker to exploit improper validation of web requests, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "Zombie Microsoft bugs rise from the dead, pave way for crims and ransomware scum",
+      "url": "https://www.theregister.com/2026/04/13/ransomware_gang_other_crims_attacking/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-5281",
+    "aura_score": 69.2,
+    "cvss": 8.8,
+    "epss": 0.026,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 91,
+    "trend_breakdown": {
+      "news_hits": 91,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-5281"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Google",
+    "product": "Chrome",
+    "summary_analyst": "CVE-2026-5281 is a vulnerability in Google Chrome that can be exploited through a use-after-free condition in the WebRTC component, potentially allowing an attacker to execute arbitrary code.",
+    "summary_ciso": "CVE-2026-5281 poses a significant risk to our business as it exposes sensitive data through a vulnerability in Google Chrome, necessitating immediate mitigation to protect our assets and maintain trust with customers.",
+    "description": "CVE-2026-5281 is a vulnerability in Google Chrome that can be exploited through a use-after-free condition in the WebRTC component, potentially allowing an attacker to execute arbitrary code.",
+    "news_article": {
+      "title": "If You See This Message In Google Chrome, You Are Now At Risk",
+      "url": "https://www.forbes.com/sites/zakdoffman/2026/04/04/if-you-see-this-message-in-google-chrome-you-are-now-at-risk/",
+      "source": "Forbes"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-34621",
+    "aura_score": 68.8,
+    "cvss": 8.6,
+    "epss": 0.046,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 71,
+    "trend_breakdown": {
+      "news_hits": 71,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-34621"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Adobe",
+    "product": "Acrobat Dc",
+    "summary_analyst": "CVE-2026-34621 is a vulnerability in Adobe Acrobat DC that allows an attacker to execute arbitrary code on the affected system via crafted PDF files, exploiting a memory corruption flaw.",
+    "summary_ciso": "CVE-2026-34621 presents a critical vulnerability in Adobe Acrobat DC that could allow attackers to execute arbitrary code, potentially compromising sensitive documents and leading to significant data breaches or operational disruptions, necessitating immediate remediation efforts.",
+    "description": "CVE-2026-34621 is a vulnerability in Adobe Acrobat DC that allows an attacker to execute arbitrary code on the affected system via crafted PDF files, exploiting a memory corruption flaw.",
+    "news_article": {
+      "title": "Adobe Patches Actively Exploited Acrobat Reader Flaw CVE-2026-34621",
+      "url": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-60710",
+    "aura_score": 66.8,
+    "cvss": 7.8,
+    "epss": 0.18,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-60710"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Windows 11 24h2",
+    "summary_analyst": "CVE-2025-60710 is a security vulnerability in Microsoft Windows 11 24h2 that allows attackers to execute arbitrary code via a compromised application due to improper validation of input.",
+    "summary_ciso": "CVE-2025-60710 presents a critical vulnerability in Microsoft Windows 11 24h2 that exposes the organization to potential data breaches and operational disruptions, necessitating immediate mitigation to safeguard sensitive information and maintain business continuity.",
+    "description": "CVE-2025-60710 is a security vulnerability in Microsoft Windows 11 24h2 that allows attackers to execute arbitrary code via a compromised application due to improper validation of input.",
+    "news_article": {
+      "title": "Zombie Microsoft bugs rise from the dead, pave way for crims and ransomware scum",
+      "url": "https://www.theregister.com/2026/04/13/ransomware_gang_other_crims_attacking/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-36424",
+    "aura_score": 64.3,
+    "cvss": 7.8,
+    "epss": 0.055,
+    "kev": true,
+    "trend_score": 0.391,
+    "trend_mentions": 8,
+    "trend_breakdown": {
+      "news_hits": 8,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.391
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2023-36424"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Windows 10 1507",
+    "summary_analyst": "CVE-2023-36424 is a vulnerability in Microsoft Windows 10 1507 that allows an attacker to exploit a race condition in the Windows kernel, potentially leading to elevation of privileges.",
+    "summary_ciso": "CVE-2023-36424 poses a critical risk to Microsoft Windows 10 version 1507, potentially allowing attackers to exploit vulnerabilities for unauthorized access, which urgently necessitates immediate patching to safeguard sensitive business data and maintain operational integrity.",
+    "description": "CVE-2023-36424 is a vulnerability in Microsoft Windows 10 1507 that allows an attacker to exploit a race condition in the Windows kernel, potentially leading to elevation of privileges.",
+    "news_article": {
+      "title": "Zombie Microsoft bugs rise from the dead, pave way for crims and ransomware scum",
+      "url": "https://www.theregister.com/2026/04/13/ransomware_gang_other_crims_attacking/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-3502",
+    "aura_score": 63.5,
+    "cvss": 7.8,
+    "epss": 0.017,
+    "kev": true,
+    "trend_score": 0.391,
+    "trend_mentions": 8,
+    "trend_breakdown": {
+      "news_hits": 8,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.391
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-3502"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Trueconf",
+    "product": "Trueconf",
+    "summary_analyst": "CVE-2026-3502 affects Trueconf by allowing an authenticated user to exploit improper input validation in the application's handling of audio data, potentially leading to a denial of service.",
+    "summary_ciso": "CVE-2026-3502 presents an urgent risk to Trueconf's communication platform that could lead to unauthorized access to sensitive data, necessitating immediate mitigation efforts to protect our business and maintain customer trust.",
+    "description": "CVE-2026-3502 affects Trueconf by allowing an authenticated user to exploit improper input validation in the application's handling of audio data, potentially leading to a denial of service.",
+    "news_article": {
+      "title": "TrueConf Zero-Day Exploited in Attacks on Southeast Asian Government Networks",
+      "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-32201",
+    "aura_score": 59.4,
+    "cvss": 6.5,
+    "epss": 0.009,
+    "kev": true,
+    "trend_score": 0.648,
+    "trend_mentions": 37,
+    "trend_breakdown": {
+      "news_hits": 37,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.648
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-32201"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Sharepoint Server",
+    "summary_analyst": "CVE-2026-32201 allows remote attackers to execute arbitrary code on Microsoft SharePoint Server by leveraging improper input validation in the handling of document uploads, leading to potential exploitation of the affected component.",
+    "summary_ciso": "CVE-2026-32201 exposes Microsoft SharePoint Server to potential data breaches and operational disruptions, necessitating immediate mitigation to protect sensitive information and maintain business continuity.",
+    "description": "CVE-2026-32201 allows remote attackers to execute arbitrary code on Microsoft SharePoint Server by leveraging improper input validation in the handling of document uploads, leading to potential exploitation of the affected component.",
+    "news_article": {
+      "title": "Microsoft's massive Patch Tuesday: It's raining bugs",
+      "url": "https://www.theregister.com/2026/04/14/microsofts_massive_patch_tuesday/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
