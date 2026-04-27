@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2024-7399",
+    "aura_score": 82.9,
+    "cvss": 8.8,
+    "epss": 0.823,
+    "kev": true,
+    "trend_score": 0.247,
+    "trend_mentions": 3,
+    "trend_breakdown": {
+      "news_hits": 3,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.247
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-7399"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Samsung",
+    "product": "Magicinfo 9 Server",
+    "summary_analyst": "CVE-2024-7399 is a vulnerability in Samsung Magicinfo 9 Server that allows remote attackers to exploit improper input validation, resulting in potential code execution on the affected component.",
+    "summary_ciso": "CVE-2024-7399 exposes Samsung Magicinfo 9 Server to potential unauthorized access and data breaches, posing an immediate risk to sensitive business information and necessitating urgent remediation to protect organizational integrity and customer trust.",
+    "description": "CVE-2024-7399 is a vulnerability in Samsung Magicinfo 9 Server that allows remote attackers to exploit improper input validation, resulting in potential code execution on the affected component.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-39987",
+    "aura_score": 82.9,
+    "cvss": 9.8,
+    "epss": 0.552,
+    "kev": true,
+    "trend_score": 0.524,
+    "trend_mentions": 18,
+    "trend_breakdown": {
+      "news_hits": 18,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.524
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-39987"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Coreweave",
+    "product": "Marimo",
+    "summary_analyst": "CVE-2026-39987 affects Coreweave Marimo by allowing an attacker to exploit a buffer overflow vulnerability in the component that handles user input, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-39987 poses a significant security risk to Coreweave Marimo, potentially exposing sensitive data and critical business operations to exploitation, necessitating immediate mitigation to protect our assets and maintain customer trust.",
+    "description": "CVE-2026-39987 affects Coreweave Marimo by allowing an attacker to exploit a buffer overflow vulnerability in the component that handles user input, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "Marimo RCE Flaw CVE-2026-39987 Exploited Within 10 Hours of Disclosure",
+      "url": "https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-57726",
+    "aura_score": 81.0,
+    "cvss": 9.9,
+    "epss": 0.491,
+    "kev": true,
+    "trend_score": 0.319,
+    "trend_mentions": 5,
+    "trend_breakdown": {
+      "news_hits": 5,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.319
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-57726"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Simple-help",
+    "product": "Simplehelp",
+    "summary_analyst": "CVE-2024-57726 is a vulnerability in Simple-help Simplehelp that allows remote attackers to execute arbitrary code due to improper input validation in the application's network communication component.",
+    "summary_ciso": "CVE-2024-57726 poses an immediate risk to our operations as it allows unauthorized access to sensitive information in Simple-help Simplehelp, necessitating urgent mitigation to prevent potential data breaches and operational disruptions.",
+    "description": "CVE-2024-57726 is a vulnerability in Simple-help Simplehelp that allows remote attackers to execute arbitrary code due to improper input validation in the application's network communication component.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-27351",
+    "aura_score": 79.4,
+    "cvss": 7.5,
+    "epss": 0.861,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2023-27351"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Papercut",
+    "product": "Papercut Mf",
+    "summary_analyst": "CVE-2023-27351 is a vulnerability in PaperCut MF that allows an unauthenticated attacker to execute arbitrary code remotely through improper input validation in the application's web interface.",
+    "summary_ciso": "CVE-2023-27351 exposes Papercut MF to critical vulnerabilities that could allow attackers to execute arbitrary code, risking sensitive data loss and necessitating immediate remediation to protect our business operations and reputation.",
+    "description": "CVE-2023-27351 is a vulnerability in PaperCut MF that allows an unauthenticated attacker to execute arbitrary code remotely through improper input validation in the application's web interface.",
+    "news_article": {
+      "title": "CISA Adds Eight Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/20/cisa-adds-eight-known-exploited-vulnerabilities-catalog",
+      "source": "Cisa.gov"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-29635",
+    "aura_score": 72.7,
+    "cvss": 7.2,
+    "epss": 0.589,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-29635"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Dlink",
+    "product": "Dir-823x Firmware",
+    "summary_analyst": "CVE-2025-29635 is a vulnerability in Dlink Dir-823x firmware that allows remote attackers to execute arbitrary commands via shell metacharacters in the \"username\" parameter of a web configuration request.",
+    "summary_ciso": "The CVE-2025-29635 vulnerability in Dlink Dir-823x Firmware exposes our network to severe security risks, potentially allowing unauthorized access to sensitive data, making immediate mitigation critical to protect our business operations and reputation.",
+    "description": "CVE-2025-29635 is a vulnerability in Dlink Dir-823x firmware that allows remote attackers to execute arbitrary commands via shell metacharacters in the \"username\" parameter of a web configuration request.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-57728",
+    "aura_score": 70.5,
+    "cvss": 7.2,
+    "epss": 0.506,
+    "kev": true,
+    "trend_score": 0.319,
+    "trend_mentions": 5,
+    "trend_breakdown": {
+      "news_hits": 5,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.319
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-57728"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Simple-help",
+    "product": "Simplehelp",
+    "summary_analyst": "CVE-2024-57728 is a vulnerability in Simple-help Simplehelp that allows an attacker to exploit an improper input validation flaw, potentially leading to arbitrary code execution on the affected component.",
+    "summary_ciso": "CVE-2024-57728 exposes Simple-help Simplehelp to significant security vulnerabilities that could lead to unauthorized data access, necessitating immediate remediation to protect sensitive information and maintain business integrity.",
+    "description": "CVE-2024-57728 is a vulnerability in Simple-help Simplehelp that allows an attacker to exploit an improper input validation flaw, potentially leading to arbitrary code execution on the affected component.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-33825",
+    "aura_score": 65.4,
+    "cvss": 7.8,
+    "epss": 0.033,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 58,
+    "trend_breakdown": {
+      "news_hits": 58,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-33825"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Defender Antimalware Platform",
+    "summary_analyst": "CVE-2026-33825 is a vulnerability in the Microsoft Defender Antimalware Platform that allows an attacker to execute arbitrary code by exploiting a flaw in the way the platform processes malicious files.",
+    "summary_ciso": "CVE-2026-33825 poses a critical risk to our organization as it exposes Microsoft Defender Antimalware Platform to potential exploitation, which could lead to significant data breaches and operational disruptions, necessitating immediate attention and mitigation efforts.",
+    "description": "CVE-2026-33825 is a vulnerability in the Microsoft Defender Antimalware Platform that allows an attacker to execute arbitrary code by exploiting a flaw in the way the platform processes malicious files.",
+    "news_article": {
+      "title": "Microsoft's massive Patch Tuesday: It's raining bugs",
+      "url": "https://www.theregister.com/2026/04/14/microsofts_massive_patch_tuesday/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20128",
+    "aura_score": 63.5,
+    "cvss": 7.5,
+    "epss": 0.0,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 55,
+    "trend_breakdown": {
+      "news_hits": 55,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20128"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Catalyst Sd-wan Manager",
+    "summary_analyst": "CVE-2026-20128 is a vulnerability in the Cisco Catalyst SD-WAN Manager that allows an authenticated attacker to exploit improper input validation in a specific component, enabling potential arbitrary command execution.",
+    "summary_ciso": "The CVE-2026-20128 vulnerability in Cisco Catalyst SD-WAN Manager poses an urgent risk of unauthorized access that could compromise sensitive data, highlighting the critical need for immediate mitigation to protect our business operations and reputation.",
+    "description": "CVE-2026-20128 is a vulnerability in the Cisco Catalyst SD-WAN Manager that allows an authenticated attacker to exploit improper input validation in a specific component, enabling potential arbitrary command execution.",
+    "news_article": {
+      "title": "More Cisco SD-WAN bugs battered in attacks",
+      "url": "https://www.theregister.com/2026/04/21/cisco_sdwan_bugs_kev/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-2749",
+    "aura_score": 61.2,
+    "cvss": 7.2,
+    "epss": 0.051,
+    "kev": true,
+    "trend_score": 0.287,
+    "trend_mentions": 4,
+    "trend_breakdown": {
+      "news_hits": 4,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.287
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-2749"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Kentico",
+    "product": "Xperience",
+    "summary_analyst": "CVE-2025-2749 affects Kentico Xperience by allowing an attacker to exploit improper input validation in the content management module, which can lead to unauthorized access and data manipulation.",
+    "summary_ciso": "CVE-2025-2749 poses a significant security risk to Kentico Xperience, potentially exposing sensitive customer data and operational integrity, necessitating immediate mitigation to safeguard our reputation and regulatory compliance.",
+    "description": "CVE-2025-2749 affects Kentico Xperience by allowing an attacker to exploit improper input validation in the content management module, which can lead to unauthorized access and data manipulation.",
+    "news_article": {
+      "title": "CISA Adds Eight Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/20/cisa-adds-eight-known-exploited-vulnerabilities-catalog",
+      "source": "Cisa.gov"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-48700",
+    "aura_score": 60.0,
+    "cvss": 6.1,
+    "epss": 0.188,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-48700"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Synacor",
+    "product": "Zimbra Collaboration Suite",
+    "summary_analyst": "CVE-2025-48700 affects the Synacor Zimbra Collaboration Suite, allowing remote attackers to exploit a command injection vulnerability via crafted HTTP requests targeting the email service component.",
+    "summary_ciso": "CVE-2025-48700 poses a significant risk to Synacor Zimbra Collaboration Suite, potentially exposing sensitive communications and data, requiring immediate action to mitigate the threat of data breaches and maintain business integrity.",
+    "description": "CVE-2025-48700 affects the Synacor Zimbra Collaboration Suite, allowing remote attackers to exploit a command injection vulnerability via crafted HTTP requests targeting the email service component.",
+    "news_article": {
+      "title": "CISA Adds Eight Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/20/cisa-adds-eight-known-exploited-vulnerabilities-catalog",
+      "source": "Cisa.gov"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20133",
+    "aura_score": 59.7,
+    "cvss": 6.5,
+    "epss": 0.012,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 55,
+    "trend_breakdown": {
+      "news_hits": 55,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20133"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Catalyst Sd-wan Manager",
+    "summary_analyst": "CVE-2026-20133 is a vulnerability in the Cisco Catalyst SD-WAN Manager that allows an authenticated attacker to execute arbitrary commands on the underlying operating system due to improper input validation in the web management interface.",
+    "summary_ciso": "CVE-2026-20133 exposes Cisco Catalyst SD-WAN Manager to significant security vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive business information and mitigate potential operational disruptions.",
+    "description": "CVE-2026-20133 is a vulnerability in the Cisco Catalyst SD-WAN Manager that allows an authenticated attacker to execute arbitrary commands on the underlying operating system due to improper input validation in the web management interface.",
+    "news_article": {
+      "title": "More Cisco SD-WAN bugs battered in attacks",
+      "url": "https://www.theregister.com/2026/04/21/cisco_sdwan_bugs_kev/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20122",
+    "aura_score": 55.3,
+    "cvss": 5.4,
+    "epss": 0.01,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 55,
+    "trend_breakdown": {
+      "news_hits": 55,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20122"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Catalyst Sd-wan Manager",
+    "summary_analyst": "CVE-2026-20122 affects Cisco Catalyst SD-WAN Manager by allowing an authenticated user to execute arbitrary commands on the underlying operating system due to improper validation of user-supplied input in the command execution functionality.",
+    "summary_ciso": "The CVE-2026-20122 vulnerability in Cisco Catalyst SD-WAN Manager poses an urgent risk of unauthorized access, which could lead to significant business disruption and data compromise if not promptly addressed.",
+    "description": "CVE-2026-20122 affects Cisco Catalyst SD-WAN Manager by allowing an authenticated user to execute arbitrary commands on the underlying operating system due to improper validation of user-supplied input in the command execution functionality.",
+    "news_article": {
+      "title": "More Cisco SD-WAN bugs battered in attacks",
+      "url": "https://www.theregister.com/2026/04/21/cisco_sdwan_bugs_kev/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
