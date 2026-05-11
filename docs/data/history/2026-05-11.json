@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2026-39987",
+    "aura_score": 87.6,
+    "cvss": 9.8,
+    "epss": 0.796,
+    "kev": true,
+    "trend_score": 0.504,
+    "trend_mentions": 16,
+    "trend_breakdown": {
+      "news_hits": 16,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.504
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-39987"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Coreweave",
+    "product": "Marimo",
+    "summary_analyst": "CVE-2026-39987 allows an attacker to exploit a vulnerability in Coreweave Marimo's authentication mechanism, potentially enabling unauthorized access to sensitive data.",
+    "summary_ciso": "CVE-2026-39987 poses an immediate risk to Coreweave Marimo, exposing critical systems to potential data breaches that could significantly disrupt operations and impact our bottom line, necessitating urgent mitigation efforts.",
+    "description": "CVE-2026-39987 allows an attacker to exploit a vulnerability in Coreweave Marimo's authentication mechanism, potentially enabling unauthorized access to sensitive data.",
+    "news_article": {
+      "title": "CVE-2026-39987: Marimo RCE exploited in hours after disclosure",
+      "url": "https://securityaffairs.com/190623/hacking/cve-2026-39987-marimo-rce-exploited-in-hours-after-disclosure.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-41940",
+    "aura_score": 86.1,
+    "cvss": 9.8,
+    "epss": 0.67,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 63,
+    "trend_breakdown": {
+      "news_hits": 63,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-41940"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cpanel",
+    "product": "Cpanel",
+    "summary_analyst": "CVE-2026-41940 affects Cpanel's web application component, allowing remote attackers to exploit a vulnerability that enables unauthorized access through improper validation of user inputs.",
+    "summary_ciso": "CVE-2026-41940 presents a significant risk to Cpanel users by exposing sensitive system configurations, necessitating immediate mitigation to prevent potential data breaches and operational disruptions.",
+    "description": "CVE-2026-41940 affects Cpanel's web application component, allowing remote attackers to exploit a vulnerability that enables unauthorized access through improper validation of user inputs.",
+    "news_article": {
+      "title": "The Internet Is Falling Down- CPanel/WHM Authentication Bypass CVE-2026-41940",
+      "url": "https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/",
+      "source": "Watchtowr.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-7399",
+    "aura_score": 83.1,
+    "cvss": 8.8,
+    "epss": 0.813,
+    "kev": true,
+    "trend_score": 0.319,
+    "trend_mentions": 5,
+    "trend_breakdown": {
+      "news_hits": 5,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.319
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-7399"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Samsung",
+    "product": "Magicinfo 9 Server",
+    "summary_analyst": "CVE-2024-7399 is a vulnerability in Samsung Magicinfo 9 Server that allows an attacker to execute arbitrary commands on the server by exploiting improper input validation in the application's API endpoints.",
+    "summary_ciso": "CVE-2024-7399 presents a critical vulnerability in Samsung Magicinfo 9 Server that could expose sensitive data and disrupt operations, necessitating immediate action to mitigate potential business impact.",
+    "description": "CVE-2024-7399 is a vulnerability in Samsung Magicinfo 9 Server that allows an attacker to execute arbitrary commands on the server by exploiting improper input validation in the application's API endpoints.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-1708",
+    "aura_score": 82.3,
+    "cvss": 8.4,
+    "epss": 0.85,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-1708"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Connectwise",
+    "product": "Screenconnect",
+    "summary_analyst": "CVE-2024-1708 affects Connectwise Screenconnect by allowing an attacker to exploit improper input validation in the application's web interface, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2024-1708 exposes Connectwise Screenconnect to critical vulnerabilities that could enable unauthorized access to sensitive data and systems, posing an urgent risk to our operational integrity and reputation if not promptly mitigated.",
+    "description": "CVE-2024-1708 affects Connectwise Screenconnect by allowing an attacker to exploit improper input validation in the application's web interface, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "Cisa.gov"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-57726",
+    "aura_score": 80.9,
+    "cvss": 9.9,
+    "epss": 0.492,
+    "kev": true,
+    "trend_score": 0.287,
+    "trend_mentions": 4,
+    "trend_breakdown": {
+      "news_hits": 4,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.287
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-57726"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Simple-help",
+    "product": "Simplehelp",
+    "summary_analyst": "CVE-2024-57726 affects Simple-help Simplehelp, allowing remote attackers to execute arbitrary code via crafted input due to improper input validation in the parsing function.",
+    "summary_ciso": "CVE-2024-57726 poses a significant security vulnerability in Simple-help Simplehelp that could expose sensitive data and lead to potential operational disruptions, necessitating immediate remediation to protect our assets and maintain trust with clients.",
+    "description": "CVE-2024-57726 affects Simple-help Simplehelp, allowing remote attackers to execute arbitrary code via crafted input due to improper input validation in the parsing function.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-42208",
+    "aura_score": 78.8,
+    "cvss": 9.8,
+    "epss": 0.374,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-42208"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Litellm",
+    "product": "Litellm",
+    "summary_analyst": "CVE-2026-42208 affects the Litellm component by allowing remote attackers to execute arbitrary code through a vulnerability in the input validation process.",
+    "summary_ciso": "CVE-2026-42208 poses an urgent risk for Litellm, as its vulnerabilities could lead to significant data breaches and operational disruptions, necessitating immediate mitigation to safeguard critical business assets.",
+    "description": "CVE-2026-42208 affects the Litellm component by allowing remote attackers to execute arbitrary code through a vulnerability in the input validation process.",
+    "news_article": {
+      "title": "LiteLLM CVE-2026-42208 SQL Injection Exploited within 36 Hours of Disclosure",
+      "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-0300",
+    "aura_score": 73.0,
+    "cvss": 9.8,
+    "epss": 0.053,
+    "kev": true,
+    "trend_score": 0.558,
+    "trend_mentions": 22,
+    "trend_breakdown": {
+      "news_hits": 22,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.558
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-0300"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Paloaltonetworks",
+    "product": "Pan-os",
+    "summary_analyst": "CVE-2026-0300 describes a vulnerability in Palo Alto Networks PAN-OS that enables an authenticated attacker to exploit improper input validation in web components, potentially leading to arbitrary code execution on the affected device.",
+    "summary_ciso": "CVE-2026-0300 exposes Palo Alto Networks' PAN-OS to critical vulnerabilities that could enable unauthorized access to sensitive data and network resources, necessitating immediate remediation to protect against potential breaches and operational disruptions.",
+    "description": "CVE-2026-0300 describes a vulnerability in Palo Alto Networks PAN-OS that enables an authenticated attacker to exploit improper input validation in web components, potentially leading to arbitrary code execution on the affected device.",
+    "news_article": {
+      "title": "PAN-OS RCE Exploit Under Active Use Enabling Root Access and Espionage",
+      "url": "https://thehackernews.com/2026/05/pan-os-rce-exploit-under-active-use.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-29635",
+    "aura_score": 72.9,
+    "cvss": 7.2,
+    "epss": 0.59,
+    "kev": true,
+    "trend_score": 0.457,
+    "trend_mentions": 12,
+    "trend_breakdown": {
+      "news_hits": 12,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.457
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-29635"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Dlink",
+    "product": "Dir-823x Firmware",
+    "summary_analyst": "CVE-2025-29635 is a vulnerability in Dlink Dir-823x Firmware that allows remote attackers to execute arbitrary commands via crafted HTTP requests, affecting the device's web management interface.",
+    "summary_ciso": "The CVE-2025-29635 vulnerability in Dlink Dir-823x firmware exposes our network to potential unauthorized access, creating an urgent need for immediate remediation to protect sensitive data and maintain business continuity.",
+    "description": "CVE-2025-29635 is a vulnerability in Dlink Dir-823x Firmware that allows remote attackers to execute arbitrary commands via crafted HTTP requests, affecting the device's web management interface.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-57728",
+    "aura_score": 72.1,
+    "cvss": 7.2,
+    "epss": 0.593,
+    "kev": true,
+    "trend_score": 0.287,
+    "trend_mentions": 4,
+    "trend_breakdown": {
+      "news_hits": 4,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.287
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-57728"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Simple-help",
+    "product": "Simplehelp",
+    "summary_analyst": "CVE-2024-57728 is a vulnerability in Simple-help Simplehelp that allows an attacker to execute arbitrary code by exploiting insufficient input validation in the system's authentication mechanism.",
+    "summary_ciso": "CVE-2024-57728 exposes Simple-help Simplehelp to potential exploitation, which could lead to unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive information and maintain business integrity.",
+    "description": "CVE-2024-57728 is a vulnerability in Simple-help Simplehelp that allows an attacker to execute arbitrary code by exploiting insufficient input validation in the system's authentication mechanism.",
+    "news_article": {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-31431",
+    "aura_score": 65.5,
+    "cvss": 7.8,
+    "epss": 0.039,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 238,
+    "trend_breakdown": {
+      "news_hits": 238,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-31431"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Linux",
+    "product": "Linux Kernel",
+    "summary_analyst": "CVE-2026-31431 is a vulnerability in the Linux Kernel that allows an authenticated local attacker to exploit a stack-based buffer overflow in the handling of certain IOCTL commands, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-31431 exposes critical vulnerabilities in the Linux Kernel that could lead to unauthorized access and potential data breaches, posing significant risk to business operations and requiring immediate remediation to protect sensitive information and ensure compliance.",
+    "description": "CVE-2026-31431 is a vulnerability in the Linux Kernel that allows an authenticated local attacker to exploit a stack-based buffer overflow in the handling of certain IOCTL commands, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "Severe Linux Copy Fail security flaw uncovered using AI scanning help",
+      "url": "https://www.theverge.com/tech/922243/linux-cve-2026-3141-copy-fail-exploit",
+      "source": "The Verge"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-6973",
+    "aura_score": 61.9,
+    "cvss": 7.2,
+    "epss": 0.05,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-6973"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ivanti",
+    "product": "Endpoint Manager Mobile",
+    "summary_analyst": "CVE-2026-6973 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an attacker to execute arbitrary code on the affected component through improper validation of user-supplied input.",
+    "summary_ciso": "CVE-2026-6973 exposes Ivanti Endpoint Manager Mobile to potential data breaches and system compromises, necessitating urgent remediation to protect sensitive corporate information and maintain regulatory compliance.",
+    "description": "CVE-2026-6973 is a vulnerability in Ivanti Endpoint Manager Mobile that allows an attacker to execute arbitrary code on the affected component through improper validation of user-supplied input.",
+    "news_article": {
+      "title": "Ivanti EPMM CVE-2026-6973 RCE Under Active Exploitation Grants Admin-Level Access",
+      "url": "https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-32202",
+    "aura_score": 51.5,
+    "cvss": 4.3,
+    "epss": 0.072,
+    "kev": true,
+    "trend_score": 0.573,
+    "trend_mentions": 24,
+    "trend_breakdown": {
+      "news_hits": 24,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.573
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-32202"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Windows 10 1607",
+    "summary_analyst": "CVE-2026-32202 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to execute arbitrary code via a specially crafted application, impacting the system's memory management component.",
+    "summary_ciso": "CVE-2026-32202 exposes Microsoft Windows 10 1607 to potential exploitation by attackers, posing a significant risk to sensitive business data and operations, which necessitates immediate action for mitigation.",
+    "description": "CVE-2026-32202 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to execute arbitrary code via a specially crafted application, impacting the system's memory management component.",
+    "news_article": {
+      "title": "Microsoft's patch for a 0-day exploited by Russian spies fell short. Another Windows flaw is under attack",
+      "url": "https://www.theregister.com/2026/04/29/microsoft_zero_click_exploit/",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
