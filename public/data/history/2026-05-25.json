@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2026-41940",
+    "aura_score": 89.7,
+    "cvss": 9.8,
+    "epss": 0.85,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 74,
+    "trend_breakdown": {
+      "news_hits": 74,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-41940"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cpanel",
+    "product": "Cpanel",
+    "summary_analyst": "CVE-2026-41940 affects cPanel by allowing attackers to exploit a remote code execution vulnerability through crafted requests, compromising the integrity of the user's server environment.",
+    "summary_ciso": "CVE-2026-41940 presents a critical vulnerability in Cpanel that could lead to unauthorized access and data breaches, exposing our organization to significant financial losses and reputational damage, necessitating immediate mitigation efforts.",
+    "description": "CVE-2026-41940 affects cPanel by allowing attackers to exploit a remote code execution vulnerability through crafted requests, compromising the integrity of the user's server environment.",
+    "news_article": {
+      "title": "The Internet Is Falling Down- CPanel/WHM Authentication Bypass CVE-2026-41940",
+      "url": "https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/",
+      "source": "Watchtowr.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-20182",
+    "aura_score": 88.3,
+    "cvss": 10.0,
+    "epss": 0.773,
+    "kev": true,
+    "trend_score": 0.573,
+    "trend_mentions": 24,
+    "trend_breakdown": {
+      "news_hits": 24,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.573
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-20182"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Catalyst Sd-wan Manager",
+    "summary_analyst": "CVE-2026-20182 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying operating system through improper input validation in the web interface.",
+    "summary_ciso": "CVE-2026-20182 poses an urgent risk to Cisco Catalyst SD-WAN Manager, exposing our network infrastructure to potential unauthorized access and compromising sensitive data, necessitating immediate mitigation to safeguard business operations.",
+    "description": "CVE-2026-20182 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying operating system through improper input validation in the web interface.",
+    "news_article": {
+      "title": "Patch time for Cisco SD-WAN admins as vendor drops yet another make-me-admin zero-day",
+      "url": "https://www.theregister.com/patches/2026/05/15/cisco-discloses-yet-another-sd-wan-make-me-admin-0-day/5241071",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-42208",
+    "aura_score": 82.3,
+    "cvss": 9.8,
+    "epss": 0.543,
+    "kev": true,
+    "trend_score": 0.457,
+    "trend_mentions": 12,
+    "trend_breakdown": {
+      "news_hits": 12,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.457
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-42208"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Litellm",
+    "product": "Litellm",
+    "summary_analyst": "CVE-2026-42208 affects the Litellm component by allowing remote attackers to execute arbitrary code through improper input validation in user authentication processes.",
+    "summary_ciso": "The recent CVE-2026-42208 vulnerability in Litellm poses a significant risk of data breaches and operational disruption, necessitating immediate remediation to safeguard our sensitive information and maintain business continuity.",
+    "description": "CVE-2026-42208 affects the Litellm component by allowing remote attackers to execute arbitrary code through improper input validation in user authentication processes.",
+    "news_article": {
+      "title": "LiteLLM CVE-2026-42208 SQL Injection Exploited within 36 Hours of Disclosure",
+      "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-34291",
+    "aura_score": 73.3,
+    "cvss": 8.8,
+    "epss": 0.319,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-34291"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Langflow",
+    "product": "Langflow",
+    "summary_analyst": "CVE-2025-34291 affects Langflow Langflow, where an improper validation of user input in the application's resource handling component can allow an attacker to execute arbitrary code on the server.",
+    "summary_ciso": "CVE-2025-34291 poses a significant risk to Langflow by potentially exposing sensitive data and disrupting business operations, necessitating immediate mitigative actions to safeguard our organization's integrity and reputation.",
+    "description": "CVE-2025-34291 affects Langflow Langflow, where an improper validation of user input in the application's resource handling component can allow an attacker to execute arbitrary code on the server.",
+    "news_article": {
+      "title": "U.S. CISA adds Trend Micro Apex One and Langflow to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/192529/hacking/u-s-cisa-adds-trend-micro-apex-one-and-langflow-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-0300",
+    "aura_score": 73.2,
+    "cvss": 9.8,
+    "epss": 0.044,
+    "kev": true,
+    "trend_score": 0.622,
+    "trend_mentions": 32,
+    "trend_breakdown": {
+      "news_hits": 32,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.622
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-0300"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Paloaltonetworks",
+    "product": "Pan-os",
+    "summary_analyst": "CVE-2026-0300 affects Palo Alto Networks PAN-OS by allowing an authenticated attacker to exploit improper input validation in the web interface, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-0300 exposes Palo Alto Networks PAN-OS to potential exploitation, posing a significant risk of unauthorized access to sensitive data, which requires immediate remediation to safeguard our network's integrity and protect against severe operational and reputational damage.",
+    "description": "CVE-2026-0300 affects Palo Alto Networks PAN-OS by allowing an authenticated attacker to exploit improper input validation in the web interface, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "PAN-OS RCE Exploit Under Active Use Enabling Root Access and Espionage",
+      "url": "https://thehackernews.com/2026/05/pan-os-rce-exploit-under-active-use.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-42897",
+    "aura_score": 67.5,
+    "cvss": 8.1,
+    "epss": 0.084,
+    "kev": true,
+    "trend_score": 0.689,
+    "trend_mentions": 47,
+    "trend_breakdown": {
+      "news_hits": 47,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.689
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-42897"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Exchange Server",
+    "summary_analyst": "CVE-2026-42897 is a vulnerability in Microsoft Exchange Server that allows remote attackers to execute arbitrary code due to improper validation of user-supplied input in the handling of email messages.",
+    "summary_ciso": "CVE-2026-42897 presents a critical vulnerability in Microsoft Exchange Server that could lead to unauthorized access and data breaches, posing an immediate risk to sensitive business information and necessitating urgent mitigation measures to safeguard corporate assets and maintain regulatory compliance.",
+    "description": "CVE-2026-42897 is a vulnerability in Microsoft Exchange Server that allows remote attackers to execute arbitrary code due to improper validation of user-supplied input in the handling of email messages.",
+    "news_article": {
+      "title": "Microsoft Exchange Server Vulnerability Actively Exploited, in a Bad Week for Microsoft",
+      "url": "https://it.slashdot.org/story/26/05/17/2053257/microsoft-exchange-server-vulnerability-actively-exploited-in-a-bad-week-for-microsoft",
+      "source": "Slashdot.org"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-31431",
+    "aura_score": 65.2,
+    "cvss": 7.8,
+    "epss": 0.026,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 281,
+    "trend_breakdown": {
+      "news_hits": 281,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-31431"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Linux",
+    "product": "Linux Kernel",
+    "summary_analyst": "CVE-2026-31431 is a vulnerability in the Linux Kernel that allows an attacker to exploit a race condition in the handling of certain operations, potentially leading to privilege escalation.",
+    "summary_ciso": "CVE-2026-31431 poses a significant risk to our Linux-based systems, potentially exposing critical infrastructure to exploitation and data breaches, necessitating immediate mitigation to safeguard our operations.",
+    "description": "CVE-2026-31431 is a vulnerability in the Linux Kernel that allows an attacker to exploit a race condition in the handling of certain operations, potentially leading to privilege escalation.",
+    "news_article": {
+      "title": "Severe Linux Copy Fail security flaw uncovered using AI scanning help",
+      "url": "https://www.theverge.com/tech/922243/linux-cve-2026-3141-copy-fail-exploit",
+      "source": "The Verge"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-41091",
+    "aura_score": 65.0,
+    "cvss": 7.8,
+    "epss": 0.045,
+    "kev": true,
+    "trend_score": 0.573,
+    "trend_mentions": 24,
+    "trend_breakdown": {
+      "news_hits": 24,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.573
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-41091"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Malware Protection Engine",
+    "summary_analyst": "CVE-2026-41091 affects the Microsoft Malware Protection Engine, where an attacker can exploit a flaw in the component's handling of certain file types to execute arbitrary code on the system.",
+    "summary_ciso": "CVE-2026-41091 presents an urgent security vulnerability in the Microsoft Malware Protection Engine that could severely compromise enterprise defenses, exposing critical systems to potential exploitation and data breaches, necessitating immediate remediation efforts.",
+    "description": "CVE-2026-41091 affects the Microsoft Malware Protection Engine, where an attacker can exploit a flaw in the component's handling of certain file types to execute arbitrary code on the system.",
+    "news_article": {
+      "title": "Microsoft Warns of Two Actively Exploited Defender Vulnerabilities",
+      "url": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-6973",
+    "aura_score": 62.2,
+    "cvss": 7.2,
+    "epss": 0.049,
+    "kev": true,
+    "trend_score": 0.482,
+    "trend_mentions": 14,
+    "trend_breakdown": {
+      "news_hits": 14,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.482
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-6973"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ivanti",
+    "product": "Endpoint Manager Mobile",
+    "summary_analyst": "CVE-2026-6973 is a vulnerability in Ivanti Endpoint Manager Mobile that allows attackers to exploit improper input validation, potentially leading to unauthorized access or remote code execution.",
+    "summary_ciso": "CVE-2026-6973 poses a critical vulnerability in Ivanti Endpoint Manager Mobile that could allow attackers to exploit sensitive corporate data, potentially leading to significant financial loss and reputational damage; immediate remediation is essential to safeguard our assets.",
+    "description": "CVE-2026-6973 is a vulnerability in Ivanti Endpoint Manager Mobile that allows attackers to exploit improper input validation, potentially leading to unauthorized access or remote code execution.",
+    "news_article": {
+      "title": "Ivanti EPMM CVE-2026-6973 RCE Under Active Exploitation Grants Admin-Level Access",
+      "url": "https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-9082",
+    "aura_score": 61.0,
+    "cvss": 6.5,
+    "epss": 0.126,
+    "kev": true,
+    "trend_score": 0.494,
+    "trend_mentions": 15,
+    "trend_breakdown": {
+      "news_hits": 15,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.494
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-9082"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Unknown",
+    "product": "Unknown",
+    "summary_analyst": "CVE-2026-9082 exploits a vulnerability in an unspecified component, allowing attackers to execute arbitrary code through a crafted input.",
+    "summary_ciso": "CVE-2026-9082 presents a significant risk to our operations due to an unaddressed vulnerability in Unknown Unknown, potentially leading to data breaches and operational disruptions, necessitating immediate mitigation efforts to protect our assets and reputation.",
+    "description": "CVE-2026-9082 exploits a vulnerability in an unspecified component, allowing attackers to execute arbitrary code through a crafted input.",
+    "news_article": {
+      "title": "Drupal Core SQL Injection Bug Actively Exploited, Added to CISA KEV",
+      "url": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-34926",
+    "aura_score": 59.2,
+    "cvss": 6.7,
+    "epss": 0.002,
+    "kev": true,
+    "trend_score": 0.482,
+    "trend_mentions": 14,
+    "trend_breakdown": {
+      "news_hits": 14,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.482
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-34926"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Unknown",
+    "product": "Unknown",
+    "summary_analyst": "CVE-2026-34926 involves a vulnerability in an unspecified component that allows attackers to exploit improper input validation to execute arbitrary code.",
+    "summary_ciso": "CVE-2026-34926 poses a critical risk to our operations by potentially exposing sensitive data and systems to exploitation, necessitating immediate action to mitigate potential business disruptions.",
+    "description": "CVE-2026-34926 involves a vulnerability in an unspecified component that allows attackers to exploit improper input validation to execute arbitrary code.",
+    "news_article": {
+      "title": "TrendAI Patches Apex One Zero-Day Exploited in the Wild",
+      "url": "https://www.securityweek.com/trendai-patches-apex-one-zero-day-exploited-in-the-wild/",
+      "source": "Securityweek.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-45498",
+    "aura_score": 49.4,
+    "cvss": 4.0,
+    "epss": 0.032,
+    "kev": true,
+    "trend_score": 0.558,
+    "trend_mentions": 22,
+    "trend_breakdown": {
+      "news_hits": 22,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.558
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-45498"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Defender Antimalware Platform",
+    "summary_analyst": "CVE-2026-45498 is a vulnerability in the Microsoft Defender Antimalware Platform that allows remote attackers to execute arbitrary code on the system through improper handling of specially crafted files.",
+    "summary_ciso": "CVE-2026-45498 exposes Microsoft Defender Antimalware Platform to potential exploitation, which could lead to significant data breaches and operational disruptions, necessitating immediate remediation to safeguard our critical assets.",
+    "description": "CVE-2026-45498 is a vulnerability in the Microsoft Defender Antimalware Platform that allows remote attackers to execute arbitrary code on the system through improper handling of specially crafted files.",
+    "news_article": {
+      "title": "Microsoft Defender vulnerabilities exploited in the wild (CVE-2026-41091, CVE-2026-45498)",
+      "url": "https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/",
+      "source": "Help Net Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
