@@ -1,0 +1,622 @@
+[
+  {
+    "cve": "CVE-2026-9082",
+    "aura_score": 78.9,
+    "cvss": 9.8,
+    "epss": 0.347,
+    "kev": true,
+    "trend_score": 0.55,
+    "trend_mentions": 21,
+    "trend_breakdown": {
+      "news_hits": 21,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.55
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-9082"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Drupal",
+    "product": "Drupal",
+    "summary_analyst": "CVE-2026-9082 is a vulnerability in Drupal that allows an authenticated attacker to exploit improper access control mechanisms to escalate privileges on affected installations.",
+    "summary_ciso": "CVE-2026-9082 exposes Drupal to critical security vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate action to protect sensitive information and maintain customer trust.",
+    "description": "CVE-2026-9082 is a vulnerability in Drupal that allows an authenticated attacker to exploit improper access control mechanisms to escalate privileges on affected installations.",
+    "news_article": {
+      "title": "Drupal Core SQL Injection Bug Actively Exploited, Added to CISA KEV",
+      "url": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2024-21182",
+    "aura_score": 77.5,
+    "cvss": 7.5,
+    "epss": 0.877,
+    "kev": true,
+    "trend_score": 0.0,
+    "trend_mentions": 0,
+    "trend_breakdown": {
+      "news_hits": 0,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.0
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2024-21182"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Oracle",
+    "product": "Weblogic Server",
+    "summary_analyst": "CVE-2024-21182 is a vulnerability in Oracle Weblogic Server that allows remote attackers to execute arbitrary code via crafted requests due to improper input validation in the Web Services component.",
+    "summary_ciso": "CVE-2024-21182 presents a critical vulnerability in Oracle WebLogic Server that could expose sensitive business data and operations to imminent cyber threats, necessitating immediate remediation to protect organizational assets and maintain compliance.",
+    "description": "CVE-2024-21182 is a vulnerability in Oracle Weblogic Server that allows remote attackers to execute arbitrary code via crafted requests due to improper input validation in the Web Services component.",
+    "news_article": null,
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-0257",
+    "aura_score": 76.6,
+    "cvss": 9.1,
+    "epss": 0.415,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-0257"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Paloaltonetworks",
+    "product": "Pan-os",
+    "summary_analyst": "CVE-2026-0257 affects Palo Alto Networks PAN-OS, where an attacker can exploit a command injection vulnerability in the web interface to execute arbitrary commands on the affected system.",
+    "summary_ciso": "CVE-2026-0257 poses an urgent risk to Palo Alto Networks PAN-OS users by potentially exposing critical network infrastructure to exploitation, which could result in significant operational disruptions and financial losses if not promptly addressed.",
+    "description": "CVE-2026-0257 affects Palo Alto Networks PAN-OS, where an attacker can exploit a command injection vulnerability in the web interface to execute arbitrary commands on the affected system.",
+    "news_article": {
+      "title": "PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation",
+      "url": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-48027",
+    "aura_score": 76.5,
+    "cvss": 9.8,
+    "epss": 0.268,
+    "kev": true,
+    "trend_score": 0.391,
+    "trend_mentions": 8,
+    "trend_breakdown": {
+      "news_hits": 8,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.391
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-48027"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Nx",
+    "product": "Nx Console",
+    "summary_analyst": "CVE-2026-48027 affects the Nx Nx Console by exploiting a vulnerability in its command execution mechanism, allowing an authenticated user to execute arbitrary commands on the server.",
+    "summary_ciso": "CVE-2026-48027 poses a critical risk to Nx Nx Console, potentially exposing our systems to significant operational disruptions and vulnerabilities that require immediate mitigation to safeguard our business.",
+    "description": "CVE-2026-48027 affects the Nx Nx Console by exploiting a vulnerability in its command execution mechanism, allowing an authenticated user to execute arbitrary commands on the server.",
+    "news_article": {
+      "title": "U.S. CISA adds Daemon Tools, TanStack,\u00a0and Nx Console flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/192776/security/u-s-cisa-adds-daemon-tools-tanstack-and-nx-console-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-45321",
+    "aura_score": 74.1,
+    "cvss": 9.6,
+    "epss": 0.171,
+    "kev": true,
+    "trend_score": 0.457,
+    "trend_mentions": 12,
+    "trend_breakdown": {
+      "news_hits": 12,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.457
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-45321"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Tanstack",
+    "product": "Tanstack\\/arktype-adapter",
+    "summary_analyst": "CVE-2026-45321 is a vulnerability in the Tanstack Tanstack/arktype-adapter that allows an attacker to execute arbitrary code via a crafted input due to improper input validation in the component's parsing mechanism.",
+    "summary_ciso": "CVE-2026-45321 exposes Tanstack Tanstack/arktype-adapter to potential data breaches and operational disruptions, necessitating immediate action to mitigate risks associated with sensitive information compromise and ensure business continuity.",
+    "description": "CVE-2026-45321 is a vulnerability in the Tanstack Tanstack/arktype-adapter that allows an attacker to execute arbitrary code via a crafted input due to improper input validation in the component's parsing mechanism.",
+    "news_article": {
+      "title": "TeamPCP Supply Chain Campaign: Activity Through 2026-05-24, (Mon, May 25th)",
+      "url": "https://isc.sans.edu/diary/33016",
+      "source": "Sans.edu"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-8398",
+    "aura_score": 73.9,
+    "cvss": 9.8,
+    "epss": 0.155,
+    "kev": true,
+    "trend_score": 0.319,
+    "trend_mentions": 5,
+    "trend_breakdown": {
+      "news_hits": 5,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.319
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-8398"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Disc-soft",
+    "product": "Daemon Tools",
+    "summary_analyst": "CVE-2026-8398 affects Disc-soft Daemon Tools by allowing an attacker to exploit a buffer overflow vulnerability in the application's file handler, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-8398 poses a significant risk to Disc-soft Daemon Tools users, exposing sensitive data to potential exploitation, which necessitates immediate remediation to protect our organization from data breaches and financial repercussions.",
+    "description": "CVE-2026-8398 affects Disc-soft Daemon Tools by allowing an attacker to exploit a buffer overflow vulnerability in the application's file handler, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "U.S. CISA adds Daemon Tools, TanStack,\u00a0and Nx Console flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/192776/security/u-s-cisa-adds-daemon-tools-tanstack-and-nx-console-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-34291",
+    "aura_score": 73.5,
+    "cvss": 8.8,
+    "epss": 0.327,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2025-34291"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Langflow",
+    "product": "Langflow",
+    "summary_analyst": "CVE-2025-34291 affects Langflow by allowing an authenticated attacker to execute arbitrary code through improper input validation in the application's handling of user-generated content.",
+    "summary_ciso": "CVE-2025-34291 poses a significant risk to Langflow users by potentially allowing unauthorized access to sensitive data, necessitating immediate mitigation to safeguard business operations and maintain reputation.",
+    "description": "CVE-2025-34291 affects Langflow by allowing an authenticated attacker to execute arbitrary code through improper input validation in the application's handling of user-generated content.",
+    "news_article": {
+      "title": "U.S. CISA adds Trend Micro Apex One and Langflow to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/192529/hacking/u-s-cisa-adds-trend-micro-apex-one-and-langflow-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-48172",
+    "aura_score": 73.0,
+    "cvss": 9.8,
+    "epss": 0.08,
+    "kev": true,
+    "trend_score": 0.442,
+    "trend_mentions": 11,
+    "trend_breakdown": {
+      "news_hits": 11,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.442
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-48172"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Litespeedtech",
+    "product": "Litespeed Cpanel Plugin",
+    "summary_analyst": "CVE-2026-48172 is a vulnerability in the Litespeedtech Litespeed Cpanel Plugin that allows an attacker to execute arbitrary code due to improper input validation, potentially leading to unauthorized access and system compromise.",
+    "summary_ciso": "CVE-2026-48172 exposes our web infrastructure to potential exploitation through the Litespeed Cpanel Plugin, necessitating immediate remediation to mitigate risks of data breaches and operational disruptions.",
+    "description": "CVE-2026-48172 is a vulnerability in the Litespeedtech Litespeed Cpanel Plugin that allows an attacker to execute arbitrary code due to improper input validation, potentially leading to unauthorized access and system compromise.",
+    "news_article": {
+      "title": "LiteSpeed cPanel Plugin CVE-2026-48172 Exploited to Run Scripts as Root",
+      "url": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-42897",
+    "aura_score": 68.0,
+    "cvss": 8.1,
+    "epss": 0.107,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 91,
+    "trend_breakdown": {
+      "news_hits": 91,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-42897"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Exchange Server",
+    "summary_analyst": "CVE-2026-42897 is a vulnerability in Microsoft Exchange Server that enables an authenticated attacker to execute arbitrary code on the server through crafted RPC requests.",
+    "summary_ciso": "CVE-2026-42897 poses a significant risk to Microsoft Exchange Server, potentially exposing critical organizational data to unauthorized access, and necessitates immediate mitigation to prevent severe business disruption and data breaches.",
+    "description": "CVE-2026-42897 is a vulnerability in Microsoft Exchange Server that enables an authenticated attacker to execute arbitrary code on the server through crafted RPC requests.",
+    "news_article": {
+      "title": "Microsoft Exchange Server Vulnerability Actively Exploited, in a Bad Week for Microsoft",
+      "url": "https://it.slashdot.org/story/26/05/17/2053257/microsoft-exchange-server-vulnerability-actively-exploited-in-a-bad-week-for-microsoft",
+      "source": "Slashdot.org"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-41091",
+    "aura_score": 66.1,
+    "cvss": 7.8,
+    "epss": 0.08,
+    "kev": true,
+    "trend_score": 0.661,
+    "trend_mentions": 40,
+    "trend_breakdown": {
+      "news_hits": 40,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.661
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-41091"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Malware Protection Engine",
+    "summary_analyst": "CVE-2026-41091 is a vulnerability in the Microsoft Malware Protection Engine that allows an attacker to execute arbitrary code by crafting a specially formatted file, due to improper handling of input data during file scanning operations.",
+    "summary_ciso": "CVE-2026-41091 presents an urgent risk to our organization's security posture as it may allow attackers to bypass our antivirus defenses in the Microsoft Malware Protection Engine, potentially leading to significant data breaches and operational disruptions if not promptly mitigated.",
+    "description": "CVE-2026-41091 is a vulnerability in the Microsoft Malware Protection Engine that allows an attacker to execute arbitrary code by crafting a specially formatted file, due to improper handling of input data during file scanning operations.",
+    "news_article": {
+      "title": "Microsoft Warns of Two Actively Exploited Defender Vulnerabilities",
+      "url": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-34926",
+    "aura_score": 59.7,
+    "cvss": 6.7,
+    "epss": 0.01,
+    "kev": true,
+    "trend_score": 0.542,
+    "trend_mentions": 20,
+    "trend_breakdown": {
+      "news_hits": 20,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.542
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-34926"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Trendmicro",
+    "product": "Apex One",
+    "summary_analyst": "CVE-2026-34926 is a vulnerability in Trendmicro Apex One that allows an attacker to exploit improper input validation in the software\u2019s web console, leading to potential unauthorized access to sensitive information.",
+    "summary_ciso": "CVE-2026-34926 presents a critical vulnerability in Trendmicro Apex One that could expose sensitive organizational data to unauthorized access, necessitating immediate action to mitigate the risk of a potential security breach.",
+    "description": "CVE-2026-34926 is a vulnerability in Trendmicro Apex One that allows an attacker to exploit improper input validation in the software\u2019s web console, leading to potential unauthorized access to sensitive information.",
+    "news_article": {
+      "title": "Actively exploited Trend Micro Apex One flaw gets CISA warning (CVE-2026-34926)",
+      "url": "https://www.helpnetsecurity.com/2026/05/26/actively-exploited-trend-micro-apex-one-flaw-cve-2026-34926/",
+      "source": "Help Net Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-45498",
+    "aura_score": 50.1,
+    "cvss": 4.0,
+    "epss": 0.041,
+    "kev": true,
+    "trend_score": 0.648,
+    "trend_mentions": 37,
+    "trend_breakdown": {
+      "news_hits": 37,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.648
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-45498"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Defender Antimalware Platform",
+    "summary_analyst": "CVE-2026-45498 is a vulnerability in the Microsoft Defender Antimalware Platform that could allow an attacker to execute arbitrary code by crafting malicious files that exploit improper input validation during file scanning operations.",
+    "summary_ciso": "CVE-2026-45498 poses a critical risk to business operations by potentially allowing attackers to exploit vulnerabilities in the Microsoft Defender Antimalware Platform, emphasizing the urgent need for immediate mitigation to protect sensitive data and ensure continuity of security processes.",
+    "description": "CVE-2026-45498 is a vulnerability in the Microsoft Defender Antimalware Platform that could allow an attacker to execute arbitrary code by crafting malicious files that exploit improper input validation during file scanning operations.",
+    "news_article": {
+      "title": "Microsoft Defender vulnerabilities exploited in the wild (CVE-2026-41091, CVE-2026-45498)",
+      "url": "https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/",
+      "source": "Help Net Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
