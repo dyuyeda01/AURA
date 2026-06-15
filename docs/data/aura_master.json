@@ -1,25 +1,23 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-15",
   "records": [
     {
-      "cve": "CVE-2024-21182",
-      "aura_score": 79.9,
-      "cvss": 7.5,
-      "epss": 0.896,
+      "cve": "CVE-2026-10520",
+      "aura_score": 74.6,
+      "cvss": 10.0,
+      "epss": 0.595,
       "kev": true,
-      "trend_score": 0.391,
-      "trend_mentions": 8,
+      "trend_score": 0.533,
+      "trend_mentions": 19,
       "trend_breakdown": {
-        "news_hits": 8,
+        "news_hits": 19,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.391
+        "trend_raw": 0.533
       },
-      "exploit_poc": true,
+      "exploit_poc": false,
       "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2024-21182"
-      ],
+      "exploit_urls": [],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -34,483 +32,15 @@
           "low": 0
         }
       },
-      "vendor": "Oracle",
-      "product": "Weblogic Server",
-      "summary_analyst": "CVE-2024-21182 is a vulnerability in Oracle Weblogic Server that allows an unauthenticated attacker to execute arbitrary code via a crafted HTTP request due to improper input validation in the affected component.",
-      "summary_ciso": "CVE-2024-21182 poses an urgent risk to Oracle WebLogic Server, potentially allowing attackers to execute arbitrary code, which could severely impact business operations and expose critical data if not promptly mitigated.",
-      "description": "CVE-2024-21182 is a vulnerability in Oracle Weblogic Server that allows an unauthenticated attacker to execute arbitrary code via a crafted HTTP request due to improper input validation in the affected component.",
+      "vendor": "Ivanti",
+      "product": "Standalone Sentry",
+      "summary_analyst": "CVE-2026-10520 is a vulnerability in Ivanti Standalone Sentry that can be exploited through improper input validation, allowing an attacker to execute arbitrary commands on the affected component.",
+      "summary_ciso": "CVE-2026-10520 exposes Ivanti Standalone Sentry to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect sensitive information and maintain business continuity.",
+      "description": "CVE-2026-10520 is a vulnerability in Ivanti Standalone Sentry that can be exploited through improper input validation, allowing an attacker to execute arbitrary commands on the affected component.",
       "news_article": {
-        "title": "Oracle WebLogic CVE-2024-21182 Added to KEV Catalog After Active Exploitation",
-        "url": "https://thehackernews.com/2026/06/oracle-weblogic-cve-2024-21182-added-to.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-0257",
-      "aura_score": 79.8,
-      "cvss": 9.1,
-      "epss": 0.528,
-      "kev": true,
-      "trend_score": 0.558,
-      "trend_mentions": 22,
-      "trend_breakdown": {
-        "news_hits": 22,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.558
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-0257"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Paloaltonetworks",
-      "product": "Pan-os",
-      "summary_analyst": "CVE-2026-0257 is a vulnerability in Palo Alto Networks PAN-OS that allows an unauthenticated attacker to execute arbitrary code on the system by exploiting improper validation of user input in the web interface.",
-      "summary_ciso": "CVE-2026-0257 poses a critical security risk for Palo Alto Networks PAN-OS, potentially exposing sensitive data and system integrity, necessitating immediate remediation to prevent severe business disruption and reputational damage.",
-      "description": "CVE-2026-0257 is a vulnerability in Palo Alto Networks PAN-OS that allows an unauthenticated attacker to execute arbitrary code on the system by exploiting improper validation of user input in the web interface.",
-      "news_article": {
-        "title": "PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation",
-        "url": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-48027",
-      "aura_score": 77.7,
-      "cvss": 9.8,
-      "epss": 0.321,
-      "kev": true,
-      "trend_score": 0.41,
-      "trend_mentions": 9,
-      "trend_breakdown": {
-        "news_hits": 9,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.41
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-48027"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Nx",
-      "product": "Nx Console",
-      "summary_analyst": "CVE-2026-48027 is a vulnerability in Nx Nx Console that allows attackers to execute arbitrary code via a crafted input to the affected component's command parser.",
-      "summary_ciso": "CVE-2026-48027 exposes the Nx Nx Console to critical vulnerabilities that could lead to unauthorized access and significant data breaches, necessitating immediate mitigation to protect business assets and customer trust.",
-      "description": "CVE-2026-48027 is a vulnerability in Nx Nx Console that allows attackers to execute arbitrary code via a crafted input to the affected component's command parser.",
-      "news_article": {
-        "title": "U.S. CISA adds Daemon Tools, TanStack,\u00a0and Nx Console flaws to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/192776/security/u-s-cisa-adds-daemon-tools-tanstack-and-nx-console-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-        "source": "Securityaffairs.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-45321",
-      "aura_score": 74.1,
-      "cvss": 9.6,
-      "epss": 0.171,
-      "kev": true,
-      "trend_score": 0.457,
-      "trend_mentions": 12,
-      "trend_breakdown": {
-        "news_hits": 12,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.457
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-45321"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Tanstack",
-      "product": "Tanstack\\/arktype-adapter",
-      "summary_analyst": "CVE-2026-45321 involves a vulnerability in Tanstack Tanstack/arktype-adapter that allows an attacker to exploit improperly validated input in order to execute arbitrary code.",
-      "summary_ciso": "The CVE-2026-45321 vulnerability in the Tanstack arktype-adapter poses an urgent risk of data exposure that could lead to significant business disruption if not mitigated promptly.",
-      "description": "CVE-2026-45321 involves a vulnerability in Tanstack Tanstack/arktype-adapter that allows an attacker to exploit improperly validated input in order to execute arbitrary code.",
-      "news_article": {
-        "title": "TeamPCP Supply Chain Campaign: Activity Through 2026-05-24, (Mon, May 25th)",
-        "url": "https://isc.sans.edu/diary/33016",
-        "source": "Sans.edu"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-9082",
-      "aura_score": 74.1,
-      "cvss": 9.8,
-      "epss": 0.104,
-      "kev": true,
-      "trend_score": 0.558,
-      "trend_mentions": 22,
-      "trend_breakdown": {
-        "news_hits": 22,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.558
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-9082"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Drupal",
-      "product": "Drupal",
-      "summary_analyst": "CVE-2026-9082 affects Drupal by allowing an authenticated user to exploit a flaw in the access control mechanisms, potentially leading to unauthorized data exposure.",
-      "summary_ciso": "CVE-2026-9082 poses an immediate threat to our Drupal installations, potentially exposing sensitive customer data and disrupting business operations, necessitating urgent remediation to mitigate significant reputational and financial risks.",
-      "description": "CVE-2026-9082 affects Drupal by allowing an authenticated user to exploit a flaw in the access control mechanisms, potentially leading to unauthorized data exposure.",
-      "news_article": {
-        "title": "Drupal Core SQL Injection Bug Actively Exploited, Added to CISA KEV",
-        "url": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-8398",
-      "aura_score": 73.7,
-      "cvss": 9.8,
-      "epss": 0.144,
-      "kev": true,
-      "trend_score": 0.319,
-      "trend_mentions": 5,
-      "trend_breakdown": {
-        "news_hits": 5,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.319
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-8398"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Disc-soft",
-      "product": "Daemon Tools",
-      "summary_analyst": "CVE-2026-8398 affects Disc-soft Daemon Tools by allowing an attacker to exploit a buffer overflow vulnerability in the application's handling of image files, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2026-8398 poses a significant risk to Disc-soft Daemon Tools, potentially exposing sensitive data and system integrity, necessitating immediate action to mitigate vulnerabilities and protect against exploitation.",
-      "description": "CVE-2026-8398 affects Disc-soft Daemon Tools by allowing an attacker to exploit a buffer overflow vulnerability in the application's handling of image files, potentially leading to arbitrary code execution.",
-      "news_article": {
-        "title": "U.S. CISA adds Daemon Tools, TanStack,\u00a0and Nx Console flaws to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/192776/security/u-s-cisa-adds-daemon-tools-tanstack-and-nx-console-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-        "source": "Securityaffairs.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-34291",
-      "aura_score": 73.5,
-      "cvss": 8.8,
-      "epss": 0.327,
-      "kev": true,
-      "trend_score": 0.346,
-      "trend_mentions": 6,
-      "trend_breakdown": {
-        "news_hits": 6,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.346
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-34291"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Langflow",
-      "product": "Langflow",
-      "summary_analyst": "CVE-2025-34291 affects Langflow by allowing an attacker to exploit improper input validation in the component's parsing functionality, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2025-34291 exposes Langflow to significant security vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect our sensitive information and maintain operational integrity.",
-      "description": "CVE-2025-34291 affects Langflow by allowing an attacker to exploit improper input validation in the component's parsing functionality, potentially leading to arbitrary code execution.",
-      "news_article": {
-        "title": "U.S. CISA adds Trend Micro Apex One and Langflow to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/192529/hacking/u-s-cisa-adds-trend-micro-apex-one-and-langflow-to-its-known-exploited-vulnerabilities-catalog.html",
-        "source": "Securityaffairs.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-48172",
-      "aura_score": 73.1,
-      "cvss": 9.8,
-      "epss": 0.08,
-      "kev": true,
-      "trend_score": 0.47,
-      "trend_mentions": 13,
-      "trend_breakdown": {
-        "news_hits": 13,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.47
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-48172"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Litespeedtech",
-      "product": "Litespeed Cpanel Plugin",
-      "summary_analyst": "CVE-2026-48172 is a vulnerability in the Litespeedtech Litespeed Cpanel Plugin that allows unauthenticated attackers to execute arbitrary commands on the server by exploiting improper input validation mechanisms in the plugin's configuration handling.",
-      "summary_ciso": "The vulnerability CVE-2026-48172 in the Litespeedtech Litespeed Cpanel Plugin poses a significant risk of data breaches and operational disruption, necessitating immediate attention to mitigate potential adverse business impacts.",
-      "description": "CVE-2026-48172 is a vulnerability in the Litespeedtech Litespeed Cpanel Plugin that allows unauthenticated attackers to execute arbitrary commands on the server by exploiting improper input validation mechanisms in the plugin's configuration handling.",
-      "news_article": {
-        "title": "LiteSpeed cPanel Plugin CVE-2026-48172 Exploited to Run Scripts as Root",
-        "url": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-45247",
-      "aura_score": 72.4,
-      "cvss": 9.8,
-      "epss": 0.061,
-      "kev": true,
-      "trend_score": 0.391,
-      "trend_mentions": 8,
-      "trend_breakdown": {
-        "news_hits": 8,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.391
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-45247"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Mirasvit",
-      "product": "Full Page Cache Warmer",
-      "summary_analyst": "CVE-2026-45247 affects Mirasvit Full Page Cache Warmer by allowing an authenticated attacker to exploit improper input validation in the request processing mechanism, potentially leading to unauthorized access to sensitive data.",
-      "summary_ciso": "CVE-2026-45247 poses an immediate risk to business operations and data integrity by potentially allowing unauthorized access and exploitation of the Mirasvit Full Page Cache Warmer, necessitating urgent mitigation to safeguard our systems and maintain customer trust.",
-      "description": "CVE-2026-45247 affects Mirasvit Full Page Cache Warmer by allowing an authenticated attacker to exploit improper input validation in the request processing mechanism, potentially leading to unauthorized access to sensitive data.",
-      "news_article": {
-        "title": "U.S. CISA adds Mirasvit Full Page Cache Warmer flaw to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/193156/security/u-s-cisa-adds-mirasvit-full-page-cache-warmer-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
-        "source": "Securityaffairs.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-48595",
-      "aura_score": 66.4,
-      "cvss": 8.4,
-      "epss": 0.005,
-      "kev": true,
-      "trend_score": 0.542,
-      "trend_mentions": 20,
-      "trend_breakdown": {
-        "news_hits": 20,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.542
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-48595"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Google",
-      "product": "Android",
-      "summary_analyst": "CVE-2025-48595 in Google Android involves a vulnerability in the system's media framework that could allow attackers to execute arbitrary code through specially crafted media files.",
-      "summary_ciso": "CVE-2025-48595 presents a critical vulnerability in Google Android that could allow malicious actors to exploit user data and elevate privileges, necessitating immediate remediation to protect sensitive information and maintain customer trust.",
-      "description": "CVE-2025-48595 in Google Android involves a vulnerability in the system's media framework that could allow attackers to execute arbitrary code through specially crafted media files.",
-      "news_article": {
-        "title": "Google June 2026 Android Update Patches 124 Flaws, One Actively Exploited",
-        "url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
-        "source": "Internet"
+        "title": "Ivanti Sentry pre-auth RCE (CVE-2026-10520) \u2013 CVSS 10.0, public PoC, CISA KEV",
+        "url": "https://hellorecon.com/blog/cve-2026-10520",
+        "source": "Hellorecon.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -523,23 +53,21 @@
     },
     {
       "cve": "CVE-2026-42271",
-      "aura_score": 66.0,
+      "aura_score": 67.8,
       "cvss": 8.8,
-      "epss": 0.041,
+      "epss": 0.537,
       "kev": true,
-      "trend_score": 0.0,
-      "trend_mentions": 0,
+      "trend_score": 0.37,
+      "trend_mentions": 7,
       "trend_breakdown": {
-        "news_hits": 0,
+        "news_hits": 7,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.0
+        "trend_raw": 0.37
       },
-      "exploit_poc": true,
+      "exploit_poc": false,
       "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-42271"
-      ],
+      "exploit_urls": [],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -556,9 +84,309 @@
       },
       "vendor": "Litellm",
       "product": "Litellm",
-      "summary_analyst": "CVE-2026-42271 affects Litellm Litellm by allowing an attacker to execute arbitrary code through improper validation of user input in the input processing component.",
-      "summary_ciso": "CVE-2026-42271 poses an immediate risk to Litellm due to its potential for exploitation that could lead to significant data breaches and operational disruption, necessitating urgent mitigation to protect our business assets and reputation.",
-      "description": "CVE-2026-42271 affects Litellm Litellm by allowing an attacker to execute arbitrary code through improper validation of user input in the input processing component.",
+      "summary_analyst": "CVE-2026-42271 affects the Litellm component by allowing remote attackers to exploit a buffer overflow vulnerability through crafted input, potentially leading to arbitrary code execution.",
+      "summary_ciso": "CVE-2026-42271 poses a critical risk to Litellm's operations due to potential unauthorized access and data breaches, necessitating immediate remediation to protect sensitive information and maintain business continuity.",
+      "description": "CVE-2026-42271 affects the Litellm component by allowing remote attackers to exploit a buffer overflow vulnerability through crafted input, potentially leading to arbitrary code execution.",
+      "news_article": {
+        "title": "LiteLLM vulnerability under active attack, CISA warns (CVE-2026-42271)",
+        "url": "https://www.helpnetsecurity.com/2026/06/09/litellm-vulnerability-under-active-attack-cisa-warns-cve-2026-42271/",
+        "source": "Help Net Security"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-35273",
+      "aura_score": 62.2,
+      "cvss": 9.8,
+      "epss": 0.007,
+      "kev": true,
+      "trend_score": 0.58,
+      "trend_mentions": 25,
+      "trend_breakdown": {
+        "news_hits": 25,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.58
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Oracle",
+      "product": "Peoplesoft Enterprise Peopletools",
+      "summary_analyst": "CVE-2026-35273 is a vulnerability in Oracle Peoplesoft Enterprise Peopletools that allows remote attackers to exploit improper input validation, potentially leading to unauthorized access to sensitive data within the affected application.",
+      "summary_ciso": "CVE-2026-35273 poses a significant business risk to Oracle Peoplesoft Enterprise Peopletools by potentially exposing sensitive data and operational continuity to threat actors, necessitating immediate mitigation efforts to protect organizational integrity and maintain customer trust.",
+      "description": "CVE-2026-35273 is a vulnerability in Oracle Peoplesoft Enterprise Peopletools that allows remote attackers to exploit improper input validation, potentially leading to unauthorized access to sensitive data within the affected application.",
+      "news_article": {
+        "title": "Oracle warns customers of critical PeopleSoft attack after hundreds of servers hacked by apparent ShinyHunters data theft attacks",
+        "url": "https://www.techradar.com/pro/security/oracle-warns-customers-of-critical-peoplesoft-attack-after-hundreds-of-servers-hacked-by-apparent-shinyhunters-data-theft-attacks",
+        "source": "TechRadar"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-45247",
+      "aura_score": 61.5,
+      "cvss": 9.8,
+      "epss": 0.015,
+      "kev": true,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
+      "trend_breakdown": {
+        "news_hits": 8,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.391
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Mirasvit",
+      "product": "Full Page Cache Warmer",
+      "summary_analyst": "CVE-2026-45247 affects Mirasvit Full Page Cache Warmer by allowing remote attackers to execute arbitrary PHP code via specially crafted requests due to improper input validation in the cache warming process.",
+      "summary_ciso": "CVE-2026-45247 poses a significant risk to Mirasvit Full Page Cache Warmer, potentially compromising sensitive data and application integrity, necessitating immediate remediation to protect our business from data breaches and operational disruptions.",
+      "description": "CVE-2026-45247 affects Mirasvit Full Page Cache Warmer by allowing remote attackers to execute arbitrary PHP code via specially crafted requests due to improper input validation in the cache warming process.",
+      "news_article": {
+        "title": "U.S. CISA adds Mirasvit Full Page Cache Warmer flaw to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/193156/security/u-s-cisa-adds-mirasvit-full-page-cache-warmer-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-50751",
+      "aura_score": 61.3,
+      "cvss": 9.3,
+      "epss": 0.062,
+      "kev": true,
+      "trend_score": 0.58,
+      "trend_mentions": 25,
+      "trend_breakdown": {
+        "news_hits": 25,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.58
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Checkpoint",
+      "product": "Gaia Os",
+      "summary_analyst": "CVE-2026-50751 is a vulnerability in Checkpoint Gaia OS that allows an attacker to exploit a flaw in the authentication process, which can lead to unauthorized access to the system.",
+      "summary_ciso": "CVE-2026-50751 exposes Checkpoint Gaia OS to critical vulnerabilities that could lead to unauthorized access and potential data breaches, necessitating immediate mitigation to protect organizational assets and ensure compliance.",
+      "description": "CVE-2026-50751 is a vulnerability in Checkpoint Gaia OS that allows an attacker to exploit a flaw in the authentication process, which can lead to unauthorized access to the system.",
+      "news_article": {
+        "title": "Check Point says VPN attacks caused by Qilin ransomware group \u2014 who had a month's head start on them",
+        "url": "https://www.techradar.com/pro/security/check-point-says-vpn-attacks-caused-by-qilin-ransomware-group-who-had-a-months-head-start-on-them",
+        "source": "TechRadar"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-11645",
+      "aura_score": 58.7,
+      "cvss": 8.8,
+      "epss": 0.007,
+      "kev": true,
+      "trend_score": 0.674,
+      "trend_mentions": 43,
+      "trend_breakdown": {
+        "news_hits": 43,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.674
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Google",
+      "product": "Chrome",
+      "summary_analyst": "CVE-2026-11645 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free error in the browser's handling of web content, potentially leading to arbitrary code execution.",
+      "summary_ciso": "CVE-2026-11645 exposes Google Chrome to critical security vulnerabilities that could lead to data breaches and compromised user privacy, necessitating immediate patch implementation to mitigate potential business disruptions and reputational damage.",
+      "description": "CVE-2026-11645 is a vulnerability in Google Chrome that allows attackers to exploit a use-after-free error in the browser's handling of web content, potentially leading to arbitrary code execution.",
+      "news_article": {
+        "title": "Chrome V8 Zero-Day CVE-2026-11645 Exploited in the Wild - Patch Now",
+        "url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-48595",
+      "aura_score": 56.5,
+      "cvss": 8.4,
+      "epss": 0.002,
+      "kev": true,
+      "trend_score": 0.573,
+      "trend_mentions": 24,
+      "trend_breakdown": {
+        "news_hits": 24,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.573
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Google",
+      "product": "Android",
+      "summary_analyst": "CVE-2025-48595 affects the Google Android operating system, where a vulnerability in the media framework allows an attacker to execute arbitrary code via a crafted media file, leading to potential exploitation of the device.",
+      "summary_ciso": "CVE-2025-48595 presents a significant risk to Google Android devices, potentially compromising sensitive user data and system integrity, necessitating immediate mitigation to protect against exploitation in the rapidly evolving threat landscape.",
+      "description": "CVE-2025-48595 affects the Google Android operating system, where a vulnerability in the media framework allows an attacker to execute arbitrary code via a crafted media file, leading to potential exploitation of the device.",
+      "news_article": {
+        "title": "Google June 2026 Android Update Patches 124 Flaws, One Actively Exploited",
+        "url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-54420",
+      "aura_score": 54.1,
+      "cvss": 8.5,
+      "epss": 0.003,
+      "kev": true,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
+      "trend_breakdown": {
+        "news_hits": 0,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.0
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Unknown",
+      "product": "Unknown",
+      "summary_analyst": "CVE-2026-54420 exploits a buffer overflow vulnerability in the memory allocation component of Unknown Unknown, allowing an attacker to execute arbitrary code.",
+      "summary_ciso": "CVE-2026-54420 presents a critical exposure risk that could lead to significant operational disruptions and data breaches, necessitating immediate mitigation efforts to protect our organization's assets and reputation.",
+      "description": "CVE-2026-54420 exploits a buffer overflow vulnerability in the memory allocation component of Unknown Unknown, allowing an attacker to execute arbitrary code.",
       "news_article": null,
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -570,24 +398,72 @@
       }
     },
     {
-      "cve": "CVE-2026-28318",
-      "aura_score": 62.8,
-      "cvss": 7.5,
-      "epss": 0.067,
+      "cve": "CVE-2026-20245",
+      "aura_score": 54.1,
+      "cvss": 7.8,
+      "epss": 0.01,
       "kev": true,
-      "trend_score": 0.287,
-      "trend_mentions": 4,
+      "trend_score": 0.55,
+      "trend_mentions": 21,
       "trend_breakdown": {
-        "news_hits": 4,
+        "news_hits": 21,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.287
+        "trend_raw": 0.55
       },
-      "exploit_poc": true,
+      "exploit_poc": false,
       "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-28318"
-      ],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Cisco",
+      "product": "Catalyst Sd-wan Manager",
+      "summary_analyst": "CVE-2026-20245 affects the Cisco Catalyst SD-WAN Manager due to a command injection vulnerability that could allow an authenticated, local attacker to execute arbitrary commands on the underlying operating system.",
+      "summary_ciso": "The CVE-2026-20245 vulnerability in Cisco Catalyst SD-WAN Manager presents a significant exposure risk that could allow unauthorized access to sensitive network configurations, necessitating immediate mitigation to safeguard our business operations and maintain regulatory compliance.",
+      "description": "CVE-2026-20245 affects the Cisco Catalyst SD-WAN Manager due to a command injection vulnerability that could allow an authenticated, local attacker to execute arbitrary commands on the underlying operating system.",
+      "news_article": {
+        "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
+        "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-28318",
+      "aura_score": 52.3,
+      "cvss": 7.5,
+      "epss": 0.011,
+      "kev": true,
+      "trend_score": 0.427,
+      "trend_mentions": 10,
+      "trend_breakdown": {
+        "news_hits": 10,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.427
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
       "ai_context": 0.0,
       "ai_breakdown": {
         "score": 0.0,
@@ -604,12 +480,108 @@
       },
       "vendor": "Solarwinds",
       "product": "Serv-u",
-      "summary_analyst": "CVE-2026-28318 is a vulnerability in SolarWinds Serv-U that allows an unauthenticated remote attacker to execute arbitrary commands on the server due to improper input validation in the file upload functionality.",
-      "summary_ciso": "CVE-2026-28318 presents a critical vulnerability in SolarWinds Serv-U that could allow unauthorized access to sensitive data, significantly increasing our exposure to data breaches and compliance violations, and requiring immediate action to mitigate potential business impact.",
-      "description": "CVE-2026-28318 is a vulnerability in SolarWinds Serv-U that allows an unauthenticated remote attacker to execute arbitrary commands on the server due to improper input validation in the file upload functionality.",
+      "summary_analyst": "CVE-2026-28318 is a vulnerability in Solarwinds Serv-U that allows remote attackers to exploit improper input validation, potentially leading to code execution on affected systems.",
+      "summary_ciso": "CVE-2026-28318 exposes SolarWinds Serv-U to potential remote code execution, posing a significant risk to sensitive data and operational integrity, necessitating immediate action to mitigate exploitation risks.",
+      "description": "CVE-2026-28318 is a vulnerability in Solarwinds Serv-U that allows remote attackers to exploit improper input validation, potentially leading to code execution on affected systems.",
       "news_article": {
         "title": "CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
         "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-20262",
+      "aura_score": 46.0,
+      "cvss": 6.5,
+      "epss": 0,
+      "kev": true,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
+      "trend_breakdown": {
+        "news_hits": 0,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.0
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Unknown",
+      "product": "Unknown",
+      "summary_analyst": "CVE-2026-20262 describes a vulnerability in the Unknown Unknown component that could allow an attacker to execute arbitrary code due to improper input validation.",
+      "summary_ciso": "CVE-2026-20262 presents a critical security vulnerability that could expose our systems to significant operational disruptions and data breaches, necessitating immediate remediation to safeguard our business continuity.",
+      "description": "CVE-2026-20262 describes a vulnerability in the Unknown Unknown component that could allow an attacker to execute arbitrary code due to improper input validation.",
+      "news_article": null,
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-7473",
+      "aura_score": 45.0,
+      "cvss": 5.8,
+      "epss": 0.004,
+      "kev": true,
+      "trend_score": 0.346,
+      "trend_mentions": 6,
+      "trend_breakdown": {
+        "news_hits": 6,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.346
+      },
+      "exploit_poc": false,
+      "exploit_edb_ids": [],
+      "exploit_urls": [],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Arista",
+      "product": "Eos",
+      "summary_analyst": "CVE-2026-7473 is a vulnerability in Arista EOS that allows an unauthenticated remote attacker to execute arbitrary commands on the affected component due to improper input validation in the command-line interface.",
+      "summary_ciso": "CVE-2026-7473 exposes Arista Eos to potential exploitation, posing an immediate threat to network integrity and operational continuity, necessitating urgent mitigation actions to safeguard business assets.",
+      "description": "CVE-2026-7473 is a vulnerability in Arista EOS that allows an unauthenticated remote attacker to execute arbitrary commands on the affected component due to improper input validation in the command-line interface.",
+      "news_article": {
+        "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
+        "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
         "source": "Internet"
       },
       "score_breakdown": {
