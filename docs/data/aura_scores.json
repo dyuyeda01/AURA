@@ -1,74 +1,22 @@
 {
-  "last_run": "2026-07-06T17:51:40.138720+00:00",
-  "generated": "2026-07-06T17:51:40.138835",
-  "daily_analyst_summary": "Today's intelligence highlights a prevalent exploitation trend targeting insufficient and improper input validation across multiple platforms, enabling remote or authenticated attackers to execute arbitrary code or commands. Noteworthy vulnerabilities include critical remote code execution flaws in Ui Unifi OS Server (CVE-2026-34908, CVE-2026-34909, CVE-2026-34910), Splunk (CVE-2026-20253), and Lantronix Eds5032 Firmware (CVE-2025-67038), alongside cross-site scripting risks in Cisco Unified Communications Manager (CVE-2026-20230). Organizations should prioritize patching these high-risk CVEs to mitigate potential unauthorized access and system compromise.",
-  "daily_ciso_summary": "Today's vulnerability landscape highlights critical risks primarily stemming from widespread improper input validation flaws across key enterprise platforms such as Splunk, Ui Unifi OS Server, Cisco Unified Communications Manager, and Microsoft SharePoint, exposing ACME Services to potential arbitrary code execution and unauthorized data access. These vulnerabilities significantly elevate financial risk by increasing the likelihood of operational disruption, data breaches, and regulatory penalties, particularly given the potential for attackers to execute commands remotely or escalate privileges within core business systems. To mitigate impact, our focus must prioritize rapid patch management, enhanced input validation controls, and continuous monitoring of high-value assets to reduce exposure and safeguard sensitive financial and operational data.",
+  "last_run": "2026-07-13T17:23:55.151233+00:00",
+  "generated": "2026-07-13T17:23:55.151283",
+  "daily_analyst_summary": "Today\u2019s intelligence highlights a surge in exploitation of improper input validation vulnerabilities across multiple platforms, notably Ui Unifi OS Server (CVE-2026-34910), Simple-help Simplehelp (CVE-2026-48558), and Ptc Flexplm (CVE-2026-12569), facilitating remote code execution. Additionally, deserialization flaws in Adobe ColdFusion (CVE-2026-48282) and command injection in Cisco Unified Communications Manager (CVE-2026-20230) remain critical targets, while cross-site scripting in Joomlack Page Builder Ck (CVE-2026-56290) underscores ongoing risks to user session integrity. Vigilance in patching and input validation hardening is essential to mitigate these widespread threats.",
+  "daily_ciso_summary": "Today\u2019s vulnerability landscape presents significant business risks due to multiple critical remote code execution and command injection flaws across widely used platforms such as Ui Unifi OS Server, Adobe ColdFusion, and Cisco Unified Communications Manager, which could lead to unauthorized access and disruption of core services. These vulnerabilities expose organizations to substantial financial risk through potential data breaches, operational downtime, and regulatory penalties, especially where sensitive customer and financial data are involved. Immediate focus should be on patch management, strengthening input validation controls, and enhanced monitoring of critical infrastructure to mitigate exploitation risks and protect business continuity.",
   "cves": [
     {
-      "cve": "CVE-2026-20253",
-      "aura_score": 89.5,
-      "cvss": 9.8,
-      "epss": 0.882,
-      "kev": true,
-      "trend_score": 0.542,
-      "trend_mentions": 20,
-      "trend_breakdown": {
-        "news_hits": 20,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.542
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-20253"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Splunk",
-      "product": "Splunk",
-      "summary_analyst": "CVE-2026-20253 affects Splunk due to a vulnerability in its logging mechanism that allows an attacker to exploit insufficient input validation to execute arbitrary code.",
-      "summary_ciso": "CVE-2026-20253 presents an urgent risk to Splunk environments, with potential business impact from data breaches and operational disruptions, necessitating immediate mitigation efforts to safeguard sensitive information and maintain compliance.",
-      "description": "CVE-2026-20253 affects Splunk due to a vulnerability in its logging mechanism that allows an attacker to exploit insufficient input validation to execute arbitrary code.",
-      "news_article": {
-        "title": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
-        "url": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2026-34910",
-      "aura_score": 88.1,
+      "aura_score": 87.9,
       "cvss": 10.0,
       "epss": 0.786,
       "kev": true,
-      "trend_score": 0.47,
-      "trend_mentions": 13,
+      "trend_score": 0.442,
+      "trend_mentions": 11,
       "trend_breakdown": {
-        "news_hits": 13,
+        "news_hits": 11,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.47
+        "trend_raw": 0.442
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -91,9 +39,9 @@
       },
       "vendor": "Ui",
       "product": "Unifi Os Server",
-      "summary_analyst": "CVE-2026-34910 is a vulnerability in Ui Unifi OS Server that allows remote attackers to execute arbitrary code via a crafted request due to improper input validation in the server's API endpoints.",
-      "summary_ciso": "CVE-2026-34910 poses a critical risk to Ui Unifi OS Server, exposing our network to potential unauthorized access and data breaches, necessitating immediate action to mitigate substantial business repercussions.",
-      "description": "CVE-2026-34910 is a vulnerability in Ui Unifi OS Server that allows remote attackers to execute arbitrary code via a crafted request due to improper input validation in the server's API endpoints.",
+      "summary_analyst": "CVE-2026-34910 affects the Ui Unifi OS Server, allowing attackers to exploit a vulnerability in the server's improper input validation, potentially leading to remote code execution.",
+      "summary_ciso": "CVE-2026-34910 poses a critical risk to Ui Unifi OS Server, potentially exposing sensitive data to unauthorized access, which necessitates immediate mitigation to protect our business from significant financial and reputational damage.",
+      "description": "CVE-2026-34910 affects the Ui Unifi OS Server, allowing attackers to exploit a vulnerability in the server's improper input validation, potentially leading to remote code execution.",
       "news_article": {
         "title": "CISA Warns Critical Lantronix EDS5000 Flaw Is Being Actively Exploited",
         "url": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
@@ -109,23 +57,23 @@
       }
     },
     {
-      "cve": "CVE-2026-48907",
-      "aura_score": 87.2,
-      "cvss": 9.8,
-      "epss": 0.804,
+      "cve": "CVE-2026-48282",
+      "aura_score": 79.1,
+      "cvss": 10.0,
+      "epss": 0.286,
       "kev": true,
-      "trend_score": 0.391,
-      "trend_mentions": 8,
+      "trend_score": 0.685,
+      "trend_mentions": 46,
       "trend_breakdown": {
-        "news_hits": 8,
+        "news_hits": 46,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.391
+        "trend_raw": 0.685
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-48907"
+        "https://www.exploit-db.com/search?q=CVE-2026-48282"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -141,14 +89,14 @@
           "low": 0
         }
       },
-      "vendor": "Widgetfactorylimited",
-      "product": "Jce",
-      "summary_analyst": "CVE-2026-48907 is a vulnerability in Widgetfactorylimited Jce that allows attackers to exploit improper input validation, potentially leading to arbitrary code execution within the affected component.",
-      "summary_ciso": "CVE-2026-48907 poses a critical security risk to Widgetfactorylimited Jce that could lead to significant data breaches and operational disruptions, necessitating immediate action to mitigate potential financial and reputational damage.",
-      "description": "CVE-2026-48907 is a vulnerability in Widgetfactorylimited Jce that allows attackers to exploit improper input validation, potentially leading to arbitrary code execution within the affected component.",
+      "vendor": "Adobe",
+      "product": "Coldfusion",
+      "summary_analyst": "CVE-2026-48282 is a vulnerability in Adobe ColdFusion that allows remote attackers to exploit a deserialization flaw, potentially leading to arbitrary code execution in the affected component.",
+      "summary_ciso": "CVE-2026-48282 exposes Adobe ColdFusion to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive business information and maintain compliance.",
+      "description": "CVE-2026-48282 is a vulnerability in Adobe ColdFusion that allows remote attackers to exploit a deserialization flaw, potentially leading to arbitrary code execution in the affected component.",
       "news_article": {
-        "title": "CISA Warns of Actively Exploited Joomla JCE Flaw Allowing PHP Code Execution",
-        "url": "https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html",
+        "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+        "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -162,17 +110,17 @@
     },
     {
       "cve": "CVE-2026-20230",
-      "aura_score": 75.7,
+      "aura_score": 75.6,
       "cvss": 8.6,
       "epss": 0.417,
       "kev": true,
-      "trend_score": 0.599,
-      "trend_mentions": 28,
+      "trend_score": 0.573,
+      "trend_mentions": 24,
       "trend_breakdown": {
-        "news_hits": 28,
+        "news_hits": 24,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.599
+        "trend_raw": 0.573
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -195,9 +143,9 @@
       },
       "vendor": "Cisco",
       "product": "Unified Communications Manager",
-      "summary_analyst": "CVE-2026-20230 is a vulnerability in Cisco Unified Communications Manager that allows an authenticated attacker to exploit a reflected cross-site scripting (XSS) attack via crafted web requests, potentially leading to unauthorized access or manipulation of the application.",
-      "summary_ciso": "CVE-2026-20230 poses a critical security risk to Cisco Unified Communications Manager, which, if exploited, could lead to significant disruptions in communication services and compromised sensitive data, necessitating immediate attention and mitigation to safeguard operational integrity and protect against potential financial and reputational losses.",
-      "description": "CVE-2026-20230 is a vulnerability in Cisco Unified Communications Manager that allows an authenticated attacker to exploit a reflected cross-site scripting (XSS) attack via crafted web requests, potentially leading to unauthorized access or manipulation of the application.",
+      "summary_analyst": "CVE-2026-20230 allows an authenticated attacker to exploit a command injection vulnerability in Cisco Unified Communications Manager, potentially leading to unauthorized access and control over affected systems.",
+      "summary_ciso": "CVE-2026-20230 poses an immediate risk to Cisco Unified Communications Manager, potentially exposing sensitive communications data and impacting operational continuity, necessitating rapid remediation to safeguard against exploitation.",
+      "description": "CVE-2026-20230 allows an authenticated attacker to exploit a command injection vulnerability in Cisco Unified Communications Manager, potentially leading to unauthorized access and control over affected systems.",
       "news_article": {
         "title": "The hits keep on coming for Cisco vulnerabilities",
         "url": "https://www.theregister.com/security/2026/06/24/the-hits-keep-on-coming-for-cisco-vulnerabilities/5261797",
@@ -214,17 +162,17 @@
     },
     {
       "cve": "CVE-2026-48558",
-      "aura_score": 72.9,
+      "aura_score": 73.0,
       "cvss": 10.0,
       "epss": 0.012,
       "kev": true,
-      "trend_score": 0.542,
-      "trend_mentions": 20,
+      "trend_score": 0.55,
+      "trend_mentions": 21,
       "trend_breakdown": {
-        "news_hits": 20,
+        "news_hits": 21,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.542
+        "trend_raw": 0.55
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -247,116 +195,12 @@
       },
       "vendor": "Simple-help",
       "product": "Simplehelp",
-      "summary_analyst": "CVE-2026-48558 affects Simple-help Simplehelp by allowing an authenticated attacker to exploit improper input validation in user control properties, enabling command execution on the server.",
-      "summary_ciso": "CVE-2026-48558 exposes Simple-help Simplehelp to critical security vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate mitigation efforts to protect sensitive customer information and maintain business integrity.",
-      "description": "CVE-2026-48558 affects Simple-help Simplehelp by allowing an authenticated attacker to exploit improper input validation in user control properties, enabling command execution on the server.",
+      "summary_analyst": "CVE-2026-48558 affects Simple-help Simplehelp by allowing remote attackers to exploit an improper input validation vulnerability, enabling the execution of arbitrary code on the affected component.",
+      "summary_ciso": "CVE-2026-48558 poses a critical security vulnerability in Simple-help that could lead to unauthorized access and data breaches, exposing the organization to significant financial and reputational risks, necessitating immediate mitigation efforts to safeguard sensitive information.",
+      "description": "CVE-2026-48558 affects Simple-help Simplehelp by allowing remote attackers to exploit an improper input validation vulnerability, enabling the execution of arbitrary code on the affected component.",
       "news_article": {
         "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
         "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-34909",
-      "aura_score": 72.9,
-      "cvss": 10.0,
-      "epss": 0.023,
-      "kev": true,
-      "trend_score": 0.482,
-      "trend_mentions": 14,
-      "trend_breakdown": {
-        "news_hits": 14,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.482
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-34909"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Ui",
-      "product": "Unifi Os Server",
-      "summary_analyst": "CVE-2026-34909 affects the Ui Unifi OS Server, where an attacker can exploit an insufficient input validation vulnerability to execute arbitrary commands on the affected system.",
-      "summary_ciso": "The recently identified CVE-2026-34909 vulnerability in Ui Unifi OS Server poses a critical risk to our network security, potentially allowing unauthorized access and data breaches, which necessitates immediate mitigation to protect sensitive business operations.",
-      "description": "CVE-2026-34909 affects the Ui Unifi OS Server, where an attacker can exploit an insufficient input validation vulnerability to execute arbitrary commands on the affected system.",
-      "news_article": {
-        "title": "CISA Warns Critical Lantronix EDS5000 Flaw Is Being Actively Exploited",
-        "url": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-34908",
-      "aura_score": 72.8,
-      "cvss": 10.0,
-      "epss": 0.025,
-      "kev": true,
-      "trend_score": 0.47,
-      "trend_mentions": 13,
-      "trend_breakdown": {
-        "news_hits": 13,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.47
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-34908"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Ui",
-      "product": "Unifi Os Server",
-      "summary_analyst": "CVE-2026-34908 affects the Ui Unifi OS Server due to an improper input validation vulnerability that could allow an attacker to execute arbitrary commands on the affected system.",
-      "summary_ciso": "CVE-2026-34908 poses a significant risk to the Ui Unifi OS Server by potentially exposing sensitive network management data, necessitating immediate action to mitigate the risk of disruption and reputational harm to our organization.",
-      "description": "CVE-2026-34908 affects the Ui Unifi OS Server due to an improper input validation vulnerability that could allow an attacker to execute arbitrary commands on the affected system.",
-      "news_article": {
-        "title": "CISA Warns Critical Lantronix EDS5000 Flaw Is Being Actively Exploited",
-        "url": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -403,12 +247,116 @@
       },
       "vendor": "Ptc",
       "product": "Flexplm",
-      "summary_analyst": "CVE-2026-12569 affects Ptc FlexPLM by allowing an unauthorized attacker to exploit improper input validation in the application, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2026-12569 presents an urgent risk to Ptc FlexPLM users, potentially exposing sensitive product data to unauthorized access, which could significantly disrupt operations and harm our brand reputation if not promptly mitigated.",
-      "description": "CVE-2026-12569 affects Ptc FlexPLM by allowing an unauthorized attacker to exploit improper input validation in the application, potentially leading to arbitrary code execution.",
+      "summary_analyst": "CVE-2026-12569 affects Ptc Flexplm due to an improper input validation vulnerability, which could allow an attacker to execute arbitrary code on the server through crafted requests.",
+      "summary_ciso": "CVE-2026-12569 poses a significant risk to Ptc Flexplm, potentially exposing sensitive product lifecycle data to unauthorized access, which urgently requires mitigation to protect our intellectual property and comply with regulatory standards.",
+      "description": "CVE-2026-12569 affects Ptc Flexplm due to an improper input validation vulnerability, which could allow an attacker to execute arbitrary code on the server through crafted requests.",
       "news_article": {
         "title": "CISA Adds Exploited PTC Windchill RCE Flaw to KEV as Web Shell Attacks Continue",
         "url": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-48908",
+      "aura_score": 71.6,
+      "cvss": 9.8,
+      "epss": 0.016,
+      "kev": true,
+      "trend_score": 0.41,
+      "trend_mentions": 9,
+      "trend_breakdown": {
+        "news_hits": 9,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.41
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-48908"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Ollyo",
+      "product": "Sp Page Builder",
+      "summary_analyst": "CVE-2026-48908 affects Ollyo SP Page Builder, allowing remote attackers to execute arbitrary code via crafted input due to improper input validation in the component's file handling process.",
+      "summary_ciso": "CVE-2026-48908 presents a critical vulnerability in Ollyo Sp Page Builder that could allow attackers to compromise website integrity and exploit sensitive data, highlighting an urgent need for immediate patching to mitigate substantial business and reputational risks.",
+      "description": "CVE-2026-48908 affects Ollyo SP Page Builder, allowing remote attackers to execute arbitrary code via crafted input due to improper input validation in the component's file handling process.",
+      "news_article": {
+        "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+        "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-56290",
+      "aura_score": 71.2,
+      "cvss": 9.8,
+      "epss": 0.029,
+      "kev": true,
+      "trend_score": 0.287,
+      "trend_mentions": 4,
+      "trend_breakdown": {
+        "news_hits": 4,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.287
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-56290"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Joomlack",
+      "product": "Page Builder Ck",
+      "summary_analyst": "CVE-2026-56290 is a cross-site scripting (XSS) vulnerability in Joomlack Page Builder Ck that allows an attacker to inject malicious scripts via unvalidated input in the component's settings, potentially compromising user sessions.",
+      "summary_ciso": "CVE-2026-56290 poses an urgent risk to our operations by potentially allowing unauthorized access to sensitive data through vulnerabilities in Joomlack Page Builder Ck, necessitating immediate remediation to protect our information assets and maintain business continuity.",
+      "description": "CVE-2026-56290 is a cross-site scripting (XSS) vulnerability in Joomlack Page Builder Ck that allows an attacker to inject malicious scripts via unvalidated input in the component's settings, potentially compromising user sessions.",
+      "news_article": {
+        "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+        "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -455,9 +403,9 @@
       },
       "vendor": "Lantronix",
       "product": "Eds5032 Firmware",
-      "summary_analyst": "CVE-2025-67038 involves a remote code execution vulnerability in the Lantronix Eds5032 Firmware due to improper input validation, allowing an attacker to execute arbitrary commands on the affected device.",
-      "summary_ciso": "CVE-2025-67038 exposes critical vulnerabilities in Lantronix Eds5032 Firmware that could lead to unauthorized access and potential data breaches, necessitating immediate remediation to protect sensitive information and maintain operational integrity.",
-      "description": "CVE-2025-67038 involves a remote code execution vulnerability in the Lantronix Eds5032 Firmware due to improper input validation, allowing an attacker to execute arbitrary commands on the affected device.",
+      "summary_analyst": "CVE-2025-67038 is a vulnerability in Lantronix Eds5032 Firmware that allows remote attackers to execute arbitrary code via crafted network packets, exploiting insufficient input validation in the device's network processing component.",
+      "summary_ciso": "CVE-2025-67038 exposes the Lantronix Eds5032 Firmware to critical security vulnerabilities that could lead to unauthorized access and potential data breaches, necessitating immediate action to mitigate risks to our business operations and reputation.",
+      "description": "CVE-2025-67038 is a vulnerability in Lantronix Eds5032 Firmware that allows remote attackers to execute arbitrary code via crafted network packets, exploiting insufficient input validation in the device's network processing component.",
       "news_article": {
         "title": "CISA Warns Critical Lantronix EDS5000 Flaw Is Being Actively Exploited",
         "url": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
@@ -473,23 +421,23 @@
       }
     },
     {
-      "cve": "CVE-2026-45659",
-      "aura_score": 68.0,
-      "cvss": 8.8,
-      "epss": 0.032,
+      "cve": "CVE-2026-48939",
+      "aura_score": 70.7,
+      "cvss": 9.8,
+      "epss": 0.015,
       "kev": true,
-      "trend_score": 0.427,
-      "trend_mentions": 10,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
       "trend_breakdown": {
-        "news_hits": 10,
+        "news_hits": 3,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.427
+        "trend_raw": 0.247
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-45659"
+        "https://www.exploit-db.com/search?q=CVE-2026-48939"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -505,15 +453,67 @@
           "low": 0
         }
       },
-      "vendor": "Microsoft",
-      "product": "Sharepoint Server",
-      "summary_analyst": "CVE-2026-45659 is a vulnerability in Microsoft SharePoint Server that allows an authenticated attacker to exploit insufficient input validation, potentially enabling unauthorized access to sensitive data and affecting the integrity of the affected component.",
-      "summary_ciso": "CVE-2026-45659 poses an urgent risk to Microsoft SharePoint Server that could lead to unauthorized access and data breaches, potentially jeopardizing sensitive business information and requiring immediate mitigation to prevent operational disruption and reputational damage.",
-      "description": "CVE-2026-45659 is a vulnerability in Microsoft SharePoint Server that allows an authenticated attacker to exploit insufficient input validation, potentially enabling unauthorized access to sensitive data and affecting the integrity of the affected component.",
+      "vendor": "Joomlic",
+      "product": "Icagenda",
+      "summary_analyst": "CVE-2026-48939 affects Joomlic Icagenda by allowing attackers to exploit improper input validation in the component, which could lead to remote code execution or information disclosure.",
+      "summary_ciso": "CVE-2026-48939 presents an urgent risk to our organization by potentially exposing sensitive data through a vulnerability in Joomlic Icagenda, which could lead to severe business disruption and reputational damage if not addressed promptly.",
+      "description": "CVE-2026-48939 affects Joomlic Icagenda by allowing attackers to exploit improper input validation in the component, which could lead to remote code execution or information disclosure.",
       "news_article": {
-        "title": "SharePoint RCE CVE-2026-45659 Added to CISA KEV After Active Exploitation",
-        "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
-        "source": "Internet"
+        "title": "U.S. CISA adds iCagenda and Balbooa Forms flaws to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/195164/security/u-s-cisa-adds-icagenda-and-balbooa-forms-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-56291",
+      "aura_score": 70.3,
+      "cvss": 9.8,
+      "epss": 0.008,
+      "kev": true,
+      "trend_score": 0.196,
+      "trend_mentions": 2,
+      "trend_breakdown": {
+        "news_hits": 2,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.196
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-56291"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Balbooa",
+      "product": "Forms",
+      "summary_analyst": "CVE-2026-56291 affects Balbooa Forms by allowing attackers to exploit improper input validation, potentially leading to arbitrary file uploads on the server.",
+      "summary_ciso": "CVE-2026-56291 poses a significant risk to Balbooa Forms users by potentially exposing sensitive data, necessitating immediate action to mitigate vulnerabilities and protect the business from reputational damage and compliance issues.",
+      "description": "CVE-2026-56291 affects Balbooa Forms by allowing attackers to exploit improper input validation, potentially leading to arbitrary file uploads on the server.",
+      "news_article": {
+        "title": "U.S. CISA adds iCagenda and Balbooa Forms flaws to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/195164/security/u-s-cisa-adds-icagenda-and-balbooa-forms-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
