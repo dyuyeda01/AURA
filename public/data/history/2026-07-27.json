@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2026-63030",
+    "aura_score": 92.3,
+    "cvss": 9.8,
+    "epss": 0.981,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 53,
+    "trend_breakdown": {
+      "news_hits": 53,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-63030"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Wordpress",
+    "product": "Wordpress",
+    "summary_analyst": "CVE-2026-63030 is a vulnerability in WordPress that allows remote attackers to execute arbitrary code through improperly validated input, specifically impacting the plugin dependency management component.",
+    "summary_ciso": "CVE-2026-63030 presents a critical vulnerability in WordPress that could lead to unauthorized data access, exposing our organization to significant reputational damage and compliance risks, necessitating immediate remediation.",
+    "description": "CVE-2026-63030 is a vulnerability in WordPress that allows remote attackers to execute arbitrary code through improperly validated input, specifically impacting the plugin dependency management component.",
+    "news_article": {
+      "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
+      "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-39808",
+    "aura_score": 89.3,
+    "cvss": 9.8,
+    "epss": 0.897,
+    "kev": true,
+    "trend_score": 0.442,
+    "trend_mentions": 11,
+    "trend_breakdown": {
+      "news_hits": 11,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.442
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-39808"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Fortisandbox",
+    "summary_analyst": "CVE-2026-39808 affects Fortinet FortiSandbox by allowing remote attackers to execute arbitrary code through crafted files that trigger improper input validation in the file processing component.",
+    "summary_ciso": "CVE-2026-39808 exposes Fortinet Fortisandbox to critical vulnerabilities that could lead to unauthorized access and data breaches, requiring immediate remediation to protect sensitive business assets.",
+    "description": "CVE-2026-39808 affects Fortinet FortiSandbox by allowing remote attackers to execute arbitrary code through crafted files that trigger improper input validation in the file processing component.",
+    "news_article": {
+      "title": "CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV",
+      "url": "https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-25089",
+    "aura_score": 85.4,
+    "cvss": 9.8,
+    "epss": 0.698,
+    "kev": true,
+    "trend_score": 0.442,
+    "trend_mentions": 11,
+    "trend_breakdown": {
+      "news_hits": 11,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.442
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-25089"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Fortisandbox",
+    "summary_analyst": "CVE-2026-25089 is a vulnerability in Fortinet Fortisandbox that allows an attacker to execute arbitrary code by exploiting improper input validation in the file processing module.",
+    "summary_ciso": "CVE-2026-25089 poses a significant risk to our organization by exploiting vulnerabilities in Fortinet Fortisandbox, potentially allowing attackers to access sensitive data and compromise our cybersecurity defenses, necessitating immediate mitigation to protect our assets and reputation.",
+    "description": "CVE-2026-25089 is a vulnerability in Fortinet Fortisandbox that allows an attacker to execute arbitrary code by exploiting improper input validation in the file processing module.",
+    "news_article": {
+      "title": "Attackers target critical FortiSandbox flaws as CISA issues patch order",
+      "url": "https://www.theregister.com/security/2026/07/17/attackers-target-critical-fortisandbox-flaws-as-cisa-issues-patch-order/5274287",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-50522",
+    "aura_score": 83.5,
+    "cvss": 9.8,
+    "epss": 0.571,
+    "kev": true,
+    "trend_score": 0.573,
+    "trend_mentions": 24,
+    "trend_breakdown": {
+      "news_hits": 24,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.573
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-50522"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Sharepoint Server",
+    "summary_analyst": "CVE-2026-50522 affects Microsoft SharePoint Server, allowing an attacker to exploit improper input validation to execute arbitrary code remotely on the affected component.",
+    "summary_ciso": "CVE-2026-50522 exposes Microsoft SharePoint Server to critical vulnerabilities that could lead to data breaches and operational disruptions, necessitating immediate remediation efforts to protect sensitive information and maintain business continuity.",
+    "description": "CVE-2026-50522 affects Microsoft SharePoint Server, allowing an attacker to exploit improper input validation to execute arbitrary code remotely on the affected component.",
+    "news_article": {
+      "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
+      "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-0770",
+    "aura_score": 81.6,
+    "cvss": 9.8,
+    "epss": 0.535,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-0770"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Langflow",
+    "product": "Langflow",
+    "summary_analyst": "CVE-2026-0770 is a vulnerability in Langflow Langflow that allows attackers to exploit improper input validation, potentially leading to arbitrary code execution on the affected component.",
+    "summary_ciso": "CVE-2026-0770 poses a critical risk to Langflow\u2019s functionality, potentially exposing sensitive data and leading to significant operational disruptions, necessitating immediate mitigation to safeguard our business assets and compliance.",
+    "description": "CVE-2026-0770 is a vulnerability in Langflow Langflow that allows attackers to exploit improper input validation, potentially leading to arbitrary code execution on the affected component.",
+    "news_article": {
+      "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+      "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-46817",
+    "aura_score": 74.4,
+    "cvss": 9.8,
+    "epss": 0.133,
+    "kev": true,
+    "trend_score": 0.515,
+    "trend_mentions": 17,
+    "trend_breakdown": {
+      "news_hits": 17,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.515
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-46817"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Oracle",
+    "product": "E-business Suite",
+    "summary_analyst": "CVE-2026-46817 affects Oracle E-Business Suite by allowing an unauthenticated attacker to exploit a flaw in input validation, potentially leading to remote code execution on the affected component.",
+    "summary_ciso": "The recently identified CVE-2026-46817 poses a significant risk to Oracle E-Business Suite, potentially exposing sensitive business data to unauthorized access, necessitating immediate mitigation to protect our financial and operational integrity.",
+    "description": "CVE-2026-46817 affects Oracle E-Business Suite by allowing an unauthenticated attacker to exploit a flaw in input validation, potentially leading to remote code execution on the affected component.",
+    "news_article": {
+      "title": "Oracle E-Business Suite Flaw CVE-2026-46817 Actively Exploited in the Wild",
+      "url": "https://thehackernews.com/2026/06/oracle-e-business-suite-flaw-cve-2026.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-58644",
+    "aura_score": 73.1,
+    "cvss": 9.8,
+    "epss": 0.051,
+    "kev": true,
+    "trend_score": 0.587,
+    "trend_mentions": 26,
+    "trend_breakdown": {
+      "news_hits": 26,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.587
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-58644"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Sharepoint Server",
+    "summary_analyst": "CVE-2026-58644 affects Microsoft SharePoint Server by allowing an authenticated attacker to execute arbitrary code through improper input validation in the web application component.",
+    "summary_ciso": "CVE-2026-58644 poses an urgent risk to Microsoft SharePoint Server, exposing sensitive business data to potential breaches, which could lead to significant financial and reputational damage if not promptly addressed.",
+    "description": "CVE-2026-58644 affects Microsoft SharePoint Server by allowing an authenticated attacker to execute arbitrary code through improper input validation in the web application component.",
+    "news_article": {
+      "title": "CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV",
+      "url": "https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-60137",
+    "aura_score": 72.6,
+    "cvss": 5.9,
+    "epss": 0.78,
+    "kev": true,
+    "trend_score": 0.678,
+    "trend_mentions": 44,
+    "trend_breakdown": {
+      "news_hits": 44,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.678
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-60137"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Wordpress",
+    "product": "Wordpress",
+    "summary_analyst": "CVE-2026-60137 is a vulnerability in WordPress that allows an attacker to exploit improper input validation through crafted requests, potentially leading to unauthorized access or data manipulation in the affected component.",
+    "summary_ciso": "CVE-2026-60137 exposes WordPress installations to potential unauthorized access and data compromise, posing an immediate risk to business continuity and reputation, necessitating urgent patching to prevent exploitation.",
+    "description": "CVE-2026-60137 is a vulnerability in WordPress that allows an attacker to exploit improper input validation through crafted requests, potentially leading to unauthorized access or data manipulation in the affected component.",
+    "news_article": {
+      "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
+      "url": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-16232",
+    "aura_score": 71.2,
+    "cvss": 9.1,
+    "epss": 0.127,
+    "kev": true,
+    "trend_score": 0.457,
+    "trend_mentions": 12,
+    "trend_breakdown": {
+      "news_hits": 12,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.457
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-16232"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Checkpoint",
+    "product": "Multi-domain Security Management",
+    "summary_analyst": "CVE-2026-16232 allows an attacker to exploit a deserialization vulnerability in Checkpoint Multi-domain Security Management, potentially leading to remote code execution on the affected component.",
+    "summary_ciso": "CVE-2026-16232 exposes Checkpoint Multi-domain Security Management to potential unauthorized access, compromising sensitive data and operational integrity, requiring immediate attention to mitigate significant risk to the organization's security posture.",
+    "description": "CVE-2026-16232 allows an attacker to exploit a deserialization vulnerability in Checkpoint Multi-domain Security Management, potentially leading to remote code execution on the affected component.",
+    "news_article": {
+      "title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
+      "url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-56155",
+    "aura_score": 65.2,
+    "cvss": 7.8,
+    "epss": 0.023,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 54,
+    "trend_breakdown": {
+      "news_hits": 54,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-56155"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Windows 10 1607",
+    "summary_analyst": "CVE-2026-56155 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to execute arbitrary code due to improper validation of input in the Windows kernel, enabling exploitation through crafted applications or files.",
+    "summary_ciso": "CVE-2026-56155 poses a critical security risk to Microsoft Windows 10 1607, potentially exposing sensitive business data to exploitation by attackers, necessitating immediate patching to mitigate the risk of significant financial and reputational damage.",
+    "description": "CVE-2026-56155 is a vulnerability in Microsoft Windows 10 1607 that allows an attacker to execute arbitrary code due to improper validation of input in the Windows kernel, enabling exploitation through crafted applications or files.",
+    "news_article": {
+      "title": "Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack",
+      "url": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-4346",
+    "aura_score": 61.2,
+    "cvss": 7.5,
+    "epss": 0.009,
+    "kev": true,
+    "trend_score": 0.196,
+    "trend_mentions": 2,
+    "trend_breakdown": {
+      "news_hits": 2,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.196
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2023-4346"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Knx",
+    "product": "Connection Authorization",
+    "summary_analyst": "CVE-2023-4346 allows an attacker to exploit improper authentication mechanisms in the Knx Connection Authorization component to gain unauthorized access to network resources.",
+    "summary_ciso": "CVE-2023-4346 presents a significant risk to our operations as it allows unauthorized access to the Knx Connection Authorization system, requiring immediate mitigation to protect against potential data breaches and operational disruptions.",
+    "description": "CVE-2023-4346 allows an attacker to exploit improper authentication mechanisms in the Knx Connection Authorization component to gain unauthorized access to network resources.",
+    "news_article": {
+      "title": "U.S. CISA adds KNX Association KNX Protocol Connection Authorization Option 1 and Oracle flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/195516/security/u-s-cisa-adds-knx-association-knx-protocol-connection-authorization-option-1-and-oracle-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-56164",
+    "aura_score": 58.4,
+    "cvss": 5.3,
+    "epss": 0.184,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 64,
+    "trend_breakdown": {
+      "news_hits": 64,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-56164"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Sharepoint Server",
+    "summary_analyst": "CVE-2026-56164 is a vulnerability in Microsoft SharePoint Server that allows attackers to exploit input validation flaws, potentially leading to unauthorized access and manipulation of sensitive data within the application.",
+    "summary_ciso": "CVE-2026-56164 exposes Microsoft SharePoint Server to critical vulnerabilities that could lead to significant data breaches and operational disruptions, requiring immediate remediation to protect sensitive business information and maintain compliance.",
+    "description": "CVE-2026-56164 is a vulnerability in Microsoft SharePoint Server that allows attackers to exploit input validation flaws, potentially leading to unauthorized access and manipulation of sensitive data within the application.",
+    "news_article": {
+      "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
+      "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
