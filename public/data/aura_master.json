@@ -1,24 +1,76 @@
 {
-  "date": "2026-08-24",
+  "date": "2026-08-31",
   "records": [
     {
-      "cve": "CVE-2026-72898",
-      "aura_score": 87.9,
+      "cve": "CVE-2026-60004",
+      "aura_score": 88.4,
+      "cvss": 9.8,
+      "epss": 0.846,
+      "kev": true,
+      "trend_score": 0.457,
+      "trend_mentions": 12,
+      "trend_breakdown": {
+        "news_hits": 12,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.457
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-60004"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Gitea",
+      "product": "Gitea",
+      "summary_analyst": "CVE-2026-60004 affects Gitea, where an attacker can exploit a vulnerability in the application\u2019s input validation mechanisms to execute arbitrary code on the server.",
+      "summary_ciso": "CVE-2026-60004 poses a critical risk to Gitea, potentially exposing sensitive data and operations to unauthorized access, necessitating immediate remediation to protect our organization's assets and maintain trust.",
+      "description": "CVE-2026-60004 affects Gitea, where an attacker can exploit a vulnerability in the application\u2019s input validation mechanisms to execute arbitrary code on the server.",
+      "news_article": {
+        "title": "Critical Gitea vulnerability now exploited in the wild (CVE-2026-60004)",
+        "url": "https://www.helpnetsecurity.com/2026/08/26/gitea-cve-2026-60004-exploited-in-the-wild/",
+        "source": "Help Net Security"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-21962",
+      "aura_score": 80.4,
       "cvss": 10.0,
-      "epss": 0.792,
+      "epss": 0.42,
       "kev": true,
-      "trend_score": 0.41,
-      "trend_mentions": 9,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
       "trend_breakdown": {
-        "news_hits": 9,
+        "news_hits": 8,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.41
+        "trend_raw": 0.391
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-72898"
+        "https://www.exploit-db.com/search?q=CVE-2026-21962"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -34,118 +86,14 @@
           "low": 0
         }
       },
-      "vendor": "Metabase",
-      "product": "Metabase",
-      "summary_analyst": "CVE-2026-72898 affects Metabase Metabase by allowing an authenticated attacker to exploit improper input validation in the application, potentially leading to unauthorized access to sensitive data.",
-      "summary_ciso": "CVE-2026-72898 poses a critical security vulnerability in Metabase that could lead to significant data breaches, exposing our sensitive information and requiring immediate action to mitigate potential impacts on our business operations and reputation.",
-      "description": "CVE-2026-72898 affects Metabase Metabase by allowing an authenticated attacker to exploit improper input validation in the application, potentially leading to unauthorized access to sensitive data.",
+      "vendor": "Oracle",
+      "product": "Http Server",
+      "summary_analyst": "CVE-2026-21962 is a vulnerability in Oracle HTTP Server that allows remote attackers to exploit improper input validation, potentially leading to denial of service or unauthorized access to sensitive data.",
+      "summary_ciso": "CVE-2026-21962 exposes Oracle Http Server to critical vulnerabilities that could lead to significant data breaches and operational disruption, necessitating immediate remediation to protect sensitive information and maintain business continuity.",
+      "description": "CVE-2026-21962 is a vulnerability in Oracle HTTP Server that allows remote attackers to exploit improper input validation, potentially leading to denial of service or unauthorized access to sensitive data.",
       "news_article": {
-        "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/08/11/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-33824",
-      "aura_score": 86.1,
-      "cvss": 9.8,
-      "epss": 0.727,
-      "kev": true,
-      "trend_score": 0.482,
-      "trend_mentions": 14,
-      "trend_breakdown": {
-        "news_hits": 14,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.482
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-33824"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Microsoft",
-      "product": "Windows 10 1607",
-      "summary_analyst": "CVE-2026-33824 is a vulnerability in Microsoft Windows 10 version 1607 that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected system.",
-      "summary_ciso": "CVE-2026-33824 poses a significant risk to Windows 10 1607 systems, potentially allowing attackers to exploit vulnerabilities, resulting in unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive business assets.",
-      "description": "CVE-2026-33824 is a vulnerability in Microsoft Windows 10 version 1607 that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected system.",
-      "news_article": {
-        "title": "CISA Flags Langflow RCE, Tomcat, and N-central Flaws as Actively Exploited",
-        "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-59310",
-      "aura_score": 81.4,
-      "cvss": 9.8,
-      "epss": 0.459,
-      "kev": true,
-      "trend_score": 0.611,
-      "trend_mentions": 30,
-      "trend_breakdown": {
-        "news_hits": 30,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.611
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-59310"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Vmware",
-      "product": "Vcenter Server",
-      "summary_analyst": "CVE-2026-59310 affects VMware vCenter Server by allowing an attacker to exploit improper input validation in the REST API, potentially leading to remote code execution.",
-      "summary_ciso": "The recently discovered CVE-2026-59310 vulnerability in VMware vCenter Server poses a significant risk of unauthorized access, potentially compromising sensitive data and operations, necessitating immediate mitigation efforts to safeguard against exploitation.",
-      "description": "CVE-2026-59310 affects VMware vCenter Server by allowing an attacker to exploit improper input validation in the REST API, potentially leading to remote code execution.",
-      "news_article": {
-        "title": "Suspected China-Nexus Actor Exploits VMware vCenter Flaw, Deploys Babuk-Derived Ransomware",
-        "url": "https://thehackernews.com/2026/08/suspected-china-nexus-actor-exploits.html",
+        "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+        "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -159,17 +107,17 @@
     },
     {
       "cve": "CVE-2026-64849",
-      "aura_score": 74.8,
+      "aura_score": 75.0,
       "cvss": 9.3,
       "epss": 0.164,
       "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
+      "trend_score": 0.41,
+      "trend_mentions": 9,
       "trend_breakdown": {
-        "news_hits": 7,
+        "news_hits": 9,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.37
+        "trend_raw": 0.41
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -194,9 +142,9 @@
       },
       "vendor": "Lfprojects",
       "product": "Mlflow",
-      "summary_analyst": "CVE-2026-64849 affects Lfprojects Mlflow by allowing an attacker to execute arbitrary code through improper input validation in the tracking server component.",
-      "summary_ciso": "CVE-2026-64849 exposes Lfprojects Mlflow to potential data breaches and operational disruptions, necessitating urgent remediation to protect sensitive information and maintain business continuity.",
-      "description": "CVE-2026-64849 affects Lfprojects Mlflow by allowing an attacker to execute arbitrary code through improper input validation in the tracking server component.",
+      "summary_analyst": "CVE-2026-64849 affects the Lfprojects Mlflow component, allowing an attacker to exploit a vulnerability in its authentication process, potentially leading to unauthorized access to sensitive data.",
+      "summary_ciso": "CVE-2026-64849 presents a critical vulnerability in Lfprojects Mlflow, exposing our organization to potential data breaches and operational disruptions, necessitating immediate mitigation to safeguard sensitive information and maintain business continuity.",
+      "description": "CVE-2026-64849 affects the Lfprojects Mlflow component, allowing an attacker to exploit a vulnerability in its authentication process, potentially leading to unauthorized access to sensitive data.",
       "news_article": {
         "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
         "url": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html",
@@ -212,280 +160,18 @@
       }
     },
     {
-      "cve": "CVE-2026-65400",
-      "aura_score": 74.8,
-      "cvss": 9.8,
-      "epss": 0.104,
-      "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 76,
-      "trend_breakdown": {
-        "news_hits": 76,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.7
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-65400"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Apple",
-      "product": "Macos",
-      "summary_analyst": "CVE-2026-65400 is a vulnerability in Apple macOS that allows attackers to exploit a flaw in the system's memory management, potentially resulting in arbitrary code execution.",
-      "summary_ciso": "CVE-2026-65400 poses a significant risk to Apple macOS users by potentially allowing unauthorized access to sensitive data, warranting immediate mitigation to protect against data breaches and ensure business continuity.",
-      "description": "CVE-2026-65400 is a vulnerability in Apple macOS that allows attackers to exploit a flaw in the system's memory management, potentially resulting in arbitrary code execution.",
-      "news_article": {
-        "title": "An AI agent built a working exploit for this macOS flaw in four hours",
-        "url": "https://thenextweb.com/news/macos-screen-sharing-flaw-cve-2026-65400-monero-miner",
-        "source": "The Next Web"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-62593",
-      "aura_score": 73.2,
-      "cvss": 8.8,
-      "epss": 0.169,
-      "kev": true,
-      "trend_score": 0.427,
-      "trend_mentions": 10,
-      "trend_breakdown": {
-        "news_hits": 10,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.427
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-62593"
-      ],
-      "ai_context": 0.5,
-      "ai_breakdown": {
-        "score": 0.5,
-        "matched": {
-          "high": [
-            "ray"
-          ],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 1,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Anyscale",
-      "product": "Ray",
-      "summary_analyst": "CVE-2025-62593 affects Anyscale Ray by allowing remote attackers to exploit insufficient input validation in the API, leading to potential arbitrary code execution on the affected component.",
-      "summary_ciso": "CVE-2025-62593 poses an urgent security risk to Anyscale Ray, potentially exposing critical data and operations to unauthorized access, thereby threatening business continuity and necessitating immediate mitigation actions.",
-      "description": "CVE-2025-62593 affects Anyscale Ray by allowing remote attackers to exploit insufficient input validation in the API, leading to potential arbitrary code execution on the affected component.",
-      "news_article": {
-        "title": "CISA orders a three-day patch after a flaw in the Ray AI framework comes under active attack",
-        "url": "https://thenextweb.com/news/cisa-kev-ray-ai-framework",
-        "source": "The Next Web"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-72529",
-      "aura_score": 71.2,
-      "cvss": 9.8,
-      "epss": 0.016,
-      "kev": true,
-      "trend_score": 0.346,
-      "trend_mentions": 6,
-      "trend_breakdown": {
-        "news_hits": 6,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.346
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-72529"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Trueconf",
-      "product": "Trueconf Server",
-      "summary_analyst": "CVE-2026-72529 is a vulnerability in Trueconf Server that allows an unauthenticated remote attacker to execute arbitrary commands on the server through specially crafted API requests.",
-      "summary_ciso": "CVE-2026-72529 poses an urgent risk to Trueconf Server that could allow unauthorized access to sensitive communications, potentially compromising our business's confidentiality and integrity, necessitating immediate mitigation to protect our reputation and customer trust.",
-      "description": "CVE-2026-72529 is a vulnerability in Trueconf Server that allows an unauthenticated remote attacker to execute arbitrary commands on the server through specially crafted API requests.",
-      "news_article": {
-        "title": "U.S. CISA adds TrueConf Server flaws to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/197602/security/u-s-cisa-adds-trueconf-server-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-        "source": "Securityaffairs.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-55040",
-      "aura_score": 70.6,
-      "cvss": 9.1,
-      "epss": 0.056,
-      "kev": true,
-      "trend_score": 0.611,
-      "trend_mentions": 30,
-      "trend_breakdown": {
-        "news_hits": 30,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.611
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-55040"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Microsoft",
-      "product": "Sharepoint Server",
-      "summary_analyst": "CVE-2026-55040 is a vulnerability in Microsoft SharePoint Server that allows an authenticated attacker to execute arbitrary code through crafted requests sent to the affected component, potentially leading to unauthorized access or system compromise.",
-      "summary_ciso": "CVE-2026-55040 presents a critical risk to Microsoft SharePoint Server that could lead to significant data breaches and operational disruptions, necessitating immediate mitigation to safeguard sensitive information and maintain business continuity.",
-      "description": "CVE-2026-55040 is a vulnerability in Microsoft SharePoint Server that allows an authenticated attacker to execute arbitrary code through crafted requests sent to the affected component, potentially leading to unauthorized access or system compromise.",
-      "news_article": {
-        "title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
-        "url": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-72530",
-      "aura_score": 68.0,
-      "cvss": 9.0,
-      "epss": 0.018,
-      "kev": true,
-      "trend_score": 0.319,
-      "trend_mentions": 5,
-      "trend_breakdown": {
-        "news_hits": 5,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.319
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-72530"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Trueconf",
-      "product": "Trueconf Server",
-      "summary_analyst": "CVE-2026-72530 is a vulnerability in Trueconf Trueconf Server that allows remote attackers to exploit improper input validation, potentially leading to command injection and execution of arbitrary commands on the affected component.",
-      "summary_ciso": "CVE-2026-72530 poses an immediate risk to organizational data integrity and operational continuity through a vulnerable Trueconf Server, necessitating urgent patching to prevent potential data breaches and service disruptions.",
-      "description": "CVE-2026-72530 is a vulnerability in Trueconf Trueconf Server that allows remote attackers to exploit improper input validation, potentially leading to command injection and execution of arbitrary commands on the affected component.",
-      "news_article": {
-        "title": "U.S. CISA adds TrueConf Server flaws to its Known Exploited Vulnerabilities catalog",
-        "url": "https://securityaffairs.com/197602/security/u-s-cisa-adds-trueconf-server-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
-        "source": "Securityaffairs.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2026-73570",
-      "aura_score": 67.8,
+      "aura_score": 72.3,
       "cvss": 8.9,
-      "epss": 0.015,
+      "epss": 0.205,
       "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
+      "trend_score": 0.515,
+      "trend_mentions": 17,
       "trend_breakdown": {
-        "news_hits": 7,
+        "news_hits": 17,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.37
+        "trend_raw": 0.515
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -508,9 +194,9 @@
       },
       "vendor": "Synacor",
       "product": "Zimbra Collaboration Suite",
-      "summary_analyst": "CVE-2026-73570 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an unauthenticated attacker to exploit improper input validation in the web application, leading to potential remote code execution on the affected components.",
-      "summary_ciso": "CVE-2026-73570 poses a critical risk to the Synacor Zimbra Collaboration Suite, potentially exposing sensitive organizational data and requiring immediate action to mitigate vulnerabilities and protect business operations.",
-      "description": "CVE-2026-73570 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an unauthenticated attacker to exploit improper input validation in the web application, leading to potential remote code execution on the affected components.",
+      "summary_analyst": "CVE-2026-73570 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an attacker to exploit improper input validation in the email handling component, potentially leading to remote code execution.",
+      "summary_ciso": "CVE-2026-73570 poses a significant risk to our data integrity and customer trust due to vulnerabilities in the Synacor Zimbra Collaboration Suite, requiring immediate mitigation to prevent potential breaches and operational disruptions.",
+      "description": "CVE-2026-73570 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an attacker to exploit improper input validation in the email handling component, potentially leading to remote code execution.",
       "news_article": {
         "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
         "url": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
@@ -526,23 +212,23 @@
       }
     },
     {
-      "cve": "CVE-2026-20349",
-      "aura_score": 67.4,
-      "cvss": 8.6,
-      "epss": 0.022,
+      "cve": "CVE-2026-8452",
+      "aura_score": 72.2,
+      "cvss": 9.8,
+      "epss": 0.016,
       "kev": true,
-      "trend_score": 0.515,
-      "trend_mentions": 17,
+      "trend_score": 0.533,
+      "trend_mentions": 19,
       "trend_breakdown": {
-        "news_hits": 17,
+        "news_hits": 19,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.515
+        "trend_raw": 0.533
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-20349"
+        "https://www.exploit-db.com/search?q=CVE-2026-8452"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -558,15 +244,15 @@
           "low": 0
         }
       },
-      "vendor": "Cisco",
-      "product": "Adaptive Security Appliance Software",
-      "summary_analyst": "CVE-2026-20349 is an authentication bypass vulnerability in Cisco Adaptive Security Appliance Software that allows an attacker to gain unauthorized access to the device by exploiting a flaw in the authentication process.",
-      "summary_ciso": "CVE-2026-20349 represents a critical vulnerability in Cisco Adaptive Security Appliance Software that could allow attackers to gain unauthorized access and control over network security devices, presenting an urgent risk to the integrity of our network infrastructure and potential business disruptions.",
-      "description": "CVE-2026-20349 is an authentication bypass vulnerability in Cisco Adaptive Security Appliance Software that allows an attacker to gain unauthorized access to the device by exploiting a flaw in the authentication process.",
+      "vendor": "Citrix",
+      "product": "Netscaler Application Delivery Controller",
+      "summary_analyst": "CVE-2026-8452 affects Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation vulnerabilities to execute arbitrary code remotely.",
+      "summary_ciso": "CVE-2026-8452 exposes Citrix Netscaler Application Delivery Controller to significant security risks that could lead to unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive business information and ensure operational continuity.",
+      "description": "CVE-2026-8452 affects Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation vulnerabilities to execute arbitrary code remotely.",
       "news_article": {
-        "title": "Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0",
-        "url": "https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html",
-        "source": "Internet"
+        "title": "Previously patched Citrix NetScaler flaw exploited in the wild (CVE-2026-8452)",
+        "url": "https://www.helpnetsecurity.com/2026/08/27/netscaler-adc-gateway-cve-2026-8452/",
+        "source": "Help Net Security"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -578,23 +264,23 @@
       }
     },
     {
-      "cve": "CVE-2026-68820",
-      "aura_score": 62.7,
-      "cvss": 7.0,
-      "epss": 0.062,
+      "cve": "CVE-2026-72529",
+      "aura_score": 71.4,
+      "cvss": 9.8,
+      "epss": 0.016,
       "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 60,
+      "trend_score": 0.37,
+      "trend_mentions": 7,
       "trend_breakdown": {
-        "news_hits": 60,
+        "news_hits": 7,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.7
+        "trend_raw": 0.37
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-68820"
+        "https://www.exploit-db.com/search?q=CVE-2026-72529"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -610,15 +296,327 @@
           "low": 0
         }
       },
-      "vendor": "Microsoft",
-      "product": "Windows 10 1607",
-      "summary_analyst": "CVE-2026-68820 affects Microsoft Windows 10 1607 by allowing an attacker to exploit a vulnerability in the Windows kernel, leading to potential elevation of privileges through specially crafted applications.",
-      "summary_ciso": "CVE-2026-68820 poses a critical security risk to Microsoft Windows 10 1607, potentially exposing sensitive organizational data to exploitation, necessitating immediate action to mitigate vulnerabilities and safeguard our assets.",
-      "description": "CVE-2026-68820 affects Microsoft Windows 10 1607 by allowing an attacker to exploit a vulnerability in the Windows kernel, leading to potential elevation of privileges through specially crafted applications.",
+      "vendor": "Trueconf",
+      "product": "Trueconf Server",
+      "summary_analyst": "CVE-2026-72529 affects Trueconf Server, where an unauthenticated remote attacker can exploit a flaw in the web interface to execute arbitrary code via crafted HTTP requests.",
+      "summary_ciso": "CVE-2026-72529 exposes Trueconf Trueconf Server to potential unauthorized access, which could disrupt operations and compromise sensitive communications, necessitating immediate action to mitigate these risks.",
+      "description": "CVE-2026-72529 affects Trueconf Server, where an unauthenticated remote attacker can exploit a flaw in the web interface to execute arbitrary code via crafted HTTP requests.",
       "news_article": {
-        "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
-        "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
-        "source": "Internet"
+        "title": "U.S. CISA adds TrueConf Server flaws to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/197602/security/u-s-cisa-adds-trueconf-server-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-81578",
+      "aura_score": 70.5,
+      "cvss": 9.8,
+      "epss": 0.004,
+      "kev": true,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
+      "trend_breakdown": {
+        "news_hits": 3,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.247
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-81578"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Papercut",
+      "product": "Papercut Mf",
+      "summary_analyst": "CVE-2026-81578 is a SQL injection vulnerability in Papercut MF that allows remote attackers to execute arbitrary SQL queries by sending crafted input to the application, potentially compromising the database.",
+      "summary_ciso": "CVE-2026-81578 exposes Papercut MF systems to critical security vulnerabilities that could result in unauthorized access to sensitive data, necessitating immediate remediation to protect our organizational assets and maintain compliance.",
+      "description": "CVE-2026-81578 is a SQL injection vulnerability in Papercut MF that allows remote attackers to execute arbitrary SQL queries by sending crafted input to the application, potentially compromising the database.",
+      "news_article": {
+        "title": "PaperCut releases second emergency patch for exploited flaws",
+        "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+        "source": "BleepingComputer"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-72530",
+      "aura_score": 68.1,
+      "cvss": 9.0,
+      "epss": 0.018,
+      "kev": true,
+      "trend_score": 0.346,
+      "trend_mentions": 6,
+      "trend_breakdown": {
+        "news_hits": 6,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.346
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-72530"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Trueconf",
+      "product": "Trueconf Server",
+      "summary_analyst": "CVE-2026-72530 is a vulnerability in Trueconf Server that allows remote attackers to exploit an insecure deserialization flaw in the application's handling of user input, potentially leading to unauthorized code execution.",
+      "summary_ciso": "CVE-2026-72530 poses a critical risk to Trueconf Server that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect sensitive communications and maintain business integrity.",
+      "description": "CVE-2026-72530 is a vulnerability in Trueconf Server that allows remote attackers to exploit an insecure deserialization flaw in the application's handling of user input, potentially leading to unauthorized code execution.",
+      "news_article": {
+        "title": "U.S. CISA adds TrueConf Server flaws to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/197602/security/u-s-cisa-adds-trueconf-server-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-82078",
+      "aura_score": 67.7,
+      "cvss": 9.1,
+      "epss": 0.005,
+      "kev": true,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
+      "trend_breakdown": {
+        "news_hits": 3,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.247
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-82078"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Papercut",
+      "product": "Papercut Mf",
+      "summary_analyst": "CVE-2026-82078 is a vulnerability in PaperCut MF that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected server.",
+      "summary_ciso": "CVE-2026-82078 poses an urgent risk to Papercut MF, potentially exposing sensitive organizational data and operations to exploitation, necessitating immediate mitigation to safeguard business integrity and compliance.",
+      "description": "CVE-2026-82078 is a vulnerability in PaperCut MF that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected server.",
+      "news_article": {
+        "title": "PaperCut releases second emergency patch for exploited flaws",
+        "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+        "source": "BleepingComputer"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-53362",
+      "aura_score": 62.7,
+      "cvss": 7.8,
+      "epss": 0.005,
+      "kev": true,
+      "trend_score": 0.287,
+      "trend_mentions": 4,
+      "trend_breakdown": {
+        "news_hits": 4,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.287
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-53362"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Linux",
+      "product": "Linux Kernel",
+      "summary_analyst": "CVE-2026-53362 affects the Linux Kernel by allowing an attacker to exploit a race condition in the implementation of the netfilter subsystem, which could lead to a denial-of-service (DoS) condition.",
+      "summary_ciso": "CVE-2026-53362 exposes critical vulnerabilities in the Linux Kernel that can lead to significant data breaches and operational disruptions, requiring immediate mitigation to safeguard our systems and maintain business continuity.",
+      "description": "CVE-2026-53362 affects the Linux Kernel by allowing an attacker to exploit a race condition in the implementation of the netfilter subsystem, which could lead to a denial-of-service (DoS) condition.",
+      "news_article": {
+        "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2026/08/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-66384",
+      "aura_score": 52.6,
+      "cvss": 5.3,
+      "epss": 0.006,
+      "kev": true,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
+      "trend_breakdown": {
+        "news_hits": 3,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.247
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-66384"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Jfrog",
+      "product": "Artifactory",
+      "summary_analyst": "CVE-2026-66384 is a vulnerability in JFrog Artifactory that allows an attacker to exploit inadequate access controls to gain unauthorized access to sensitive repository data.",
+      "summary_ciso": "CVE-2026-66384 exposes JFrog Artifactory to potentially severe data breaches and operational disruptions, necessitating immediate action to mitigate risks to sensitive repository data and maintain business continuity.",
+      "description": "CVE-2026-66384 is a vulnerability in JFrog Artifactory that allows an attacker to exploit inadequate access controls to gain unauthorized access to sensitive repository data.",
+      "news_article": {
+        "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2026/08/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2023-49105",
+      "aura_score": 40.1,
+      "cvss": 0,
+      "epss": 0.432,
+      "kev": true,
+      "trend_score": 0.287,
+      "trend_mentions": 4,
+      "trend_breakdown": {
+        "news_hits": 4,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.287
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2023-49105"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Unknown",
+      "product": "Unknown",
+      "summary_analyst": "CVE-2023-49105 presents a vulnerability in an unknown component that can be exploited to execute unauthorized code due to insufficient input validation.",
+      "summary_ciso": "CVE-2023-49105 poses an urgent risk to our business due to an unpatched vulnerability in Unknown Unknown, potentially exposing critical assets to exploitation and significant financial or reputational damage if not addressed swiftly.",
+      "description": "CVE-2023-49105 presents a vulnerability in an unknown component that can be exploited to execute unauthorized code due to insufficient input validation.",
+      "news_article": {
+        "title": "U.S. CISA adds ownCloud, Linux Kernel, and JFrog Artifactory flaws to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/198014/hacking/u-s-cisa-adds-owncloud-linux-kernel-and-jfrog-artifactory-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
