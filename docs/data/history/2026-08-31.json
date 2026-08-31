@@ -1,0 +1,628 @@
+[
+  {
+    "cve": "CVE-2026-60004",
+    "aura_score": 88.4,
+    "cvss": 9.8,
+    "epss": 0.846,
+    "kev": true,
+    "trend_score": 0.457,
+    "trend_mentions": 12,
+    "trend_breakdown": {
+      "news_hits": 12,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.457
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-60004"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Gitea",
+    "product": "Gitea",
+    "summary_analyst": "CVE-2026-60004 affects Gitea, where an attacker can exploit a vulnerability in the application\u2019s input validation mechanisms to execute arbitrary code on the server.",
+    "summary_ciso": "CVE-2026-60004 poses a critical risk to Gitea, potentially exposing sensitive data and operations to unauthorized access, necessitating immediate remediation to protect our organization's assets and maintain trust.",
+    "description": "CVE-2026-60004 affects Gitea, where an attacker can exploit a vulnerability in the application\u2019s input validation mechanisms to execute arbitrary code on the server.",
+    "news_article": {
+      "title": "Critical Gitea vulnerability now exploited in the wild (CVE-2026-60004)",
+      "url": "https://www.helpnetsecurity.com/2026/08/26/gitea-cve-2026-60004-exploited-in-the-wild/",
+      "source": "Help Net Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-21962",
+    "aura_score": 80.4,
+    "cvss": 10.0,
+    "epss": 0.42,
+    "kev": true,
+    "trend_score": 0.391,
+    "trend_mentions": 8,
+    "trend_breakdown": {
+      "news_hits": 8,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.391
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-21962"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Oracle",
+    "product": "Http Server",
+    "summary_analyst": "CVE-2026-21962 is a vulnerability in Oracle HTTP Server that allows remote attackers to exploit improper input validation, potentially leading to denial of service or unauthorized access to sensitive data.",
+    "summary_ciso": "CVE-2026-21962 exposes Oracle Http Server to critical vulnerabilities that could lead to significant data breaches and operational disruption, necessitating immediate remediation to protect sensitive information and maintain business continuity.",
+    "description": "CVE-2026-21962 is a vulnerability in Oracle HTTP Server that allows remote attackers to exploit improper input validation, potentially leading to denial of service or unauthorized access to sensitive data.",
+    "news_article": {
+      "title": "Actively Exploited Oracle WebLogic Flaw Lets Unauthenticated Attackers Access Critical Data",
+      "url": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-64849",
+    "aura_score": 75.0,
+    "cvss": 9.3,
+    "epss": 0.164,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-64849"
+    ],
+    "ai_context": 0.5,
+    "ai_breakdown": {
+      "score": 0.5,
+      "matched": {
+        "high": [
+          "mlflow"
+        ],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 1,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Lfprojects",
+    "product": "Mlflow",
+    "summary_analyst": "CVE-2026-64849 affects the Lfprojects Mlflow component, allowing an attacker to exploit a vulnerability in its authentication process, potentially leading to unauthorized access to sensitive data.",
+    "summary_ciso": "CVE-2026-64849 presents a critical vulnerability in Lfprojects Mlflow, exposing our organization to potential data breaches and operational disruptions, necessitating immediate mitigation to safeguard sensitive information and maintain business continuity.",
+    "description": "CVE-2026-64849 affects the Lfprojects Mlflow component, allowing an attacker to exploit a vulnerability in its authentication process, potentially leading to unauthorized access to sensitive data.",
+    "news_article": {
+      "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
+      "url": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-73570",
+    "aura_score": 72.3,
+    "cvss": 8.9,
+    "epss": 0.205,
+    "kev": true,
+    "trend_score": 0.515,
+    "trend_mentions": 17,
+    "trend_breakdown": {
+      "news_hits": 17,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.515
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-73570"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Synacor",
+    "product": "Zimbra Collaboration Suite",
+    "summary_analyst": "CVE-2026-73570 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an attacker to exploit improper input validation in the email handling component, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2026-73570 poses a significant risk to our data integrity and customer trust due to vulnerabilities in the Synacor Zimbra Collaboration Suite, requiring immediate mitigation to prevent potential breaches and operational disruptions.",
+    "description": "CVE-2026-73570 is a vulnerability in the Synacor Zimbra Collaboration Suite that allows an attacker to exploit improper input validation in the email handling component, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
+      "url": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-8452",
+    "aura_score": 72.2,
+    "cvss": 9.8,
+    "epss": 0.016,
+    "kev": true,
+    "trend_score": 0.533,
+    "trend_mentions": 19,
+    "trend_breakdown": {
+      "news_hits": 19,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.533
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-8452"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Citrix",
+    "product": "Netscaler Application Delivery Controller",
+    "summary_analyst": "CVE-2026-8452 affects Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation vulnerabilities to execute arbitrary code remotely.",
+    "summary_ciso": "CVE-2026-8452 exposes Citrix Netscaler Application Delivery Controller to significant security risks that could lead to unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive business information and ensure operational continuity.",
+    "description": "CVE-2026-8452 affects Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation vulnerabilities to execute arbitrary code remotely.",
+    "news_article": {
+      "title": "Previously patched Citrix NetScaler flaw exploited in the wild (CVE-2026-8452)",
+      "url": "https://www.helpnetsecurity.com/2026/08/27/netscaler-adc-gateway-cve-2026-8452/",
+      "source": "Help Net Security"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-72529",
+    "aura_score": 71.4,
+    "cvss": 9.8,
+    "epss": 0.016,
+    "kev": true,
+    "trend_score": 0.37,
+    "trend_mentions": 7,
+    "trend_breakdown": {
+      "news_hits": 7,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.37
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-72529"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Trueconf",
+    "product": "Trueconf Server",
+    "summary_analyst": "CVE-2026-72529 affects Trueconf Server, where an unauthenticated remote attacker can exploit a flaw in the web interface to execute arbitrary code via crafted HTTP requests.",
+    "summary_ciso": "CVE-2026-72529 exposes Trueconf Trueconf Server to potential unauthorized access, which could disrupt operations and compromise sensitive communications, necessitating immediate action to mitigate these risks.",
+    "description": "CVE-2026-72529 affects Trueconf Server, where an unauthenticated remote attacker can exploit a flaw in the web interface to execute arbitrary code via crafted HTTP requests.",
+    "news_article": {
+      "title": "U.S. CISA adds TrueConf Server flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/197602/security/u-s-cisa-adds-trueconf-server-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-81578",
+    "aura_score": 70.5,
+    "cvss": 9.8,
+    "epss": 0.004,
+    "kev": true,
+    "trend_score": 0.247,
+    "trend_mentions": 3,
+    "trend_breakdown": {
+      "news_hits": 3,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.247
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-81578"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Papercut",
+    "product": "Papercut Mf",
+    "summary_analyst": "CVE-2026-81578 is a SQL injection vulnerability in Papercut MF that allows remote attackers to execute arbitrary SQL queries by sending crafted input to the application, potentially compromising the database.",
+    "summary_ciso": "CVE-2026-81578 exposes Papercut MF systems to critical security vulnerabilities that could result in unauthorized access to sensitive data, necessitating immediate remediation to protect our organizational assets and maintain compliance.",
+    "description": "CVE-2026-81578 is a SQL injection vulnerability in Papercut MF that allows remote attackers to execute arbitrary SQL queries by sending crafted input to the application, potentially compromising the database.",
+    "news_article": {
+      "title": "PaperCut releases second emergency patch for exploited flaws",
+      "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+      "source": "BleepingComputer"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-72530",
+    "aura_score": 68.1,
+    "cvss": 9.0,
+    "epss": 0.018,
+    "kev": true,
+    "trend_score": 0.346,
+    "trend_mentions": 6,
+    "trend_breakdown": {
+      "news_hits": 6,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.346
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-72530"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Trueconf",
+    "product": "Trueconf Server",
+    "summary_analyst": "CVE-2026-72530 is a vulnerability in Trueconf Server that allows remote attackers to exploit an insecure deserialization flaw in the application's handling of user input, potentially leading to unauthorized code execution.",
+    "summary_ciso": "CVE-2026-72530 poses a critical risk to Trueconf Server that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect sensitive communications and maintain business integrity.",
+    "description": "CVE-2026-72530 is a vulnerability in Trueconf Server that allows remote attackers to exploit an insecure deserialization flaw in the application's handling of user input, potentially leading to unauthorized code execution.",
+    "news_article": {
+      "title": "U.S. CISA adds TrueConf Server flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/197602/security/u-s-cisa-adds-trueconf-server-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-82078",
+    "aura_score": 67.7,
+    "cvss": 9.1,
+    "epss": 0.005,
+    "kev": true,
+    "trend_score": 0.247,
+    "trend_mentions": 3,
+    "trend_breakdown": {
+      "news_hits": 3,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.247
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-82078"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Papercut",
+    "product": "Papercut Mf",
+    "summary_analyst": "CVE-2026-82078 is a vulnerability in PaperCut MF that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected server.",
+    "summary_ciso": "CVE-2026-82078 poses an urgent risk to Papercut MF, potentially exposing sensitive organizational data and operations to exploitation, necessitating immediate mitigation to safeguard business integrity and compliance.",
+    "description": "CVE-2026-82078 is a vulnerability in PaperCut MF that allows an attacker to exploit improper input validation, potentially leading to remote code execution on the affected server.",
+    "news_article": {
+      "title": "PaperCut releases second emergency patch for exploited flaws",
+      "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+      "source": "BleepingComputer"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-53362",
+    "aura_score": 62.7,
+    "cvss": 7.8,
+    "epss": 0.005,
+    "kev": true,
+    "trend_score": 0.287,
+    "trend_mentions": 4,
+    "trend_breakdown": {
+      "news_hits": 4,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.287
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-53362"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Linux",
+    "product": "Linux Kernel",
+    "summary_analyst": "CVE-2026-53362 affects the Linux Kernel by allowing an attacker to exploit a race condition in the implementation of the netfilter subsystem, which could lead to a denial-of-service (DoS) condition.",
+    "summary_ciso": "CVE-2026-53362 exposes critical vulnerabilities in the Linux Kernel that can lead to significant data breaches and operational disruptions, requiring immediate mitigation to safeguard our systems and maintain business continuity.",
+    "description": "CVE-2026-53362 affects the Linux Kernel by allowing an attacker to exploit a race condition in the implementation of the netfilter subsystem, which could lead to a denial-of-service (DoS) condition.",
+    "news_article": {
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/08/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "source": "Cisa.gov"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-66384",
+    "aura_score": 52.6,
+    "cvss": 5.3,
+    "epss": 0.006,
+    "kev": true,
+    "trend_score": 0.247,
+    "trend_mentions": 3,
+    "trend_breakdown": {
+      "news_hits": 3,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.247
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-66384"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Jfrog",
+    "product": "Artifactory",
+    "summary_analyst": "CVE-2026-66384 is a vulnerability in JFrog Artifactory that allows an attacker to exploit inadequate access controls to gain unauthorized access to sensitive repository data.",
+    "summary_ciso": "CVE-2026-66384 exposes JFrog Artifactory to potentially severe data breaches and operational disruptions, necessitating immediate action to mitigate risks to sensitive repository data and maintain business continuity.",
+    "description": "CVE-2026-66384 is a vulnerability in JFrog Artifactory that allows an attacker to exploit inadequate access controls to gain unauthorized access to sensitive repository data.",
+    "news_article": {
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/08/27/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "source": "Cisa.gov"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-49105",
+    "aura_score": 40.1,
+    "cvss": 0,
+    "epss": 0.432,
+    "kev": true,
+    "trend_score": 0.287,
+    "trend_mentions": 4,
+    "trend_breakdown": {
+      "news_hits": 4,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.287
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2023-49105"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Unknown",
+    "product": "Unknown",
+    "summary_analyst": "CVE-2023-49105 presents a vulnerability in an unknown component that can be exploited to execute unauthorized code due to insufficient input validation.",
+    "summary_ciso": "CVE-2023-49105 poses an urgent risk to our business due to an unpatched vulnerability in Unknown Unknown, potentially exposing critical assets to exploitation and significant financial or reputational damage if not addressed swiftly.",
+    "description": "CVE-2023-49105 presents a vulnerability in an unknown component that can be exploited to execute unauthorized code due to insufficient input validation.",
+    "news_article": {
+      "title": "U.S. CISA adds ownCloud, Linux Kernel, and JFrog Artifactory flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/198014/hacking/u-s-cisa-adds-owncloud-linux-kernel-and-jfrog-artifactory-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "source": "Securityaffairs.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
