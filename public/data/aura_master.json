@@ -1,71 +1,19 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-21",
   "records": [
     {
-      "cve": "CVE-2026-20079",
-      "aura_score": 87.7,
-      "cvss": 10.0,
-      "epss": 0.758,
-      "kev": true,
-      "trend_score": 0.515,
-      "trend_mentions": 17,
-      "trend_breakdown": {
-        "news_hits": 17,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.515
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-20079"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Cisco",
-      "product": "Secure Firewall Management Center",
-      "summary_analyst": "CVE-2026-20079 is a vulnerability in Cisco Secure Firewall Management Center that allows an unauthenticated attacker to execute arbitrary commands via crafted requests, potentially compromising the integrity of the affected component.",
-      "summary_ciso": "CVE-2026-20079 poses a critical vulnerability in Cisco Secure Firewall Management Center that could lead to unauthorized access and potentially severe operational disruptions, necessitating immediate attention to mitigate exposure risks and protect our assets.",
-      "description": "CVE-2026-20079 is a vulnerability in Cisco Secure Firewall Management Center that allows an unauthenticated attacker to execute arbitrary commands via crafted requests, potentially compromising the integrity of the affected component.",
-      "news_article": {
-        "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
-        "url": "https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2026-85706",
-      "aura_score": 74.1,
+      "aura_score": 75.9,
       "cvss": 10.0,
-      "epss": 0.111,
+      "epss": 0.146,
       "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
+      "trend_score": 0.606,
+      "trend_mentions": 29,
       "trend_breakdown": {
-        "news_hits": 7,
+        "news_hits": 29,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.37
+        "trend_raw": 0.606
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -88,9 +36,9 @@
       },
       "vendor": "Gitlab",
       "product": "Gitlab",
-      "summary_analyst": "CVE-2026-85706 affects GitLab by allowing an authenticated attacker to execute arbitrary code through improper validation of user inputs in the application's webhook feature.",
-      "summary_ciso": "CVE-2026-85706 exposes GitLab to potential data breaches and unauthorized access, posing a significant risk to our sensitive information and necessitating immediate mitigation to protect our business continuity and reputation.",
-      "description": "CVE-2026-85706 affects GitLab by allowing an authenticated attacker to execute arbitrary code through improper validation of user inputs in the application's webhook feature.",
+      "summary_analyst": "CVE-2026-85706 affects GitLab by allowing an attacker to exploit a vulnerability in the handling of user authentication tokens, potentially leading to unauthorized access to sensitive data.",
+      "summary_ciso": "CVE-2026-85706 presents a critical vulnerability in Gitlab that exposes sensitive code repositories to potential exploitation, posing an urgent risk to our intellectual property and business continuity, necessitating immediate remediation.",
+      "description": "CVE-2026-85706 affects GitLab by allowing an attacker to exploit a vulnerability in the handling of user authentication tokens, potentially leading to unauthorized access to sensitive data.",
       "news_article": {
         "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
         "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
@@ -106,23 +54,23 @@
       }
     },
     {
-      "cve": "CVE-2026-75650",
-      "aura_score": 73.9,
+      "cve": "CVE-2026-76460",
+      "aura_score": 72.8,
       "cvss": 10.0,
-      "epss": 0.021,
+      "epss": 0.008,
       "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 62,
+      "trend_score": 0.533,
+      "trend_mentions": 19,
       "trend_breakdown": {
-        "news_hits": 62,
+        "news_hits": 19,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.7
+        "trend_raw": 0.533
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-75650"
+        "https://www.exploit-db.com/search?q=CVE-2026-76460"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -138,14 +86,14 @@
           "low": 0
         }
       },
-      "vendor": "Adobe",
-      "product": "Commerce",
-      "summary_analyst": "CVE-2026-75650 affects Adobe Commerce by allowing attackers to execute arbitrary code through improper input validation in the payment processing component.",
-      "summary_ciso": "CVE-2026-75650 exposes Adobe Commerce to potential breaches, risking customer data integrity and leading to significant financial and reputational damage, making immediate mitigation critical to safeguard our business.",
-      "description": "CVE-2026-75650 affects Adobe Commerce by allowing attackers to execute arbitrary code through improper input validation in the payment processing component.",
+      "vendor": "Cisco",
+      "product": "Identity Services Engine",
+      "summary_analyst": "CVE-2026-76460 is a vulnerability in Cisco Identity Services Engine that allows an authenticated attacker to execute arbitrary code by sending specially crafted requests to the affected component.",
+      "summary_ciso": "CVE-2026-76460 poses a critical security vulnerability in Cisco Identity Services Engine, exposing our systems to potential unauthorized access and data breaches, necessitating immediate mitigation to protect sensitive information and maintain operational integrity.",
+      "description": "CVE-2026-76460 is a vulnerability in Cisco Identity Services Engine that allows an authenticated attacker to execute arbitrary code by sending specially crafted requests to the affected component.",
       "news_article": {
-        "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
-        "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+        "title": "Cisco Warns of New Zero-Day ISE Auth Bypass (CVSS 10.0) Exploited in Active Attacks",
+        "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -158,23 +106,23 @@
       }
     },
     {
-      "cve": "CVE-2026-19490",
-      "aura_score": 73.1,
+      "cve": "CVE-2026-76461",
+      "aura_score": 72.5,
       "cvss": 9.8,
-      "epss": 0.056,
+      "epss": 0.02,
       "kev": true,
-      "trend_score": 0.558,
-      "trend_mentions": 22,
+      "trend_score": 0.58,
+      "trend_mentions": 25,
       "trend_breakdown": {
-        "news_hits": 22,
+        "news_hits": 25,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.558
+        "trend_raw": 0.58
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-19490"
+        "https://www.exploit-db.com/search?q=CVE-2026-76461"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -190,67 +138,15 @@
           "low": 0
         }
       },
-      "vendor": "Citrix",
-      "product": "Netscaler Application Delivery Controller",
-      "summary_analyst": "CVE-2026-19490 affects the Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation, potentially leading to arbitrary code execution on the affected component.",
-      "summary_ciso": "CVE-2026-19490 poses a critical risk to Citrix Netscaler Application Delivery Controller, exposing our organization to potential data breaches and operational disruptions, making it imperative to implement mitigation strategies urgently to safeguard our assets and maintain business continuity.",
-      "description": "CVE-2026-19490 affects the Citrix Netscaler Application Delivery Controller by allowing an attacker to exploit improper input validation, potentially leading to arbitrary code execution on the affected component.",
+      "vendor": "Cisco",
+      "product": "Asyncos",
+      "summary_analyst": "CVE-2026-76461 is a vulnerability in Cisco Asyncos that allows an unauthenticated remote attacker to execute arbitrary code via crafted HTTP requests, exploiting improper input validation in the affected component.",
+      "summary_ciso": "CVE-2026-76461 poses a significant risk to Cisco Asyncos by potentially allowing unauthorized access to sensitive data, emphasizing the urgent need for immediate remediation to protect our business operations and reputation.",
+      "description": "CVE-2026-76461 is a vulnerability in Cisco Asyncos that allows an unauthenticated remote attacker to execute arbitrary code via crafted HTTP requests, exploiting improper input validation in the affected component.",
       "news_article": {
-        "title": "Critical NetScaler Flaw Can Bypass Authentication on Certain Gateway and AAA Servers",
-        "url": "https://thehackernews.com/2026/08/critical-netscaler-flaw-can-bypass.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-86060",
-      "aura_score": 72.9,
-      "cvss": 9.8,
-      "epss": 0.01,
-      "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 68,
-      "trend_breakdown": {
-        "news_hits": 68,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.7
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-86060"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Mikrotik",
-      "product": "Routeros",
-      "summary_analyst": "CVE-2026-86060 allows remote attackers to exploit a command injection vulnerability in Mikrotik RouterOS through crafted input in the WebFig interface, potentially enabling unauthorized system access.",
-      "summary_ciso": "CVE-2026-86060 poses a critical risk to Mikrotik RouterOS, exposing our network infrastructure to potential remote exploitation, which could lead to data breaches and significant operational disruptions, necessitating immediate action to mitigate this vulnerability.",
-      "description": "CVE-2026-86060 allows remote attackers to exploit a command injection vulnerability in Mikrotik RouterOS through crafted input in the WebFig interface, potentially enabling unauthorized system access.",
-      "news_article": {
-        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/09/10/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
+        "title": "Cisco patches actively exploited email gateway zero-day (CVE-2026-76461)",
+        "url": "https://www.helpnetsecurity.com/2026/09/15/cve-2026-76461-cisco-email-gateway-zero-day-exploited/",
+        "source": "Help Net Security"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -263,17 +159,17 @@
     },
     {
       "cve": "CVE-2026-84869",
-      "aura_score": 71.0,
+      "aura_score": 72.0,
       "cvss": 9.9,
       "epss": 0.007,
       "kev": true,
-      "trend_score": 0.247,
-      "trend_mentions": 3,
+      "trend_score": 0.457,
+      "trend_mentions": 12,
       "trend_breakdown": {
-        "news_hits": 3,
+        "news_hits": 12,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.247
+        "trend_raw": 0.457
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -296,13 +192,13 @@
       },
       "vendor": "Connectwise",
       "product": "Screenconnect",
-      "summary_analyst": "CVE-2026-84869 affects Connectwise Screenconnect by exploiting a vulnerability in the remote desktop sharing functionality, allowing unauthorized access to user sessions and sensitive data.",
-      "summary_ciso": "CVE-2026-84869 presents a critical vulnerability in Connectwise Screenconnect, exposing the organization to potential data breaches and unauthorized access, necessitating immediate remediation to safeguard sensitive information and maintain operational integrity.",
-      "description": "CVE-2026-84869 affects Connectwise Screenconnect by exploiting a vulnerability in the remote desktop sharing functionality, allowing unauthorized access to user sessions and sensitive data.",
+      "summary_analyst": "CVE-2026-84869 affects ConnectWise ScreenConnect by allowing remote attackers to execute arbitrary commands on the target system through improper validation of user-supplied input.",
+      "summary_ciso": "CVE-2026-84869 poses an urgent threat to our operations by exposing Connectwise Screenconnect to potential remote exploitation, which could lead to unauthorized access to sensitive data and disrupt critical business functions, necessitating immediate mitigation actions.",
+      "description": "CVE-2026-84869 affects ConnectWise ScreenConnect by allowing remote attackers to execute arbitrary commands on the target system through improper validation of user-supplied input.",
       "news_article": {
-        "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/09/11/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
+        "title": "ConnectWise Patches ScreenConnect Vulnerability Exploited in Worm-Like Attacks",
+        "url": "https://www.securityweek.com/connectwise-patches-screenconnect-vulnerability-exploited-in-worm-like-attacks/",
+        "source": "Securityweek.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -314,23 +210,23 @@
       }
     },
     {
-      "cve": "CVE-2026-76461",
-      "aura_score": 69.2,
+      "cve": "CVE-2025-39682",
+      "aura_score": 70.9,
       "cvss": 9.8,
-      "epss": 0,
+      "epss": 0.012,
       "kev": true,
-      "trend_score": 0.0,
-      "trend_mentions": 0,
+      "trend_score": 0.287,
+      "trend_mentions": 4,
       "trend_breakdown": {
-        "news_hits": 0,
+        "news_hits": 4,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.0
+        "trend_raw": 0.287
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-76461"
+        "https://www.exploit-db.com/search?q=CVE-2025-39682"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -346,12 +242,16 @@
           "low": 0
         }
       },
-      "vendor": "Unknown",
-      "product": "Unknown",
-      "summary_analyst": "CVE-2026-76461 involves a vulnerability that allows for remote code execution through improper input validation in the affected Unknown Unknown component, enabling attackers to execute arbitrary commands on the system.",
-      "summary_ciso": "CVE-2026-76461 presents a critical vulnerability that could expose our organization to significant data breaches and operational disruptions, necessitating immediate attention to mitigate potential financial and reputational damage.",
-      "description": "CVE-2026-76461 involves a vulnerability that allows for remote code execution through improper input validation in the affected Unknown Unknown component, enabling attackers to execute arbitrary commands on the system.",
-      "news_article": null,
+      "vendor": "Linux",
+      "product": "Linux Kernel",
+      "summary_analyst": "CVE-2025-39682 is a vulnerability in the Linux Kernel that allows local attackers to escalate privileges through a flaw in the handling of memory allocation within specific kernel modules.",
+      "summary_ciso": "CVE-2025-39682 exposes critical vulnerabilities in the Linux Kernel that could allow attackers to gain unauthorized access to systems, risking sensitive data and operational integrity, necessitating immediate mitigation to protect the organization from potential breaches.",
+      "description": "CVE-2025-39682 is a vulnerability in the Linux Kernel that allows local attackers to escalate privileges through a flaw in the handling of memory allocation within specific kernel modules.",
+      "news_article": {
+        "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+        "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+        "source": "Internet"
+      },
       "score_breakdown": {
         "cvss_weight": 0.4,
         "epss_weight": 0.2,
@@ -362,23 +262,23 @@
       }
     },
     {
-      "cve": "CVE-2026-87491",
-      "aura_score": 68.3,
+      "cve": "CVE-2026-58704",
+      "aura_score": 68.5,
       "cvss": 8.8,
-      "epss": 0.009,
+      "epss": 0.002,
       "kev": true,
-      "trend_score": 0.593,
-      "trend_mentions": 27,
+      "trend_score": 0.648,
+      "trend_mentions": 37,
       "trend_breakdown": {
-        "news_hits": 27,
+        "news_hits": 37,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.593
+        "trend_raw": 0.648
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-87491"
+        "https://www.exploit-db.com/search?q=CVE-2026-58704"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -395,13 +295,13 @@
         }
       },
       "vendor": "Google",
-      "product": "Chrome",
-      "summary_analyst": "CVE-2026-87491 is a heap buffer overflow vulnerability in Google Chrome that can be exploited by an attacker to execute arbitrary code by manipulating the memory management of web content.",
-      "summary_ciso": "CVE-2026-87491 poses a critical security risk to Google Chrome users, potentially exposing sensitive data to exploitation, and requires immediate patching to safeguard our organization's digital assets and maintain user trust.",
-      "description": "CVE-2026-87491 is a heap buffer overflow vulnerability in Google Chrome that can be exploited by an attacker to execute arbitrary code by manipulating the memory management of web content.",
+      "product": "Android",
+      "summary_analyst": "CVE-2026-58704 is a vulnerability in Google Android that allows attackers to exploit insufficient input validation in specific system components, potentially leading to arbitrary code execution.",
+      "summary_ciso": "CVE-2026-58704 poses a significant risk to Google Android users by exposing sensitive personal data, necessitating immediate mitigation actions to prevent potential breaches and protect user privacy.",
+      "description": "CVE-2026-58704 is a vulnerability in Google Android that allows attackers to exploit insufficient input validation in specific system components, potentially leading to arbitrary code execution.",
       "news_article": {
-        "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
-        "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+        "title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
+        "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
         "source": "Internet"
       },
       "score_breakdown": {
@@ -414,23 +314,23 @@
       }
     },
     {
-      "cve": "CVE-2026-67277",
-      "aura_score": 65.2,
-      "cvss": 8.2,
-      "epss": 0.009,
+      "cve": "CVE-2026-53266",
+      "aura_score": 67.4,
+      "cvss": 8.8,
+      "epss": 0.003,
       "kev": true,
-      "trend_score": 0.442,
-      "trend_mentions": 11,
+      "trend_score": 0.427,
+      "trend_mentions": 10,
       "trend_breakdown": {
-        "news_hits": 11,
+        "news_hits": 10,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.442
+        "trend_raw": 0.427
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-67277"
+        "https://www.exploit-db.com/search?q=CVE-2026-53266"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -446,67 +346,15 @@
           "low": 0
         }
       },
-      "vendor": "Mikrotik",
-      "product": "Routeros",
-      "summary_analyst": "CVE-2026-67277 affects MikroTik RouterOS by allowing remote attackers to execute arbitrary code due to improper input validation in the web interface.",
-      "summary_ciso": "The CVE-2026-67277 vulnerability in Mikrotik RouterOS exposes critical network assets to potential exploitation, increasing the urgency to implement security measures to protect sensitive data and maintain operational integrity.",
-      "description": "CVE-2026-67277 affects MikroTik RouterOS by allowing remote attackers to execute arbitrary code due to improper input validation in the web interface.",
+      "vendor": "Linux",
+      "product": "Linux Kernel",
+      "summary_analyst": "CVE-2026-53266 is a vulnerability in the Linux Kernel that allows attackers to execute arbitrary code through a buffer overflow in the handling of certain socket options.",
+      "summary_ciso": "CVE-2026-53266 poses a significant risk to Linux Kernel systems, potentially allowing attackers to exploit vulnerabilities that could lead to data breaches and operational disruptions, necessitating immediate action to mitigate exposure.",
+      "description": "CVE-2026-53266 is a vulnerability in the Linux Kernel that allows attackers to execute arbitrary code through a buffer overflow in the handling of certain socket options.",
       "news_article": {
-        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/09/10/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2025-25249",
-      "aura_score": 64.7,
-      "cvss": 8.1,
-      "epss": 0.024,
-      "kev": true,
-      "trend_score": 0.37,
-      "trend_mentions": 7,
-      "trend_breakdown": {
-        "news_hits": 7,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.37
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-25249"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Fortinet",
-      "product": "Fortios",
-      "summary_analyst": "CVE-2025-25249 involves a stack-based buffer overflow vulnerability in Fortinet Fortios, allowing remote attackers to execute arbitrary code on affected devices through crafted HTTP requests.",
-      "summary_ciso": "CVE-2025-25249 exposes Fortinet Fortios to critical vulnerabilities that could allow attackers to exploit the system, risking sensitive data breaches and urgent need for remediation to protect business continuity and reputation.",
-      "description": "CVE-2025-25249 involves a stack-based buffer overflow vulnerability in Fortinet Fortios, allowing remote attackers to execute arbitrary code on affected devices through crafted HTTP requests.",
-      "news_article": {
-        "title": "Fortinet Code Execution Flaw Exploited in PivotC2 RAT Attacks",
-        "url": "https://www.securityweek.com/fortinet-code-execution-flaw-exploited-in-pivotc2-rat-attacks/",
-        "source": "Securityweek.com"
+        "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+        "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+        "source": "Internet"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -519,17 +367,17 @@
     },
     {
       "cve": "CVE-2026-42016",
-      "aura_score": 64.5,
+      "aura_score": 66.8,
       "cvss": 8.1,
-      "epss": 0.009,
+      "epss": 0.091,
       "kev": true,
-      "trend_score": 0.391,
-      "trend_mentions": 8,
+      "trend_score": 0.515,
+      "trend_mentions": 17,
       "trend_breakdown": {
-        "news_hits": 8,
+        "news_hits": 17,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.391
+        "trend_raw": 0.515
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -552,9 +400,9 @@
       },
       "vendor": "Jfrog",
       "product": "Artifactory",
-      "summary_analyst": "CVE-2026-42016 is a vulnerability in Jfrog Artifactory that allows an unauthorized user to execute arbitrary code on the server by exploiting improper validation of user input in the API endpoint.",
-      "summary_ciso": "CVE-2026-42016 presents an urgent security vulnerability in JFrog Artifactory that could lead to significant data exposure risk, potentially compromising sensitive assets and requiring immediate remediation to protect business integrity and customer trust.",
-      "description": "CVE-2026-42016 is a vulnerability in Jfrog Artifactory that allows an unauthorized user to execute arbitrary code on the server by exploiting improper validation of user input in the API endpoint.",
+      "summary_analyst": "CVE-2026-42016 is a vulnerability in JFrog Artifactory that allows an authenticated user to execute arbitrary code through improperly validated input in the artifact upload process.",
+      "summary_ciso": "CVE-2026-42016 presents a critical vulnerability in JFrog Artifactory that, if exploited, could lead to unauthorized access to sensitive repositories, posing a significant operational risk and necessitating immediate mitigation efforts to protect our assets and reputation.",
+      "description": "CVE-2026-42016 is a vulnerability in JFrog Artifactory that allows an authenticated user to execute arbitrary code through improperly validated input in the artifact upload process.",
       "news_article": {
         "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
         "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
@@ -570,18 +418,66 @@
       }
     },
     {
-      "cve": "CVE-2026-42018",
-      "aura_score": 62.1,
-      "cvss": 7.5,
-      "epss": 0.009,
+      "cve": "CVE-2026-7273",
+      "aura_score": 65.3,
+      "cvss": 8.8,
+      "epss": 0.003,
       "kev": true,
-      "trend_score": 0.391,
-      "trend_mentions": 8,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
       "trend_breakdown": {
-        "news_hits": 8,
+        "news_hits": 0,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.391
+        "trend_raw": 0.0
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-7273"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Unknown",
+      "product": "Unknown",
+      "summary_analyst": "CVE-2026-7273 involves a vulnerability in the Unknown Unknown component that can be exploited through unauthorized access to sensitive data by an attacker manipulating input validation mechanisms.",
+      "summary_ciso": "CVE-2026-7273 poses a critical risk to our business by exposing sensitive data and operational integrity, necessitating immediate mitigation efforts to prevent potential exploitation and costly repercussions.",
+      "description": "CVE-2026-7273 involves a vulnerability in the Unknown Unknown component that can be exploited through unauthorized access to sensitive data by an attacker manipulating input validation mechanisms.",
+      "news_article": null,
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-42018",
+      "aura_score": 64.8,
+      "cvss": 7.5,
+      "epss": 0.11,
+      "kev": true,
+      "trend_score": 0.515,
+      "trend_mentions": 17,
+      "trend_breakdown": {
+        "news_hits": 17,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.515
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -604,12 +500,116 @@
       },
       "vendor": "Jfrog",
       "product": "Artifactory",
-      "summary_analyst": "CVE-2026-42018 affects JFrog Artifactory by allowing an authenticated user to exploit insecure direct object references, potentially leading to unauthorized access to sensitive resources.",
-      "summary_ciso": "CVE-2026-42018 poses a critical vulnerability in JFrog Artifactory that could potentially lead to unauthorized access to sensitive data and intellectual property, exposing the organization to significant financial loss and reputational damage, thereby necessitating immediate mitigation efforts.",
-      "description": "CVE-2026-42018 affects JFrog Artifactory by allowing an authenticated user to exploit insecure direct object references, potentially leading to unauthorized access to sensitive resources.",
+      "summary_analyst": "CVE-2026-42018 is a vulnerability in JFrog Artifactory that allows an authenticated attacker to execute arbitrary code on the server via crafted API requests due to improper validation of user input in the application's API handling component.",
+      "summary_ciso": "CVE-2026-42018 exposes JFrog Artifactory to potential data breaches and supply chain attacks, posing significant operational risks that necessitate immediate remediation to safeguard sensitive artifacts and maintain business continuity.",
+      "description": "CVE-2026-42018 is a vulnerability in JFrog Artifactory that allows an authenticated attacker to execute arbitrary code on the server via crafted API requests due to improper validation of user input in the application's API handling component.",
       "news_article": {
         "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
         "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2025-39964",
+      "aura_score": 63.8,
+      "cvss": 7.8,
+      "epss": 0.008,
+      "kev": true,
+      "trend_score": 0.494,
+      "trend_mentions": 15,
+      "trend_breakdown": {
+        "news_hits": 15,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.494
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2025-39964"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Linux",
+      "product": "Linux Kernel",
+      "summary_analyst": "CVE-2025-39964 is a vulnerability in the Linux Kernel that allows local users to gain elevated privileges through a race condition in the handling of the 'fsetxattr' function, affecting file system operations.",
+      "summary_ciso": "CVE-2025-39964 presents a critical vulnerability in the Linux Kernel that could allow attackers to escalate privileges, potentially compromising our infrastructure and requiring immediate action to mitigate risks to our operations and data security.",
+      "description": "CVE-2025-39964 is a vulnerability in the Linux Kernel that allows local users to gain elevated privileges through a race condition in the handling of the 'fsetxattr' function, affecting file system operations.",
+      "news_article": {
+        "title": "CISA Flags Three Linux Kernel Vulnerabilities Exploited in the Wild",
+        "url": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-87886",
+      "aura_score": 63.2,
+      "cvss": 7.8,
+      "epss": 0.003,
+      "kev": true,
+      "trend_score": 0.391,
+      "trend_mentions": 8,
+      "trend_breakdown": {
+        "news_hits": 8,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.391
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-87886"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Acronis",
+      "product": "Acronis Backup",
+      "summary_analyst": "CVE-2026-87886 is a vulnerability in Acronis Backup that allows an authenticated attacker to execute arbitrary code on the affected component due to improper input validation in the web interface.",
+      "summary_ciso": "CVE-2026-87886 presents a critical vulnerability in Acronis Backup that could allow unauthorized access to sensitive data, exposing the organization to potential data breaches and compliance risks, necessitating immediate remediation to safeguard our operations and reputation.",
+      "description": "CVE-2026-87886 is a vulnerability in Acronis Backup that allows an authenticated attacker to execute arbitrary code on the affected component due to improper input validation in the web interface.",
+      "news_article": {
+        "title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
+        "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
         "source": "Internet"
       },
       "score_breakdown": {
