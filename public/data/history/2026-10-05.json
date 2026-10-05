@@ -1,0 +1,626 @@
+[
+  {
+    "cve": "CVE-2026-87902",
+    "aura_score": 75.1,
+    "cvss": 8.1,
+    "epss": 0.461,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 107,
+    "trend_breakdown": {
+      "news_hits": 107,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-87902"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Wordpress",
+    "product": "Wordpress",
+    "summary_analyst": "CVE-2026-87902 is a vulnerability in WordPress that allows an attacker to exploit an unsecured endpoint to execute arbitrary code, potentially compromising the affected website.",
+    "summary_ciso": "CVE-2026-87902 exposes WordPress users to potential data breaches and site compromise, necessitating immediate updates to safeguard against this urgent vulnerability.",
+    "description": "CVE-2026-87902 is a vulnerability in WordPress that allows an attacker to exploit an unsecured endpoint to execute arbitrary code, potentially compromising the affected website.",
+    "news_article": {
+      "title": "Hackers exploited a critical WordPress flaw within hours of the patch",
+      "url": "https://thenextweb.com/news/wordpress-flaw-cve-2026-87902-exploited",
+      "source": "The Next Web"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-104286",
+    "aura_score": 72.9,
+    "cvss": 9.8,
+    "epss": 0.022,
+    "kev": true,
+    "trend_score": 0.643,
+    "trend_mentions": 36,
+    "trend_breakdown": {
+      "news_hits": 36,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.643
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-104286"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Fortimail",
+    "summary_analyst": "CVE-2026-104286 is a vulnerability in Fortinet Fortimail that allows remote attackers to execute arbitrary commands on the affected component by sending specially crafted requests to the system.",
+    "summary_ciso": "CVE-2026-104286 poses a significant risk to Fortinet Fortimail users, potentially exposing sensitive data to unauthorized access, which necessitates immediate mitigation actions to safeguard business continuity and protect customer trust.",
+    "description": "CVE-2026-104286 is a vulnerability in Fortinet Fortimail that allows remote attackers to execute arbitrary commands on the affected component by sending specially crafted requests to the system.",
+    "news_article": {
+      "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
+      "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-88771",
+    "aura_score": 72.9,
+    "cvss": 9.8,
+    "epss": 0.011,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 88,
+    "trend_breakdown": {
+      "news_hits": 88,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-88771"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Citrix",
+    "product": "Netscaler Application Delivery Controller",
+    "summary_analyst": "CVE-2026-88771 is a vulnerability in the Citrix Netscaler Application Delivery Controller that exploits improper input validation in the management interface, allowing an attacker to perform arbitrary command execution on the device.",
+    "summary_ciso": "CVE-2026-88771 exposes Citrix Netscaler Application Delivery Controller to critical vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate remediation to protect our sensitive information and maintain operational integrity.",
+    "description": "CVE-2026-88771 is a vulnerability in the Citrix Netscaler Application Delivery Controller that exploits improper input validation in the management interface, allowing an attacker to perform arbitrary command execution on the device.",
+    "news_article": {
+      "title": "Hackers are exploiting two critical Citrix NetScaler zero-days",
+      "url": "https://thenextweb.com/news/citrix-netscaler-zero-days-cve-2026-88771-exploited",
+      "source": "The Next Web"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-5430",
+    "aura_score": 72.3,
+    "cvss": 10.0,
+    "epss": 0.006,
+    "kev": true,
+    "trend_score": 0.427,
+    "trend_mentions": 10,
+    "trend_breakdown": {
+      "news_hits": 10,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.427
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-5430"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Wso2",
+    "product": "Api Control Plane",
+    "summary_analyst": "CVE-2026-5430 is a vulnerability in the Wso2 API Control Plane that allows an attacker to exploit improper input validation, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2026-5430 exposes WSO2 API Control Plane to potential data breaches and operational disruptions, necessitating immediate action to mitigate risks to sensitive information and ensure business continuity.",
+    "description": "CVE-2026-5430 is a vulnerability in the Wso2 API Control Plane that allows an attacker to exploit improper input validation, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "Active Exploitation Attempts Target WSO2 API Manager JWT Bypass With Forged Admin Tokens",
+      "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-76504",
+    "aura_score": 72.2,
+    "cvss": 9.8,
+    "epss": 0.016,
+    "kev": true,
+    "trend_score": 0.533,
+    "trend_mentions": 19,
+    "trend_breakdown": {
+      "news_hits": 19,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.533
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-76504"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Catalyst Sd-wan Manager",
+    "summary_analyst": "CVE-2026-76504 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying operating system due to improper input validation in the web-based management interface.",
+    "summary_ciso": "The recently identified CVE-2026-76504 vulnerability in Cisco Catalyst SD-WAN Manager poses a significant risk of data breach and operational disruption, necessitating immediate remediation to protect sensitive business operations and safeguard against potential financial and reputational damage.",
+    "description": "CVE-2026-76504 is a vulnerability in Cisco Catalyst SD-WAN Manager that allows an unauthenticated attacker to execute arbitrary commands on the underlying operating system due to improper input validation in the web-based management interface.",
+    "news_article": {
+      "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
+      "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-102489",
+    "aura_score": 71.9,
+    "cvss": 9.8,
+    "epss": 0.014,
+    "kev": true,
+    "trend_score": 0.482,
+    "trend_mentions": 14,
+    "trend_breakdown": {
+      "news_hits": 14,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.482
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-102489"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Zammad",
+    "product": "Zammad",
+    "summary_analyst": "CVE-2026-102489 affects Zammad's web interface, where an attacker can exploit improper input validation to execute arbitrary code on the server.",
+    "summary_ciso": "CVE-2026-102489 poses an urgent risk to Zammad users, as it could lead to significant data exposure, potentially compromising sensitive customer information and impacting business operations if not promptly addressed.",
+    "description": "CVE-2026-102489 affects Zammad's web interface, where an attacker can exploit improper input validation to execute arbitrary code on the server.",
+    "news_article": {
+      "title": "AI agents hacked the hackers, stealing email addresses from security research org",
+      "url": "https://www.theregister.com/security/2026/10/01/ai-agents-hacked-the-hackers-stealing-email-addresses-from-security-research-org/5300652",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-102490",
+    "aura_score": 71.6,
+    "cvss": 9.8,
+    "epss": 0.006,
+    "kev": true,
+    "trend_score": 0.457,
+    "trend_mentions": 12,
+    "trend_breakdown": {
+      "news_hits": 12,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.457
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-102490"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Zammad",
+    "product": "Zammad",
+    "summary_analyst": "CVE-2026-102490 affects Zammad Zammad by allowing an authenticated attacker to exploit improper input validation in the system's API, leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-102490 presents a critical vulnerability in Zammad that could lead to unauthorized access to sensitive customer data, exposing the organization to significant financial and reputational risks if not addressed immediately.",
+    "description": "CVE-2026-102490 affects Zammad Zammad by allowing an authenticated attacker to exploit improper input validation in the system's API, leading to arbitrary code execution.",
+    "news_article": {
+      "title": "AI agents hacked the hackers, stealing email addresses from security research org",
+      "url": "https://www.theregister.com/security/2026/10/01/ai-agents-hacked-the-hackers-stealing-email-addresses-from-security-research-org/5300652",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-86950",
+    "aura_score": 68.9,
+    "cvss": 8.8,
+    "epss": 0.012,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 96,
+    "trend_breakdown": {
+      "news_hits": 96,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-86950"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Apple",
+    "product": "Ipados",
+    "summary_analyst": "CVE-2026-86950 affects Apple iPadOS by allowing an attacker to exploit a vulnerability in the system's handling of memory management, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-86950 poses a critical vulnerability in Apple iPadOS that, if exploited, could result in unauthorized access to sensitive data, significantly increasing the risk of data breaches and requiring immediate remediation to protect our organization's assets and reputation.",
+    "description": "CVE-2026-86950 affects Apple iPadOS by allowing an attacker to exploit a vulnerability in the system's handling of memory management, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "Apple Patches CoreGraphics Flaw Possibly Exploited in Targeted Attacks",
+      "url": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-65660",
+    "aura_score": 67.8,
+    "cvss": 8.8,
+    "epss": 0.021,
+    "kev": true,
+    "trend_score": 0.442,
+    "trend_mentions": 11,
+    "trend_breakdown": {
+      "news_hits": 11,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.442
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-65660"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Sharepoint Server",
+    "summary_analyst": "CVE-2026-65660 is a vulnerability in Microsoft SharePoint Server that allows remote attackers to execute arbitrary code via crafted requests due to improper validation of input in the affected component's processing logic.",
+    "summary_ciso": "CVE-2026-65660 presents a critical vulnerability in Microsoft SharePoint Server, potentially exposing sensitive company data to unauthorized access, which urgently requires mitigation to protect our business from reputational damage and regulatory penalties.",
+    "description": "CVE-2026-65660 is a vulnerability in Microsoft SharePoint Server that allows remote attackers to execute arbitrary code via crafted requests due to improper validation of input in the affected component's processing logic.",
+    "news_article": {
+      "title": "SharePoint Flaw Initially Listed as Spoofing by Microsoft Enables Authenticated RCE",
+      "url": "https://thehackernews.com/2026/09/sharepoint-flaw-initially-listed-as.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-88772",
+    "aura_score": 66.2,
+    "cvss": 8.1,
+    "epss": 0.013,
+    "kev": true,
+    "trend_score": 0.7,
+    "trend_mentions": 85,
+    "trend_breakdown": {
+      "news_hits": 85,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.7
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-88772"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Citrix",
+    "product": "Netscaler Application Delivery Controller",
+    "summary_analyst": "CVE-2026-88772 enables an attacker to exploit a vulnerability in the Citrix Netscaler Application Delivery Controller by sending specially crafted requests that can lead to unauthorized access and potential data leakage.",
+    "summary_ciso": "CVE-2026-88772 poses a critical vulnerability in Citrix Netscaler Application Delivery Controller that, if exploited, could lead to significant data breaches and operational disruptions, necessitating immediate action to mitigate potential business impacts.",
+    "description": "CVE-2026-88772 enables an attacker to exploit a vulnerability in the Citrix Netscaler Application Delivery Controller by sending specially crafted requests that can lead to unauthorized access and potential data leakage.",
+    "news_article": {
+      "title": "Hackers are exploiting two critical Citrix NetScaler zero-days",
+      "url": "https://thenextweb.com/news/citrix-netscaler-zero-days-cve-2026-88771-exploited",
+      "source": "The Next Web"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-88779",
+    "aura_score": 61.1,
+    "cvss": 7.5,
+    "epss": 0.005,
+    "kev": true,
+    "trend_score": 0.196,
+    "trend_mentions": 2,
+    "trend_breakdown": {
+      "news_hits": 2,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.196
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-88779"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Citrix",
+    "product": "Netscaler Application Delivery Controller",
+    "summary_analyst": "CVE-2026-88779 is a vulnerability in Citrix Netscaler Application Delivery Controller that allows an attacker to exploit improper input validation in the management interface, potentially leading to arbitrary code execution.",
+    "summary_ciso": "CVE-2026-88779 exposes Citrix Netscaler Application Delivery Controllers to potential exploits, posing an immediate risk of data breaches and service disruptions that could significantly impact business operations if unaddressed.",
+    "description": "CVE-2026-88779 is a vulnerability in Citrix Netscaler Application Delivery Controller that allows an attacker to exploit improper input validation in the management interface, potentially leading to arbitrary code execution.",
+    "news_article": {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "Cisa.gov"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-67279",
+    "aura_score": 58.7,
+    "cvss": 6.5,
+    "epss": 0.01,
+    "kev": true,
+    "trend_score": 0.504,
+    "trend_mentions": 16,
+    "trend_breakdown": {
+      "news_hits": 16,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.504
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-67279"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Mikrotik",
+    "product": "Routeros",
+    "summary_analyst": "CVE-2026-67279 affects MikroTik RouterOS by allowing an unauthenticated attacker to execute arbitrary commands via a crafted HTTP request, exploiting a vulnerability in the web management interface.",
+    "summary_ciso": "CVE-2026-67279 poses an immediate risk to our network infrastructure by allowing unauthorized access to Mikrotik RouterOS, potentially compromising sensitive data and disrupting operations if not mitigated swiftly.",
+    "description": "CVE-2026-67279 affects MikroTik RouterOS by allowing an unauthenticated attacker to execute arbitrary commands via a crafted HTTP request, exploiting a vulnerability in the web management interface.",
+    "news_article": {
+      "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
+      "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
