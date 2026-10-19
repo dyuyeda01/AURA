@@ -1,0 +1,610 @@
+[
+  {
+    "cve": "CVE-2026-104935",
+    "aura_score": 72.5,
+    "cvss": 8.6,
+    "epss": 0.26,
+    "kev": true,
+    "trend_score": 0.587,
+    "trend_mentions": 26,
+    "trend_breakdown": {
+      "news_hits": 26,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.587
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-104935"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ivanti",
+    "product": "Connect Secure",
+    "summary_analyst": "CVE-2026-104935 is a vulnerability in Ivanti Connect Secure that allows an attacker to exploit improper input validation, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2026-104935 poses an immediate risk to Ivanti Connect Secure, potentially exposing sensitive organizational data and operations to severe compromise, necessitating urgent remediation to protect against exploitation.",
+    "description": "CVE-2026-104935 is a vulnerability in Ivanti Connect Secure that allows an attacker to exploit improper input validation, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far",
+      "url": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-76519",
+    "aura_score": 71.9,
+    "cvss": 9.8,
+    "epss": 0.016,
+    "kev": true,
+    "trend_score": 0.482,
+    "trend_mentions": 14,
+    "trend_breakdown": {
+      "news_hits": 14,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.482
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-76519"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Cisco",
+    "product": "Asyncos",
+    "summary_analyst": "CVE-2026-76519 is a vulnerability in Cisco AsyncOS that allows an unauthenticated, remote attacker to exploit improper input validation, enabling them to execute arbitrary code on the affected system.",
+    "summary_ciso": "CVE-2026-76519 poses a significant risk to Cisco Asyncos, exposing critical systems to potential unauthorized access and data breaches, necessitating immediate action to mitigate the risk and protect sensitive information.",
+    "description": "CVE-2026-76519 is a vulnerability in Cisco AsyncOS that allows an unauthenticated, remote attacker to exploit improper input validation, enabling them to execute arbitrary code on the affected system.",
+    "news_article": {
+      "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
+      "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-105134",
+    "aura_score": 63.4,
+    "cvss": 10.0,
+    "epss": 0.048,
+    "kev": true,
+    "trend_score": 0.482,
+    "trend_mentions": 14,
+    "trend_breakdown": {
+      "news_hits": 14,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.482
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ahsay",
+    "product": "Cloud Backup Suite",
+    "summary_analyst": "CVE-2026-105134 affects the Ahsay Cloud Backup Suite by allowing an unauthenticated attacker to exploit a vulnerability in the authentication process, potentially leading to unauthorized access to sensitive backup data.",
+    "summary_ciso": "The recently discovered CVE-2026-105134 vulnerability in Ahsay Cloud Backup Suite exposes critical customer data to potential unauthorized access, creating an urgent need for mitigation to protect our reputation and compliance standing.",
+    "description": "CVE-2026-105134 affects the Ahsay Cloud Backup Suite by allowing an unauthenticated attacker to exploit a vulnerability in the authentication process, potentially leading to unauthorized access to sensitive backup data.",
+    "news_article": {
+      "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+      "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-0322",
+    "aura_score": 61.9,
+    "cvss": 7.2,
+    "epss": 0.012,
+    "kev": true,
+    "trend_score": 0.58,
+    "trend_mentions": 25,
+    "trend_breakdown": {
+      "news_hits": 25,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.58
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-0322"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Paloaltonetworks",
+    "product": "Pan-os",
+    "summary_analyst": "CVE-2026-0322 is a vulnerability in Palo Alto Networks PAN-OS that allows an authenticated attacker to execute arbitrary commands on the system via crafted API requests due to improper validation of user-supplied input.",
+    "summary_ciso": "CVE-2026-0322 exposes critical vulnerabilities in Palo Alto Networks PAN-OS that could lead to unauthorized access and data breaches, necessitating immediate action to mitigate potential financial and reputational damage.",
+    "description": "CVE-2026-0322 is a vulnerability in Palo Alto Networks PAN-OS that allows an authenticated attacker to execute arbitrary commands on the system via crafted API requests due to improper validation of user-supplied input.",
+    "news_article": {
+      "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
+      "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-105133",
+    "aura_score": 61.7,
+    "cvss": 7.3,
+    "epss": 0.009,
+    "kev": true,
+    "trend_score": 0.457,
+    "trend_mentions": 12,
+    "trend_breakdown": {
+      "news_hits": 12,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.457
+    },
+    "exploit_poc": true,
+    "exploit_edb_ids": [],
+    "exploit_urls": [
+      "https://www.exploit-db.com/search?q=CVE-2026-105133"
+    ],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Ahsay",
+    "product": "Cloud Backup Suite",
+    "summary_analyst": "CVE-2026-105133 affects the Ahsay Cloud Backup Suite, allowing remote attackers to exploit improper input validation through crafted requests, potentially leading to unauthorized access or information disclosure.",
+    "summary_ciso": "The recently discovered CVE-2026-105133 vulnerability in Ahsay Cloud Backup Suite exposes sensitive data to potential unauthorized access, posing an immediate risk to our data integrity and compliance, necessitating urgent remediation to safeguard our business operations and client trust.",
+    "description": "CVE-2026-105133 affects the Ahsay Cloud Backup Suite, allowing remote attackers to exploit improper input validation through crafted requests, potentially leading to unauthorized access or information disclosure.",
+    "news_article": {
+      "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+      "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-102764",
+    "aura_score": 61.0,
+    "cvss": 9.8,
+    "epss": 0.012,
+    "kev": true,
+    "trend_score": 0.319,
+    "trend_mentions": 5,
+    "trend_breakdown": {
+      "news_hits": 5,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.319
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Beyondtrust",
+    "product": "Remote Support",
+    "summary_analyst": "CVE-2026-102764 is a vulnerability in BeyondTrust Remote Support that allows an unauthenticated attacker to execute arbitrary code by exploiting improper input validation in the application's web interface.",
+    "summary_ciso": "CVE-2026-102764 poses an urgent risk to BeyondTrust Remote Support, potentially allowing unauthorized access to sensitive systems, which could lead to significant business disruptions and data breaches if not promptly mitigated.",
+    "description": "CVE-2026-102764 is a vulnerability in BeyondTrust Remote Support that allows an unauthenticated attacker to execute arbitrary code by exploiting improper input validation in the application's web interface.",
+    "news_article": {
+      "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-96951",
+    "aura_score": 58.9,
+    "cvss": 8.8,
+    "epss": 0.015,
+    "kev": true,
+    "trend_score": 0.67,
+    "trend_mentions": 42,
+    "trend_breakdown": {
+      "news_hits": 42,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.67
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Microsoft",
+    "product": "Outlook Web",
+    "summary_analyst": "CVE-2026-96951 is a vulnerability in Microsoft Outlook Web that allows an attacker to exploit improper input validation leading to remote code execution on the affected component.",
+    "summary_ciso": "CVE-2026-96951 poses an immediate risk to our organization by potentially allowing unauthorized access to sensitive emails in Microsoft Outlook Web, necessitating urgent mitigation to protect critical information and maintain client trust.",
+    "description": "CVE-2026-96951 is a vulnerability in Microsoft Outlook Web that allows an attacker to exploit improper input validation leading to remote code execution on the affected component.",
+    "news_article": {
+      "title": "Microsoft Patches Record 1,413 Flaws, Including Exploited Windows Shell Bug",
+      "url": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-102490",
+    "aura_score": 54.0,
+    "cvss": 7.8,
+    "epss": 0.005,
+    "kev": true,
+    "trend_score": 0.533,
+    "trend_mentions": 19,
+    "trend_breakdown": {
+      "news_hits": 19,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.533
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Zammad",
+    "product": "Zammad",
+    "summary_analyst": "CVE-2026-102490 is a vulnerability in Zammad that allows attackers to exploit improper input validation mechanisms, potentially leading to unauthorized access or data exposure within the application.",
+    "summary_ciso": "CVE-2026-102490 poses a significant risk to Zammad's customer service platform, potentially exposing sensitive user data to unauthorized access, which requires immediate mitigation to protect our organization's reputation and customer trust.",
+    "description": "CVE-2026-102490 is a vulnerability in Zammad that allows attackers to exploit improper input validation mechanisms, potentially leading to unauthorized access or data exposure within the application.",
+    "news_article": {
+      "title": "AI agents hacked the hackers, stealing email addresses from security research org",
+      "url": "https://www.theregister.com/security/2026/10/01/ai-agents-hacked-the-hackers-stealing-email-addresses-from-security-research-org/5300652",
+      "source": "Theregister.com"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-88779",
+    "aura_score": 53.3,
+    "cvss": 7.5,
+    "epss": 0.006,
+    "kev": true,
+    "trend_score": 0.628,
+    "trend_mentions": 33,
+    "trend_breakdown": {
+      "news_hits": 33,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.628
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Citrix",
+    "product": "Netscaler Application Delivery Controller",
+    "summary_analyst": "CVE-2026-88779 is a vulnerability in Citrix Netscaler Application Delivery Controller that allows an attacker to exploit improper input validation in the web management interface, potentially leading to remote code execution.",
+    "summary_ciso": "CVE-2026-88779 presents a critical vulnerability in Citrix Netscaler Application Delivery Controller that could allow attackers to exploit exposed systems, potentially leading to significant data breaches, operational disruption, and necessitating immediate remedial actions to safeguard our assets.",
+    "description": "CVE-2026-88779 is a vulnerability in Citrix Netscaler Application Delivery Controller that allows an attacker to exploit improper input validation in the web management interface, potentially leading to remote code execution.",
+    "news_article": {
+      "title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
+      "url": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2026-21589",
+    "aura_score": 53.1,
+    "cvss": 7.5,
+    "epss": 0,
+    "kev": true,
+    "trend_score": 0.628,
+    "trend_mentions": 33,
+    "trend_breakdown": {
+      "news_hits": 33,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.628
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Atlassian",
+    "product": "Bitbucket Data Center",
+    "summary_analyst": "CVE-2026-21589 is a vulnerability in Atlassian Bitbucket Data Center that allows remote attackers to bypass authentication and gain unauthorized access to sensitive data due to improper input validation in the application's API endpoints.",
+    "summary_ciso": "CVE-2026-21589 poses an urgent risk to Atlassian Bitbucket Data Center, potentially exposing sensitive code repositories to unauthorized access, which could lead to significant data breaches and regulatory penalties if not mitigated promptly.",
+    "description": "CVE-2026-21589 is a vulnerability in Atlassian Bitbucket Data Center that allows remote attackers to bypass authentication and gain unauthorized access to sensitive data due to improper input validation in the application's API endpoints.",
+    "news_article": {
+      "title": "Scans for Atlassian vulnerablity (CVE-2026-21589), (Wed, Oct 7th)",
+      "url": "https://isc.sans.edu/diary/33406",
+      "source": "Sans.edu"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2025-61624",
+    "aura_score": 45.5,
+    "cvss": 6.0,
+    "epss": 0.011,
+    "kev": true,
+    "trend_score": 0.247,
+    "trend_mentions": 3,
+    "trend_breakdown": {
+      "news_hits": 3,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.247
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Fortinet",
+    "product": "Fortios",
+    "summary_analyst": "CVE-2025-61624 is a vulnerability in Fortinet FortiOS that allows an unauthenticated attacker to execute arbitrary code on the affected device by sending specially crafted requests to the SSL VPN port.",
+    "summary_ciso": "CVE-2025-61624 poses a critical risk to Fortinet Fortios, potentially exposing sensitive data and system integrity to serious breaches, requiring immediate remediation to safeguard operational continuity and protect against evolving cyber threats.",
+    "description": "CVE-2025-61624 is a vulnerability in Fortinet FortiOS that allows an unauthenticated attacker to execute arbitrary code on the affected device by sending specially crafted requests to the SSL VPN port.",
+    "news_article": {
+      "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  },
+  {
+    "cve": "CVE-2023-22894",
+    "aura_score": 42.4,
+    "cvss": 4.9,
+    "epss": 0.036,
+    "kev": true,
+    "trend_score": 0.41,
+    "trend_mentions": 9,
+    "trend_breakdown": {
+      "news_hits": 9,
+      "github_hits": 0,
+      "exploit_boost": 0.0,
+      "trend_raw": 0.41
+    },
+    "exploit_poc": false,
+    "exploit_edb_ids": [],
+    "exploit_urls": [],
+    "ai_context": 0.0,
+    "ai_breakdown": {
+      "score": 0.0,
+      "matched": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "counts": {
+        "high": 0,
+        "medium": 0,
+        "low": 0
+      }
+    },
+    "vendor": "Strapi",
+    "product": "Strapi",
+    "summary_analyst": "CVE-2023-22894 affects Strapi due to a vulnerability that allows an authenticated attacker to exploit a failure in input validation, potentially leading to arbitrary code execution on the server.",
+    "summary_ciso": "CVE-2023-22894 poses an immediate threat to our data integrity and customer trust, as it exposes Strapi installations to potential unauthorized access and data breaches, necessitating urgent remediation to mitigate the risk.",
+    "description": "CVE-2023-22894 affects Strapi due to a vulnerability that allows an authenticated attacker to exploit a failure in input validation, potentially leading to arbitrary code execution on the server.",
+    "news_article": {
+      "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
+      "url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
+      "source": "Internet"
+    },
+    "score_breakdown": {
+      "cvss_weight": 0.4,
+      "epss_weight": 0.2,
+      "kev_weight": 0.2,
+      "exploit_weight": 0.1,
+      "trend_weight": 0.05,
+      "ai_weight": 0.05
+    }
+  }
+]
