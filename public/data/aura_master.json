@@ -1,128 +1,24 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "records": [
     {
-      "cve": "CVE-2026-105134",
-      "aura_score": 89.7,
-      "cvss": 10.0,
-      "epss": 0.863,
-      "kev": true,
-      "trend_score": 0.482,
-      "trend_mentions": 14,
-      "trend_breakdown": {
-        "news_hits": 14,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.482
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-105134"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Ahsay",
-      "product": "Cloud Backup Suite",
-      "summary_analyst": "CVE-2026-105134 is a vulnerability in Ahsay Cloud Backup Suite that allows an attacker to exploit improper validation of input, potentially leading to arbitrary code execution on the affected component.",
-      "summary_ciso": "CVE-2026-105134 exposes Ahsay Cloud Backup Suite to significant data breach risks, potentially compromising sensitive client information, and requires immediate remediation to safeguard against escalating threats and potential financial and reputational damages.",
-      "description": "CVE-2026-105134 is a vulnerability in Ahsay Cloud Backup Suite that allows an attacker to exploit improper validation of input, potentially leading to arbitrary code execution on the affected component.",
-      "news_article": {
-        "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-        "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-21589",
-      "aura_score": 83.1,
-      "cvss": 7.5,
-      "epss": 0.995,
-      "kev": true,
-      "trend_score": 0.633,
-      "trend_mentions": 34,
-      "trend_breakdown": {
-        "news_hits": 34,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.633
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-21589"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Atlassian",
-      "product": "Bitbucket Data Center",
-      "summary_analyst": "CVE-2026-21589 is a technical vulnerability in Atlassian Bitbucket Data Center that allows remote authenticated users to execute arbitrary code on the server via crafted REST API requests, compromising the integrity of the affected component.",
-      "summary_ciso": "CVE-2026-21589 poses an urgent risk to our organization through potential unauthorized access to sensitive data in Atlassian Bitbucket Data Center, necessitating immediate mitigation to prevent data breaches and safeguard our operational integrity.",
-      "description": "CVE-2026-21589 is a technical vulnerability in Atlassian Bitbucket Data Center that allows remote authenticated users to execute arbitrary code on the server via crafted REST API requests, compromising the integrity of the affected component.",
-      "news_article": {
-        "title": "Scans for Atlassian vulnerablity (CVE-2026-21589), (Wed, Oct 7th)",
-        "url": "https://isc.sans.edu/diary/33406",
-        "source": "Sans.edu"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-102764",
-      "aura_score": 75.7,
+      "cve": "CVE-2026-109618",
+      "aura_score": 92.7,
       "cvss": 9.8,
-      "epss": 0.203,
+      "epss": 1.0,
       "kev": true,
-      "trend_score": 0.482,
-      "trend_mentions": 14,
+      "trend_score": 0.7,
+      "trend_mentions": 664,
       "trend_breakdown": {
-        "news_hits": 14,
+        "news_hits": 664,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.482
+        "trend_raw": 0.7
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-102764"
+        "https://www.exploit-db.com/search?q=CVE-2026-109618"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -138,15 +34,119 @@
           "low": 0
         }
       },
-      "vendor": "Beyondtrust",
-      "product": "Remote Support",
-      "summary_analyst": "CVE-2026-102764 is a vulnerability in BeyondTrust Remote Support that allows attackers to exploit improper input validation in the authentication process, potentially enabling unauthorized access to sensitive information.",
-      "summary_ciso": "The CVE-2026-102764 vulnerability in Beyondtrust Remote Support poses an urgent risk of unauthorized access to sensitive systems, which could lead to significant business disruption and data breaches if not mitigated promptly.",
-      "description": "CVE-2026-102764 is a vulnerability in BeyondTrust Remote Support that allows attackers to exploit improper input validation in the authentication process, potentially enabling unauthorized access to sensitive information.",
+      "vendor": "Php",
+      "product": "Php",
+      "summary_analyst": "CVE-2026-109618: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-109618: Apply mitigations promptly.",
+      "description": "CVE-2026-109618: Apply mitigations promptly.",
       "news_article": {
-        "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
-        "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
-        "source": "Internet"
+        "title": "Updated PHP version released to GitHub",
+        "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+        "source": "Github.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-111497",
+      "aura_score": 89.2,
+      "cvss": 9.8,
+      "epss": 0.826,
+      "kev": true,
+      "trend_score": 0.7,
+      "trend_mentions": 153,
+      "trend_breakdown": {
+        "news_hits": 153,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.7
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-111497"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Google",
+      "product": "Brotli",
+      "summary_analyst": "CVE-2026-111497: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-111497: Apply mitigations promptly.",
+      "description": "CVE-2026-111497: Apply mitigations promptly.",
+      "news_article": {
+        "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+        "source": "Aikido.dev"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-109619",
+      "aura_score": 85.9,
+      "cvss": 8.1,
+      "epss": 1.0,
+      "kev": true,
+      "trend_score": 0.7,
+      "trend_mentions": 648,
+      "trend_breakdown": {
+        "news_hits": 648,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.7
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-109619"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Php",
+      "product": "Php",
+      "summary_analyst": "CVE-2026-109619: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-109619: Apply mitigations promptly.",
+      "description": "CVE-2026-109619: Apply mitigations promptly.",
+      "news_article": {
+        "title": "Updated PHP version released to GitHub",
+        "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+        "source": "Github.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -159,17 +159,17 @@
     },
     {
       "cve": "CVE-2026-110447",
-      "aura_score": 73.4,
+      "aura_score": 85.9,
       "cvss": 9.8,
-      "epss": 0.123,
+      "epss": 0.733,
       "kev": true,
-      "trend_score": 0.346,
-      "trend_mentions": 6,
+      "trend_score": 0.41,
+      "trend_mentions": 9,
       "trend_breakdown": {
-        "news_hits": 6,
+        "news_hits": 9,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.346
+        "trend_raw": 0.41
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -191,10 +191,10 @@
         }
       },
       "vendor": "Collabora",
-      "product": "Online",
-      "summary_analyst": "CVE-2026-110447 affects Collabora Online by allowing an attacker to exploit a vulnerability in the document rendering process, potentially leading to arbitrary code execution through specially crafted documents.",
-      "summary_ciso": "CVE-2026-110447 poses a significant risk to Collabora Online, potentially exposing sensitive data through a vulnerability that requires immediate remediation to protect our business from data breaches and reputational damage.",
-      "description": "CVE-2026-110447 affects Collabora Online by allowing an attacker to exploit a vulnerability in the document rendering process, potentially leading to arbitrary code execution through specially crafted documents.",
+      "product": "Collabora Online - Built-in Code Server",
+      "summary_analyst": "CVE-2026-110447: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-110447: Apply mitigations promptly.",
+      "description": "CVE-2026-110447: Apply mitigations promptly.",
       "news_article": {
         "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
         "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
@@ -210,18 +210,122 @@
       }
     },
     {
+      "cve": "CVE-2026-97229",
+      "aura_score": 79.0,
+      "cvss": 10.0,
+      "epss": 0.273,
+      "kev": true,
+      "trend_score": 0.7,
+      "trend_mentions": 50,
+      "trend_breakdown": {
+        "news_hits": 50,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.7
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-97229"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Gitlab",
+      "product": "Gitlab",
+      "summary_analyst": "CVE-2026-97229: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-97229: Apply mitigations promptly.",
+      "description": "CVE-2026-97229: Apply mitigations promptly.",
+      "news_article": {
+        "title": "GitLab admins urged to patch critical RCE flaw (CVE-2026-97229)",
+        "url": "https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/",
+        "source": "Help Net Security"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-48356",
+      "aura_score": 78.3,
+      "cvss": 9.3,
+      "epss": 0.446,
+      "kev": true,
+      "trend_score": 0.442,
+      "trend_mentions": 11,
+      "trend_breakdown": {
+        "news_hits": 11,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.442
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-48356"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Adobe",
+      "product": "Commerce",
+      "summary_analyst": "CVE-2026-48356: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-48356: Apply mitigations promptly.",
+      "description": "CVE-2026-48356: Apply mitigations promptly.",
+      "news_article": {
+        "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+        "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
       "cve": "CVE-2026-114625",
-      "aura_score": 71.4,
+      "aura_score": 71.9,
       "cvss": 9.9,
       "epss": 0.01,
       "kev": true,
-      "trend_score": 0.319,
-      "trend_mentions": 5,
+      "trend_score": 0.427,
+      "trend_mentions": 10,
       "trend_breakdown": {
-        "news_hits": 5,
+        "news_hits": 10,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.319
+        "trend_raw": 0.427
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -244,9 +348,9 @@
       },
       "vendor": "Arista",
       "product": "Velocloud Orchestrator",
-      "summary_analyst": "CVE-2026-114625 is a vulnerability in the Arista Velocloud Orchestrator that allows an unauthenticated attacker to execute arbitrary commands on the system via a specially crafted HTTP request, compromising the affected component.",
-      "summary_ciso": "CVE-2026-114625 exposes Arista Velocloud Orchestrator to significant security vulnerabilities that could lead to unauthorized access and data breaches, necessitating immediate mitigation to protect our critical infrastructure and maintain customer trust.",
-      "description": "CVE-2026-114625 is a vulnerability in the Arista Velocloud Orchestrator that allows an unauthenticated attacker to execute arbitrary commands on the system via a specially crafted HTTP request, compromising the affected component.",
+      "summary_analyst": "CVE-2026-114625: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-114625: Apply mitigations promptly.",
+      "description": "CVE-2026-114625: Apply mitigations promptly.",
       "news_article": {
         "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
         "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
@@ -262,23 +366,23 @@
       }
     },
     {
-      "cve": "CVE-2026-106931",
-      "aura_score": 65.2,
+      "cve": "CVE-2026-46300",
+      "aura_score": 67.1,
       "cvss": 7.8,
-      "epss": 0.025,
+      "epss": 0.161,
       "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 71,
+      "trend_score": 0.533,
+      "trend_mentions": 19,
       "trend_breakdown": {
-        "news_hits": 71,
+        "news_hits": 19,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.7
+        "trend_raw": 0.533
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-106931"
+        "https://www.exploit-db.com/search?q=CVE-2026-46300"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -294,15 +398,15 @@
           "low": 0
         }
       },
-      "vendor": "E-guardian",
-      "product": "Siteguard",
-      "summary_analyst": "CVE-2026-106931 affects E-guardian Siteguard by allowing attackers to exploit improper input validation to bypass authentication mechanisms, potentially compromising user accounts.",
-      "summary_ciso": "CVE-2026-106931 poses a critical risk to E-guardian Siteguard, potentially exposing sensitive data to unauthorized access, necessitating immediate action to mitigate significant business impact and reputational damage.",
-      "description": "CVE-2026-106931 affects E-guardian Siteguard by allowing attackers to exploit improper input validation to bypass authentication mechanisms, potentially compromising user accounts.",
+      "vendor": "Linux",
+      "product": "Linux Kernel",
+      "summary_analyst": "CVE-2026-46300: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-46300: Apply mitigations promptly.",
+      "description": "CVE-2026-46300: Apply mitigations promptly.",
       "news_article": {
-        "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-        "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-        "source": "Internet"
+        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -314,23 +418,23 @@
       }
     },
     {
-      "cve": "CVE-2026-96656",
-      "aura_score": 61.7,
-      "cvss": 7.2,
-      "epss": 0.018,
+      "cve": "CVE-2026-76418",
+      "aura_score": 66.6,
+      "cvss": 8.6,
+      "epss": 0.008,
       "kev": true,
-      "trend_score": 0.515,
-      "trend_mentions": 17,
+      "trend_score": 0.41,
+      "trend_mentions": 9,
       "trend_breakdown": {
-        "news_hits": 17,
+        "news_hits": 9,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.515
+        "trend_raw": 0.41
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-96656"
+        "https://www.exploit-db.com/search?q=CVE-2026-76418"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -346,15 +450,15 @@
           "low": 0
         }
       },
-      "vendor": "Plex",
-      "product": "Media Server",
-      "summary_analyst": "CVE-2026-96656 affects Plex Media Server by allowing an attacker to exploit an improper input validation vulnerability, which can lead to remote code execution and unauthorized access to system resources.",
-      "summary_ciso": "CVE-2026-96656 poses a critical risk to Plex Media Server that could lead to unauthorized access to sensitive media content, requiring immediate attention to mitigate potential data breaches and safeguard our brand reputation.",
-      "description": "CVE-2026-96656 affects Plex Media Server by allowing an attacker to exploit an improper input validation vulnerability, which can lead to remote code execution and unauthorized access to system resources.",
+      "vendor": "Cisco",
+      "product": "Adaptive Security Appliance Software",
+      "summary_analyst": "CVE-2026-76418: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-76418: Apply mitigations promptly.",
+      "description": "CVE-2026-76418: Apply mitigations promptly.",
       "news_article": {
-        "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-        "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-        "source": "Internet"
+        "title": "U.S. CISA adds GitLab\u00a0and Cisco\u00a0flaws to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/202133/security/u-s-cisa-adds-gitlab-and-cisco-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -366,23 +470,23 @@
       }
     },
     {
-      "cve": "CVE-2026-110936",
-      "aura_score": 59.3,
-      "cvss": 6.7,
-      "epss": 0.01,
+      "cve": "CVE-2026-111357",
+      "aura_score": 59.5,
+      "cvss": 7.0,
+      "epss": 0.005,
       "kev": true,
-      "trend_score": 0.457,
-      "trend_mentions": 12,
+      "trend_score": 0.287,
+      "trend_mentions": 4,
       "trend_breakdown": {
-        "news_hits": 12,
+        "news_hits": 4,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.457
+        "trend_raw": 0.287
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-110936"
+        "https://www.exploit-db.com/search?q=CVE-2026-111357"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -398,15 +502,15 @@
           "low": 0
         }
       },
-      "vendor": "Siemens",
-      "product": "Software Center",
-      "summary_analyst": "CVE-2026-110936 is a vulnerability in Siemens Software Center that allows potential unauthorized access due to improper input validation, enabling attackers to execute arbitrary code within the affected component.",
-      "summary_ciso": "CVE-2026-110936 exposes Siemens Software Center to significant security vulnerabilities that could lead to data breaches, operational disruptions, and potential regulatory penalties, necessitating immediate mitigation to safeguard our assets and reputation.",
-      "description": "CVE-2026-110936 is a vulnerability in Siemens Software Center that allows potential unauthorized access due to improper input validation, enabling attackers to execute arbitrary code within the affected component.",
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "summary_analyst": "CVE-2026-111357: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-111357: Apply mitigations promptly.",
+      "description": "CVE-2026-111357: Apply mitigations promptly.",
       "news_article": {
-        "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
-        "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
-        "source": "Internet"
+        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -418,23 +522,23 @@
       }
     },
     {
-      "cve": "CVE-2026-96654",
-      "aura_score": 58.9,
-      "cvss": 6.5,
-      "epss": 0.019,
+      "cve": "CVE-2026-41709",
+      "aura_score": 43.0,
+      "cvss": 2.7,
+      "epss": 0.007,
       "kev": true,
-      "trend_score": 0.504,
-      "trend_mentions": 16,
+      "trend_score": 0.41,
+      "trend_mentions": 9,
       "trend_breakdown": {
-        "news_hits": 16,
+        "news_hits": 9,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.504
+        "trend_raw": 0.41
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-96654"
+        "https://www.exploit-db.com/search?q=CVE-2026-41709"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -450,15 +554,15 @@
           "low": 0
         }
       },
-      "vendor": "Plex",
-      "product": "Media Server",
-      "summary_analyst": "CVE-2026-96654 affects Plex Media Server due to improper input validation, allowing remote attackers to execute arbitrary code via crafted requests to the server's web interface.",
-      "summary_ciso": "CVE-2026-96654 exposes Plex Media Server to potential remote code execution vulnerabilities, posing an urgent risk of data compromise and operational disruptions that require immediate attention to safeguard sensitive user information and maintain service integrity.",
-      "description": "CVE-2026-96654 affects Plex Media Server due to improper input validation, allowing remote attackers to execute arbitrary code via crafted requests to the server's web interface.",
+      "vendor": "Vmware",
+      "product": "Esxi",
+      "summary_analyst": "CVE-2026-41709: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-41709: Apply mitigations promptly.",
+      "description": "CVE-2026-41709: Apply mitigations promptly.",
       "news_article": {
-        "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-        "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-        "source": "Internet"
+        "title": "Chinese hackers used VMware ESX zero-day; PHP2Shell and Fragnesia chained to root firewalls",
+        "url": "https://www.helpnetsecurity.com/2026/10/29/php2shell-fragnesia-vmware-esx-zero-day/",
+        "source": "Help Net Security"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -470,23 +574,23 @@
       }
     },
     {
-      "cve": "CVE-2025-61624",
-      "aura_score": 56.4,
-      "cvss": 6.0,
-      "epss": 0.013,
+      "cve": "CVE-2026-118527",
+      "aura_score": 31.2,
+      "cvss": 0,
+      "epss": 0,
       "kev": true,
-      "trend_score": 0.427,
-      "trend_mentions": 10,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
       "trend_breakdown": {
-        "news_hits": 10,
+        "news_hits": 3,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.427
+        "trend_raw": 0.247
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2025-61624"
+        "https://www.exploit-db.com/search?q=CVE-2026-118527"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -502,119 +606,15 @@
           "low": 0
         }
       },
-      "vendor": "Fortinet",
-      "product": "Fortios",
-      "summary_analyst": "CVE-2025-61624 is a vulnerability in Fortinet Fortios that allows an attacker to exploit improper input validation in the web interface, potentially leading to remote command execution on the affected component.",
-      "summary_ciso": "CVE-2025-61624 poses a critical risk to Fortinet Fortios systems, potentially exposing sensitive data and disrupting services, necessitating immediate remediation to safeguard business integrity and compliance.",
-      "description": "CVE-2025-61624 is a vulnerability in Fortinet Fortios that allows an attacker to exploit improper input validation in the web interface, potentially leading to remote command execution on the affected component.",
+      "vendor": "Unknown",
+      "product": "Unknown",
+      "summary_analyst": "CVE-2026-118527: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-118527: Apply mitigations promptly.",
+      "description": "CVE-2026-118527: Apply mitigations promptly.",
       "news_article": {
-        "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
-        "url": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-96652",
-      "aura_score": 50.1,
-      "cvss": 4.3,
-      "epss": 0.018,
-      "kev": true,
-      "trend_score": 0.504,
-      "trend_mentions": 16,
-      "trend_breakdown": {
-        "news_hits": 16,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.504
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-96652"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Plex",
-      "product": "Media Server",
-      "summary_analyst": "CVE-2026-96652 affects Plex Media Server, allowing unauthenticated remote attackers to exploit an improper input validation vulnerability to execute arbitrary code via crafted requests to the server.",
-      "summary_ciso": "The recent CVE-2026-96652 vulnerability in Plex Media Server poses an immediate risk of unauthorized access to sensitive media data, potentially exposing our organization to significant reputational and financial damage, necessitating urgent mitigation efforts.",
-      "description": "CVE-2026-96652 affects Plex Media Server, allowing unauthenticated remote attackers to exploit an improper input validation vulnerability to execute arbitrary code via crafted requests to the server.",
-      "news_article": {
-        "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-        "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-96655",
-      "aura_score": 50.0,
-      "cvss": 4.3,
-      "epss": 0.016,
-      "kev": true,
-      "trend_score": 0.504,
-      "trend_mentions": 16,
-      "trend_breakdown": {
-        "news_hits": 16,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.504
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-96655"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Plex",
-      "product": "Media Server",
-      "summary_analyst": "CVE-2026-96655 is a vulnerability in Plex Media Server that allows an attacker to exploit a stack-based buffer overflow via maliciously crafted media files, potentially leading to arbitrary code execution.",
-      "summary_ciso": "CVE-2026-96655 poses a significant risk to Plex Media Server users, potentially exposing sensitive media content to unauthorized access, and necessitating immediate mitigation to prevent data breaches and protect our reputation.",
-      "description": "CVE-2026-96655 is a vulnerability in Plex Media Server that allows an attacker to exploit a stack-based buffer overflow via maliciously crafted media files, potentially leading to arbitrary code execution.",
-      "news_article": {
-        "title": "The Internet Is Currently On Fire",
-        "url": "https://kotaku.com/the-internet-is-currently-on-fire-2000748813",
-        "source": "Kotaku"
+        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+        "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "source": "Cisa.gov"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
