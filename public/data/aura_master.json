@@ -1,224 +1,16 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-09",
   "records": [
     {
-      "cve": "CVE-2026-109618",
-      "aura_score": 92.7,
-      "cvss": 9.8,
-      "epss": 1.0,
-      "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 664,
-      "trend_breakdown": {
-        "news_hits": 664,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.7
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-109618"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Php",
-      "product": "Php",
-      "summary_analyst": "CVE-2026-109618: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-109618: Apply mitigations promptly.",
-      "description": "CVE-2026-109618: Apply mitigations promptly.",
-      "news_article": {
-        "title": "Updated PHP version released to GitHub",
-        "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
-        "source": "Github.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-111497",
-      "aura_score": 89.2,
-      "cvss": 9.8,
-      "epss": 0.826,
-      "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 153,
-      "trend_breakdown": {
-        "news_hits": 153,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.7
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-111497"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Google",
-      "product": "Brotli",
-      "summary_analyst": "CVE-2026-111497: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-111497: Apply mitigations promptly.",
-      "description": "CVE-2026-111497: Apply mitigations promptly.",
-      "news_article": {
-        "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
-        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-        "source": "Aikido.dev"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-109619",
-      "aura_score": 85.9,
-      "cvss": 8.1,
-      "epss": 1.0,
-      "kev": true,
-      "trend_score": 0.7,
-      "trend_mentions": 648,
-      "trend_breakdown": {
-        "news_hits": 648,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.7
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-109619"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Php",
-      "product": "Php",
-      "summary_analyst": "CVE-2026-109619: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-109619: Apply mitigations promptly.",
-      "description": "CVE-2026-109619: Apply mitigations promptly.",
-      "news_article": {
-        "title": "Updated PHP version released to GitHub",
-        "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
-        "source": "Github.com"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-110447",
-      "aura_score": 85.9,
-      "cvss": 9.8,
-      "epss": 0.733,
-      "kev": true,
-      "trend_score": 0.41,
-      "trend_mentions": 9,
-      "trend_breakdown": {
-        "news_hits": 9,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.41
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-110447"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Collabora",
-      "product": "Collabora Online - Built-in Code Server",
-      "summary_analyst": "CVE-2026-110447: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-110447: Apply mitigations promptly.",
-      "description": "CVE-2026-110447: Apply mitigations promptly.",
-      "news_article": {
-        "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-        "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-        "source": "Internet"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
       "cve": "CVE-2026-97229",
-      "aura_score": 79.0,
+      "aura_score": 86.5,
       "cvss": 10.0,
-      "epss": 0.273,
+      "epss": 0.652,
       "kev": true,
       "trend_score": 0.7,
-      "trend_mentions": 50,
+      "trend_mentions": 63,
       "trend_breakdown": {
-        "news_hits": 50,
+        "news_hits": 63,
         "github_hits": 0,
         "exploit_boost": 0.0,
         "trend_raw": 0.7
@@ -262,23 +54,23 @@
       }
     },
     {
-      "cve": "CVE-2026-48356",
-      "aura_score": 78.3,
-      "cvss": 9.3,
-      "epss": 0.446,
+      "cve": "CVE-2026-116779",
+      "aura_score": 69.5,
+      "cvss": 9.8,
+      "epss": 0.013,
       "kev": true,
-      "trend_score": 0.442,
-      "trend_mentions": 11,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
       "trend_breakdown": {
-        "news_hits": 11,
+        "news_hits": 0,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.442
+        "trend_raw": 0.0
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-48356"
+        "https://www.exploit-db.com/search?q=CVE-2026-116779"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -294,16 +86,12 @@
           "low": 0
         }
       },
-      "vendor": "Adobe",
-      "product": "Commerce",
-      "summary_analyst": "CVE-2026-48356: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-48356: Apply mitigations promptly.",
-      "description": "CVE-2026-48356: Apply mitigations promptly.",
-      "news_article": {
-        "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
-        "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-        "source": "Internet"
-      },
+      "vendor": "Freeswitch",
+      "product": "Freeswitch",
+      "summary_analyst": "CVE-2026-116779: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-116779: Apply mitigations promptly.",
+      "description": "CVE-2026-116779: Apply mitigations promptly.",
+      "news_article": null,
       "score_breakdown": {
         "cvss_weight": 0.4,
         "epss_weight": 0.2,
@@ -314,23 +102,23 @@
       }
     },
     {
-      "cve": "CVE-2026-114625",
-      "aura_score": 71.9,
-      "cvss": 9.9,
-      "epss": 0.01,
+      "cve": "CVE-2026-102895",
+      "aura_score": 69.3,
+      "cvss": 9.8,
+      "epss": 0.003,
       "kev": true,
-      "trend_score": 0.427,
-      "trend_mentions": 10,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
       "trend_breakdown": {
-        "news_hits": 10,
+        "news_hits": 0,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.427
+        "trend_raw": 0.0
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-114625"
+        "https://www.exploit-db.com/search?q=CVE-2026-102895"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -346,16 +134,12 @@
           "low": 0
         }
       },
-      "vendor": "Arista",
-      "product": "Velocloud Orchestrator",
-      "summary_analyst": "CVE-2026-114625: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-114625: Apply mitigations promptly.",
-      "description": "CVE-2026-114625: Apply mitigations promptly.",
-      "news_article": {
-        "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-        "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-        "source": "Internet"
-      },
+      "vendor": "Gpustack",
+      "product": "Gpustack",
+      "summary_analyst": "CVE-2026-102895: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-102895: Apply mitigations promptly.",
+      "description": "CVE-2026-102895: Apply mitigations promptly.",
+      "news_article": null,
       "score_breakdown": {
         "cvss_weight": 0.4,
         "epss_weight": 0.2,
@@ -366,23 +150,23 @@
       }
     },
     {
-      "cve": "CVE-2026-46300",
-      "aura_score": 67.1,
-      "cvss": 7.8,
-      "epss": 0.161,
+      "cve": "CVE-2026-123218",
+      "aura_score": 69.3,
+      "cvss": 9.8,
+      "epss": 0.004,
       "kev": true,
-      "trend_score": 0.533,
-      "trend_mentions": 19,
+      "trend_score": 0.0,
+      "trend_mentions": 0,
       "trend_breakdown": {
-        "news_hits": 19,
+        "news_hits": 0,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.533
+        "trend_raw": 0.0
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
       "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-46300"
+        "https://www.exploit-db.com/search?q=CVE-2026-123218"
       ],
       "ai_context": 0.0,
       "ai_breakdown": {
@@ -398,16 +182,12 @@
           "low": 0
         }
       },
-      "vendor": "Linux",
-      "product": "Linux Kernel",
-      "summary_analyst": "CVE-2026-46300: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-46300: Apply mitigations promptly.",
-      "description": "CVE-2026-46300: Apply mitigations promptly.",
-      "news_article": {
-        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
-      },
+      "vendor": "Unknown",
+      "product": "Unknown",
+      "summary_analyst": "CVE-2026-123218: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-123218: Apply mitigations promptly.",
+      "description": "CVE-2026-123218: Apply mitigations promptly.",
+      "news_article": null,
       "score_breakdown": {
         "cvss_weight": 0.4,
         "epss_weight": 0.2,
@@ -419,17 +199,17 @@
     },
     {
       "cve": "CVE-2026-76418",
-      "aura_score": 66.6,
+      "aura_score": 66.8,
       "cvss": 8.6,
       "epss": 0.008,
       "kev": true,
-      "trend_score": 0.41,
-      "trend_mentions": 9,
+      "trend_score": 0.457,
+      "trend_mentions": 12,
       "trend_breakdown": {
-        "news_hits": 9,
+        "news_hits": 12,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.41
+        "trend_raw": 0.457
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -470,18 +250,174 @@
       }
     },
     {
+      "cve": "CVE-2026-123158",
+      "aura_score": 65.2,
+      "cvss": 8.1,
+      "epss": 0.01,
+      "kev": true,
+      "trend_score": 0.524,
+      "trend_mentions": 18,
+      "trend_breakdown": {
+        "news_hits": 18,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.524
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-123158"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Openbsd",
+      "product": "Openssh",
+      "summary_analyst": "CVE-2026-123158: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-123158: Apply mitigations promptly.",
+      "description": "CVE-2026-123158: Apply mitigations promptly.",
+      "news_article": {
+        "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
+        "url": "https://isc.sans.edu/diary/33498",
+        "source": "Sans.edu"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-119977",
+      "aura_score": 64.9,
+      "cvss": 8.1,
+      "epss": 0.012,
+      "kev": true,
+      "trend_score": 0.457,
+      "trend_mentions": 12,
+      "trend_breakdown": {
+        "news_hits": 12,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.457
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-119977"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Wordpress",
+      "product": "Wordpress",
+      "summary_analyst": "CVE-2026-119977: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-119977: Apply mitigations promptly.",
+      "description": "CVE-2026-119977: Apply mitigations promptly.",
+      "news_article": {
+        "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+        "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-19868",
+      "aura_score": 61.4,
+      "cvss": 7.5,
+      "epss": 0.006,
+      "kev": true,
+      "trend_score": 0.247,
+      "trend_mentions": 3,
+      "trend_breakdown": {
+        "news_hits": 3,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.247
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-19868"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Sonicwall",
+      "product": "Sonicos",
+      "summary_analyst": "CVE-2026-19868: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-19868: Apply mitigations promptly.",
+      "description": "CVE-2026-19868: Apply mitigations promptly.",
+      "news_article": {
+        "title": "U.S. CISA adds SonicWall SonicOS SSLVPN\u00a0flaw to its Known Exploited Vulnerabilities catalog",
+        "url": "https://securityaffairs.com/202581/security/u-s-cisa-adds-sonicwall-sonicos-sslvpn-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+        "source": "Securityaffairs.com"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
       "cve": "CVE-2026-111357",
-      "aura_score": 59.5,
+      "aura_score": 60.6,
       "cvss": 7.0,
       "epss": 0.005,
       "kev": true,
-      "trend_score": 0.287,
-      "trend_mentions": 4,
+      "trend_score": 0.494,
+      "trend_mentions": 15,
       "trend_breakdown": {
-        "news_hits": 4,
+        "news_hits": 15,
         "github_hits": 0,
         "exploit_boost": 0.0,
-        "trend_raw": 0.287
+        "trend_raw": 0.494
       },
       "exploit_poc": true,
       "exploit_edb_ids": [],
@@ -508,9 +444,113 @@
       "summary_ciso": "CVE-2026-111357: Apply mitigations promptly.",
       "description": "CVE-2026-111357: Apply mitigations promptly.",
       "news_article": {
-        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
+        "title": "CISA to federal agencies: Remediate exploited Ivanti Connect Secure vulnerabilities (CVE-2026-111357, CVE-2026-118527)",
+        "url": "https://www.helpnetsecurity.com/2026/11/02/cisa-to-federal-agencies-remediate-exploited-ivanti-connect-secure-vulnerabilities-cve-2026-111357-cve-2026-118527/",
+        "source": "Help Net Security"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2024-27834",
+      "aura_score": 54.6,
+      "cvss": 5.5,
+      "epss": 0.015,
+      "kev": true,
+      "trend_score": 0.457,
+      "trend_mentions": 12,
+      "trend_breakdown": {
+        "news_hits": 12,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.457
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2024-27834"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Apple",
+      "product": "Safari",
+      "summary_analyst": "CVE-2024-27834: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2024-27834: Apply mitigations promptly.",
+      "description": "CVE-2024-27834: Apply mitigations promptly.",
+      "news_article": {
+        "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+        "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+        "source": "Internet"
+      },
+      "score_breakdown": {
+        "cvss_weight": 0.4,
+        "epss_weight": 0.2,
+        "kev_weight": 0.2,
+        "exploit_weight": 0.1,
+        "trend_weight": 0.05,
+        "ai_weight": 0.05
+      }
+    },
+    {
+      "cve": "CVE-2026-118527",
+      "aura_score": 49.8,
+      "cvss": 4.3,
+      "epss": 0.008,
+      "kev": true,
+      "trend_score": 0.482,
+      "trend_mentions": 14,
+      "trend_breakdown": {
+        "news_hits": 14,
+        "github_hits": 0,
+        "exploit_boost": 0.0,
+        "trend_raw": 0.482
+      },
+      "exploit_poc": true,
+      "exploit_edb_ids": [],
+      "exploit_urls": [
+        "https://www.exploit-db.com/search?q=CVE-2026-118527"
+      ],
+      "ai_context": 0.0,
+      "ai_breakdown": {
+        "score": 0.0,
+        "matched": {
+          "high": [],
+          "medium": [],
+          "low": []
+        },
+        "counts": {
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        }
+      },
+      "vendor": "Ivanti",
+      "product": "Connect Secure",
+      "summary_analyst": "CVE-2026-118527: Apply mitigations promptly.",
+      "summary_ciso": "CVE-2026-118527: Apply mitigations promptly.",
+      "description": "CVE-2026-118527: Apply mitigations promptly.",
+      "news_article": {
+        "title": "CISA to federal agencies: Remediate exploited Ivanti Connect Secure vulnerabilities (CVE-2026-111357, CVE-2026-118527)",
+        "url": "https://www.helpnetsecurity.com/2026/11/02/cisa-to-federal-agencies-remediate-exploited-ivanti-connect-secure-vulnerabilities-cve-2026-111357-cve-2026-118527/",
+        "source": "Help Net Security"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
@@ -563,58 +603,6 @@
         "title": "Chinese hackers used VMware ESX zero-day; PHP2Shell and Fragnesia chained to root firewalls",
         "url": "https://www.helpnetsecurity.com/2026/10/29/php2shell-fragnesia-vmware-esx-zero-day/",
         "source": "Help Net Security"
-      },
-      "score_breakdown": {
-        "cvss_weight": 0.4,
-        "epss_weight": 0.2,
-        "kev_weight": 0.2,
-        "exploit_weight": 0.1,
-        "trend_weight": 0.05,
-        "ai_weight": 0.05
-      }
-    },
-    {
-      "cve": "CVE-2026-118527",
-      "aura_score": 31.2,
-      "cvss": 0,
-      "epss": 0,
-      "kev": true,
-      "trend_score": 0.247,
-      "trend_mentions": 3,
-      "trend_breakdown": {
-        "news_hits": 3,
-        "github_hits": 0,
-        "exploit_boost": 0.0,
-        "trend_raw": 0.247
-      },
-      "exploit_poc": true,
-      "exploit_edb_ids": [],
-      "exploit_urls": [
-        "https://www.exploit-db.com/search?q=CVE-2026-118527"
-      ],
-      "ai_context": 0.0,
-      "ai_breakdown": {
-        "score": 0.0,
-        "matched": {
-          "high": [],
-          "medium": [],
-          "low": []
-        },
-        "counts": {
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        }
-      },
-      "vendor": "Unknown",
-      "product": "Unknown",
-      "summary_analyst": "CVE-2026-118527: Apply mitigations promptly.",
-      "summary_ciso": "CVE-2026-118527: Apply mitigations promptly.",
-      "description": "CVE-2026-118527: Apply mitigations promptly.",
-      "news_article": {
-        "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-        "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-        "source": "Cisa.gov"
       },
       "score_breakdown": {
         "cvss_weight": 0.4,
